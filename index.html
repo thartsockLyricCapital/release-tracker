@@ -27,7 +27,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ---------- Top bar ---------- */
 .topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.topbar-in{max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:18px}
+.topbar-in{max-width:min(1720px,96vw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:18px}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{width:40px;height:40px;display:grid;place-items:center;flex-shrink:0}
 .logo img{width:100%;height:100%;object-fit:contain;display:block}
@@ -55,7 +55,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .edit-toggle.on .dot{background:#5AE39A;box-shadow:0 0 0 3px rgba(90,227,154,.25)}
 
 /* ---------- Hero ---------- */
-.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.wrap{max-width:min(1720px,96vw);margin:0 auto;padding:0 24px}
 .hero{padding:34px 0 8px}
 .hero h2{font-family:'Space Grotesk';font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.025em;line-height:1.02}
 .hero h2 .accent{color:var(--blue)}
@@ -261,11 +261,11 @@ body.editing .card{cursor:default}
 .tscroll-top{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-bottom:none;border-radius:var(--r) var(--r) 0 0;background:var(--bg-2)}
 .tscroll-top>div{height:1px}
 .tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:0 0 var(--r) var(--r);overflow:auto;max-height:74vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
-table{width:100%;min-width:1280px;border-collapse:collapse;font-size:13px}
-thead th{position:sticky;top:0;z-index:3;text-align:left;padding:12px 14px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);background:var(--bg-2);cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--line)}
+table{width:100%;min-width:1120px;border-collapse:collapse;font-size:13px}
+thead th{position:sticky;top:0;z-index:3;text-align:left;padding:11px 11px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);background:var(--bg-2);cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--line)}
 thead th:hover{color:var(--blue)}
 thead th .arr{opacity:.4;font-size:9px}
-tbody td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+tbody td{padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:middle}
 tbody tr:hover{background:var(--bg)}
 tbody tr:last-child td{border-bottom:none}
 td .t-art{font-weight:700;font-family:'Space Grotesk'}
