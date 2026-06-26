@@ -258,6 +258,17 @@ body.editing .edit-btn{display:inline-block}
 body.editing .card{cursor:default}
 
 /* ---------- Table ---------- */
+.gapchart{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:15px 18px 8px;margin-bottom:14px}
+.gc-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.gc-head h3{font-family:'Space Grotesk';font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+.gc-head .warn{font-size:11px;color:#C0392B;font-weight:600}
+.gc-head .leg{margin-left:auto;font-size:10.5px;color:var(--ink-faint)}
+.gc-svg{width:100%;height:auto;display:block}
+.gc-grid{stroke:var(--line);stroke-width:1}
+.gc-line{stroke:var(--ink-faint);stroke-width:1.5;stroke-dasharray:5 4}
+.gc-axt{fill:var(--ink-faint);font-size:10px;font-family:'Space Mono'}
+.gc-axtitle{fill:var(--ink-soft);font-size:11px;font-weight:700;font-family:'Inter'}
+.gc-lbl{fill:var(--ink-soft);font-size:9.5px;font-family:'Inter'}
 .tscroll-top{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-bottom:none;border-radius:var(--r) var(--r) 0 0;background:var(--bg-2)}
 .tscroll-top>div{height:1px}
 .tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:0 0 var(--r) var(--r);overflow:auto;max-height:74vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
@@ -596,6 +607,48 @@ function adjOn(){ return state.basis==='adjusted'; }
 function factor(r){ return adjOn() ? (r.spiritPct||0) : 1; }
 function splitChip(p){ return p==null?'':`<span class="split" title="Spirit ownership split">${Math.round(p*100)}%</span>`; }
 
+/* ---------- Monetization gap scatter (reach vs royalty) ---------- */
+function gapData(){
+  const R=window.LYRIC_ROYALTY, W=window.LYRIC_WRITERS;
+  if(!R||!W) return [];
+  return Object.values(R.writers).map(rw=>{
+    const w=W[rw.name];
+    const x=w?w.grossStreams:null;
+    return (x&&x>0&&rw.npsTtm>0)?{name:rw.name,x:x,y:rw.npsTtm}:null;
+  }).filter(Boolean);
+}
+function renderGapChart(){
+  const pts=gapData(); if(pts.length<3) return '';
+  const VW=940,VH=470,padL=72,padR=170,padT=44,padB=56;
+  const xs=pts.map(p=>Math.log10(p.x)), ys=pts.map(p=>Math.log10(p.y));
+  const x0=Math.floor(Math.min(...xs)), x1=Math.ceil(Math.max(...xs));
+  const y0=Math.floor(Math.min(...ys)), y1=Math.ceil(Math.max(...ys));
+  const X=lx=>padL+(lx-x0)/(x1-x0)*(VW-padL-padR);
+  const Y=ly=>VH-padB-(ly-y0)/(y1-y0)*(VH-padT-padB);
+  const ratios=pts.map(p=>p.y/p.x).sort((a,b)=>a-b);
+  const k=ratios[Math.floor(ratios.length/2)];               // median $/stream = conversion line
+  let grid='';
+  for(let i=x0;i<=x1;i++){const gx=X(i);grid+=`<line x1="${gx}" y1="${padT}" x2="${gx}" y2="${VH-padB}" class="gc-grid"/><text x="${gx}" y="${VH-padB+18}" class="gc-axt" text-anchor="middle">${fmtNum(Math.pow(10,i))}</text>`;}
+  for(let i=y0;i<=y1;i++){const gy=Y(i);grid+=`<line x1="${padL}" y1="${gy}" x2="${VW-padR}" y2="${gy}" class="gc-grid"/><text x="${padL-8}" y="${gy+3}" class="gc-axt" text-anchor="end">${fmtUSD(Math.pow(10,i))}</text>`;}
+  const resid=p=>Math.log10(p.y/(k*p.x));
+  const col=p=>{const r=resid(p);return r>0.2?'var(--green)':r<-0.3?'#C0392B':'var(--blue)';};
+  let dots='',labels='';
+  pts.sort((a,b)=>a.x-b.x).forEach(p=>{const cx=X(Math.log10(p.x)),cy=Y(Math.log10(p.y));
+    dots+=`<circle cx="${cx}" cy="${cy}" r="5" fill="${col(p)}" stroke="#fff" stroke-width="1"/>`;
+    if(p.x>=5e7||resid(p)<-0.3) labels+=`<text x="${cx+8}" y="${cy+3}" class="gc-lbl">${esc(p.name)}</text>`;});
+  const L0={lx:x0,ly:Math.log10(k*Math.pow(10,x0))}, L1={lx:x1,ly:Math.log10(k*Math.pow(10,x1))};
+  return `<div class="gapchart">
+    <div class="gc-head"><h3>The monetization gap — reach vs. royalty income</h3>
+      <span class="warn">● below the line = streams not yet converting to royalties</span>
+      <span class="leg">writers · log–log · conversion line = median $/stream</span></div>
+    <svg viewBox="0 0 ${VW} ${VH}" class="gc-svg" preserveAspectRatio="xMidYMid meet">
+      <line x1="${X(L0.lx)}" y1="${Y(L0.ly)}" x2="${X(L1.lx)}" y2="${Y(L1.ly)}" class="gc-line"/>
+      ${grid}${dots}${labels}
+      <text x="${(padL+VW-padR)/2}" y="${VH-6}" class="gc-axtitle" text-anchor="middle">Spotify streams · catalog (log)</text>
+      <text transform="translate(16,${(padT+VH-padB)/2}) rotate(-90)" class="gc-axtitle" text-anchor="middle">Spirit NPS · last 12 mo (log)</text>
+    </svg></div>`;
+}
+
 /* ---------- Royalties (Songs of Spirit NPS, from Sigma/Snowflake) ---------- */
 function renderRoyalty(){
   const R=window.LYRIC_ROYALTY; if(!R){ $('#royKpis').innerHTML=''; $('#royBoards').innerHTML=''; return; }
@@ -820,7 +873,7 @@ function renderTable(){
   });
   if(!rows.length){ $('#tableView').innerHTML=emptyState(); return; }
   const tcolor={'Single':'var(--t-single)','Album':'var(--t-album)','EP':'var(--t-ep)','Single → Album':'var(--t-sa)','Unknown':'var(--t-unk)'};
-  $('#tableView').innerHTML=`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
+  $('#tableView').innerHTML=renderGapChart()+`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
     cols.map(c=>`<th data-sort="${c[0]}">${c[1]} <span class="arr">${state.sort===c[0]?(state.dir<0?'▼':'▲'):''}</span></th>`).join('')
   }</tr></thead><tbody>${rows.map(r=>{const sp=spotify(r);return `<tr>
     <td class="mono" style="white-space:nowrap">${fmtDate(r.releaseDate)}</td>
