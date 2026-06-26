@@ -77,6 +77,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .kpi.k-spins::before{background:var(--t-ep)}
 .kpi.k-mo::before{background:var(--green)}
 .kpi.k-gain::before{background:var(--gold)}
+.kpi.k-roy::before{background:var(--gold)}
 .kpi .kpi-top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .kpi .n{font-family:'Space Grotesk';font-size:29px;font-weight:700;letter-spacing:-.02em;line-height:1}
 .kpi .n.sm{font-size:17px;line-height:1.15}
@@ -406,6 +407,14 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
   <div class="boards" id="boards"></div>
 
   <div class="section-head">
+    <span class="eyebrow">Royalties</span>
+    <h3>Songs of Spirit — royalty income</h3>
+    <span class="count" id="royAsOf"></span>
+  </div>
+  <div class="kpis" id="royKpis"></div>
+  <div class="boards" id="royBoards"></div>
+
+  <div class="section-head">
     <span class="eyebrow">Release mix</span>
     <h3>What's in the calendar</h3>
   </div>
@@ -487,6 +496,7 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 <script src="releases.js"></script>
 <script src="charts.js"></script>
 <script src="writers.js"></script>
+<script src="royalty.js"></script>
 <script>
 const TODAY = new Date('2026-06-24'); // anchor; uses real today if later
 const NOW = (new Date() > TODAY) ? new Date() : TODAY;
@@ -527,6 +537,14 @@ function fmtInt(n){ if(n==null||isNaN(n)) return '—';   // truncated, no decim
   if(n>=1e3) return Math.floor(n/1e3)+'K';
   return String(Math.floor(n));
 }
+function fmtUSD(n){ if(n==null||isNaN(n)) return '—';
+  if(n>=1e6) return '$'+(n/1e6).toFixed(n>=1e7?0:1)+'M';
+  if(n>=1e3) return '$'+Math.round(n/1e3)+'K';
+  return '$'+Math.round(n);
+}
+function royClean(t){ return (t||'').replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim().toLowerCase(); }
+function royForSong(r){ const R=window.LYRIC_ROYALTY; return R&&R.songs?R.songs[royClean(r.songTitle)]||null:null; }
+function royForWriter(name){ const R=window.LYRIC_ROYALTY; return R&&R.writers?R.writers[name]||null:null; }
 function edBadge(r){
   if(!r.mergedCount||r.mergedCount<2) return '';
   const multi=r.editions>1;
@@ -575,6 +593,31 @@ function filtered(){
 function adjOn(){ return state.basis==='adjusted'; }
 function factor(r){ return adjOn() ? (r.spiritPct||0) : 1; }
 function splitChip(p){ return p==null?'':`<span class="split" title="Spirit ownership split">${Math.round(p*100)}%</span>`; }
+
+/* ---------- Royalties (Songs of Spirit NPS, from Sigma/Snowflake) ---------- */
+function renderRoyalty(){
+  const R=window.LYRIC_ROYALTY; if(!R){ $('#royKpis').innerHTML=''; $('#royBoards').innerHTML=''; return; }
+  const T=R.meta.totals;
+  const tiles=[
+    {c:'k-roy', n:fmtUSD(T.npsLife), l:'Spirit NPS — lifetime', sub:`${T.songs.toLocaleString()} SOS songs`},
+    {c:'k-roy', n:fmtUSD(T.npsTtm), l:'Spirit NPS — last 12 mo', sub:R.meta.window},
+    {c:'k-roy', n:fmtUSD(T.incomeLife), l:'Gross income — lifetime', sub:'before Spirit share'},
+    {c:'k-roy', n:fmtUSD(R.topWriters[0].npsLife), l:`Top earner · ${esc(R.topWriters[0].name)}`, sub:'Spirit NPS lifetime'},
+  ];
+  $('#royKpis').innerHTML=tiles.map(t=>`<div class="kpi ${t.c}"><div class="kpi-top"><span class="n">${t.n}</span></div>`
+    +`<div class="l">${t.l}</div><div class="sub">${t.sub}</div></div>`).join('');
+  const rows=(list,isWriter)=>list.map((x,i)=>`<div class="brow">
+      <span class="brank t${i+1<=3?i+1:''}">${i+1}</span>
+      <div><div class="bsong">${isWriter?`<span class="wname" data-writer="${esc(x.name)}">${esc(x.name)}</span>`:esc(x.title)}</div>
+        <div class="bsub">${fmtUSD(x.incomeLife)} gross income${x.npsTtm?` · ${fmtUSD(x.npsTtm)} NPS last 12mo`:''}</div></div>
+      <div class="bmetric"><span class="bn" style="color:var(--gold-ink,#8A6510)">${fmtUSD(x.npsLife)}</span>
+        <span class="bt">Spirit NPS life</span></div>
+    </div>`).join('');
+  const board=(title,body)=>`<section class="board"><div class="board-h"><span class="eyebrow">By Spirit NPS</span><h3>${title}</h3><span class="when">lifetime</span></div>${body}</section>`;
+  $('#royBoards').innerHTML = board('Top writers by royalty', rows(R.topWriters,true))
+                            + board('Top songs by royalty', rows(R.topSongs,false));
+  $('#royAsOf').textContent = R.meta.period+' · Sigma/Snowflake';
+}
 
 /* ---------- Leaderboards (top performers, last 6 mo) ---------- */
 function writerLine(w){
@@ -757,7 +800,7 @@ function card(r){
 
 /* ---------- Table ---------- */
 function renderTable(){
-  const cols=[['date','Date'],['artist','Artist'],['song','Song'],['writer','Writer'],['type','Type'],['tier','Artist tier'],['label','Label'],['status','Status'],['split','Spirit %'],['chart','Streams (net / gross)'],['spins','Spins (net / gross)'],['spotify','Spotify']];
+  const cols=[['date','Date'],['artist','Artist'],['song','Song'],['writer','Writer'],['type','Type'],['tier','Artist tier'],['label','Label'],['status','Status'],['split','Spirit %'],['chart','Streams (net / gross)'],['spins','Spins (net / gross)'],['royalty','Royalty (NPS)'],['spotify','Spotify']];
   let rows=filtered().slice();
   const key=state.sort;
   rows.sort((a,b)=>{
@@ -767,6 +810,7 @@ function renderTable(){
     else if(key==='writer'){av=(a.spiritSongwriters||'').toLowerCase();bv=(b.spiritSongwriters||'').toLowerCase();}
     else if(key==='tier'){av=a.topArtist?1:0;bv=b.topArtist?1:0;}
     else if(key==='split'){av=a.spiritPct!=null?a.spiritPct:-1;bv=b.spiritPct!=null?b.spiritPct:-1;}
+    else if(key==='royalty'){const ra=royForSong(a),rb=royForSong(b);av=ra?ra.npsLife:-1;bv=rb?rb.npsLife:-1;}
     else if(key==='chart'){const ca=chartFor(a),cb=chartFor(b);av=ca&&ca.streams!=null?ca.streams:-1;bv=cb&&cb.streams!=null?cb.streams:-1;}
     else if(key==='spins'){const ca=chartFor(a),cb=chartFor(b);av=ca&&typeof ca.spins==='number'?ca.spins:-1;bv=cb&&typeof cb.spins==='number'?cb.spins:-1;}
     else {av=(a[key]||'').toString().toLowerCase();bv=(b[key]||'').toString().toLowerCase();}
@@ -788,6 +832,7 @@ function renderTable(){
     <td><span class="t-split">${r.spiritPct!=null?Math.round(r.spiritPct*100)+'%':'—'}</span></td>
     <td>${(()=>{const c=chartFor(r);if(r.status!=='Released')return '<span style="color:var(--ink-faint)">—</span>';if(!c||c.streams==null)return '<span style="color:var(--ink-faint)">·</span>';const net=r.spiritPct!=null?fmtInt(c.streams*r.spiritPct):'—';return `<span class="t-chart">#${c.rank} ${trendMark(c.streamsTrend)} <span class="t-pop">${net}</span> net</span><span class="t-net">${fmtNum(c.streams)} gross</span>`;})()}</td>
     <td>${(()=>{const c=chartFor(r);if(!c||typeof c.spins!=='number')return '<span style="color:var(--ink-faint)">—</span>';const net=r.spiritPct!=null?fmtInt(c.spins*r.spiritPct):'—';return `<span class="t-chart"><span class="t-pop">${net}</span> ${trendMark(c.spinsTrend)}</span><span class="t-net">${fmtNum(c.spins)} gross</span>`;})()}</td>
+    <td>${(()=>{const ry=royForSong(r);if(!ry)return '<span style="color:var(--ink-faint)">—</span>';return `<span class="t-chart" style="color:#8A6510" title="Gross income ${fmtUSD(ry.incomeLife)} lifetime">${fmtUSD(ry.npsLife)}</span><span class="t-net">${fmtUSD(ry.npsTtm)} 12mo</span>`;})()}</td>
     <td><a class="spotify ${sp.official?'':'sp-search'}" href="${sp.url}" target="_blank" rel="noopener" style="padding:5px 9px">${sp.official?'Play':'Find'}</a></td>
   </tr>`;}).join('')}</tbody></table></div>`;
   $('#tableView').querySelectorAll('th[data-sort]').forEach(th=>th.onclick=()=>{
@@ -798,7 +843,7 @@ function emptyState(){return `<div class="empty"><svg viewBox="0 0 24 24" fill="
 
 /* ---------- Render all ---------- */
 function render(){
-  renderKPIs(); renderBoards(); renderStats(); renderRail();
+  renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail();
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
   const m=window.LYRIC_META||{};
@@ -840,6 +885,7 @@ function openAdd(){
 }
 function openWriter(name){
   const W=(window.LYRIC_WRITERS||{})[name]; if(!W) return;
+  const roy=royForWriter(name);
   const share=W.avgShare!=null?Math.round(W.avgShare*100)+'%':'—';
   const stat=(n,l,x,cls)=>`<div class="wc-stat ${cls||''}"><div class="n">${n}</div><div class="l">${l}</div>${x?`<div class="x">${x}</div>`:'<div class="x">&nbsp;</div>'}</div>`;
   const m=(net,gross,l)=>`<div class="wc-m"><div class="n">${fmtInt(net)}</div><div class="g">${fmtNum(gross)} gross</div><div class="l">${l}</div></div>`;
@@ -865,6 +911,7 @@ function openWriter(name){
         ${m(W.netStreams,W.grossStreams,'Streams · net / gross')}
         ${m(W.netSpins,W.grossSpins,'Airplay spins · net / gross')}
       </div>
+      ${roy?`<div class="wc-metrics"><div class="wc-m" style="--accent:var(--gold)"><div class="n" style="color:#8A6510">${fmtUSD(roy.npsLife)}</div><div class="g">${fmtUSD(roy.npsTtm)} last 12mo · ${fmtUSD(roy.incomeLife)} gross income</div><div class="l">Spirit NPS royalties · lifetime (SOS)</div></div></div>`:''}
       <div class="wc-cols">
         <div><h5>Top artists</h5>${arts}</div>
         <div><h5>Top songs (by net streams)</h5>${songs}</div>
