@@ -258,7 +258,9 @@ body.editing .edit-btn{display:inline-block}
 body.editing .card{cursor:default}
 
 /* ---------- Table ---------- */
-.tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:auto;max-height:78vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
+.tscroll-top{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-bottom:none;border-radius:var(--r) var(--r) 0 0;background:var(--bg-2)}
+.tscroll-top>div{height:1px}
+.tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:0 0 var(--r) var(--r);overflow:auto;max-height:74vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
 table{width:100%;min-width:1280px;border-collapse:collapse;font-size:13px}
 thead th{position:sticky;top:0;z-index:3;text-align:left;padding:12px 14px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);background:var(--bg-2);cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--line)}
 thead th:hover{color:var(--blue)}
@@ -818,7 +820,7 @@ function renderTable(){
   });
   if(!rows.length){ $('#tableView').innerHTML=emptyState(); return; }
   const tcolor={'Single':'var(--t-single)','Album':'var(--t-album)','EP':'var(--t-ep)','Single → Album':'var(--t-sa)','Unknown':'var(--t-unk)'};
-  $('#tableView').innerHTML=`<div class="tablewrap"><table><thead><tr>${
+  $('#tableView').innerHTML=`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
     cols.map(c=>`<th data-sort="${c[0]}">${c[1]} <span class="arr">${state.sort===c[0]?(state.dir<0?'▼':'▲'):''}</span></th>`).join('')
   }</tr></thead><tbody>${rows.map(r=>{const sp=spotify(r);return `<tr>
     <td class="mono" style="white-space:nowrap">${fmtDate(r.releaseDate)}</td>
@@ -838,6 +840,15 @@ function renderTable(){
   $('#tableView').querySelectorAll('th[data-sort]').forEach(th=>th.onclick=()=>{
     const k=th.dataset.sort; if(state.sort===k) state.dir*=-1; else {state.sort=k;state.dir=1;} renderTable();
   });
+  const top=$('#tscrollTop'), wrap=$('#tablewrap');
+  if(top&&wrap){
+    const tbl=wrap.querySelector('table');
+    const sync=()=>{ top.firstElementChild.style.width=tbl.scrollWidth+'px'; };
+    sync(); window.addEventListener('resize',sync);
+    let lock=false;
+    top.onscroll=()=>{ if(lock)return; lock=true; wrap.scrollLeft=top.scrollLeft; lock=false; };
+    wrap.onscroll=()=>{ if(lock)return; lock=true; top.scrollLeft=wrap.scrollLeft; lock=false; };
+  }
 }
 function emptyState(){return `<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg><p>No releases match your filters.</p></div>`;}
 
