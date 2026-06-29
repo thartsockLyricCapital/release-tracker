@@ -349,6 +349,31 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 .lock-err{margin-top:14px;height:16px;color:#ff9a9a;font-size:13px;font-weight:600;opacity:0;transition:opacity .2s}
 .lock-err.show{opacity:1}
 .lock-foot{margin-top:32px;font-size:10.5px;color:rgba(255,255,255,.34);letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+
+/* ===== sidebar app layout ===== */
+.applayout{display:flex;align-items:flex-start}
+.sidebar{position:sticky;top:0;align-self:flex-start;height:100vh;width:212px;flex:0 0 auto;background:var(--paper);border-right:1px solid var(--line);padding:16px 10px;box-sizing:border-box;overflow:hidden}
+.appmain{flex:1;min-width:0}
+.nav{display:flex;flex-direction:column;gap:3px;margin-top:8px}
+.nav-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:9px;color:var(--ink-soft);font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.nav-item svg{width:18px;height:18px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nav-item:hover{background:var(--bg-2);color:var(--ink)}
+.nav-item.on{background:var(--blue);color:#fff}
+.nav-burger{width:40px;height:38px;border-radius:9px;color:var(--ink-soft);font-size:17px;line-height:1}
+.nav-burger:hover{background:var(--bg-2)}
+body.nav-collapsed .sidebar{width:62px}
+body.nav-collapsed .nav-item span{display:none}
+body.nav-collapsed .nav-item{justify-content:center;padding:10px}
+.page[hidden]{display:none}
+.wdir-search{margin:2px 0 14px}
+.wdir-search input{width:100%;max-width:380px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;font-size:14px;background:var(--paper);font-family:inherit}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:11px}
+.wtile{text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:13px 14px;cursor:pointer;box-shadow:var(--shadow);transition:.12s;width:100%}
+.wtile:hover{border-color:var(--blue);transform:translateY(-1px)}
+.wt-name{font-family:'Space Grotesk';font-weight:700;font-size:14.5px;letter-spacing:-.01em}
+.wt-stats{display:flex;gap:11px;flex-wrap:wrap;margin-top:7px;font-size:11px;color:var(--ink-faint);font-family:'Space Mono'}
+.wt-roy{color:#8A6510;font-weight:700}
+@media(max-width:760px){.sidebar{width:56px}.nav-item span{display:none}.nav-item{justify-content:center;padding:10px}}
 </style>
 </head>
 <body>
@@ -401,86 +426,130 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
   </div>
 </div>
 
-<div class="wrap">
-  <div class="hero">
-    <h2>What's coming out, <span class="accent">when it drops, and how it's doing.</span></h2>
-    <p>Every cut across the SOS A&amp;R output — singles, albums and EPs, major-artist signals and developing acts — on one live calendar the whole firm can see. Click any release to open it on Spotify.</p>
-  </div>
+<div class="applayout">
+  <aside class="sidebar" id="sidebar">
+    <button class="nav-burger" id="navBurger" title="Collapse / expand menu">&#9776;</button>
+    <nav class="nav">
+      <a class="nav-item on" data-page="overview" href="#overview"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Overview</span></a>
+      <a class="nav-item" data-page="performance" href="#performance"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Performance</span></a>
+      <a class="nav-item" data-page="royalties" href="#royalties"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>Royalties</span></a>
+      <a class="nav-item" data-page="releases" href="#releases"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Releases</span></a>
+      <a class="nav-item" data-page="writers" href="#writers"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Writers</span></a>
+    </nav>
+  </aside>
+  <main class="appmain">
 
-  <div class="section-head">
-    <span class="eyebrow">Consumption snapshot</span>
-    <h3>How the catalog is performing</h3>
-    <span class="count" id="kpiAsOf"></span>
-    <div class="basis-wrap">
-      <span class="basis-lbl">Show</span>
-      <div class="seg basis-seg" id="basisSeg" title="Gross = raw plays. Spirit-adjusted = plays × Spirit's ownership split.">
-        <button data-basis="gross">Gross</button>
-        <button data-basis="adjusted" class="on">Spirit-adjusted</button>
+  <section class="page" id="page-overview" data-page="overview">
+   <div class="wrap">
+    <div class="hero">
+      <h2>What's coming out, <span class="accent">when it drops, and how it's doing.</span></h2>
+      <p>Every cut across the SOS A&amp;R output — singles, albums and EPs, major-artist signals and developing acts — on one live calendar the whole firm can see. Click any release to open it on Spotify.</p>
+    </div>
+    <div class="section-head">
+      <span class="eyebrow">Consumption snapshot</span>
+      <h3>How the catalog is performing</h3>
+      <span class="count" id="kpiAsOf"></span>
+      <div class="basis-wrap">
+        <span class="basis-lbl">Show</span>
+        <div class="seg basis-seg" id="basisSeg" title="Gross = raw plays. Spirit-adjusted = plays × Spirit's ownership split.">
+          <button data-basis="gross">Gross</button>
+          <button data-basis="adjusted" class="on">Spirit-adjusted</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="kpis" id="kpis"></div>
-
-  <div class="boards" id="boards"></div>
-
-  <div class="section-head">
-    <span class="eyebrow">Royalties</span>
-    <h3>Songs of Spirit — royalty income</h3>
-    <span class="count" id="royAsOf"></span>
-  </div>
-  <div class="kpis" id="royKpis"></div>
-  <div class="boards" id="royBoards"></div>
-
-  <div class="section-head">
-    <span class="eyebrow">Release mix</span>
-    <h3>What's in the calendar</h3>
-  </div>
-  <div class="stats" id="stats"></div>
-
-  <div class="section-head">
-    <span class="eyebrow">Up next</span>
-    <h3>Forward release pipeline</h3>
-    <span class="count" id="pipeCount"></span>
-  </div>
-  <div class="rail" id="rail"></div>
-</div>
-
-<div class="controls">
-  <div class="wrap">
-    <div class="controls-in">
-      <div class="search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
-        <input id="search" placeholder="Search artist, song, writer, label…">
-      </div>
-      <select class="ctl" id="fStatus"><option value="">All status</option><option value="Upcoming">Upcoming</option><option value="Released">Released</option></select>
-      <select class="ctl" id="fType"><option value="">All types</option><option>Single</option><option>Album</option><option>EP</option><option>Single → Album</option></select>
-      <select class="ctl" id="fTier"><option value="">All artists</option><option value="top">Top artists only</option><option value="major">Major-label cuts</option><option value="dev">Developing only</option></select>
-      <select class="ctl" id="fLabel"><option value="">All labels</option></select>
-      <select class="ctl" id="fWriter"><option value="">All writers</option></select>
-      <div class="seg" id="viewSeg">
-        <button data-v="calendar" class="on">Calendar</button>
-        <button data-v="table">Table</button>
-      </div>
-      <button class="btn btn-ghost" id="addBtn" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add release</button>
-      <button class="btn btn-ghost" id="csvBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>CSV</button>
+    <div class="kpis" id="kpis"></div>
+    <div class="section-head">
+      <span class="eyebrow">Release mix</span>
+      <h3>What's in the calendar</h3>
     </div>
-  </div>
-</div>
+    <div class="stats" id="stats"></div>
+    <div class="section-head">
+      <span class="eyebrow">Up next</span>
+      <h3>Forward release pipeline</h3>
+      <span class="count" id="pipeCount"></span>
+    </div>
+    <div class="rail" id="rail"></div>
+   </div>
+  </section>
 
-<div class="wrap">
-  <div class="savebar" id="saveBar">
-    <span class="msg"><b>Unsaved local changes.</b> Your edits are saved in this browser only. Export <b>releases.js</b> and commit it to GitHub to publish for everyone.</span>
-    <button class="btn btn-pri" id="exportBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Export releases.js</button>
-    <button class="btn btn-ghost" id="importBtn">Import</button>
-    <button class="btn btn-ghost" id="revertBtn">Discard</button>
-  </div>
-  <input type="file" id="importFile" accept=".js,.json" class="hidden">
+  <section class="page" id="page-performance" data-page="performance" hidden>
+   <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Performance</span>
+      <h3>Streaming &amp; airplay — last 6 months</h3>
+    </div>
+    <div class="boards" id="boards"></div>
+   </div>
+  </section>
 
-  <div class="results">
-    <div id="calendarView"></div>
-    <div id="tableView" class="hidden"></div>
-  </div>
-  <div class="foot-note" id="footNote"></div>
+  <section class="page" id="page-royalties" data-page="royalties" hidden>
+   <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Royalties</span>
+      <h3>Songs of Spirit — royalty income</h3>
+      <span class="count" id="royAsOf"></span>
+    </div>
+    <div class="kpis" id="royKpis"></div>
+    <div class="boards" id="royBoards"></div>
+    <div class="section-head">
+      <span class="eyebrow">Monetization</span>
+      <h3>Reach vs. royalty income</h3>
+    </div>
+    <div id="royGap"></div>
+   </div>
+  </section>
+
+  <section class="page" id="page-writers" data-page="writers" hidden>
+   <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Writers</span>
+      <h3>Writer directory</h3>
+      <span class="count" id="wCount"></span>
+    </div>
+    <div class="wdir-search"><input id="wDirSearch" placeholder="Search writers…"></div>
+    <div class="wgrid" id="writersGrid"></div>
+   </div>
+  </section>
+
+  <section class="page" id="page-releases" data-page="releases" hidden>
+   <div class="controls">
+    <div class="wrap">
+      <div class="controls-in">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+          <input id="search" placeholder="Search artist, song, writer, label…">
+        </div>
+        <select class="ctl" id="fStatus"><option value="">All status</option><option value="Upcoming">Upcoming</option><option value="Released">Released</option></select>
+        <select class="ctl" id="fType"><option value="">All types</option><option>Single</option><option>Album</option><option>EP</option><option>Single → Album</option></select>
+        <select class="ctl" id="fTier"><option value="">All artists</option><option value="top">Top artists only</option><option value="major">Major-label cuts</option><option value="dev">Developing only</option></select>
+        <select class="ctl" id="fLabel"><option value="">All labels</option></select>
+        <select class="ctl" id="fWriter"><option value="">All writers</option></select>
+        <div class="seg" id="viewSeg">
+          <button data-v="calendar" class="on">Calendar</button>
+          <button data-v="table">Table</button>
+        </div>
+        <button class="btn btn-ghost" id="addBtn" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add release</button>
+        <button class="btn btn-ghost" id="csvBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>CSV</button>
+      </div>
+    </div>
+   </div>
+   <div class="wrap">
+    <div class="savebar" id="saveBar">
+      <span class="msg"><b>Unsaved local changes.</b> Your edits are saved in this browser only. Export <b>releases.js</b> and commit it to GitHub to publish for everyone.</span>
+      <button class="btn btn-pri" id="exportBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Export releases.js</button>
+      <button class="btn btn-ghost" id="importBtn">Import</button>
+      <button class="btn btn-ghost" id="revertBtn">Discard</button>
+    </div>
+    <input type="file" id="importFile" accept=".js,.json" class="hidden">
+    <div class="results">
+      <div id="calendarView"></div>
+      <div id="tableView" class="hidden"></div>
+    </div>
+    <div class="foot-note" id="footNote"></div>
+   </div>
+  </section>
+
+  </main>
 </div>
 
 <!-- Edit / Add modal -->
@@ -522,7 +591,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:''};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview'};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -878,7 +947,7 @@ function renderTable(){
   });
   if(!rows.length){ $('#tableView').innerHTML=emptyState(); return; }
   const tcolor={'Single':'var(--t-single)','Album':'var(--t-album)','EP':'var(--t-ep)','Single → Album':'var(--t-sa)','Unknown':'var(--t-unk)'};
-  $('#tableView').innerHTML=renderGapChart()+`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
+  $('#tableView').innerHTML=`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
     cols.map(c=>`<th data-sort="${c[0]}">${c[1]} <span class="arr">${state.sort===c[0]?(state.dir<0?'▼':'▲'):''}</span></th>`).join('')
   }</tr></thead><tbody>${rows.map(r=>{const sp=spotify(r);return `<tr>
     <td class="mono" style="white-space:nowrap">${fmtDate(r.releaseDate)}</td>
@@ -911,8 +980,29 @@ function renderTable(){
 function emptyState(){return `<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg><p>No releases match your filters.</p></div>`;}
 
 /* ---------- Render all ---------- */
+function showPage(name){
+  if(!document.getElementById('page-'+name)) name='overview';
+  state.page=name;
+  document.querySelectorAll('.page').forEach(p=>{ p.hidden = (p.dataset.page!==name); });
+  document.querySelectorAll('#sidebar .nav-item').forEach(a=>a.classList.toggle('on', a.dataset.page===name));
+  try{ if((location.hash||'#overview').slice(1)!==name) location.hash=name; }catch(e){}
+  window.scrollTo(0,0);
+}
+function renderWriters(){
+  const W=window.LYRIC_WRITERS||{}; const grid=$('#writersGrid'); if(!grid) return;
+  const q=(($('#wDirSearch')||{}).value||'').toLowerCase();
+  let arr=Object.values(W).filter(w=>!q||(w.name||'').toLowerCase().includes(q));
+  arr.sort((a,b)=>(b.netStreams||0)-(a.netStreams||0));
+  if($('#wCount')) $('#wCount').textContent=arr.length+' writers';
+  grid.innerHTML=arr.map(w=>{ const roy=royForWriter(w.name);
+    return `<button class="wtile" data-writer="${esc(w.name)}">
+      <div class="wt-name">${esc(w.name)}</div>
+      <div class="wt-stats"><span>${w.releases||0} rel</span><span>${fmtInt(w.netStreams||0)} net str</span>${roy?`<span class="wt-roy">${fmtUSD(roy.npsLife)} NPS</span>`:''}</div>
+    </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
+}
 function render(){
-  renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail();
+  renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters();
+  { const g=$('#royGap'); if(g) g.innerHTML=renderGapChart(); }
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
   const m=window.LYRIC_META||{};
@@ -1061,6 +1151,11 @@ $('#overlay').onclick=e=>{if(e.target===$('#overlay'))closeModal();};
 fillLabels();
 if(hasDraft()) $('#saveBar').classList.add('show');
 render();
+document.querySelectorAll('#sidebar .nav-item').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showPage(a.dataset.page);}));
+$('#navBurger').onclick=()=>document.body.classList.toggle('nav-collapsed');
+if($('#wDirSearch')) $('#wDirSearch').oninput=renderWriters;
+window.addEventListener('hashchange',()=>showPage((location.hash||'#overview').slice(1)));
+showPage((location.hash||'#overview').slice(1));
 </script>
 </body>
 </html>
