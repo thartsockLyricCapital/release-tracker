@@ -268,7 +268,8 @@ body.editing .card{cursor:default}
 .gc-line{stroke:var(--ink-faint);stroke-width:1.5;stroke-dasharray:5 4}
 .gc-axt{fill:var(--ink-faint);font-size:10px;font-family:'Space Mono'}
 .gc-axtitle{fill:var(--ink-soft);font-size:11px;font-weight:700;font-family:'Inter'}
-.gc-lbl{fill:var(--ink-soft);font-size:9.5px;font-family:'Inter'}
+.gc-lbl{fill:var(--ink-soft);font-size:9.5px;font-family:'Inter';font-weight:600}
+.gc-convlbl{fill:var(--ink-faint);font-size:10px;font-family:'Inter';font-style:italic}
 .tscroll-top{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-bottom:none;border-radius:var(--r) var(--r) 0 0;background:var(--bg-2)}
 .tscroll-top>div{height:1px}
 .tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:0 0 var(--r) var(--r);overflow:auto;max-height:74vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
@@ -635,7 +636,7 @@ function renderGapChart(){
   let dots='',labels='';
   pts.sort((a,b)=>a.x-b.x).forEach(p=>{const cx=X(Math.log10(p.x)),cy=Y(Math.log10(p.y));
     dots+=`<circle cx="${cx}" cy="${cy}" r="5" fill="${col(p)}" stroke="#fff" stroke-width="1"/>`;
-    if(p.x>=5e7||resid(p)<-0.3) labels+=`<text x="${cx+8}" y="${cy+3}" class="gc-lbl">${esc(p.name)}</text>`;});
+    if(p.x>=5e7||resid(p)<-0.3) labels+=`<text x="${cx+8}" y="${cy+3}" class="gc-lbl" fill="${col(p)}">${esc(p.name)}</text>`;});
   const L0={lx:x0,ly:Math.log10(k*Math.pow(10,x0))}, L1={lx:x1,ly:Math.log10(k*Math.pow(10,x1))};
   return `<div class="gapchart">
     <div class="gc-head"><h3>The monetization gap — reach vs. royalty income</h3>
@@ -643,6 +644,7 @@ function renderGapChart(){
       <span class="leg">writers · log–log · conversion line = median $/stream</span></div>
     <svg viewBox="0 0 ${VW} ${VH}" class="gc-svg" preserveAspectRatio="xMidYMid meet">
       <line x1="${X(L0.lx)}" y1="${Y(L0.ly)}" x2="${X(L1.lx)}" y2="${Y(L1.ly)}" class="gc-line"/>
+      ${(()=>{const t=0.82,lx=L0.lx+(L1.lx-L0.lx)*t,ly=L0.ly+(L1.ly-L0.ly)*t,ang=Math.atan2(Y(L1.ly)-Y(L0.ly),X(L1.lx)-X(L0.lx))*180/Math.PI;return `<text x="${X(lx)}" y="${Y(ly)-7}" transform="rotate(${ang.toFixed(2)} ${X(lx)} ${Y(ly)-7})" class="gc-convlbl" text-anchor="middle">avg conversion</text>`;})()}
       ${grid}${dots}${labels}
       <text x="${(padL+VW-padR)/2}" y="${VH-6}" class="gc-axtitle" text-anchor="middle">Spotify streams · catalog (log)</text>
       <text transform="translate(16,${(padT+VH-padB)/2}) rotate(-90)" class="gc-axtitle" text-anchor="middle">Spirit NPS · last 12 mo (log)</text>
