@@ -373,6 +373,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
 .wt-name{font-family:'Space Grotesk';font-weight:700;font-size:14.5px;letter-spacing:-.01em}
 .wt-stats{display:flex;gap:11px;flex-wrap:wrap;margin-top:7px;font-size:11px;color:var(--ink-faint);font-family:'Space Mono'}
 .wt-roy{color:#8A6510;font-weight:700}
+.wt-roy.wt-zero{color:var(--ink-faint);font-weight:600}
 @media(max-width:760px){.sidebar{width:56px}.nav-item span{display:none}.nav-item{justify-content:center;padding:10px}}
 </style>
 </head>
@@ -997,7 +998,7 @@ function renderWriters(){
   grid.innerHTML=arr.map(w=>{ const roy=royForWriter(w.name);
     return `<button class="wtile" data-writer="${esc(w.name)}">
       <div class="wt-name">${esc(w.name)}</div>
-      <div class="wt-stats"><span>${w.releases||0} rel</span><span>${fmtInt(w.netStreams||0)} net str</span>${roy?`<span class="wt-roy">${fmtUSD(roy.npsLife)} NPS</span>`:''}</div>
+      <div class="wt-stats"><span>${w.releases||0} rel</span><span>${fmtInt(w.netStreams||0)} net str</span><span class="wt-roy${roy?'':' wt-zero'}" title="Spirit NPS, lifetime (SOS)">${roy?fmtUSD(roy.npsLife):'$0'} NPS</span></div>
     </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
 }
 function render(){
