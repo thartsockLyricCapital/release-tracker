@@ -270,6 +270,9 @@ body.editing .card{cursor:default}
 .gc-axtitle{fill:var(--ink-soft);font-size:11px;font-weight:700;font-family:'Inter'}
 .gc-lbl{fill:var(--ink-soft);font-size:9.5px;font-family:'Inter';font-weight:600}
 .gc-convlbl{fill:var(--ink-faint);font-size:10px;font-family:'Inter';font-style:italic}
+.gc-dot{cursor:pointer}
+circle.gc-dot:hover{stroke:var(--ink);stroke-width:2}
+text.gc-dot:hover{text-decoration:underline}
 .tscroll-top{overflow-x:auto;overflow-y:hidden;border:1px solid var(--line);border-bottom:none;border-radius:var(--r) var(--r) 0 0;background:var(--bg-2)}
 .tscroll-top>div{height:1px}
 .tablewrap{background:var(--paper);border:1px solid var(--line);border-radius:0 0 var(--r) var(--r);overflow:auto;max-height:74vh;box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
@@ -635,8 +638,8 @@ function renderGapChart(){
   const col=p=>{const r=resid(p);return r>0.2?'var(--green)':r<-0.3?'#C0392B':'var(--blue)';};
   let dots='',labels='';
   pts.sort((a,b)=>a.x-b.x).forEach(p=>{const cx=X(Math.log10(p.x)),cy=Y(Math.log10(p.y));
-    dots+=`<circle cx="${cx}" cy="${cy}" r="5" fill="${col(p)}" stroke="#fff" stroke-width="1"/>`;
-    if(p.x>=5e7||resid(p)<-0.3) labels+=`<text x="${cx+8}" y="${cy+3}" class="gc-lbl" fill="${col(p)}">${esc(p.name)}</text>`;});
+    dots+=`<circle cx="${cx}" cy="${cy}" r="5" fill="${col(p)}" stroke="#fff" stroke-width="1" class="gc-dot" data-writer="${esc(p.name)}"><title>${esc(p.name)} — click for writer card</title></circle>`;
+    if(p.x>=5e7||resid(p)<-0.3) labels+=`<text x="${cx+8}" y="${cy+3}" class="gc-lbl gc-dot" fill="${col(p)}" data-writer="${esc(p.name)}">${esc(p.name)}</text>`;});
   const L0={lx:x0,ly:Math.log10(k*Math.pow(10,x0))}, L1={lx:x1,ly:Math.log10(k*Math.pow(10,x1))};
   return `<div class="gapchart">
     <div class="gc-head"><h3>The monetization gap — reach vs. royalty income</h3>
