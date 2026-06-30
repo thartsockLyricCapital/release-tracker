@@ -270,6 +270,8 @@ body.editing .card{cursor:default}
 .gc-axtitle{fill:var(--ink-soft);font-size:11px;font-weight:700;font-family:'Inter'}
 .gc-lbl{fill:var(--ink-soft);font-size:9.5px;font-family:'Inter';font-weight:600}
 .gc-convlbl{fill:var(--ink-faint);font-size:10px;font-family:'Inter';font-style:italic}
+.gapsrc-seg{margin-left:auto}
+.gapsrc-seg button{padding:5px 10px;font-size:11.5px;font-weight:700}
 .gc-dot{cursor:pointer}
 circle.gc-dot:hover{stroke:var(--ink);stroke-width:2}
 text.gc-dot:hover{text-decoration:underline}
@@ -584,6 +586,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
 <script src="charts.js"></script>
 <script src="writers.js"></script>
 <script src="royalty.js"></script>
+<script src="luminate.js"></script>
 <script>
 const TODAY = new Date('2026-06-24'); // anchor; uses real today if later
 const NOW = (new Date() > TODAY) ? new Date() : TODAY;
@@ -592,7 +595,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview'};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate'};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -632,6 +635,7 @@ function fmtUSD(n){ if(n==null||isNaN(n)) return '—';
 function royClean(t){ return (t||'').replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim().toLowerCase(); }
 function royForSong(r){ const R=window.LYRIC_ROYALTY; return R&&R.songs?R.songs[royClean(r.songTitle)]||null:null; }
 function royForWriter(name){ const R=window.LYRIC_ROYALTY; return R&&R.writers?R.writers[name]||null:null; }
+function lumForSong(r){ const L=window.LYRIC_LUMINATE; return (L&&r&&r.isrc)?(L[r.isrc]||null):null; }
 function edBadge(r){
   if(!r.mergedCount||r.mergedCount<2) return '';
   const multi=r.editions>1;
@@ -687,7 +691,8 @@ function gapData(){
   if(!R||!W) return [];
   return Object.values(R.writers).map(rw=>{
     const w=W[rw.name];
-    const x=w?w.grossStreams:null;
+    const lumOn=state.gapSrc==='luminate';
+    const x=w?(lumOn?w.lumStreams:w.grossStreams):null;
     return (x&&x>0&&rw.npsTtm>0)?{name:rw.name,x:x,y:rw.npsTtm}:null;
   }).filter(Boolean);
 }
@@ -714,12 +719,15 @@ function renderGapChart(){
   return `<div class="gapchart">
     <div class="gc-head"><h3>The monetization gap — reach vs. royalty income</h3>
       <span class="warn">● below the line = streams not yet converting to royalties</span>
-      <span class="leg">writers · log–log · conversion line = median $/stream</span></div>
+      <div class="seg gapsrc-seg">
+        <button data-gapsrc="luminate" class="${state.gapSrc==='luminate'?'on':''}">Luminate (US)</button>
+        <button data-gapsrc="spotify" class="${state.gapSrc==='spotify'?'on':''}">Spotify (global)</button>
+      </div></div>
     <svg viewBox="0 0 ${VW} ${VH}" class="gc-svg" preserveAspectRatio="xMidYMid meet">
       <line x1="${X(L0.lx)}" y1="${Y(L0.ly)}" x2="${X(L1.lx)}" y2="${Y(L1.ly)}" class="gc-line"/>
       ${(()=>{const t=0.82,lx=L0.lx+(L1.lx-L0.lx)*t,ly=L0.ly+(L1.ly-L0.ly)*t,ang=Math.atan2(Y(L1.ly)-Y(L0.ly),X(L1.lx)-X(L0.lx))*180/Math.PI;return `<text x="${X(lx)}" y="${Y(ly)-7}" transform="rotate(${ang.toFixed(2)} ${X(lx)} ${Y(ly)-7})" class="gc-convlbl" text-anchor="middle">avg conversion</text>`;})()}
       ${grid}${dots}${labels}
-      <text x="${(padL+VW-padR)/2}" y="${VH-6}" class="gc-axtitle" text-anchor="middle">Spotify streams · catalog (log)</text>
+      <text x="${(padL+VW-padR)/2}" y="${VH-6}" class="gc-axtitle" text-anchor="middle">${state.gapSrc==='luminate'?'Luminate US streams · 12 mo (log)':'Spotify streams · catalog (log)'}</text>
       <text transform="translate(16,${(padT+VH-padB)/2}) rotate(-90)" class="gc-axtitle" text-anchor="middle">Spirit NPS · last 12 mo (log)</text>
     </svg></div>`;
 }
@@ -771,7 +779,7 @@ function leaderboard(title, rows, unit){
   const body = top.map((x,i)=>`<div class="brow">
       <span class="brank t${i+1<=3?i+1:''}">${i+1}</span>
       <div><div class="bsong" title="${esc(x.song)}">${esc(x.song)}</div>
-        <div class="bsub">${esc(x.artist)} · ${writerLine(x.writer)}${x.pct!=null?' · '+splitChip(x.pct)+' Spirit':''}</div></div>
+        <div class="bsub">${esc(x.artist)} · ${writerLine(x.writer)}${x.pct!=null?' · '+splitChip(x.pct)+' Spirit':''}${x.us!=null?' · <span class="split">US '+fmtNum(x.us)+'</span>':''}</div></div>
       <div class="bmetric"><span class="bn">+${fmtNum(x.d)}</span>
         <span class="bt">${fmtNum(x.total)} total</span></div>
     </div>`).join('') || '<div class="brow head"><span></span><div class="bsub">No data yet.</div><span></span></div>';
@@ -790,9 +798,10 @@ function renderBoards(){
   const mk=(valKey,prevKey)=>Object.keys(C).map(id=>{
       const c=C[id], r=data.find(x=>x.id===id)||{};
       if(typeof c[valKey]!=='number'||typeof c[prevKey]!=='number') return null;
-      const f=factor(r);
+      const f=factor(r); const lf=lumForSong(r);
       return {song:r.songTitle||'—', artist:r.artist||'—', writer:r.spiritSongwriters||'', pct:r.spiritPct,
-              d:(c[valKey]-c[prevKey])*f, total:c[valKey]*f};
+              d:(c[valKey]-c[prevKey])*f, total:c[valKey]*f,
+              us:(valKey==='streams')?(lf&&lf.usStreams!=null?lf.usStreams:null):(lf&&lf.usSpins!=null?lf.usSpins:null)};
     }).filter(Boolean).sort((a,b)=>b.d-a.d);
   const streams=mk('streams','prevStreams');
   const spins=mk('spins','prevSpins');
@@ -812,9 +821,10 @@ function deltaChip(frac,suffix){
 function renderKPIs(){
   const C=window.LYRIC_CHARTS||{}, ids=Object.keys(C);
   if(!ids.length){ $('#kpis').innerHTML=''; return; }
-  let tot=0,totPrev=0,spins=0,spinsPrev=0,spinsN=0,best=null,doubled=0,half=0;
+  let tot=0,totPrev=0,spins=0,spinsPrev=0,spinsN=0,best=null,doubled=0,half=0,lumS=0,lumP=0;
   ids.forEach(id=>{
     const c=C[id], r=data.find(x=>x.id===id)||{}, f=factor(r);
+    { const lf=lumForSong(r); if(lf){ if(lf.usStreams!=null) lumS+=lf.usStreams*f; if(lf.usSpins!=null) lumP+=lf.usSpins*f; } }
     if(typeof c.streams==='number'){ tot+=c.streams*f; if(typeof c.prevStreams==='number') totPrev+=c.prevStreams*f; }
     if(typeof c.spins==='number'){ spins+=c.spins*f; spinsN++; if(typeof c.prevSpins==='number') spinsPrev+=c.prevSpins*f; }
     if(typeof c.streams==='number'&&typeof c.prevStreams==='number'){
@@ -829,9 +839,9 @@ function renderKPIs(){
   const tracked=ids.length;
   const tiles=[
     {c:'', n:fmtNum(tot), top:deltaChip(streamGrow,' · 6 mo'),
-      l:adjOn()?'Spirit-adjusted streams':'Spotify streams (catalog)', sub:`${tracked} songs · ${adjOn()?'ownership-weighted':'gross plays'}`},
+      l:adjOn()?'Spirit-adjusted streams':'Spotify streams (catalog)', sub:`${tracked} songs · US (Luminate) ${fmtNum(lumS)}`},
     {c:'k-spins', n:fmtNum(spins), top:deltaChip(spinGrow,' · 6 mo'),
-      l:adjOn()?'Spirit-adjusted spins':'Radio airplay spins', sub:`${spinsN} songs on radio`},
+      l:adjOn()?'Spirit-adjusted spins':'Radio airplay spins', sub:`${spinsN} on radio · US (Luminate) ${fmtNum(lumP)}`},
     {c:'k-mo', n:`${doubled}`, top:`<span class="delta up">▲ 2×+</span>`,
       l:'Breakout tracks — streams doubled (6 mo)', sub:`${half} grew 50%+ in 6 mo`},
     bestN?{c:'k-gain', nClass:'sm', n:`${esc(bestN.s)}`, top:`<span class="delta up">▲ +${fmtNum(best.g)}</span>`,
@@ -930,7 +940,7 @@ function card(r){
 
 /* ---------- Table ---------- */
 function renderTable(){
-  const cols=[['date','Date'],['artist','Artist'],['song','Song'],['writer','Writer'],['type','Type'],['tier','Artist tier'],['label','Label'],['status','Status'],['split','Spirit %'],['chart','Streams (net / gross)'],['spins','Spins (net / gross)'],['royalty','Royalty (NPS)'],['spotify','Spotify']];
+  const cols=[['date','Date'],['artist','Artist'],['song','Song'],['writer','Writer'],['type','Type'],['tier','Artist tier'],['label','Label'],['status','Status'],['split','Spirit %'],['chart','Streams (net / gross)'],['spins','Spins (net / gross)'],['lumstr','US streams (Lum)'],['lumrad','US radio (Lum)'],['royalty','Royalty (NPS)'],['spotify','Spotify']];
   let rows=filtered().slice();
   const key=state.sort;
   rows.sort((a,b)=>{
@@ -943,6 +953,8 @@ function renderTable(){
     else if(key==='royalty'){const ra=royForSong(a),rb=royForSong(b);av=ra?ra.npsLife:-1;bv=rb?rb.npsLife:-1;}
     else if(key==='chart'){const ca=chartFor(a),cb=chartFor(b);av=ca&&ca.streams!=null?ca.streams:-1;bv=cb&&cb.streams!=null?cb.streams:-1;}
     else if(key==='spins'){const ca=chartFor(a),cb=chartFor(b);av=ca&&typeof ca.spins==='number'?ca.spins:-1;bv=cb&&typeof cb.spins==='number'?cb.spins:-1;}
+    else if(key==='lumstr'){const la=lumForSong(a),lb=lumForSong(b);av=la&&la.usStreams!=null?la.usStreams:-1;bv=lb&&lb.usStreams!=null?lb.usStreams:-1;}
+    else if(key==='lumrad'){const la=lumForSong(a),lb=lumForSong(b);av=la&&la.usSpins!=null?la.usSpins:-1;bv=lb&&lb.usSpins!=null?lb.usSpins:-1;}
     else {av=(a[key]||'').toString().toLowerCase();bv=(b[key]||'').toString().toLowerCase();}
     return av<bv?-1*state.dir:av>bv?state.dir:0;
   });
@@ -962,6 +974,8 @@ function renderTable(){
     <td><span class="t-split">${r.spiritPct!=null?Math.round(r.spiritPct*100)+'%':'—'}</span></td>
     <td>${(()=>{const c=chartFor(r);if(r.status!=='Released')return '<span style="color:var(--ink-faint)">—</span>';if(!c||c.streams==null)return '<span style="color:var(--ink-faint)">·</span>';const net=r.spiritPct!=null?fmtInt(c.streams*r.spiritPct):'—';return `<span class="t-chart">#${c.rank} ${trendMark(c.streamsTrend)} <span class="t-pop">${net}</span> net</span><span class="t-net">${fmtNum(c.streams)} gross</span>`;})()}</td>
     <td>${(()=>{const c=chartFor(r);if(!c||typeof c.spins!=='number')return '<span style="color:var(--ink-faint)">—</span>';const net=r.spiritPct!=null?fmtInt(c.spins*r.spiritPct):'—';return `<span class="t-chart"><span class="t-pop">${net}</span> ${trendMark(c.spinsTrend)}</span><span class="t-net">${fmtNum(c.spins)} gross</span>`;})()}</td>
+    <td>${(()=>{const lf=lumForSong(r);return (lf&&lf.usStreams!=null)?`<span class="t-chart">${fmtNum(lf.usStreams)}</span>`:'<span style="color:var(--ink-faint)">—</span>';})()}</td>
+    <td>${(()=>{const lf=lumForSong(r);return (lf&&lf.usSpins!=null)?`<span class="t-chart" title="US radio audience ${lf.usAud!=null?fmtNum(lf.usAud):'—'}">${fmtNum(lf.usSpins)}</span>`:'<span style="color:var(--ink-faint)">—</span>';})()}</td>
     <td>${(()=>{const ry=royForSong(r);if(!ry)return '<span style="color:var(--ink-faint)">—</span>';return `<span class="t-chart" style="color:#8A6510" title="Gross income ${fmtUSD(ry.incomeLife)} lifetime">${fmtUSD(ry.npsLife)}</span><span class="t-net">${fmtUSD(ry.npsTtm)} 12mo</span>`;})()}</td>
     <td><a class="spotify ${sp.official?'':'sp-search'}" href="${sp.url}" target="_blank" rel="noopener" style="padding:5px 9px">${sp.official?'Play':'Find'}</a></td>
   </tr>`;}).join('')}</tbody></table></div>`;
@@ -1071,6 +1085,10 @@ function openWriter(name){
         ${m(W.netStreams,W.grossStreams,'Streams · net / gross')}
         ${m(W.netSpins,W.grossSpins,'Airplay spins · net / gross')}
       </div>
+      <div class="wc-metrics">
+        ${m(W.lumStreamsNet||0,W.lumStreams||0,'US streams · Luminate · net / gross')}
+        ${m(W.lumSpinsNet||0,W.lumSpins||0,'US radio spins · Luminate · net / gross')}
+      </div>
       ${roy?`<div class="wc-metrics"><div class="wc-m" style="--accent:var(--gold)"><div class="n" style="color:#8A6510">${fmtUSD(roy.npsLife)}</div><div class="g">${fmtUSD(roy.npsTtm)} last 12mo · ${fmtUSD(roy.incomeLife)} gross income</div><div class="l">Spirit NPS royalties · lifetime (SOS)</div></div></div>`:''}
       <div class="wc-cols">
         <div><h5>Top artists</h5>${arts}</div>
@@ -1154,6 +1172,7 @@ if(hasDraft()) $('#saveBar').classList.add('show');
 render();
 document.querySelectorAll('#sidebar .nav-item').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showPage(a.dataset.page);}));
 $('#navBurger').onclick=()=>document.body.classList.toggle('nav-collapsed');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-gapsrc]'); if(b){state.gapSrc=b.dataset.gapsrc; const g=$('#royGap'); if(g) g.innerHTML=renderGapChart();}});
 if($('#wDirSearch')) $('#wDirSearch').oninput=renderWriters;
 window.addEventListener('hashchange',()=>showPage((location.hash||'#overview').slice(1)));
 showPage((location.hash||'#overview').slice(1));
