@@ -941,6 +941,13 @@ function card(r){
 /* ---------- Table ---------- */
 function renderTable(){
   const cols=[['date','Date'],['artist','Artist'],['song','Song'],['writer','Writer'],['type','Type'],['tier','Artist tier'],['label','Label'],['status','Status'],['split','Spirit %'],['chart','Streams (net / gross)'],['spins','Spins (net / gross)'],['lumstr','US streams (Lum)'],['lumrad','US radio (Lum)'],['royalty','Royalty (NPS)'],['spotify','Spotify']];
+  const TIPS={date:'Earliest release date for the recording',
+    split:"Spirit's ownership share of the song (from Airtable Spirit %)",
+    chart:'Spotify streams \u2014 all-time cumulative (Chartmetric). Net = \u00d7 Spirit %. \u25b2/\u25bc = 6-month trend.',
+    spins:'Radio spins \u2014 all-time cumulative (Chartmetric panel). Net = \u00d7 Spirit %.',
+    lumstr:'US on-demand audio streams \u2014 trailing 12 months (Luminate, official US). Gross / full song.',
+    lumrad:'US radio spins \u2014 trailing 12 months (Luminate). Gross. Hover a cell for radio audience.',
+    royalty:'Spirit Net Publisher Share \u2014 lifetime, from SOS royalty statements (Sigma). 12-mo figure below.'};
   let rows=filtered().slice();
   const key=state.sort;
   rows.sort((a,b)=>{
@@ -961,7 +968,7 @@ function renderTable(){
   if(!rows.length){ $('#tableView').innerHTML=emptyState(); return; }
   const tcolor={'Single':'var(--t-single)','Album':'var(--t-album)','EP':'var(--t-ep)','Single → Album':'var(--t-sa)','Unknown':'var(--t-unk)'};
   $('#tableView').innerHTML=`<div class="tscroll-top" id="tscrollTop"><div></div></div><div class="tablewrap" id="tablewrap"><table><thead><tr>${
-    cols.map(c=>`<th data-sort="${c[0]}">${c[1]} <span class="arr">${state.sort===c[0]?(state.dir<0?'▼':'▲'):''}</span></th>`).join('')
+    cols.map(c=>`<th data-sort="${c[0]}" title="${(TIPS[c[0]]||'').replace(/"/g,'&quot;')}">${c[1]} <span class="arr">${state.sort===c[0]?(state.dir<0?'▼':'▲'):''}</span></th>`).join('')
   }</tr></thead><tbody>${rows.map(r=>{const sp=spotify(r);return `<tr>
     <td class="mono" style="white-space:nowrap">${fmtDate(r.releaseDate)}</td>
     <td><span class="t-art">${r.topArtist?'<span style="color:var(--gold)">★</span> ':''}${esc(r.artist)}</span></td>
@@ -1023,8 +1030,13 @@ function render(){
   const m=window.LYRIC_META||{};
   $('#metaPill').textContent=`${data.length} releases · updated ${m.generated||'—'}`;
   const cm=window.LYRIC_CHARTS_META;
-  $('#footNote').textContent=`Source: Airtable A&R › All Usage · ${data.length} records`
-    + (cm?` · consumption refreshed ${cm.updated} — ${cm.metric||cm.source}`:` · consumption refreshes daily once data is connected`)
+  $('#footNote').innerHTML=`<div style="margin-bottom:6px"><b>Metric definitions:</b> `
+    + `<b>Streams / Spins</b> = Spotify streams &amp; radio spins, <b>all-time cumulative</b> (Chartmetric), with a 6-month trend arrow. `
+    + `<b>US streams / US radio</b> = US on-demand streams &amp; radio spins, <b>trailing 12 months</b> (Luminate, official US). `
+    + `<b>Net</b> = the figure × Spirit's ownership %; <b>gross</b> = the full song. `
+    + `<b>Royalty (NPS)</b> = Spirit Net Publisher Share, lifetime, from SOS royalty statements (Sigma).</div>`
+    + `Source: Airtable A&amp;R › All Usage · ${data.length} records`
+    + (cm?` · consumption refreshed ${cm.updated}`:``)
     + ` · Spirit Music Group / Lyric`;
 }
 function bindCards(){
