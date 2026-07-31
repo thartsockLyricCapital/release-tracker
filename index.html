@@ -336,6 +336,7 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 .ms-item{display:flex;align-items:center;gap:8px;padding:5px 5px;font-size:12.5px;color:var(--ink);cursor:pointer;border-radius:5px}
 .ms-item:hover{background:var(--bg-2)}
 .ms-item input{margin:0;flex:0 0 auto}
+.gc-empty{padding:40px 20px;text-align:center;color:var(--ink-faint);font-size:13.5px;font-weight:600}
 @media(max-width:760px){.gfbar-in{padding:0 12px}.gfbar .ctl{flex:1 1 auto}}
 
 @media(max-width:880px){
@@ -853,7 +854,9 @@ function gapData(){
   if(!R||!W) return [];
   const FR=filtered(), active=FR.length!==data.length;
   const fw=active?new Set(FR.flatMap(r=>(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()))):null;
+  const sel=(state.writers&&state.writers.length)?state.writers:null;
   return Object.values(R.writers).map(rw=>{
+    if(sel){ const inSel=sel.includes(rw.name); if(state.writerMode==='exclude'?inSel:!inSel) return null; }
     if(fw && !fw.has(rw.name)) return null;
     const w=W[rw.name];
     const lumOn=state.gapSrc==='luminate';
@@ -862,11 +865,13 @@ function gapData(){
   }).filter(Boolean);
 }
 function renderGapChart(){
-  const pts=gapData(); if(pts.length<3) return '';
+  const pts=gapData();
+  if(!pts.length) return '<div class="gc-empty">No writers with both reach and royalty match the current filter. Loosen the writer/status/type filters to see the plot.</div>';
   const VW=940,VH=470,padL=72,padR=170,padT=44,padB=56;
   const xs=pts.map(p=>Math.log10(p.x)), ys=pts.map(p=>Math.log10(p.y));
-  const x0=Math.floor(Math.min(...xs)), x1=Math.ceil(Math.max(...xs));
-  const y0=Math.floor(Math.min(...ys)), y1=Math.ceil(Math.max(...ys));
+  let x0=Math.floor(Math.min(...xs)), x1=Math.ceil(Math.max(...xs));
+  let y0=Math.floor(Math.min(...ys)), y1=Math.ceil(Math.max(...ys));
+  if(x1<=x0) x1=x0+1; if(y1<=y0) y1=y0+1;   // guard degenerate axes when few points
   const X=lx=>padL+(lx-x0)/(x1-x0)*(VW-padL-padR);
   const Y=ly=>VH-padB-(ly-y0)/(y1-y0)*(VH-padT-padB);
   const ratios=pts.map(p=>p.y/p.x).sort((a,b)=>a-b);
