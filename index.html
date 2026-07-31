@@ -569,6 +569,10 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
 
   <style>
   .pipe-controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .pipe-modes{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .pipe-dates{display:flex;gap:10px;align-items:flex-end}
+  .pipe-dates label{display:flex;flex-direction:column;font-size:11px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;gap:3px}
+  .pipe-dates input[type=date]{font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink);font-weight:600}
   .pipe-filters{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
   .pipe-filters label{display:flex;flex-direction:column;font-size:11px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;gap:3px}
   .pipe-filters select{font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink);min-width:135px;font-weight:600}
@@ -651,7 +655,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:''};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:'', pFrom:'', pTo:''};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -855,17 +859,24 @@ function renderPipeline(){
   const ventures=uniq(all.flatMap(s=>s.v||[]));
   const opt=(list,cur,allLabel)=>`<option value="">${allLabel}</option>`+list.map(x=>`<option value="${esc(x)}"${x===cur?' selected':''}>${esc(x)}</option>`).join('');
   const rows=pipeFiltered();
-  const asOf=meta.asOf||'2026-07-31', start='2025-08-01';
-  const inWin=d=>!!d && d>=start && d<=asOf;
+  const asOf=meta.asOf||'2026-07-31';
+  const allDates=all.flatMap(s=>[s.hd,s.cd,s.rd]).filter(Boolean);
+  const dmin=allDates.length?allDates.reduce((a,b)=>a<b?a:b):'2015-01-01';
+  const dmax=allDates.length?allDates.reduce((a,b)=>a>b?a:b):asOf;
+  const isSnap=state.pView==='snapshot';
+  const isCustom=state.pView==='custom';
+  const cFrom=state.pFrom||'2025-08-01', cTo=state.pTo||asOf;
+  let winStart='2025-08-01', winEnd=asOf, winLabel=(meta.window||'the last 12 months');
+  if(isCustom){ winStart=cFrom<=cTo?cFrom:cTo; winEnd=cFrom<=cTo?cTo:cFrom; winLabel=fmtDate(winStart)+' – '+fmtDate(winEnd); }
+  const inWin=d=>!!d && d>=winStart && d<=winEnd;
   const snap={Hold:0,Cut:0,Upcoming:0,Released:0};
   rows.forEach(s=>{ if(snap[s.s]!=null) snap[s.s]++; });
-  const t12={holds:0,cuts:0,rels:0,ahead:0};
-  rows.forEach(s=>{ if(inWin(s.hd))t12.holds++; if(inWin(s.cd))t12.cuts++; if(inWin(s.rd))t12.rels++; if(s.rd&&s.rd>asOf)t12.ahead++; });
+  const act={holds:0,cuts:0,rels:0,ahead:0};
+  rows.forEach(s=>{ if(inWin(s.hd))act.holds++; if(inWin(s.cd))act.cuts++; if(inWin(s.rd))act.rels++; if(s.rd&&s.rd>winEnd)act.ahead++; });
   const dBetween=(a,b)=>Math.round((new Date(b+'T00:00')-new Date(a+'T00:00'))/864e5);
   const med=arr=>{ if(!arr.length)return null; const s=arr.slice().sort((x,y)=>x-y); return s[Math.floor(s.length/2)]; };
   const hc=med(rows.filter(s=>s.hd&&s.cd&&s.cd>=s.hd).map(s=>dBetween(s.hd,s.cd)));
   const cr=med(rows.filter(s=>s.cd&&s.rd&&s.rd>=s.cd).map(s=>dBetween(s.cd,s.rd)));
-  const isSnap=state.pView!=='t12';
   const colors={Hold:'#8E7CC3',Cut:'#0875D0',Upcoming:'#E8A317',Released:'#1B8F5A'};
   let funnelHtml='';
   if(isSnap){
@@ -878,7 +889,7 @@ function renderPipeline(){
         <div class="pf-share">${share.toFixed(1)}% of shown</div></div>`;
     }).join('');
   } else {
-    const stages=[['Holds placed',t12.holds,colors.Hold],['Cuts made',t12.cuts,colors.Cut],['Released',t12.rels,colors.Released]];
+    const stages=[['Holds placed',act.holds,colors.Hold],['Cuts made',act.cuts,colors.Cut],['Released',act.rels,colors.Released]];
     const max=Math.max(1,...stages.map(s=>s[1]));
     funnelHtml=stages.map(([name,n,c],i)=>{
       const pct=Math.round(n/max*100), prev=i>0?stages[i-1][1]:null;
@@ -895,18 +906,26 @@ function renderPipeline(){
       +stat(snap.Released.toLocaleString(),'Released (catalog)','All-time released songs (in the current filter)')
       +stat(hc!=null?hc+'d':'—','Median hold → cut','Median days from hold to cut, where both dates exist')
       +stat(cr!=null?cr+'d':'—','Median cut → release','Median days from cut to release, where both dates exist')
-    : stat(t12.holds.toLocaleString(),'Holds placed','Songs with a Hold date in the last 12 months')
-      +stat(t12.cuts.toLocaleString(),'Cuts made','Songs with a Cut date in the last 12 months')
-      +stat(t12.rels.toLocaleString(),'Released','Songs with a Release date in the last 12 months')
-      +stat(t12.ahead.toLocaleString(),'Scheduled ahead','Releases dated after '+asOf);
+    : stat(act.holds.toLocaleString(),'Holds placed','Songs with a Hold date in the selected window')
+      +stat(act.cuts.toLocaleString(),'Cuts made','Songs with a Cut date in the selected window')
+      +stat(act.rels.toLocaleString(),'Released','Songs with a Release date in the selected window')
+      +stat(act.ahead.toLocaleString(),'After range','Releases dated after '+fmtDate(winEnd));
   const note=isSnap
     ? 'Snapshot of every song by its current status. Released is the all-time catalog, so it dwarfs the active stages — the shape reads as pipeline + catalog, not a conversion rate.'
-    : 'Activity dated within '+(meta.window||'the last 12 months')+'. Hold and Cut dates are only partially recorded in Airtable, so early-stage counts understate reality; treat conversion % as directional.';
+    : 'Activity dated within '+winLabel+'. Hold and Cut dates are only partially recorded in Airtable, so early-stage counts understate reality; treat conversion % as directional.';
+  const dateInputs=isCustom?`<div class="pipe-dates">
+        <label>From<input type="date" id="pFrom" value="${cFrom}" min="${dmin}" max="${dmax}"></label>
+        <label>To<input type="date" id="pTo" value="${cTo}" min="${dmin}" max="${dmax}"></label>
+      </div>`:'';
   host.innerHTML=`
     <div class="pipe-controls">
-      <div class="seg pipe-seg">
-        <button data-pview="snapshot" class="${isSnap?'on':''}">Snapshot</button>
-        <button data-pview="t12" class="${!isSnap?'on':''}">Last 12 months</button>
+      <div class="pipe-modes">
+        <div class="seg pipe-seg">
+          <button data-pview="snapshot" class="${isSnap?'on':''}">Snapshot</button>
+          <button data-pview="t12" class="${state.pView==='t12'?'on':''}">Last 12 months</button>
+          <button data-pview="custom" class="${isCustom?'on':''}">Custom range</button>
+        </div>
+        ${dateInputs}
       </div>
       <div class="pipe-filters">
         <label>Writer<select id="pWriter">${opt(writers,state.pWriter,'All writers')}</select></label>
@@ -1342,6 +1361,8 @@ document.addEventListener('change',e=>{
   if(e.target.id==='pWriter'){ state.pWriter=e.target.value; renderPipeline(); }
   else if(e.target.id==='pGenre'){ state.pGenre=e.target.value; renderPipeline(); }
   else if(e.target.id==='pVenture'){ state.pVenture=e.target.value; renderPipeline(); }
+  else if(e.target.id==='pFrom'){ state.pFrom=e.target.value; renderPipeline(); }
+  else if(e.target.id==='pTo'){ state.pTo=e.target.value; renderPipeline(); }
 });
 $('#editToggle').onclick=()=>{state.editing=!state.editing;document.body.classList.toggle('editing',state.editing);$('#editToggle').classList.toggle('on',state.editing);$('#addBtn').style.display=state.editing?'inline-flex':'none';};
 $('#addBtn').onclick=openAdd;
