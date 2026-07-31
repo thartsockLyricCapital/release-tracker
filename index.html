@@ -448,6 +448,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
       <a class="nav-item" data-page="releases" href="#releases"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Releases</span></a>
       <a class="nav-item" data-page="pipeline" href="#pipeline"><svg viewBox="0 0 24 24"><path d="M3 5h18M6 12h12M10 19h4"/></svg><span>Pipeline</span></a>
       <a class="nav-item" data-page="writers" href="#writers"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Writers</span></a>
+      <a class="nav-item" data-page="quality" href="#quality"><svg viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><span>Data Quality</span></a>
       <a class="nav-item" data-page="sources" href="#sources"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><span>Data Sources</span></a>
     </nav>
   </aside>
@@ -594,7 +595,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
   .pf-conv{color:var(--ink-faint)}
   .pipe-note{font-size:12px;color:var(--ink-faint);margin-top:14px;max-width:860px;line-height:1.55}
   .pipe-lists-head{margin:26px 0 10px;font-size:12px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em}
-  .pipe-lists{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .pipe-lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
   .plist{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
   .plist-h{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;color:var(--ink);padding:12px 14px;border-bottom:1px solid var(--line)}
   .plist-dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
@@ -616,7 +617,34 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
   .plist-more{padding:10px 14px;color:var(--ink-faint);font-size:11.5px;font-weight:700;border-top:1px solid var(--line)}
   @media(max-width:800px){.pipe-lists{grid-template-columns:1fr}}
   @media(max-width:700px){.pstats{grid-template-columns:repeat(2,1fr)}.pf-row{grid-template-columns:84px 1fr 64px;gap:8px}.pf-name{font-size:12px}}
+  .q-summary{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .q-total{font-size:30px;font-weight:800;color:var(--ink)}
+  .q-total-l{font-size:13px;color:var(--ink-soft);font-weight:600}
+  .q-export{margin-left:auto;font-size:13px;font-weight:700;padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--blue);cursor:pointer}
+  .q-export:hover{background:var(--bg-2)}
+  .q-group{margin-bottom:20px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper)}
+  .q-group-h{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:800;color:var(--ink);padding:12px 16px;background:var(--bg-2);border-bottom:1px solid var(--line)}
+  .q-count{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);padding:2px 9px;border-radius:20px}
+  .q-tablewrap{overflow-x:auto}
+  .q-table{width:100%;border-collapse:collapse;font-size:13px}
+  .q-table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-faint);font-weight:700;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .q-table td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .q-table tr:last-child td{border-bottom:0}
+  .q-song{display:flex;flex-direction:column;min-width:150px}
+  .q-t{font-weight:700;color:var(--ink)}
+  .q-a{font-size:11.5px;color:var(--ink-soft)}
+  .q-d{white-space:nowrap;color:var(--ink-soft);font-weight:600;font-size:12px}
+  .q-w .pli-w{color:var(--blue);cursor:pointer}
+  .q-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap}
+  .q-Hold{background:#EFEAF7;color:#6B4FA0}.q-Cut{background:#E1EEFB;color:#0663B0}.q-Upcoming{background:#FBF0D8;color:#9A6B08}.q-Released{background:#E4F6EC;color:#1B7A4D}
   </style>
+  <section class="page" id="page-quality" data-page="quality" hidden>
+   <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Data quality</span><h3>Pipeline records to clean up in Airtable</h3></div>
+    <p style="color:var(--ink-soft);font-size:13.5px;max-width:820px;margin-bottom:16px">Songs whose status and date fields look inconsistent — these should be fixed at the <b>source (Airtable)</b>, then re-exported. This is a worklist, not an auto-correction: the tracker never edits your data. Click a writer to open their card, or export the full list to CSV.</p>
+    <div id="qualityBody"></div>
+   </div>
+  </section>
   <section class="page" id="page-pipeline" data-page="pipeline" hidden>
    <div class="wrap">
     <div class="section-head"><span class="eyebrow">A&amp;R pipeline</span><h3>Hold → Cut → Release conversion</h3></div>
@@ -891,76 +919,61 @@ function renderPipeline(){
   let winStart='2025-08-01', winEnd=asOf, winLabel=(meta.window||'the last 12 months');
   if(isCustom){ winStart=cFrom<=cTo?cFrom:cTo; winEnd=cFrom<=cTo?cTo:cFrom; winLabel=fmtDate(winStart)+' – '+fmtDate(winEnd); }
   const inWin=d=>!!d && d>=winStart && d<=winEnd;
-  const snap={Hold:0,Cut:0,Upcoming:0,Released:0};
-  rows.forEach(s=>{ if(snap[s.s]!=null) snap[s.s]++; });
-  const act={holds:0,cuts:0,rels:0,ahead:0};
-  rows.forEach(s=>{ if(inWin(s.hd))act.holds++; if(inWin(s.cd))act.cuts++; if(inWin(s.rd))act.rels++; if(s.rd&&s.rd>winEnd)act.ahead++; });
+  const stageDate=s=> s.s==='Cut'?s.cd : s.s==='Hold'?s.hd : s.rd; // Released/Upcoming keyed by release date
+  const shownSet=isSnap ? rows : rows.filter(s=>inWin(stageDate(s)));
+  const byStage={Hold:[],Cut:[],Upcoming:[],Released:[]};
+  shownSet.forEach(s=>{ if(byStage[s.s]) byStage[s.s].push(s); });
   const dBetween=(a,b)=>Math.round((new Date(b+'T00:00')-new Date(a+'T00:00'))/864e5);
   const med=arr=>{ if(!arr.length)return null; const s=arr.slice().sort((x,y)=>x-y); return s[Math.floor(s.length/2)]; };
   const hc=med(rows.filter(s=>s.hd&&s.cd&&s.cd>=s.hd).map(s=>dBetween(s.hd,s.cd)));
   const cr=med(rows.filter(s=>s.cd&&s.rd&&s.rd>=s.cd).map(s=>dBetween(s.cd,s.rd)));
   const colors={Hold:'#8E7CC3',Cut:'#0875D0',Upcoming:'#E8A317',Released:'#1B8F5A'};
-  let funnelHtml='';
-  if(isSnap){
-    const stages=[['Hold',snap.Hold,colors.Hold],['Cut',snap.Cut,colors.Cut],['Upcoming',snap.Upcoming,colors.Upcoming],['Released',snap.Released,colors.Released]];
-    const max=Math.max(1,...stages.map(s=>s[1])), total=rows.length||1;
-    funnelHtml=stages.map(([name,n,c])=>{
-      const pct=Math.round(n/max*100), share=(n/total*100);
-      return `<div class="pf-row"><div class="pf-name">${name}</div>
-        <div class="pf-track"><div class="pf-bar" style="width:${Math.max(pct,2)}%;background:${c}"><span class="pf-n">${n.toLocaleString()}</span></div></div>
-        <div class="pf-share">${share.toFixed(1)}% of shown</div></div>`;
-    }).join('');
-  } else {
-    const stages=[['Holds placed',act.holds,colors.Hold],['Cuts made',act.cuts,colors.Cut],['Released',act.rels,colors.Released]];
-    const max=Math.max(1,...stages.map(s=>s[1]));
-    funnelHtml=stages.map(([name,n,c],i)=>{
-      const pct=Math.round(n/max*100), prev=i>0?stages[i-1][1]:null;
-      const conv=(prev&&prev>0)?`<span class="pf-conv">${Math.round(n/prev*100)}% of prior stage</span>`:'';
-      return `<div class="pf-row"><div class="pf-name">${name}</div>
-        <div class="pf-track"><div class="pf-bar" style="width:${Math.max(pct,2)}%;background:${c}"><span class="pf-n">${n.toLocaleString()}</span></div></div>
-        <div class="pf-share">${conv}</div></div>`;
-    }).join('');
-  }
-  const active=snap.Hold+snap.Cut+snap.Upcoming;
+  const STAGES=[['Hold','hd'],['Cut','cd'],['Upcoming','rd'],['Released','rd']];
+  const total=shownSet.length||1;
+  const maxN=Math.max(1,...STAGES.map(([k])=>byStage[k].length));
+  const funnelHtml=STAGES.map(([name])=>{
+    const n=byStage[name].length, pct=Math.round(n/maxN*100), share=(n/total*100);
+    return `<div class="pf-row"><div class="pf-name">${name}</div>
+      <div class="pf-track"><div class="pf-bar" style="width:${Math.max(pct,2)}%;background:${colors[name]}"><span class="pf-n">${n.toLocaleString()}</span></div></div>
+      <div class="pf-share">${share.toFixed(1)}% of shown</div></div>`;
+  }).join('');
+  const active=byStage.Hold.length+byStage.Cut.length+byStage.Upcoming.length;
   const stat=(v,l,tip)=>`<div class="pstat"${tip?` title="${esc(tip)}"`:''}><div class="ps-v">${v}</div><div class="ps-l">${l}</div></div>`;
-  const stats=isSnap
-    ? stat(active.toLocaleString(),'Active pipeline','Hold + Cut + Upcoming — songs in the works now')
-      +stat(snap.Released.toLocaleString(),'Released (catalog)','All-time released songs (in the current filter)')
-      +stat(hc!=null?hc+'d':'—','Median hold → cut','Median days from hold to cut, where both dates exist')
-      +stat(cr!=null?cr+'d':'—','Median cut → release','Median days from cut to release, where both dates exist')
-    : stat(act.holds.toLocaleString(),'Holds placed','Songs with a Hold date in the selected window')
-      +stat(act.cuts.toLocaleString(),'Cuts made','Songs with a Cut date in the selected window')
-      +stat(act.rels.toLocaleString(),'Released','Songs with a Release date in the selected window')
-      +stat(act.ahead.toLocaleString(),'After range','Releases dated after '+fmtDate(winEnd));
+  const stats=stat(active.toLocaleString(),'Active pipeline','Hold + Cut + Upcoming — songs in the works')
+    +stat(byStage.Released.length.toLocaleString(),'Released', isSnap?'All-time released songs (current filter)':'Songs released within this window')
+    +stat(hc!=null?hc+'d':'—','Median hold → cut','Median days from hold to cut, where both dates exist')
+    +stat(cr!=null?cr+'d':'—','Median cut → release','Median days from cut to release, where both dates exist');
+  const scope=isSnap?'current status · all songs':winLabel;
   const note=isSnap
-    ? 'Snapshot of every song by its current status. Released is the all-time catalog, so it dwarfs the active stages — the shape reads as pipeline + catalog, not a conversion rate.'
-    : 'Activity dated within '+winLabel+'. Hold and Cut dates are only partially recorded in Airtable, so early-stage counts understate reality; treat conversion % as directional.';
+    ? 'Every song shown once, at its current stage. Released is the all-time catalog, so it dwarfs the active stages.'
+    : 'Each song shown once at its current stage, if that stage was reached within '+winLabel+' (Released & Upcoming by release date, Cut by cut date, Hold by hold date).';
   const dateInputs=isCustom?`<div class="pipe-dates">
         <label>From<input type="date" id="pFrom" value="${cFrom}" min="${dmin}" max="${dmax}"></label>
         <label>To<input type="date" id="pTo" value="${cTo}" min="${dmin}" max="${dmax}"></label>
       </div>`:'';
   const shortY=iso=>{ if(!iso)return '—'; const d=new Date(iso+'T00:00'); return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'2-digit'}); };
-  const winRows=f=>rows.filter(s=>inWin(s[f])).sort((a,b)=>(b[f]||'').localeCompare(a[f]||''));
   const CAP=300;
-  const listCol=(title,color,arr,f)=>{
-    const shown=arr.slice(0,CAP);
-    const body=shown.length?shown.map(s=>{
+  const listCol=(title,color,stageKey,dateField)=>{
+    const arr=byStage[stageKey].slice().sort((a,b)=>((b[dateField]||'')+'').localeCompare((a[dateField]||'')+''));
+    const shownArr=arr.slice(0,CAP);
+    const body=shownArr.length?shownArr.map(s=>{
       const sp='https://open.spotify.com/search/'+encodeURIComponent(((s.a||'')+' '+(s.t||'')).trim());
       const wl=(s.w||[]).map(nm=>`<span class="pli-w" data-writer="${esc(nm)}">${esc(nm)}</span>`).join(', ');
       const ctx=[(s.v||[]).join(', '), (s.g&&s.g!=='Unspecified')?s.g:''].filter(Boolean).join(' · ');
-      return `<div class="pli"${ctx?` title="${esc(ctx)}"`:''}><span class="pli-d">${shortY(s[f])}</span><span class="pli-main">`
+      return `<div class="pli"${ctx?` title="${esc(ctx)}"`:''}><span class="pli-d">${shortY(s[dateField])}</span><span class="pli-main">`
         +`<a class="pli-t" href="${sp}" target="_blank" rel="noopener" title="Search on Spotify">${esc(s.t||'—')}</a>`
         +`<span class="pli-sub"><span class="pli-a">${esc(s.a||'—')}</span>${wl?` <span class="pli-sep">·</span> <span class="pli-wr">✎ ${wl}</span>`:''}</span>`
         +`</span></div>`;
-    }).join(''):'<div class="plist-empty">None in range</div>';
+    }).join(''):'<div class="plist-empty">None</div>';
     const more=arr.length>CAP?`<div class="plist-more">+${(arr.length-CAP).toLocaleString()} more…</div>`:'';
     return `<div class="plist"><div class="plist-h"><span class="plist-dot" style="background:${color}"></span>${title}<span class="plist-c">${arr.length.toLocaleString()}</span></div><div class="plist-b">${body}${more}</div></div>`;
   };
-  const listsHtml=`<div class="pipe-lists-head">Songs by activity date · ${esc(winLabel)}</div>
+  const listsHtml=`<div class="pipe-lists-head">Songs by stage · ${esc(scope)}</div>
     <div class="pipe-lists">
-      ${listCol('On hold',colors.Hold,winRows('hd'),'hd')}
-      ${listCol('Cut',colors.Cut,winRows('cd'),'cd')}
-      ${listCol('Released',colors.Released,winRows('rd'),'rd')}
+      ${listCol('On hold',colors.Hold,'Hold','hd')}
+      ${listCol('Cut',colors.Cut,'Cut','cd')}
+      ${listCol('Upcoming',colors.Upcoming,'Upcoming','rd')}
+      ${listCol('Released',colors.Released,'Released','rd')}
     </div>`;
   host.innerHTML=`
     <div class="pipe-controls">
@@ -983,6 +996,55 @@ function renderPipeline(){
     <div class="pfunnel">${funnelHtml}</div>
     <p class="pipe-note">${note}</p>
     ${listsHtml}`;
+}
+
+/* ---------- Data Quality (pipeline cleanup worklist) ---------- */
+function pipeIssues(){
+  const all=pipeAll(), asOf=(pipeMeta().asOf)||'2026-07-31';
+  const issues=[];
+  const add=(s,cat)=>issues.push({cat,a:s.a,t:s.t,st:s.s,hd:s.hd,cd:s.cd,rd:s.rd,w:s.w,v:s.v});
+  const dup={};
+  all.forEach(s=>{ const k=((s.a||'')+'|'+(s.t||'')).toLowerCase(); (dup[k]=dup[k]||[]).push(s); });
+  all.forEach(s=>{
+    if(s.s==='Released' && !s.rd) add(s,'Released — missing release date');
+    if(s.s==='Cut' && !s.cd) add(s,'Cut — missing cut date');
+    if(s.s==='Hold' && !s.hd) add(s,'Hold — missing hold date');
+    if((s.s==='Cut'||s.s==='Hold') && s.rd && s.rd<=asOf) add(s,'Stale status — has a past release date but not marked Released');
+    if(s.s==='Upcoming' && s.rd && s.rd<asOf) add(s,'Upcoming — release date already passed');
+    if(s.cd && s.hd && s.cd<s.hd) add(s,'Cut date before hold date');
+    if(s.rd && s.cd && s.rd<s.cd) add(s,'Release date before cut date');
+  });
+  Object.values(dup).forEach(arr=>{
+    if(arr.length>1){ const sts=[...new Set(arr.map(x=>x.s))]; if(sts.length>1) arr.forEach(s=>add(s,'Same song, conflicting statuses ('+sts.join(' / ')+')')); }
+  });
+  return issues;
+}
+function renderQuality(){
+  const host=$('#qualityBody'); if(!host) return;
+  const issues=pipeIssues();
+  const shortY=iso=>{ if(!iso)return '—'; const d=new Date(iso+'T00:00'); return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'2-digit'}); };
+  const groups={}; issues.forEach(i=>{ (groups[i.cat]=groups[i.cat]||[]).push(i); });
+  const cats=Object.keys(groups).sort((a,b)=>groups[b].length-groups[a].length);
+  const head=`<div class="q-summary"><div><div class="q-total">${issues.length.toLocaleString()}</div><div class="q-total-l">records to review across ${cats.length} issue types</div></div><button class="q-export" id="qExport">⬇ Export CSV</button></div>`;
+  const body=cats.length?cats.map(cat=>{
+    const rows=groups[cat].map(i=>`<tr>
+      <td class="q-song"><span class="q-t">${esc(i.t||'—')}</span><span class="q-a">${esc(i.a||'')}</span></td>
+      <td><span class="q-badge q-${i.st}">${esc(i.st)}</span></td>
+      <td class="q-d">${shortY(i.hd)}</td><td class="q-d">${shortY(i.cd)}</td><td class="q-d">${shortY(i.rd)}</td>
+      <td class="q-w">${(i.w||[]).map(nm=>`<span class="pli-w" data-writer="${esc(nm)}">${esc(nm)}</span>`).join(', ')||'—'}</td></tr>`).join('');
+    return `<section class="q-group"><div class="q-group-h">${esc(cat)}<span class="q-count">${groups[cat].length}</span></div>
+      <div class="q-tablewrap"><table class="q-table"><thead><tr><th>Song</th><th>Status</th><th>Hold</th><th>Cut</th><th>Release</th><th>Writer(s)</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+  }).join(''):'<div class="plist-empty">No issues found — pipeline data looks clean. 🎉</div>';
+  host.innerHTML=head+body;
+}
+function exportQualityCsv(){
+  const issues=pipeIssues();
+  const cell=v=>`"${String(v==null?'':v).replace(/"/g,'""')}"`;
+  const header=['Issue','Artist','Song','Status','Hold Date','Cut Date','Release Date','Writers','Venture'];
+  const lines=[header.map(cell).join(',')].concat(issues.map(i=>[i.cat,i.a,i.t,i.st,i.hd||'',i.cd||'',i.rd||'',(i.w||[]).join('; '),(i.v||[]).join('; ')].map(cell).join(',')));
+  const blob=new Blob([lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const url=URL.createObjectURL(blob), aEl=document.createElement('a');
+  aEl.href=url; aEl.download='pipeline-data-quality.csv'; document.body.appendChild(aEl); aEl.click(); aEl.remove(); URL.revokeObjectURL(url);
 }
 
 /* ---------- Leaderboards (top performers, last 6 mo) ---------- */
@@ -1256,7 +1318,7 @@ function renderWriters(){
     </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
 }
 function render(){
-  syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderSources();
+  syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderQuality(); renderSources();
   { const g=$('#royGap'); if(g) g.innerHTML=renderGapChart(); }
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
@@ -1402,6 +1464,7 @@ document.addEventListener('click',e=>{
   const pv=e.target.closest('.pipe-seg button[data-pview]');
   if(pv){ if(state.pView!==pv.dataset.pview){ state.pView=pv.dataset.pview; renderPipeline(); } return; }
   if(e.target.id==='pClear'){ state.pWriter=state.pGenre=state.pVenture=''; renderPipeline(); }
+  if(e.target.id==='qExport'){ exportQualityCsv(); }
 });
 document.addEventListener('change',e=>{
   if(e.target.id==='pWriter'){ state.pWriter=e.target.value; renderPipeline(); }
