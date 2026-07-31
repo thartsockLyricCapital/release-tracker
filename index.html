@@ -315,6 +315,15 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 
 .foot-note{text-align:center;color:var(--ink-faint);font-size:12px;padding:30px 0 50px;font-family:'Space Mono'}
 .hidden{display:none!important}
+.gfbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:6px}
+.gfbar-in{max-width:min(1720px,96vw);margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.gfbar .search{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--paper);min-width:230px;flex:1 1 230px;max-width:340px}
+.gfbar .search svg{width:15px;height:15px;color:var(--ink-faint);flex:0 0 auto}
+.gfbar .search input{border:0;outline:0;background:transparent;font-size:13px;color:var(--ink);width:100%}
+.gfbar .ctl{font-size:12.5px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-weight:600;max-width:170px}
+.gf-clear{font-size:12px;font-weight:700;padding:7px 11px;border:1px solid var(--blue);border-radius:8px;background:var(--blue);color:#fff;cursor:pointer}
+.gf-count{font-size:12px;color:var(--ink-soft);font-weight:600;margin-left:auto;white-space:nowrap}
+@media(max-width:760px){.gfbar-in{padding:0 12px}.gfbar .ctl{flex:1 1 auto}}
 
 @media(max-width:880px){
   .stats{grid-template-columns:repeat(3,1fr)}
@@ -453,6 +462,23 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
     </nav>
   </aside>
   <main class="appmain">
+  <div class="gfbar" id="gfbar">
+    <div class="gfbar-in">
+      <div class="search gf-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+        <input id="search" placeholder="Search artist, song, writer, label…">
+      </div>
+      <select class="ctl" id="fWriter"><option value="">All writers</option></select>
+      <select class="ctl" id="fArtist"><option value="">All artists</option></select>
+      <select class="ctl" id="fStatus"><option value="">All status</option><option value="Upcoming">Upcoming</option><option value="Released">Released</option></select>
+      <select class="ctl" id="fType"><option value="">All types</option><option>Single</option><option>Album</option><option>EP</option><option>Single → Album</option></select>
+      <select class="ctl" id="fGenre"><option value="">All genres</option></select>
+      <select class="ctl" id="fTier"><option value="">All tiers</option><option value="top">Top artists only</option><option value="major">Major-label cuts</option><option value="dev">Developing only</option></select>
+      <select class="ctl" id="fLabel"><option value="">All labels</option></select>
+      <button class="gf-clear" id="gfClear" hidden>✕ Clear</button>
+      <span class="gf-count" id="gfCount"></span>
+    </div>
+  </div>
 
   <section class="page" id="page-overview" data-page="overview">
    <div class="wrap">
@@ -534,15 +560,6 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
    <div class="controls">
     <div class="wrap">
       <div class="controls-in">
-        <div class="search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
-          <input id="search" placeholder="Search artist, song, writer, label…">
-        </div>
-        <select class="ctl" id="fStatus"><option value="">All status</option><option value="Upcoming">Upcoming</option><option value="Released">Released</option></select>
-        <select class="ctl" id="fType"><option value="">All types</option><option>Single</option><option>Album</option><option>EP</option><option>Single → Album</option></select>
-        <select class="ctl" id="fTier"><option value="">All artists</option><option value="top">Top artists only</option><option value="major">Major-label cuts</option><option value="dev">Developing only</option></select>
-        <select class="ctl" id="fLabel"><option value="">All labels</option></select>
-        <select class="ctl" id="fWriter"><option value="">All writers</option></select>
         <div class="seg" id="viewSeg">
           <button data-v="calendar" class="on">Calendar</button>
           <button data-v="table">Table</button>
@@ -705,7 +722,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:'', pFrom:'', pTo:''};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:'', pFrom:'', pTo:'', artist:'', genre:''};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -786,6 +803,8 @@ function filtered(){
     if(state.q){ const h=`${r.artist} ${r.songTitle} ${r.label} ${r.albumTitle} ${r.spiritSongwriters||''}`.toLowerCase(); if(!h.includes(state.q.toLowerCase())) return false; }
     if(state.status && r.status!==state.status) return false;
     if(state.type && r.type!==state.type) return false;
+    if(state.artist && r.artist!==state.artist) return false;
+    if(state.genre && (r.genre||'')!==state.genre) return false;
     if(state.label && r.label!==state.label) return false;
     if(state.writer && !(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()).includes(state.writer)) return false;
     if(state.tier==='top' && !r.topArtist) return false;
@@ -804,7 +823,10 @@ function splitChip(p){ return p==null?'':`<span class="split" title="Spirit owne
 function gapData(){
   const R=window.LYRIC_ROYALTY, W=window.LYRIC_WRITERS;
   if(!R||!W) return [];
+  const FR=filtered(), active=FR.length!==data.length;
+  const fw=active?new Set(FR.flatMap(r=>(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()))):null;
   return Object.values(R.writers).map(rw=>{
+    if(fw && !fw.has(rw.name)) return null;
     const w=W[rw.name];
     const lumOn=state.gapSrc==='luminate';
     const x=w?(lumOn?w.lumStreams:w.grossStreams):null;
@@ -1086,8 +1108,9 @@ function leaderboard(title, rows, unit){
 }
 function renderBoards(){
   const C=window.LYRIC_CHARTS||{};
-  const mk=(valKey,prevKey)=>Object.keys(C).map(id=>{
-      const c=C[id], r=data.find(x=>x.id===id)||{};
+  const FR=filtered();
+  const mk=(valKey,prevKey)=>FR.map(r=>{
+      const c=C[r.id]; if(!c) return null;
       if(typeof c[valKey]!=='number'||typeof c[prevKey]!=='number') return null;
       const f=factor(r); const lf=lumForSong(r);
       return {song:r.songTitle||'—', artist:r.artist||'—', writer:r.spiritSongwriters||'', pct:r.spiritPct,
@@ -1110,16 +1133,16 @@ function deltaChip(frac,suffix){
   return `<span class="delta ${dir}">${mark} ${pct(frac)}${suffix||''}</span>`;
 }
 function renderKPIs(){
-  const C=window.LYRIC_CHARTS||{}, ids=Object.keys(C);
-  if(!ids.length){ $('#kpis').innerHTML=''; return; }
+  const C=window.LYRIC_CHARTS||{}; const FR=filtered().filter(r=>C[r.id]);
+  if(!Object.keys(C).length){ $('#kpis').innerHTML=''; return; }
   let tot=0,totPrev=0,spins=0,spinsPrev=0,spinsN=0,best=null,doubled=0,half=0,lumS=0,lumP=0;
-  ids.forEach(id=>{
-    const c=C[id], r=data.find(x=>x.id===id)||{}, f=factor(r);
+  FR.forEach(r=>{
+    const c=C[r.id], f=factor(r);
     { const lf=lumForSong(r); if(lf){ if(lf.usStreams!=null) lumS+=lf.usStreams*f; if(lf.usSpins!=null) lumP+=lf.usSpins*f; } }
     if(typeof c.streams==='number'){ tot+=c.streams*f; if(typeof c.prevStreams==='number') totPrev+=c.prevStreams*f; }
     if(typeof c.spins==='number'){ spins+=c.spins*f; spinsN++; if(typeof c.prevSpins==='number') spinsPrev+=c.prevSpins*f; }
     if(typeof c.streams==='number'&&typeof c.prevStreams==='number'){
-      const g=(c.streams-c.prevStreams)*f; if(!best||g>best.g) best={g,id};
+      const g=(c.streams-c.prevStreams)*f; if(!best||g>best.g) best={g,id:r.id};
       if(c.prevStreams>0){ const gr=(c.streams-c.prevStreams)/c.prevStreams; if(gr>=0.5) half++; if(gr>=1) doubled++; }
     }
   });
@@ -1127,7 +1150,7 @@ function renderKPIs(){
   const spinGrow= spinsPrev? (spins-spinsPrev)/spinsPrev : null;
   const nmeOf=id=>{ const r=data.find(x=>x.id===id)||{}; return {a:r.artist||'—', s:r.songTitle||''}; };
   const bestN= best? nmeOf(best.id) : null;
-  const tracked=ids.length;
+  const tracked=FR.length;
   const tiles=[
     {c:'', n:fmtNum(tot), top:deltaChip(streamGrow,' · 6 mo'),
       l:adjOn()?'Spirit-adjusted streams':'Spotify streams (catalog)',
@@ -1152,7 +1175,7 @@ function renderKPIs(){
 
 /* ---------- Stats ---------- */
 function renderStats(){
-  const all=data;
+  const all=filtered();
   const up=all.filter(r=>r.status==='Upcoming');
   const thisMonth=all.filter(r=>r.releaseDate && r.releaseDate.slice(0,7)===NOW.toISOString().slice(0,7));
   const cards=[
@@ -1168,7 +1191,7 @@ function renderStats(){
 
 /* ---------- Pipeline rail ---------- */
 function renderRail(){
-  const up=data.filter(r=>r.status==='Upcoming').sort((a,b)=>(a.releaseDate||'')<(b.releaseDate||'')?-1:1);
+  const up=filtered().filter(r=>r.status==='Upcoming').sort((a,b)=>(a.releaseDate||'')<(b.releaseDate||'')?-1:1);
   $('#pipeCount').textContent=`${up.length} dated`;
   if(!up.length){ $('#rail').innerHTML='<div style="color:var(--ink-faint);font-size:14px;padding:8px">No upcoming releases dated yet. Add them in Edit mode.</div>'; return; }
   $('#rail').innerHTML=up.map(r=>{
@@ -1302,6 +1325,7 @@ function showPage(name){
   state.page=name;
   document.querySelectorAll('.page').forEach(p=>{ p.hidden = (p.dataset.page!==name); });
   document.querySelectorAll('#sidebar .nav-item').forEach(a=>a.classList.toggle('on', a.dataset.page===name));
+  { const gf=$('#gfbar'); if(gf) gf.style.display = ['overview','performance','royalties','releases'].includes(name)?'':'none'; }
   try{ if((location.hash||'#overview').slice(1)!==name) location.hash=name; }catch(e){}
   window.scrollTo(0,0);
 }
@@ -1318,7 +1342,7 @@ function renderWriters(){
     </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
 }
 function render(){
-  syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderQuality(); renderSources();
+  syncFilters(); syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderQuality(); renderSources();
   { const g=$('#royGap'); if(g) g.innerHTML=renderGapChart(); }
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
@@ -1340,12 +1364,21 @@ function bindCards(){
 
 /* ---------- Label filter options ---------- */
 function fillLabels(){
-  const labels=[...new Set(data.map(r=>r.label).filter(Boolean))].sort();
-  $('#fLabel').innerHTML='<option value="">All labels</option>'+labels.map(l=>`<option>${esc(l)}</option>`).join('');
-  const writers=[...new Set(data.flatMap(r=>(r.spiritSongwriters||'').split(/\s*,\s*/)).map(x=>x.trim()).filter(Boolean))]
-    .sort((a,b)=>a.localeCompare(b));
-  const keep=state.writer;
-  $('#fWriter').innerHTML='<option value="">All writers</option>'+writers.map(w=>`<option${w===keep?' selected':''}>${esc(w)}</option>`).join('');
+  const opts=(arr,cur)=>arr.map(v=>`<option${v===cur?' selected':''}>${esc(v)}</option>`).join('');
+  const uniq=arr=>[...new Set(arr.filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+  const labels=uniq(data.map(r=>r.label));
+  $('#fLabel').innerHTML='<option value="">All labels</option>'+opts(labels,state.label);
+  const writers=uniq(data.flatMap(r=>(r.spiritSongwriters||'').split(/\s*,\s*/)).map(x=>x.trim()));
+  $('#fWriter').innerHTML='<option value="">All writers</option>'+opts(writers,state.writer);
+  const artists=uniq(data.map(r=>r.artist));
+  $('#fArtist').innerHTML='<option value="">All artists</option>'+opts(artists,state.artist);
+  const genres=uniq(data.map(r=>r.genre));
+  $('#fGenre').innerHTML='<option value="">All genres</option>'+opts(genres,state.genre);
+}
+function syncFilters(){
+  const active=!!(state.q||state.writer||state.artist||state.status||state.type||state.genre||state.tier||state.label);
+  const cl=$('#gfClear'); if(cl) cl.hidden=!active;
+  const cnt=$('#gfCount'); if(cnt) cnt.textContent = active ? `${filtered().length.toLocaleString()} of ${data.length.toLocaleString()} songs` : '';
 }
 
 /* ---------- Editor ---------- */
@@ -1458,6 +1491,9 @@ $('#fType').onchange=e=>{state.type=e.target.value;render();};
 $('#fTier').onchange=e=>{state.tier=e.target.value;render();};
 $('#fLabel').onchange=e=>{state.label=e.target.value;render();};
 $('#fWriter').onchange=e=>{state.writer=e.target.value;render();};
+$('#fArtist').onchange=e=>{state.artist=e.target.value;render();};
+$('#fGenre').onchange=e=>{state.genre=e.target.value;render();};
+$('#gfClear').onclick=()=>{state.q=state.writer=state.artist=state.status=state.type=state.genre=state.tier=state.label='';$('#search').value='';['fStatus','fType','fTier'].forEach(id=>{const el=$('#'+id);if(el)el.value='';});fillLabels();render();};
 $('#viewSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;state.view=b.dataset.v;document.querySelectorAll('#viewSeg button').forEach(x=>x.classList.toggle('on',x===b));render();};
 document.addEventListener('click',e=>{const b=e.target.closest('.basis-seg button[data-basis]'); if(!b||state.basis===b.dataset.basis) return; state.basis=b.dataset.basis; syncBasis(); render();});
 document.addEventListener('click',e=>{
