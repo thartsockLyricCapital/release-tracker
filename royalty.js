@@ -40,8 +40,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 109560,
    "incomeLife": 1050569
   },
-  "Nick Gale (NG Publishing)": {
-   "name": "Nick Gale (NG Publishing)",
+  "Nick Gale": {
+   "name": "Nick Gale",
    "npsLife": 106920,
    "npsTtm": 62128,
    "incomeLife": 323662
@@ -82,8 +82,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 36624,
    "incomeLife": 104768
   },
-  "Michael Fiorentino": {
-   "name": "Michael Fiorentino",
+  "Mike Fiorentino": {
+   "name": "Mike Fiorentino",
    "npsLife": 25330,
    "npsTtm": 788,
    "incomeLife": 52888
@@ -124,8 +124,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 6142,
    "incomeLife": 113197
   },
-  "Christopher M. Robinson": {
-   "name": "Christopher M. Robinson",
+  "Chris Robinson": {
+   "name": "Chris Robinson",
    "npsLife": 14502,
    "npsTtm": 4847,
    "incomeLife": 95482
@@ -184,8 +184,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 2186,
    "incomeLife": 21662
   },
-  "Joseph Janiak": {
-   "name": "Joseph Janiak",
+  "Joe Janiak": {
+   "name": "Joe Janiak",
    "npsLife": 2883,
    "npsTtm": 2883,
    "incomeLife": 6542
@@ -250,8 +250,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 562,
    "incomeLife": 2914
   },
-  "Billy F Gibbons": {
-   "name": "Billy F Gibbons",
+  "Billy F. Gibbons": {
+   "name": "Billy F. Gibbons",
    "npsLife": 564,
    "npsTtm": 260,
    "incomeLife": 6283
@@ -286,8 +286,8 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 158,
    "incomeLife": 514
   },
-  "Benjamin Samama": {
-   "name": "Benjamin Samama",
+  "Ben Samama": {
+   "name": "Ben Samama",
    "npsLife": 100,
    "npsTtm": 100,
    "incomeLife": 390
@@ -310,14 +310,14 @@ window.LYRIC_ROYALTY = {
    "npsTtm": 34,
    "incomeLife": 185
   },
-  "Tim Prater": {
-   "name": "Tim Prater",
+  "Timothy Prater": {
+   "name": "Timothy Prater",
    "npsLife": 36,
    "npsTtm": 25,
    "incomeLife": 146
   },
-  "Yung Honi": {
-   "name": "Yung Honi",
+  "Honi": {
+   "name": "Honi",
    "npsLife": 25,
    "npsTtm": 16,
    "incomeLife": 88
@@ -819,7 +819,7 @@ window.LYRIC_ROYALTY = {
    "incomeLife": 1050569
   },
   {
-   "name": "Nick Gale (NG Publishing)",
+   "name": "Nick Gale",
    "npsLife": 106920,
    "npsTtm": 62128,
    "incomeLife": 323662
@@ -873,7 +873,7 @@ window.LYRIC_ROYALTY = {
    "incomeLife": 92708
   },
   {
-   "name": "Michael Fiorentino",
+   "name": "Mike Fiorentino",
    "npsLife": 25330,
    "npsTtm": 788,
    "incomeLife": 52888
