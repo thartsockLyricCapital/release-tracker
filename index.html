@@ -446,6 +446,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
       <a class="nav-item" data-page="performance" href="#performance"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Performance</span></a>
       <a class="nav-item" data-page="royalties" href="#royalties"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>Royalties</span></a>
       <a class="nav-item" data-page="releases" href="#releases"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Releases</span></a>
+      <a class="nav-item" data-page="pipeline" href="#pipeline"><svg viewBox="0 0 24 24"><path d="M3 5h18M6 12h12M10 19h4"/></svg><span>Pipeline</span></a>
       <a class="nav-item" data-page="writers" href="#writers"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Writers</span></a>
       <a class="nav-item" data-page="sources" href="#sources"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><span>Data Sources</span></a>
     </nav>
@@ -566,6 +567,38 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
    </div>
   </section>
 
+  <style>
+  .pipe-controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .pipe-filters{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+  .pipe-filters label{display:flex;flex-direction:column;font-size:11px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;gap:3px}
+  .pipe-filters select{font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink);min-width:135px;font-weight:600}
+  .pipe-clear{align-self:flex-end;font-size:12px;padding:7px 11px;border:1px solid var(--line);border-radius:7px;background:var(--bg-2);color:var(--ink-soft);cursor:pointer;font-weight:700}
+  .seg.pipe-seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  .seg.pipe-seg button{border:0;background:var(--paper);color:var(--ink-soft);font-weight:700;font-size:13px;padding:8px 15px;cursor:pointer}
+  .seg.pipe-seg button.on{background:var(--blue);color:#fff}
+  .pstats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px}
+  .pstat{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:14px 16px}
+  .ps-v{font-size:24px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .ps-l{font-size:12px;color:var(--ink-soft);font-weight:600;margin-top:3px}
+  .pfunnel{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+  .pf-row{display:grid;grid-template-columns:130px 1fr 128px;align-items:center;gap:14px}
+  .pf-name{font-size:13.5px;font-weight:700;color:var(--ink);text-align:right}
+  .pf-track{background:var(--bg-2);border-radius:8px;overflow:hidden;height:38px;display:flex;align-items:center}
+  .pf-bar{height:100%;display:flex;align-items:center;border-radius:8px;min-width:36px;transition:width .4s ease;box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+  .pf-n{color:#fff;font-weight:800;font-size:14px;padding:0 12px;white-space:nowrap;text-shadow:0 1px 1px rgba(0,0,0,.18)}
+  .pf-share{font-size:12.5px;color:var(--ink-soft);font-weight:600}
+  .pf-conv{color:var(--ink-faint)}
+  .pipe-note{font-size:12px;color:var(--ink-faint);margin-top:14px;max-width:860px;line-height:1.55}
+  @media(max-width:700px){.pstats{grid-template-columns:repeat(2,1fr)}.pf-row{grid-template-columns:84px 1fr 64px;gap:8px}.pf-name{font-size:12px}}
+  </style>
+  <section class="page" id="page-pipeline" data-page="pipeline" hidden>
+   <div class="wrap">
+    <div class="section-head"><span class="eyebrow">A&amp;R pipeline</span><h3>Hold → Cut → Release conversion</h3></div>
+    <p style="color:var(--ink-soft);font-size:13.5px;max-width:820px;margin-bottom:16px">How songs move through the A&amp;R pipeline — from artist <b>holds</b> to recorded <b>cuts</b> to <b>releases</b>. Switch between a current snapshot and trailing-12-month activity, and filter by writer, genre, or venture.</p>
+    <div id="pipeBody"></div>
+   </div>
+  </section>
+
   <section class="page" id="page-sources" data-page="sources" hidden>
    <div class="wrap">
     <div class="section-head"><span class="eyebrow">Data sources</span><h3>Where this data comes from</h3></div>
@@ -609,6 +642,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
 <script src="writers.js"></script>
 <script src="royalty.js"></script>
 <script src="luminate.js"></script>
+<script src="pipeline.js"></script>
 <script>
 const TODAY = new Date('2026-06-24'); // anchor; uses real today if later
 const NOW = (new Date() > TODAY) ? new Date() : TODAY;
@@ -617,7 +651,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate'};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:''};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -797,6 +831,93 @@ function renderSources(){
     card('Sigma / Snowflake — SOS royalties', (R?`SPIRIT_NPS_REPORT_CURRENT · ${R.meta.period}`:'—'),
       ['Spirit Net Publisher Share — lifetime + last 12 mo','Gross royalty income','Per-writer &amp; per-song royalties','Monetization-gap y-axis']),
   ].join('');
+}
+
+/* ---------- A&R Pipeline (funnel) ---------- */
+function pipeAll(){ return (window.LYRIC_PIPELINE&&window.LYRIC_PIPELINE.songs)||[]; }
+function pipeMeta(){ return (window.LYRIC_PIPELINE&&window.LYRIC_PIPELINE.meta)||{}; }
+function pipeFiltered(){
+  const w=state.pWriter,g=state.pGenre,v=state.pVenture;
+  return pipeAll().filter(s=>{
+    if(w && !(s.w||[]).includes(w)) return false;
+    if(g && s.g!==g) return false;
+    if(v && !(s.v||[]).includes(v)) return false;
+    return true;
+  });
+}
+function renderPipeline(){
+  const host=$('#pipeBody'); if(!host) return;
+  const meta=pipeMeta(), all=pipeAll();
+  if(!all.length){ host.innerHTML='<div style="color:var(--ink-faint);padding:8px">No pipeline data.</div>'; return; }
+  const uniq=arr=>Array.from(new Set(arr)).sort((a,b)=>a.localeCompare(b));
+  const writers=uniq(all.flatMap(s=>s.w||[]));
+  const genres=uniq(all.map(s=>s.g||'Unspecified'));
+  const ventures=uniq(all.flatMap(s=>s.v||[]));
+  const opt=(list,cur,allLabel)=>`<option value="">${allLabel}</option>`+list.map(x=>`<option value="${esc(x)}"${x===cur?' selected':''}>${esc(x)}</option>`).join('');
+  const rows=pipeFiltered();
+  const asOf=meta.asOf||'2026-07-31', start='2025-08-01';
+  const inWin=d=>!!d && d>=start && d<=asOf;
+  const snap={Hold:0,Cut:0,Upcoming:0,Released:0};
+  rows.forEach(s=>{ if(snap[s.s]!=null) snap[s.s]++; });
+  const t12={holds:0,cuts:0,rels:0,ahead:0};
+  rows.forEach(s=>{ if(inWin(s.hd))t12.holds++; if(inWin(s.cd))t12.cuts++; if(inWin(s.rd))t12.rels++; if(s.rd&&s.rd>asOf)t12.ahead++; });
+  const dBetween=(a,b)=>Math.round((new Date(b+'T00:00')-new Date(a+'T00:00'))/864e5);
+  const med=arr=>{ if(!arr.length)return null; const s=arr.slice().sort((x,y)=>x-y); return s[Math.floor(s.length/2)]; };
+  const hc=med(rows.filter(s=>s.hd&&s.cd&&s.cd>=s.hd).map(s=>dBetween(s.hd,s.cd)));
+  const cr=med(rows.filter(s=>s.cd&&s.rd&&s.rd>=s.cd).map(s=>dBetween(s.cd,s.rd)));
+  const isSnap=state.pView!=='t12';
+  const colors={Hold:'#8E7CC3',Cut:'#0875D0',Upcoming:'#E8A317',Released:'#1B8F5A'};
+  let funnelHtml='';
+  if(isSnap){
+    const stages=[['Hold',snap.Hold,colors.Hold],['Cut',snap.Cut,colors.Cut],['Upcoming',snap.Upcoming,colors.Upcoming],['Released',snap.Released,colors.Released]];
+    const max=Math.max(1,...stages.map(s=>s[1])), total=rows.length||1;
+    funnelHtml=stages.map(([name,n,c])=>{
+      const pct=Math.round(n/max*100), share=(n/total*100);
+      return `<div class="pf-row"><div class="pf-name">${name}</div>
+        <div class="pf-track"><div class="pf-bar" style="width:${Math.max(pct,2)}%;background:${c}"><span class="pf-n">${n.toLocaleString()}</span></div></div>
+        <div class="pf-share">${share.toFixed(1)}% of shown</div></div>`;
+    }).join('');
+  } else {
+    const stages=[['Holds placed',t12.holds,colors.Hold],['Cuts made',t12.cuts,colors.Cut],['Released',t12.rels,colors.Released]];
+    const max=Math.max(1,...stages.map(s=>s[1]));
+    funnelHtml=stages.map(([name,n,c],i)=>{
+      const pct=Math.round(n/max*100), prev=i>0?stages[i-1][1]:null;
+      const conv=(prev&&prev>0)?`<span class="pf-conv">${Math.round(n/prev*100)}% of prior stage</span>`:'';
+      return `<div class="pf-row"><div class="pf-name">${name}</div>
+        <div class="pf-track"><div class="pf-bar" style="width:${Math.max(pct,2)}%;background:${c}"><span class="pf-n">${n.toLocaleString()}</span></div></div>
+        <div class="pf-share">${conv}</div></div>`;
+    }).join('');
+  }
+  const active=snap.Hold+snap.Cut+snap.Upcoming;
+  const stat=(v,l,tip)=>`<div class="pstat"${tip?` title="${esc(tip)}"`:''}><div class="ps-v">${v}</div><div class="ps-l">${l}</div></div>`;
+  const stats=isSnap
+    ? stat(active.toLocaleString(),'Active pipeline','Hold + Cut + Upcoming — songs in the works now')
+      +stat(snap.Released.toLocaleString(),'Released (catalog)','All-time released songs (in the current filter)')
+      +stat(hc!=null?hc+'d':'—','Median hold → cut','Median days from hold to cut, where both dates exist')
+      +stat(cr!=null?cr+'d':'—','Median cut → release','Median days from cut to release, where both dates exist')
+    : stat(t12.holds.toLocaleString(),'Holds placed','Songs with a Hold date in the last 12 months')
+      +stat(t12.cuts.toLocaleString(),'Cuts made','Songs with a Cut date in the last 12 months')
+      +stat(t12.rels.toLocaleString(),'Released','Songs with a Release date in the last 12 months')
+      +stat(t12.ahead.toLocaleString(),'Scheduled ahead','Releases dated after '+asOf);
+  const note=isSnap
+    ? 'Snapshot of every song by its current status. Released is the all-time catalog, so it dwarfs the active stages — the shape reads as pipeline + catalog, not a conversion rate.'
+    : 'Activity dated within '+(meta.window||'the last 12 months')+'. Hold and Cut dates are only partially recorded in Airtable, so early-stage counts understate reality; treat conversion % as directional.';
+  host.innerHTML=`
+    <div class="pipe-controls">
+      <div class="seg pipe-seg">
+        <button data-pview="snapshot" class="${isSnap?'on':''}">Snapshot</button>
+        <button data-pview="t12" class="${!isSnap?'on':''}">Last 12 months</button>
+      </div>
+      <div class="pipe-filters">
+        <label>Writer<select id="pWriter">${opt(writers,state.pWriter,'All writers')}</select></label>
+        <label>Genre<select id="pGenre">${opt(genres,state.pGenre,'All genres')}</select></label>
+        <label>Venture<select id="pVenture">${opt(ventures,state.pVenture,'All ventures')}</select></label>
+        ${(state.pWriter||state.pGenre||state.pVenture)?'<button class="pipe-clear" id="pClear">Clear</button>':''}
+      </div>
+    </div>
+    <div class="pstats">${stats}</div>
+    <div class="pfunnel">${funnelHtml}</div>
+    <p class="pipe-note">${note}</p>`;
 }
 
 /* ---------- Leaderboards (top performers, last 6 mo) ---------- */
@@ -1070,7 +1191,7 @@ function renderWriters(){
     </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
 }
 function render(){
-  syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderSources();
+  syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderSources();
   { const g=$('#royGap'); if(g) g.innerHTML=renderGapChart(); }
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
@@ -1212,6 +1333,16 @@ $('#fLabel').onchange=e=>{state.label=e.target.value;render();};
 $('#fWriter').onchange=e=>{state.writer=e.target.value;render();};
 $('#viewSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;state.view=b.dataset.v;document.querySelectorAll('#viewSeg button').forEach(x=>x.classList.toggle('on',x===b));render();};
 document.addEventListener('click',e=>{const b=e.target.closest('.basis-seg button[data-basis]'); if(!b||state.basis===b.dataset.basis) return; state.basis=b.dataset.basis; syncBasis(); render();});
+document.addEventListener('click',e=>{
+  const pv=e.target.closest('.pipe-seg button[data-pview]');
+  if(pv){ if(state.pView!==pv.dataset.pview){ state.pView=pv.dataset.pview; renderPipeline(); } return; }
+  if(e.target.id==='pClear'){ state.pWriter=state.pGenre=state.pVenture=''; renderPipeline(); }
+});
+document.addEventListener('change',e=>{
+  if(e.target.id==='pWriter'){ state.pWriter=e.target.value; renderPipeline(); }
+  else if(e.target.id==='pGenre'){ state.pGenre=e.target.value; renderPipeline(); }
+  else if(e.target.id==='pVenture'){ state.pVenture=e.target.value; renderPipeline(); }
+});
 $('#editToggle').onclick=()=>{state.editing=!state.editing;document.body.classList.toggle('editing',state.editing);$('#editToggle').classList.toggle('on',state.editing);$('#addBtn').style.display=state.editing?'inline-flex':'none';};
 $('#addBtn').onclick=openAdd;
 document.addEventListener('click',e=>{const el=e.target.closest('[data-writer]');if(el){e.preventDefault();openWriter(el.dataset.writer);}});
