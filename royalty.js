@@ -16,11 +16,11 @@ window.LYRIC_ROYALTY = {
   }
  },
  "writers": {
-  "Michael Hardy": {
-   "name": "Michael Hardy",
-   "npsLife": 861949,
-   "npsTtm": 861949,
-   "incomeLife": 1373382
+  "Hardy (Acq)": {
+   "name": "Hardy (Acq)",
+   "npsLife": 845805,
+   "npsTtm": 845805,
+   "incomeLife": 845805
   },
   "Brent Anderson": {
    "name": "Brent Anderson",
@@ -123,6 +123,12 @@ window.LYRIC_ROYALTY = {
    "npsLife": 17222,
    "npsTtm": 6142,
    "incomeLife": 113197
+  },
+  "Hardy (Admin)": {
+   "name": "Hardy (Admin)",
+   "npsLife": 16144,
+   "npsTtm": 16144,
+   "incomeLife": 527577
   },
   "Chris Robinson": {
    "name": "Chris Robinson",
@@ -795,10 +801,10 @@ window.LYRIC_ROYALTY = {
  },
  "topWriters": [
   {
-   "name": "Michael Hardy",
-   "npsLife": 861949,
-   "npsTtm": 861949,
-   "incomeLife": 1373382
+   "name": "Hardy (Acq)",
+   "npsLife": 845805,
+   "npsTtm": 845805,
+   "incomeLife": 845805
   },
   {
    "name": "David Garcia",

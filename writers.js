@@ -2227,44 +2227,44 @@ window.LYRIC_WRITERS = {
    "2026": 11
   }
  },
- "Michael Hardy": {
-  "name": "Michael Hardy",
-  "songs": 98,
-  "releases": 80,
+ "Hardy (Admin)": {
+  "name": "Hardy (Admin)",
+  "songs": 52,
+  "releases": 34,
   "upcoming": 5,
   "holds": 10,
   "cuts": 3,
-  "grossStreams": 3042611188,
-  "netStreams": 664143940,
-  "grossSpins": 2170014,
-  "netSpins": 485527,
-  "lumStreams": 2369397887,
-  "lumStreamsNet": 526268561,
-  "lumSpins": 1547912,
-  "lumSpinsNet": 298939,
-  "avgShare": 0.2825,
+  "grossStreams": 1178999526,
+  "netStreams": 252419581,
+  "grossSpins": 733928,
+  "netSpins": 149435,
+  "lumStreams": 1905841598,
+  "lumStreamsNet": 424622201,
+  "lumSpins": 1447062,
+  "lumSpinsNet": 275224,
+  "avgShare": 0.3361,
   "avgHoldDays": 98,
   "maxHoldDays": 232,
   "topArtists": [
    {
     "artist": "HARDY",
-    "n": 29
+    "n": 27
    },
    {
     "artist": "Morgan Wallen",
-    "n": 9
-   },
-   {
-    "artist": "Cole Swindell",
     "n": 6
    },
    {
-    "artist": "Brantley Gilbert",
-    "n": 4
+    "artist": "Jordan Davis",
+    "n": 2
+   },
+   {
+    "artist": "Ella Langley",
+    "n": 2
    },
    {
     "artist": "Nate Smith",
-    "n": 2
+    "n": 1
    }
   ],
   "topSongs": [
@@ -2275,36 +2275,31 @@ window.LYRIC_WRITERS = {
     "gross": 414692894
    },
    {
-    "song": "One Beer",
-    "artist": "HARDY",
-    "net": 64621016,
-    "gross": 344645423
-   },
-   {
     "song": "Be Her",
     "artist": "Ella Langley",
     "net": 51770351,
     "gross": 207081406
    },
    {
-    "song": "Wait In The Truck",
+    "song": "Jim Bob",
     "artist": "HARDY",
-    "net": 48417525,
-    "gross": 215189000
+    "net": 16981504,
+    "gross": 33963009
    },
    {
-    "song": "I Wrote The Book",
-    "artist": "Morgan Wallen",
-    "net": 48326926,
-    "gross": 203481794
+    "song": "Never Met Anyone Like You",
+    "artist": "Ella Langley",
+    "net": 13338573,
+    "gross": 40007719
+   },
+   {
+    "song": "Psycho",
+    "artist": "HARDY",
+    "net": 11851902,
+    "gross": 47407608
    }
   ],
   "byYear": {
-   "2019": 1,
-   "2020": 5,
-   "2021": 15,
-   "2022": 14,
-   "2023": 11,
    "2024": 3,
    "2025": 28,
    "2026": 10
@@ -3910,6 +3905,86 @@ window.LYRIC_WRITERS = {
    "2024": 6,
    "2025": 4,
    "2026": 3
+  }
+ },
+ "Hardy (Acq)": {
+  "name": "Hardy (Acq)",
+  "songs": 46,
+  "releases": 46,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 1863611662,
+  "netStreams": 411724358,
+  "grossSpins": 1436086,
+  "netSpins": 336091,
+  "lumStreams": 463556289,
+  "lumStreamsNet": 101646360,
+  "lumSpins": 100850,
+  "lumSpinsNet": 23715,
+  "avgShare": 0.2219,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Cole Swindell",
+    "n": 6
+   },
+   {
+    "artist": "Brantley Gilbert",
+    "n": 4
+   },
+   {
+    "artist": "Morgan Wallen",
+    "n": 3
+   },
+   {
+    "artist": "HARDY",
+    "n": 2
+   },
+   {
+    "artist": "Piano Dreamers",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "One Beer",
+    "artist": "HARDY",
+    "net": 64621016,
+    "gross": 344645423
+   },
+   {
+    "song": "Wait In The Truck",
+    "artist": "HARDY",
+    "net": 48417525,
+    "gross": 215189000
+   },
+   {
+    "song": "I Wrote The Book",
+    "artist": "Morgan Wallen",
+    "net": 48326926,
+    "gross": 203481794
+   },
+   {
+    "song": "Single Saturday Night",
+    "artist": "Cole Swindell",
+    "net": 42559795,
+    "gross": 170239180
+   },
+   {
+    "song": "Beers On Me",
+    "artist": "Dierks Bentley",
+    "net": 37478200,
+    "gross": 149912801
+   }
+  ],
+  "byYear": {
+   "2019": 1,
+   "2020": 5,
+   "2021": 15,
+   "2022": 14,
+   "2023": 11
   }
  },
  "Camylio": {
