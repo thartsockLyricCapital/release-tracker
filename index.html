@@ -604,8 +604,14 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
   .pli:first-child{border-top:0}
   .pli-d{font-size:11px;color:var(--ink-faint);font-weight:700;white-space:nowrap;min-width:60px;flex:0 0 auto}
   .pli-main{display:flex;flex-direction:column;min-width:0}
-  .pli-t{font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .pli-a{font-size:11.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pli-t{font-size:13px;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+  .pli-t:hover{color:var(--blue);text-decoration:underline}
+  .pli-sub{font-size:11.5px;color:var(--ink-soft);line-height:1.45;margin-top:1px}
+  .pli-a{font-weight:700;color:var(--ink-soft)}
+  .pli-sep{color:var(--ink-faint)}
+  .pli-wr{color:var(--ink-faint)}
+  .pli-w{color:var(--blue);cursor:pointer;font-weight:600}
+  .pli-w:hover{text-decoration:underline}
   .plist-empty{padding:16px 14px;color:var(--ink-faint);font-size:12px}
   .plist-more{padding:10px 14px;color:var(--ink-faint);font-size:11.5px;font-weight:700;border-top:1px solid var(--line)}
   @media(max-width:800px){.pipe-lists{grid-template-columns:1fr}}
@@ -938,7 +944,15 @@ function renderPipeline(){
   const CAP=300;
   const listCol=(title,color,arr,f)=>{
     const shown=arr.slice(0,CAP);
-    const body=shown.length?shown.map(s=>`<div class="pli" title="${esc(s.a+' — '+s.t+((s.w&&s.w.length)?'  ·  '+s.w.join(', '):''))}"><span class="pli-d">${shortY(s[f])}</span><span class="pli-main"><span class="pli-t">${esc(s.t||'—')}</span><span class="pli-a">${esc(s.a||'')}</span></span></div>`).join(''):'<div class="plist-empty">None in range</div>';
+    const body=shown.length?shown.map(s=>{
+      const sp='https://open.spotify.com/search/'+encodeURIComponent(((s.a||'')+' '+(s.t||'')).trim());
+      const wl=(s.w||[]).map(nm=>`<span class="pli-w" data-writer="${esc(nm)}">${esc(nm)}</span>`).join(', ');
+      const ctx=[(s.v||[]).join(', '), (s.g&&s.g!=='Unspecified')?s.g:''].filter(Boolean).join(' · ');
+      return `<div class="pli"${ctx?` title="${esc(ctx)}"`:''}><span class="pli-d">${shortY(s[f])}</span><span class="pli-main">`
+        +`<a class="pli-t" href="${sp}" target="_blank" rel="noopener" title="Search on Spotify">${esc(s.t||'—')}</a>`
+        +`<span class="pli-sub"><span class="pli-a">${esc(s.a||'—')}</span>${wl?` <span class="pli-sep">·</span> <span class="pli-wr">✎ ${wl}</span>`:''}</span>`
+        +`</span></div>`;
+    }).join(''):'<div class="plist-empty">None in range</div>';
     const more=arr.length>CAP?`<div class="plist-more">+${(arr.length-CAP).toLocaleString()} more…</div>`:'';
     return `<div class="plist"><div class="plist-h"><span class="plist-dot" style="background:${color}"></span>${title}<span class="plist-c">${arr.length.toLocaleString()}</span></div><div class="plist-b">${body}${more}</div></div>`;
   };
