@@ -785,7 +785,18 @@ function fmtUSD(n){ if(n==null||isNaN(n)) return '—';
   return '$'+Math.round(n);
 }
 function royClean(t){ return (t||'').replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim().toLowerCase(); }
-function royForSong(r){ const R=window.LYRIC_ROYALTY; return R&&R.songs?R.songs[royClean(r.songTitle)]||null:null; }
+let _royPrim=null;
+function royPrimaryMap(){  // one recording per composition title = the highest-streams (original) cut
+  if(_royPrim) return _royPrim;
+  const C=window.LYRIC_CHARTS||{}, best={};
+  data.forEach(r=>{ const k=royClean(r.songTitle); if(!k) return; const s=(C[r.id]&&C[r.id].streams)||0;
+    if(!(k in best) || s>best[k].s) best[k]={id:r.id,s}; });
+  _royPrim={}; Object.keys(best).forEach(k=>_royPrim[k]=best[k].id); return _royPrim;
+}
+function royForSong(r){ const R=window.LYRIC_ROYALTY; if(!(R&&R.songs)) return null;
+  const k=royClean(r.songTitle); const ry=R.songs[k]; if(!ry) return null;
+  return royPrimaryMap()[k]===r.id ? ry : null;   // show royalty only on the primary recording
+}
 function royForWriter(name){ const R=window.LYRIC_ROYALTY; return R&&R.writers?R.writers[name]||null:null; }
 function lumForSong(r){ const L=window.LYRIC_LUMINATE; return (L&&r&&r.isrc)?(L[r.isrc]||null):null; }
 function basisPair(net,gross){ // primary/secondary driven by the global basis toggle
@@ -1375,7 +1386,7 @@ function renderWriters(){
     </button>`; }).join('') || '<div style="color:var(--ink-faint);font-size:13px;padding:6px">No writers match.</div>';
 }
 function render(){
-  syncFilters(); syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderQuality(); renderSources();
+  _royPrim=null; syncFilters(); syncBasis(); renderKPIs(); renderBoards(); renderRoyalty(); renderStats(); renderRail(); renderWriters(); renderPipeline(); renderQuality(); renderSources();
   { const g=$('#royGap'); if(g) g.innerHTML=renderGapChart(); }
   if(state.view==='calendar'){ $('#calendarView').classList.remove('hidden'); $('#tableView').classList.add('hidden'); renderCalendar(); }
   else { $('#tableView').classList.remove('hidden'); $('#calendarView').classList.add('hidden'); renderTable(); }
