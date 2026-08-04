@@ -548,10 +548,10 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
     </div>
     <div class="boards" id="boards"></div>
     <div class="section-head" style="margin-top:28px">
-      <span class="eyebrow">Momentum</span>
-      <h3>Breakout tracks — biggest 6-month movers</h3>
+      <span class="eyebrow">New &amp; rising</span>
+      <h3>New releases gaining traction</h3>
     </div>
-    <p style="color:var(--ink-soft);font-size:13px;max-width:780px;margin:-4px 0 14px">Surging songs (grew 50%+ or newly emerged in the last 6 months), ranked by the <b>Spirit-adjusted net streams / radio spins they added</b> — not the growth multiple, which can look huge off a tiny base. The multiple is shown for context. Follows the filters and the gross/net toggle.</p>
+    <p style="color:var(--ink-soft);font-size:13px;max-width:800px;margin:-4px 0 14px">Songs <b>released in the last 12 months</b>, ranked by the Spirit-adjusted net streams / radio spins they've added over the last 6 months. This is the forward-looking view — which <b>new</b> cuts are breaking through — distinct from the all-ages movers above. Release date shown per row; follows the filters and the gross/net toggle.</p>
     <div class="boards" id="breakouts"></div>
    </div>
   </section>
@@ -1179,17 +1179,18 @@ function renderBoards(){
 function renderBreakouts(){
   const host=$('#breakouts'); if(!host) return;
   const C=window.LYRIC_CHARTS||{}, FR=filtered();
-  const mk=(cur,prev)=>FR.map(r=>{ const c=C[r.id]; if(!c) return null;
-      const v=c[cur], p=c[prev];
-      if(typeof v!=='number'||typeof p!=='number') return null;
-      const add=v-p; if(add<=0) return null;
+  const cut=new Date(NOW.getTime()-365*864e5).toISOString().slice(0,10), today=NOW.toISOString().slice(0,10);
+  const recent=r=> r.releaseDate && r.releaseDate>=cut && r.releaseDate<=today;   // released in the last 12 months
+  const mk=(cur,prev)=>FR.filter(recent).map(r=>{ const c=C[r.id]; if(!c) return null;
+      const v=c[cur]; if(typeof v!=='number') return null;
+      const p=c[prev]; const pv=(typeof p==='number'&&p>0)?p:0;   // brand-new songs have no 6-mo-ago baseline
+      const add=v-pv; if(add<=0) return null;
       const f=factor(r), net=add*f; if(net<=0) return null;
-      const mult = p>0 ? v/p : null;              // null = brand-new (no 6-mo-ago baseline)
-      if(mult!==null && mult<1.5) return null;     // breakout gate: surged 50%+ or newly emerged
-      return {song:r.songTitle||'—', artist:r.artist||'—', writer:r.spiritSongwriters||'', pct:r.spiritPct, net, mult, cur:v*f};
-    }).filter(Boolean).sort((a,b)=>b.net-a.net);   // rank by ABSOLUTE net added, not the multiple
-  host.innerHTML = breakoutBoard('Streaming breakouts', mk('streams','prevStreams'), 'streams')
-                 + breakoutBoard('Radio breakouts', mk('spins','prevSpins'), 'spins');
+      const mult = pv>0 ? v/pv : null;
+      return {song:r.songTitle||'—', artist:r.artist||'—', writer:r.spiritSongwriters||'', pct:r.spiritPct, net, mult, cur:v*f, rd:r.releaseDate};
+    }).filter(Boolean).sort((a,b)=>b.net-a.net);
+  host.innerHTML = breakoutBoard('New &amp; rising — streaming', mk('streams','prevStreams'), 'streams')
+                 + breakoutBoard('New &amp; rising — radio', mk('spins','prevSpins'), 'spins');
 }
 function breakoutBoard(title, rows, unit){
   const top=rows.slice(0,10);
@@ -1197,13 +1198,13 @@ function breakoutBoard(title, rows, unit){
   const body=top.map((x,i)=>`<div class="brow">
       <span class="brank t${i+1<=3?i+1:''}">${i+1}</span>
       <div><div class="bsong" title="${esc(x.song)}">${esc(x.song)}</div>
-        <div class="bsub">${esc(x.artist)} · ${writerLine(x.writer)}${x.pct!=null?' · '+splitChip(x.pct)+' Spirit':''} · <span class="bo-mult" title="growth vs 6 months ago">${fmtMult(x.mult)}</span></div></div>
+        <div class="bsub">${esc(x.artist)} · ${writerLine(x.writer)}${x.pct!=null?' · '+splitChip(x.pct)+' Spirit':''} · <span class="bo-mult" title="released ${fmtDate(x.rd)}">${fmtShort(x.rd)}</span></div></div>
       <div class="bmetric"><span class="bn">+${fmtNum(x.net)}</span>
         <span class="bt">${fmtNum(x.cur)} ${unit} total</span></div>
-    </div>`).join('') || '<div class="brow head"><span></span><div class="bsub">No breakouts in the current filter.</div><span></span></div>';
+    </div>`).join('') || '<div class="brow head"><span></span><div class="bsub">No releases in the last 12 months match the current filter.</div><span></span></div>';
   return `<section class="board">
-    <div class="board-h" title="Songs that surged (grew 50%+ or newly emerged) in the last 6 months, ranked by ${adjOn()?'Spirit-adjusted (net)':'gross'} ${unit} ADDED (Chartmetric). Growth multiple shown for context only.">
-      <span class="eyebrow">Momentum · 6 mo</span><h3>${title}</h3>
+    <div class="board-h" title="Songs released in the last 12 months, ranked by ${adjOn()?'Spirit-adjusted (net)':'gross'} ${unit} ADDED over the last 6 months (Chartmetric).">
+      <span class="eyebrow">New · last 12 mo</span><h3>${title}</h3>
       <span class="when">${adjOn()?'net ':''}${unit} added</span></div>
     ${body}</section>`;
 }
