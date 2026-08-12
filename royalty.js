@@ -1,320 +1,320 @@
-// Songs of Spirit royalties — pulled live from Sigma/Snowflake (SPIRIT_NPS_REPORT_CURRENT, SOS catalogue).
-// Spirit NPS lifetime + trailing-12-mo (through June 2026) + lifetime income, USD. ALL clients mapped to writers.
+// Songs of Spirit royalties — Sigma/Snowflake (SPIRIT_NPS_REPORT_CURRENT, SOS catalogue).
+// Spirit NPS lifetime + trailing-12-mo (through July 2026) + lifetime income, USD. Clients mapped to writers.
 window.LYRIC_ROYALTY = {
  "meta": {
-  "period": "Through June 2026 statements",
+  "period": "Through July 2026 statements",
   "basis": "Spirit Net Publisher Share (NPS), USD",
-  "window": "TTM = Jul 2025-Jun 2026",
+  "window": "TTM = Aug 2025-Jul 2026",
   "catalogue": "Songs of Spirit (SOS)",
   "source": "Sigma / Snowflake — SPIRIT_NPS_REPORT_CURRENT (live pull)",
   "totals": {
-   "npsLife": 1993397,
-   "npsTtm": 1524376,
-   "incomeLife": 5355067,
-   "songs": 3600,
-   "clients": 135
+   "npsLife": 2005470,
+   "npsTtm": 1521899,
+   "incomeLife": 5443895,
+   "songs": 3625,
+   "clients": 137
   }
  },
  "writers": {
   "Hardy (Acq)": {
    "name": "Hardy (Acq)",
-   "npsLife": 845805,
-   "npsTtm": 845805,
-   "incomeLife": 845805
+   "npsLife": 846407,
+   "npsTtm": 846407,
+   "incomeLife": 846407
   },
   "Brent Anderson": {
    "name": "Brent Anderson",
-   "npsLife": 152235,
-   "npsTtm": 49118,
-   "incomeLife": 330997
+   "npsLife": 152587,
+   "npsTtm": 49226,
+   "incomeLife": 332323
   },
   "David Garcia": {
    "name": "David Garcia",
-   "npsLife": 155975,
-   "npsTtm": 49361,
-   "incomeLife": 419591
+   "npsLife": 156532,
+   "npsTtm": 49343,
+   "incomeLife": 422199
   },
   "Rap-A-Lot (N-The-Water)": {
    "name": "Rap-A-Lot (N-The-Water)",
-   "npsLife": 141567,
-   "npsTtm": 109560,
-   "incomeLife": 1050569
+   "npsLife": 143977,
+   "npsTtm": 106758,
+   "incomeLife": 1068543
   },
   "Nick Gale": {
    "name": "Nick Gale",
    "npsLife": 106920,
    "npsTtm": 62128,
-   "incomeLife": 323662
+   "incomeLife": 344588
   },
   "Monty Criswell": {
    "name": "Monty Criswell",
-   "npsLife": 62507,
-   "npsTtm": 55795,
-   "incomeLife": 143214
+   "npsLife": 63127,
+   "npsTtm": 56198,
+   "incomeLife": 145647
   },
   "Jeremy Bussey": {
    "name": "Jeremy Bussey",
-   "npsLife": 50342,
-   "npsTtm": 49920,
-   "incomeLife": 85946
+   "npsLife": 52791,
+   "npsTtm": 52326,
+   "incomeLife": 90108
   },
   "Derek George": {
    "name": "Derek George",
-   "npsLife": 48129,
-   "npsTtm": 41858,
-   "incomeLife": 110370
+   "npsLife": 48398,
+   "npsTtm": 41908,
+   "incomeLife": 111400
   },
   "Justin Richards": {
    "name": "Justin Richards",
-   "npsLife": 62392,
-   "npsTtm": 52108,
-   "incomeLife": 85123
+   "npsLife": 63055,
+   "npsTtm": 51820,
+   "incomeLife": 86525
   },
   "Remy Gautreau": {
    "name": "Remy Gautreau",
-   "npsLife": 42060,
-   "npsTtm": 8644,
-   "incomeLife": 145759
+   "npsLife": 42097,
+   "npsTtm": 8603,
+   "incomeLife": 145888
   },
   "Bobby Hamrick": {
    "name": "Bobby Hamrick",
-   "npsLife": 38492,
-   "npsTtm": 36624,
-   "incomeLife": 104768
+   "npsLife": 38729,
+   "npsTtm": 36855,
+   "incomeLife": 105672
   },
   "Mike Fiorentino": {
    "name": "Mike Fiorentino",
-   "npsLife": 25330,
-   "npsTtm": 788,
-   "incomeLife": 52888
-  },
-  "Cale Dodds": {
-   "name": "Cale Dodds",
-   "npsLife": 27149,
-   "npsTtm": 4248,
-   "incomeLife": 109432
+   "npsLife": 25387,
+   "npsTtm": 773,
+   "incomeLife": 52961
   },
   "Justin Halpin": {
    "name": "Justin Halpin",
-   "npsLife": 24992,
-   "npsTtm": 11553,
-   "incomeLife": 82792
+   "npsLife": 25634,
+   "npsTtm": 11509,
+   "incomeLife": 84076
   },
-  "Camylio": {
-   "name": "Camylio",
-   "npsLife": 20492,
-   "npsTtm": 19079,
-   "incomeLife": 69166
+  "Cale Dodds": {
+   "name": "Cale Dodds",
+   "npsLife": 27178,
+   "npsTtm": 4241,
+   "incomeLife": 109571
   },
   "Ryan Beaver": {
    "name": "Ryan Beaver",
-   "npsLife": 25816,
-   "npsTtm": 20134,
-   "incomeLife": 92708
+   "npsLife": 26875,
+   "npsTtm": 20681,
+   "incomeLife": 97245
+  },
+  "Camylio": {
+   "name": "Camylio",
+   "npsLife": 20636,
+   "npsTtm": 19219,
+   "incomeLife": 69803
   },
   "Patrick Ridgen": {
    "name": "Patrick Ridgen",
-   "npsLife": 18276,
-   "npsTtm": 4921,
-   "incomeLife": 36757
+   "npsLife": 18282,
+   "npsTtm": 3714,
+   "incomeLife": 36771
   },
   "Rich Robinson": {
    "name": "Rich Robinson",
-   "npsLife": 17222,
-   "npsTtm": 6142,
-   "incomeLife": 113197
+   "npsLife": 17315,
+   "npsTtm": 6097,
+   "incomeLife": 113869
   },
   "Hardy (Admin)": {
    "name": "Hardy (Admin)",
-   "npsLife": 16144,
-   "npsTtm": 16144,
-   "incomeLife": 527577
+   "npsLife": 16871,
+   "npsTtm": 16871,
+   "incomeLife": 550343
   },
   "Chris Robinson": {
    "name": "Chris Robinson",
-   "npsLife": 14502,
-   "npsTtm": 4847,
-   "incomeLife": 95482
+   "npsLife": 14566,
+   "npsTtm": 4835,
+   "incomeLife": 95910
   },
   "Ely Rise": {
    "name": "Ely Rise",
-   "npsLife": 14106,
-   "npsTtm": 14106,
-   "incomeLife": 49936
+   "npsLife": 14210,
+   "npsTtm": 14210,
+   "incomeLife": 50389
   },
   "Chizzy": {
    "name": "Chizzy",
-   "npsLife": 9954,
-   "npsTtm": 4962,
-   "incomeLife": 55782
+   "npsLife": 9958,
+   "npsTtm": 4957,
+   "incomeLife": 55814
   },
   "Songs of Spirit (house)": {
    "name": "Songs of Spirit (house)",
-   "npsLife": 10707,
-   "npsTtm": 8673,
-   "incomeLife": 43622
+   "npsLife": 10718,
+   "npsTtm": 7204,
+   "incomeLife": 43754
   },
   "JJ Scheff": {
    "name": "JJ Scheff",
-   "npsLife": 6580,
-   "npsTtm": 6580,
-   "incomeLife": 26210
+   "npsLife": 6625,
+   "npsTtm": 6625,
+   "incomeLife": 26417
   },
   "Autumn Rowe": {
    "name": "Autumn Rowe",
-   "npsLife": 5639,
-   "npsTtm": 3638,
-   "incomeLife": 33858
+   "npsLife": 5650,
+   "npsTtm": 3470,
+   "incomeLife": 33946
   },
   "Mira Housey": {
    "name": "Mira Housey",
-   "npsLife": 5707,
-   "npsTtm": 5502,
-   "incomeLife": 18636
+   "npsLife": 5735,
+   "npsTtm": 3672,
+   "incomeLife": 18728
   },
   "Melodie Wagner": {
    "name": "Melodie Wagner",
    "npsLife": 4613,
-   "npsTtm": 3614,
+   "npsTtm": 3613,
    "incomeLife": 14762
   },
   "Shane Stevens": {
    "name": "Shane Stevens",
-   "npsLife": 5473,
-   "npsTtm": 2960,
-   "incomeLife": 26755
-  },
-  "Joy Williams": {
-   "name": "Joy Williams",
-   "npsLife": 4198,
-   "npsTtm": 2186,
-   "incomeLife": 21662
+   "npsLife": 5501,
+   "npsTtm": 2940,
+   "incomeLife": 26894
   },
   "Joe Janiak": {
    "name": "Joe Janiak",
-   "npsLife": 2883,
-   "npsTtm": 2883,
-   "incomeLife": 6542
+   "npsLife": 3138,
+   "npsTtm": 3138,
+   "incomeLife": 7655
+  },
+  "Joy Williams": {
+   "name": "Joy Williams",
+   "npsLife": 4202,
+   "npsTtm": 2178,
+   "incomeLife": 21685
   },
   "Adam Wood": {
    "name": "Adam Wood",
-   "npsLife": 2782,
-   "npsTtm": 2306,
-   "incomeLife": 6983
+   "npsLife": 2806,
+   "npsTtm": 2325,
+   "incomeLife": 7061
   },
   "Jason Vance Harris": {
    "name": "Jason Vance Harris",
-   "npsLife": 2600,
-   "npsTtm": 2406,
-   "incomeLife": 8904
+   "npsLife": 2624,
+   "npsTtm": 2216,
+   "incomeLife": 9013
   },
   "LECADE": {
    "name": "LECADE",
-   "npsLife": 2348,
-   "npsTtm": 2348,
-   "incomeLife": 8349
+   "npsLife": 2377,
+   "npsTtm": 2377,
+   "incomeLife": 8477
   },
   "Jessica Cayne": {
    "name": "Jessica Cayne",
-   "npsLife": 3289,
-   "npsTtm": 2852,
-   "incomeLife": 4833
+   "npsLife": 3415,
+   "npsTtm": 2929,
+   "incomeLife": 5005
   },
   "Sawyer Utah": {
    "name": "Sawyer Utah",
-   "npsLife": 3471,
-   "npsTtm": 2416,
-   "incomeLife": 5785
+   "npsLife": 3550,
+   "npsTtm": 2459,
+   "incomeLife": 5969
   },
   "Noelle Scaggs": {
    "name": "Noelle Scaggs",
    "npsLife": 1992,
-   "npsTtm": 558,
-   "incomeLife": 20056
+   "npsTtm": 537,
+   "incomeLife": 20075
   },
   "Brock Westover": {
    "name": "Brock Westover",
-   "npsLife": 1765,
-   "npsTtm": 1418,
-   "incomeLife": 3550
+   "npsLife": 1781,
+   "npsTtm": 1214,
+   "incomeLife": 3584
   },
   "Tim Montana": {
    "name": "Tim Montana",
-   "npsLife": 1096,
-   "npsTtm": 550,
-   "incomeLife": 2738
+   "npsLife": 1102,
+   "npsTtm": 546,
+   "incomeLife": 2755
   },
   "Matthew Morrisey": {
    "name": "Matthew Morrisey",
-   "npsLife": 1372,
-   "npsTtm": 1000,
-   "incomeLife": 2252
+   "npsLife": 1383,
+   "npsTtm": 997,
+   "incomeLife": 2278
   },
   "Adam Chaffins": {
    "name": "Adam Chaffins",
-   "npsLife": 1372,
-   "npsTtm": 562,
-   "incomeLife": 2914
+   "npsLife": 1387,
+   "npsTtm": 561,
+   "incomeLife": 2940
   },
   "Billy F. Gibbons": {
    "name": "Billy F. Gibbons",
-   "npsLife": 564,
-   "npsTtm": 260,
-   "incomeLife": 6283
+   "npsLife": 565,
+   "npsTtm": 254,
+   "incomeLife": 6289
   },
   "Connor McCutcheon": {
    "name": "Connor McCutcheon",
-   "npsLife": 724,
-   "npsTtm": 513,
-   "incomeLife": 1623
+   "npsLife": 741,
+   "npsTtm": 520,
+   "incomeLife": 1671
   },
   "Brooke Lee": {
    "name": "Brooke Lee",
-   "npsLife": 920,
-   "npsTtm": 633,
-   "incomeLife": 131591
+   "npsLife": 936,
+   "npsTtm": 624,
+   "incomeLife": 131625
   },
   "Brinley Addington": {
    "name": "Brinley Addington",
-   "npsLife": 369,
-   "npsTtm": 226,
-   "incomeLife": 1170
+   "npsLife": 370,
+   "npsTtm": 196,
+   "incomeLife": 1175
   },
   "Dave Cohen": {
    "name": "Dave Cohen",
    "npsLife": 273,
-   "npsTtm": 272,
+   "npsTtm": 247,
    "incomeLife": 762
   },
   "Peter Lee Johnson": {
    "name": "Peter Lee Johnson",
-   "npsLife": 158,
-   "npsTtm": 158,
-   "incomeLife": 514
+   "npsLife": 172,
+   "npsTtm": 172,
+   "incomeLife": 562
   },
   "Ben Samama": {
    "name": "Ben Samama",
-   "npsLife": 100,
-   "npsTtm": 100,
-   "incomeLife": 390
+   "npsLife": 153,
+   "npsTtm": 153,
+   "incomeLife": 617
+  },
+  "Liz Lokre": {
+   "name": "Liz Lokre",
+   "npsLife": 110,
+   "npsTtm": 110,
+   "incomeLife": 459
   },
   "Erik Belz": {
    "name": "Erik Belz",
    "npsLife": 59,
-   "npsTtm": 36,
-   "incomeLife": 448
-  },
-  "Liz Lokre": {
-   "name": "Liz Lokre",
-   "npsLife": 55,
-   "npsTtm": 55,
-   "incomeLife": 224
+   "npsTtm": 35,
+   "incomeLife": 450
   },
   "Tyler Reeve": {
    "name": "Tyler Reeve",
-   "npsLife": 45,
-   "npsTtm": 34,
-   "incomeLife": 185
+   "npsLife": 46,
+   "npsTtm": 35,
+   "incomeLife": 191
   },
   "Timothy Prater": {
    "name": "Timothy Prater",
@@ -332,25 +332,43 @@ window.LYRIC_ROYALTY = {
    "name": "Josh Dunne",
    "npsLife": 25,
    "npsTtm": 9,
-   "incomeLife": 74
+   "incomeLife": 75
+  },
+  "Jeffrey Adam Holmes": {
+   "name": "Jeffrey Adam Holmes",
+   "npsLife": 22,
+   "npsTtm": 22,
+   "incomeLife": 94
+  },
+  "Kasey Tyndall": {
+   "name": "Kasey Tyndall",
+   "npsLife": 20,
+   "npsTtm": 20,
+   "incomeLife": 82
+  },
+  "Angel Delrae": {
+   "name": "Angel Delrae",
+   "npsLife": 15,
+   "npsTtm": 15,
+   "incomeLife": 25
+  },
+  "Zach Beeken": {
+   "name": "Zach Beeken",
+   "npsLife": 10,
+   "npsTtm": 10,
+   "incomeLife": 39
   },
   "Nathan Barlowe": {
    "name": "Nathan Barlowe",
    "npsLife": 9,
    "npsTtm": 4,
-   "incomeLife": 22
+   "incomeLife": 23
   },
   "Sam Carter": {
    "name": "Sam Carter",
    "npsLife": 10,
    "npsTtm": 10,
    "incomeLife": 11
-  },
-  "Zach Beeken": {
-   "name": "Zach Beeken",
-   "npsLife": 9,
-   "npsTtm": 9,
-   "incomeLife": 38
   },
   "Nick Autry": {
    "name": "Nick Autry",
@@ -362,7 +380,7 @@ window.LYRIC_ROYALTY = {
    "name": "Joe Bryson",
    "npsLife": 3,
    "npsTtm": 3,
-   "incomeLife": 4
+   "incomeLife": 5
   },
   "Marc Tinez": {
    "name": "Marc Tinez",
@@ -374,7 +392,7 @@ window.LYRIC_ROYALTY = {
    "name": "Frank Ray",
    "npsLife": 0,
    "npsTtm": 0,
-   "incomeLife": 15679
+   "incomeLife": 16495
   }
  },
  "songs": {
@@ -802,93 +820,93 @@ window.LYRIC_ROYALTY = {
  "topWriters": [
   {
    "name": "Hardy (Acq)",
-   "npsLife": 845805,
-   "npsTtm": 845805,
-   "incomeLife": 845805
+   "npsLife": 846407,
+   "npsTtm": 846407,
+   "incomeLife": 846407
   },
   {
    "name": "David Garcia",
-   "npsLife": 155975,
-   "npsTtm": 49361,
-   "incomeLife": 419591
+   "npsLife": 156532,
+   "npsTtm": 49343,
+   "incomeLife": 422199
   },
   {
    "name": "Brent Anderson",
-   "npsLife": 152235,
-   "npsTtm": 49118,
-   "incomeLife": 330997
+   "npsLife": 152587,
+   "npsTtm": 49226,
+   "incomeLife": 332323
   },
   {
    "name": "Rap-A-Lot (N-The-Water)",
-   "npsLife": 141567,
-   "npsTtm": 109560,
-   "incomeLife": 1050569
+   "npsLife": 143977,
+   "npsTtm": 106758,
+   "incomeLife": 1068543
   },
   {
    "name": "Nick Gale",
    "npsLife": 106920,
    "npsTtm": 62128,
-   "incomeLife": 323662
+   "incomeLife": 344588
   },
   {
    "name": "Monty Criswell",
-   "npsLife": 62507,
-   "npsTtm": 55795,
-   "incomeLife": 143214
+   "npsLife": 63127,
+   "npsTtm": 56198,
+   "incomeLife": 145647
   },
   {
    "name": "Justin Richards",
-   "npsLife": 62392,
-   "npsTtm": 52108,
-   "incomeLife": 85123
+   "npsLife": 63055,
+   "npsTtm": 51820,
+   "incomeLife": 86525
   },
   {
    "name": "Jeremy Bussey",
-   "npsLife": 50342,
-   "npsTtm": 49920,
-   "incomeLife": 85946
+   "npsLife": 52791,
+   "npsTtm": 52326,
+   "incomeLife": 90108
   },
   {
    "name": "Derek George",
-   "npsLife": 48129,
-   "npsTtm": 41858,
-   "incomeLife": 110370
+   "npsLife": 48398,
+   "npsTtm": 41908,
+   "incomeLife": 111400
   },
   {
    "name": "Remy Gautreau",
-   "npsLife": 42060,
-   "npsTtm": 8644,
-   "incomeLife": 145759
+   "npsLife": 42097,
+   "npsTtm": 8603,
+   "incomeLife": 145888
   },
   {
    "name": "Bobby Hamrick",
-   "npsLife": 38492,
-   "npsTtm": 36624,
-   "incomeLife": 104768
+   "npsLife": 38729,
+   "npsTtm": 36855,
+   "incomeLife": 105672
   },
   {
    "name": "Cale Dodds",
-   "npsLife": 27149,
-   "npsTtm": 4248,
-   "incomeLife": 109432
+   "npsLife": 27178,
+   "npsTtm": 4241,
+   "incomeLife": 109571
   },
   {
    "name": "Ryan Beaver",
-   "npsLife": 25816,
-   "npsTtm": 20134,
-   "incomeLife": 92708
-  },
-  {
-   "name": "Mike Fiorentino",
-   "npsLife": 25330,
-   "npsTtm": 788,
-   "incomeLife": 52888
+   "npsLife": 26875,
+   "npsTtm": 20681,
+   "incomeLife": 97245
   },
   {
    "name": "Justin Halpin",
-   "npsLife": 24992,
-   "npsTtm": 11553,
-   "incomeLife": 82792
+   "npsLife": 25634,
+   "npsTtm": 11509,
+   "incomeLife": 84076
+  },
+  {
+   "name": "Mike Fiorentino",
+   "npsLife": 25387,
+   "npsTtm": 773,
+   "incomeLife": 52961
   }
  ],
  "topSongs": [

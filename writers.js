@@ -4,20 +4,20 @@ window.LYRIC_WRITERS = {
   "name": "Brent Anderson",
   "songs": 136,
   "releases": 30,
-  "upcoming": 6,
-  "holds": 93,
+  "upcoming": 9,
+  "holds": 90,
   "cuts": 7,
-  "grossStreams": 104350473,
-  "netStreams": 55408841,
-  "grossSpins": 402031,
-  "netSpins": 231948,
-  "lumStreams": 208763666,
-  "lumStreamsNet": 109627927,
-  "lumSpins": 375013,
-  "lumSpinsNet": 197903,
+  "grossStreams": 105859525,
+  "netStreams": 56236110,
+  "grossSpins": 404135,
+  "netSpins": 233061,
+  "lumStreams": 201642487,
+  "lumStreamsNet": 105770397,
+  "lumSpins": 357249,
+  "lumSpinsNet": 188553,
   "avgShare": 0.5487,
-  "avgHoldDays": 374,
-  "maxHoldDays": 913,
+  "avgHoldDays": 389,
+  "maxHoldDays": 925,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
@@ -44,59 +44,59 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Cab In A Solo",
     "artist": "Scotty McCreery",
-    "net": 15830163,
-    "gross": 27115730
+    "net": 16156328,
+    "gross": 27674423
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 4985004,
-    "gross": 6646672
+    "net": 5028396,
+    "gross": 6704528
    },
    {
     "song": "Mine For The Summer",
     "artist": "Jameson Rodgers",
-    "net": 1484028,
-    "gross": 5936112
+    "net": 1486939,
+    "gross": 5947759
    },
    {
     "song": "Can't Pass The Bar",
     "artist": "Scotty McCreery",
-    "net": 1236173,
-    "gross": 1798070
+    "net": 1255640,
+    "gross": 1826386
    }
   ],
   "byYear": {
    "2023": 2,
    "2024": 11,
    "2025": 23,
-   "2026": 9
+   "2026": 11
   }
  },
  "David Garcia": {
   "name": "David Garcia",
   "songs": 66,
-  "releases": 32,
+  "releases": 33,
   "upcoming": 5,
   "holds": 22,
-  "cuts": 7,
-  "grossStreams": 237913373,
-  "netStreams": 76813031,
-  "grossSpins": 334146,
-  "netSpins": 92218,
-  "lumStreams": 277894198,
-  "lumStreamsNet": 99181316,
-  "lumSpins": 101363,
-  "lumSpinsNet": 29100,
+  "cuts": 6,
+  "grossStreams": 241058875,
+  "netStreams": 77904993,
+  "grossSpins": 335293,
+  "netSpins": 92526,
+  "lumStreams": 276960223,
+  "lumStreamsNet": 99369305,
+  "lumSpins": 100128,
+  "lumSpinsNet": 28768,
   "avgShare": 0.3679,
-  "avgHoldDays": 472,
-  "maxHoldDays": 891,
+  "avgHoldDays": 484,
+  "maxHoldDays": 903,
   "topArtists": [
    {
     "artist": "Priscilla Block",
@@ -123,39 +123,39 @@ window.LYRIC_WRITERS = {
    {
     "song": "Jim Bob",
     "artist": "HARDY",
-    "net": 16981504,
-    "gross": 33963009
+    "net": 17176068,
+    "gross": 34352136
    },
    {
     "song": "If You Were Mine",
     "artist": "Morgan Wallen",
-    "net": 16174508,
-    "gross": 64698035
+    "net": 16440373,
+    "gross": 65761495
    },
    {
     "song": "Back Then Right Now",
     "artist": "Tyler Hubbard",
-    "net": 12989773,
-    "gross": 51959094
+    "net": 13195528,
+    "gross": 52782114
    },
    {
     "song": "Good On You",
     "artist": "Priscilla Block",
-    "net": 6509924,
-    "gross": 26039697
+    "net": 6527940,
+    "gross": 26111760
    },
    {
     "song": "Country Country",
     "artist": "HARDY",
-    "net": 3284244,
-    "gross": 4926121
+    "net": 3363349,
+    "gross": 5044772
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 14,
-   "2025": 20,
-   "2026": 9
+   "2025": 19,
+   "2026": 10
   }
  },
  "Brock Westover": {
@@ -165,17 +165,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 30,
   "cuts": 9,
-  "grossStreams": 1257768,
-  "netStreams": 659650,
+  "grossStreams": 1329447,
+  "netStreams": 704961,
   "grossSpins": 672,
   "netSpins": 445,
-  "lumStreams": 819476,
-  "lumStreamsNet": 477567,
+  "lumStreams": 879261,
+  "lumStreamsNet": 516707,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.5457,
-  "avgHoldDays": 264,
-  "maxHoldDays": 690,
+  "avgHoldDays": 276,
+  "maxHoldDays": 702,
   "topArtists": [
    {
     "artist": "Haven Madison",
@@ -202,14 +202,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Anything Anymore",
     "artist": "Stella Hennen",
-    "net": 301854,
-    "gross": 452759
+    "net": 305502,
+    "gross": 458231
+   },
+   {
+    "song": "Driver Drive",
+    "artist": "Brooke Lee",
+    "net": 74603,
+    "gross": 117782
    },
    {
     "song": "Placeholder",
     "artist": "Julia Minichiello",
-    "net": 63903,
-    "gross": 95851
+    "net": 64088,
+    "gross": 96128
    },
    {
     "song": "Giddy Up",
@@ -220,14 +226,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Born To Be Country",
     "artist": "Amy Sheppard",
-    "net": 53626,
-    "gross": 160895
-   },
-   {
-    "song": "Uncross Your Heart",
-    "artist": "Haven Madison",
-    "net": 51111,
-    "gross": 76664
+    "net": 53885,
+    "gross": 161672
    }
   ],
   "byYear": {
@@ -243,17 +243,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 20,
   "cuts": 6,
-  "grossStreams": 13743461,
-  "netStreams": 5402708,
-  "grossSpins": 1559,
-  "netSpins": 864,
-  "lumStreams": 13856576,
-  "lumStreamsNet": 4664455,
-  "lumSpins": 623,
-  "lumSpinsNet": 191,
+  "grossStreams": 13872377,
+  "netStreams": 5459064,
+  "grossSpins": 1598,
+  "netSpins": 870,
+  "lumStreams": 13876230,
+  "lumStreamsNet": 4639531,
+  "lumSpins": 693,
+  "lumSpinsNet": 209,
   "avgShare": 0.5288,
-  "avgHoldDays": 330,
-  "maxHoldDays": 797,
+  "avgHoldDays": 342,
+  "maxHoldDays": 809,
   "topArtists": [
    {
     "artist": "First Time Thieves",
@@ -280,26 +280,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Liquor Talkin'",
     "artist": "Don Louis",
-    "net": 2087682,
-    "gross": 6263674
+    "net": 2110250,
+    "gross": 6331386
    },
    {
     "song": "Can't Pass The Bar",
     "artist": "Scotty McCreery",
-    "net": 1236173,
-    "gross": 1798070
+    "net": 1255640,
+    "gross": 1826386
    },
    {
     "song": "All Dogs Go To Heaven",
     "artist": "Chris Young",
-    "net": 510922,
-    "gross": 1532460
+    "net": 512874,
+    "gross": 1538315
    },
    {
     "song": "Don't Break Itself",
     "artist": "Clayton Mullen",
-    "net": 395168,
-    "gross": 592723
+    "net": 397456,
+    "gross": 596155
    },
    {
     "song": "Pockets Full Of Sand",
@@ -319,21 +319,21 @@ window.LYRIC_WRITERS = {
  "Ryan Beaver": {
   "name": "Ryan Beaver",
   "songs": 76,
-  "releases": 37,
+  "releases": 38,
   "upcoming": 14,
   "holds": 19,
-  "cuts": 6,
-  "grossStreams": 185623582,
-  "netStreams": 54494410,
-  "grossSpins": 7864,
-  "netSpins": 2581,
-  "lumStreams": 226167524,
-  "lumStreamsNet": 62554898,
-  "lumSpins": 1837,
-  "lumSpinsNet": 618,
+  "cuts": 5,
+  "grossStreams": 189272304,
+  "netStreams": 55607472,
+  "grossSpins": 7932,
+  "netSpins": 2601,
+  "lumStreams": 227742315,
+  "lumStreamsNet": 63103294,
+  "lumSpins": 1849,
+  "lumSpinsNet": 623,
   "avgShare": 0.3394,
-  "avgHoldDays": 468,
-  "maxHoldDays": 884,
+  "avgHoldDays": 480,
+  "maxHoldDays": 896,
   "topArtists": [
    {
     "artist": "Hudson Westbrook",
@@ -360,63 +360,63 @@ window.LYRIC_WRITERS = {
    {
     "song": "Mine Tomorrow",
     "artist": "Hudson Westbrook",
-    "net": 11115447,
-    "gross": 33349677
+    "net": 11199910,
+    "gross": 33603092
    },
    {
     "song": "Heart They Didn't Break",
     "artist": "Maddie & Tae",
-    "net": 7148337,
-    "gross": 21440723
+    "net": 7211373,
+    "gross": 21629794
    },
    {
     "song": "Pray Your Name",
     "artist": "Hudson Westbrook",
-    "net": 6895326,
-    "gross": 20688047
+    "net": 6954108,
+    "gross": 20864412
    },
    {
     "song": "Funny Seeing You Here",
     "artist": "Hudson Westbrook",
-    "net": 4408340,
-    "gross": 17633360
+    "net": 4330720,
+    "gross": 17322882
    },
    {
     "song": "Fight Like Hell",
     "artist": "Warren Zeiders",
-    "net": 4218256,
-    "gross": 16873027
+    "net": 4241029,
+    "gross": 16964119
    }
   ],
   "byYear": {
    "2023": 5,
    "2024": 11,
-   "2025": 17,
-   "2026": 22
+   "2025": 16,
+   "2026": 23
   }
  },
  "Adam Wood": {
   "name": "Adam Wood",
   "songs": 39,
-  "releases": 18,
+  "releases": 19,
   "upcoming": 4,
-  "holds": 8,
+  "holds": 7,
   "cuts": 9,
-  "grossStreams": 5934622,
-  "netStreams": 2313786,
-  "grossSpins": 784,
-  "netSpins": 503,
-  "lumStreams": 6039604,
-  "lumStreamsNet": 2508122,
-  "lumSpins": 419,
-  "lumSpinsNet": 240,
+  "grossStreams": 6174198,
+  "netStreams": 2385283,
+  "grossSpins": 796,
+  "netSpins": 511,
+  "lumStreams": 5959088,
+  "lumStreamsNet": 2459842,
+  "lumSpins": 392,
+  "lumSpinsNet": 235,
   "avgShare": 0.4608,
-  "avgHoldDays": 268,
-  "maxHoldDays": 632,
+  "avgHoldDays": 318,
+  "maxHoldDays": 644,
   "topArtists": [
    {
     "artist": "Smithfield",
-    "n": 6
+    "n": 7
    },
    {
     "artist": "Lee Brice",
@@ -439,39 +439,39 @@ window.LYRIC_WRITERS = {
    {
     "song": "Think About Me",
     "artist": "Tyler Braden",
-    "net": 388636,
-    "gross": 1165676
+    "net": 391615,
+    "gross": 1174613
    },
    {
     "song": "Off The Map",
     "artist": "Dierks Bentley",
-    "net": 350204,
-    "gross": 525281
+    "net": 356268,
+    "gross": 534376
    },
    {
     "song": "Anything Anymore",
     "artist": "Stella Hennen",
-    "net": 301854,
-    "gross": 452759
+    "net": 305502,
+    "gross": 458231
    },
    {
     "song": "Not As I've Done",
     "artist": "Kasey Tyndall",
-    "net": 269624,
-    "gross": 404417
+    "net": 265203,
+    "gross": 397786
    },
    {
     "song": "First Place",
     "artist": "Elvie Shane",
-    "net": 194132,
-    "gross": 776530
+    "net": 195422,
+    "gross": 781688
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 7,
    "2025": 15,
-   "2026": 8
+   "2026": 9
   }
  },
  "Nathan Barlowe": {
@@ -481,17 +481,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 6,
   "cuts": 1,
-  "grossStreams": 298182,
-  "netStreams": 166523,
-  "grossSpins": 8504,
-  "netSpins": 5669,
-  "lumStreams": 1490535,
-  "lumStreamsNet": 914786,
-  "lumSpins": 16434,
-  "lumSpinsNet": 10956,
+  "grossStreams": 363080,
+  "netStreams": 203719,
+  "grossSpins": 9517,
+  "netSpins": 6344,
+  "lumStreams": 1648476,
+  "lumStreamsNet": 1004386,
+  "lumSpins": 18690,
+  "lumSpinsNet": 12460,
   "avgShare": 0.5359,
-  "avgHoldDays": 250,
-  "maxHoldDays": 427,
+  "avgHoldDays": 262,
+  "maxHoldDays": 439,
   "topArtists": [
    {
     "artist": "Tim Montana",
@@ -524,8 +524,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Break Me Down",
     "artist": "Tim Montana",
-    "net": 57252,
-    "gross": 85874
+    "net": 76240,
+    "gross": 114355
+   },
+   {
+    "song": "Crown of Ash",
+    "artist": "Tim Montana",
+    "net": 18208,
+    "gross": 36417
    },
    {
     "song": "Candy Cigarettes",
@@ -547,22 +553,22 @@ window.LYRIC_WRITERS = {
  },
  "Jessica Cayne": {
   "name": "Jessica Cayne",
-  "songs": 59,
+  "songs": 60,
   "releases": 37,
   "upcoming": 2,
-  "holds": 18,
+  "holds": 19,
   "cuts": 2,
-  "grossStreams": 15526675,
-  "netStreams": 6067516,
-  "grossSpins": 3273,
-  "netSpins": 1636,
-  "lumStreams": 6051866,
-  "lumStreamsNet": 2341022,
+  "grossStreams": 15756916,
+  "netStreams": 6169989,
+  "grossSpins": 3283,
+  "netSpins": 1641,
+  "lumStreams": 6069340,
+  "lumStreamsNet": 2355758,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.4978,
-  "avgHoldDays": 313,
-  "maxHoldDays": 784,
+  "avgShare": 0.5006,
+  "avgHoldDays": 308,
+  "maxHoldDays": 796,
   "topArtists": [
    {
     "artist": "Haven Madison",
@@ -589,20 +595,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "The Whiskey's Gone",
     "artist": "Alli Walker",
-    "net": 1220664,
-    "gross": 3661261
+    "net": 1237763,
+    "gross": 3712548
    },
    {
     "song": "On The Fence",
     "artist": "Gowa Gibbs",
-    "net": 1041005,
-    "gross": 2011994
+    "net": 1051919,
+    "gross": 2033087
    },
    {
     "song": "Talking Bout Tonight",
     "artist": "The Kruse Brothers",
-    "net": 580369,
-    "gross": 1160738
+    "net": 613347,
+    "gross": 1226694
    },
    {
     "song": "Take It As A Blessing",
@@ -613,8 +619,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Afterglow",
     "artist": "Kelsey Parks",
-    "net": 314078,
-    "gross": 1256313
+    "net": 317630,
+    "gross": 1270523
    }
   ],
   "byYear": {
@@ -631,17 +637,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 3,
   "holds": 6,
   "cuts": 0,
-  "grossStreams": 7983457,
-  "netStreams": 3618438,
-  "grossSpins": 3253,
-  "netSpins": 1626,
-  "lumStreams": 4050222,
-  "lumStreamsNet": 1617959,
+  "grossStreams": 8063773,
+  "netStreams": 3665953,
+  "grossSpins": 3263,
+  "netSpins": 1631,
+  "lumStreams": 4063368,
+  "lumStreamsNet": 1614578,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.5204,
-  "avgHoldDays": 610,
-  "maxHoldDays": 834,
+  "avgHoldDays": 622,
+  "maxHoldDays": 846,
   "topArtists": [
    {
     "artist": "Jess Moskaluke",
@@ -668,14 +674,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "On The Fence",
     "artist": "Gowa Gibbs",
-    "net": 1041005,
-    "gross": 2011994
+    "net": 1051919,
+    "gross": 2033087
    },
    {
     "song": "Talking Bout Tonight",
     "artist": "The Kruse Brothers",
-    "net": 580369,
-    "gross": 1160738
+    "net": 613347,
+    "gross": 1226694
    },
    {
     "song": "Take It As A Blessing",
@@ -686,8 +692,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Love On The Radio",
     "artist": "Clayton Mullen",
-    "net": 344573,
-    "gross": 1378292
+    "net": 335322,
+    "gross": 1341288
    },
    {
     "song": "The Life For Me",
@@ -707,20 +713,20 @@ window.LYRIC_WRITERS = {
   "name": "Derek George",
   "songs": 89,
   "releases": 22,
-  "upcoming": 1,
-  "holds": 64,
-  "cuts": 2,
-  "grossStreams": 63723733,
-  "netStreams": 37601532,
-  "grossSpins": 249399,
-  "netSpins": 142887,
-  "lumStreams": 190017887,
-  "lumStreamsNet": 103980907,
-  "lumSpins": 363106,
-  "lumSpinsNet": 191123,
+  "upcoming": 5,
+  "holds": 59,
+  "cuts": 3,
+  "grossStreams": 64723892,
+  "netStreams": 38150912,
+  "grossSpins": 251434,
+  "netSpins": 143960,
+  "lumStreams": 183928469,
+  "lumStreamsNet": 100567588,
+  "lumSpins": 345628,
+  "lumSpinsNet": 181941,
   "avgShare": 0.7308,
-  "avgHoldDays": 271,
-  "maxHoldDays": 865,
+  "avgHoldDays": 287,
+  "maxHoldDays": 877,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
@@ -747,59 +753,59 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 4985004,
-    "gross": 6646672
+    "net": 5028396,
+    "gross": 6704528
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1824513,
-    "gross": 2454613
+    "net": 1825376,
+    "gross": 2455773
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery",
-    "net": 1103899,
-    "gross": 1379874
+    "net": 1108331,
+    "gross": 1385414
    },
    {
     "song": "Swim Up Bar",
     "artist": "Scotty McCreery",
-    "net": 954860,
-    "gross": 1206546
+    "net": 966616,
+    "gross": 1221401
    }
   ],
   "byYear": {
    "2023": 3,
    "2024": 7,
    "2025": 13,
-   "2026": 6
+   "2026": 10
   }
  },
  "Monty Criswell": {
   "name": "Monty Criswell",
   "songs": 104,
   "releases": 20,
-  "upcoming": 1,
-  "holds": 81,
-  "cuts": 2,
-  "grossStreams": 79059363,
-  "netStreams": 42036290,
-  "grossSpins": 278596,
-  "netSpins": 152557,
-  "lumStreams": 235139458,
-  "lumStreamsNet": 118083560,
-  "lumSpins": 408147,
-  "lumSpinsNet": 206138,
+  "upcoming": 5,
+  "holds": 76,
+  "cuts": 3,
+  "grossStreams": 80056904,
+  "netStreams": 42582469,
+  "grossSpins": 283254,
+  "netSpins": 154504,
+  "lumStreams": 230223266,
+  "lumStreamsNet": 115185747,
+  "lumSpins": 395600,
+  "lumSpinsNet": 198600,
   "avgShare": 0.6542,
-  "avgHoldDays": 311,
-  "maxHoldDays": 913,
+  "avgHoldDays": 329,
+  "maxHoldDays": 925,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
@@ -826,8 +832,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Killin' Me",
@@ -838,27 +844,27 @@ window.LYRIC_WRITERS = {
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 4985004,
-    "gross": 6646672
+    "net": 5028396,
+    "gross": 6704528
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1824513,
-    "gross": 2454613
+    "net": 1825376,
+    "gross": 2455773
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery",
-    "net": 1103899,
-    "gross": 1379874
+    "net": 1108331,
+    "gross": 1385414
    }
   ],
   "byYear": {
    "2023": 2,
    "2024": 8,
    "2025": 11,
-   "2026": 6
+   "2026": 10
   }
  },
  "Brinley Addington": {
@@ -868,17 +874,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 5,
   "cuts": 3,
-  "grossStreams": 3067428,
-  "netStreams": 1796312,
+  "grossStreams": 3102838,
+  "netStreams": 1816083,
   "grossSpins": 32,
   "netSpins": 20,
-  "lumStreams": 1556517,
-  "lumStreamsNet": 737485,
+  "lumStreams": 1555398,
+  "lumStreamsNet": 729449,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4196,
-  "avgHoldDays": 456,
-  "maxHoldDays": 886,
+  "avgHoldDays": 468,
+  "maxHoldDays": 898,
   "topArtists": [
    {
     "artist": "McCoy Moore",
@@ -905,20 +911,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "This Party Sucks",
     "artist": "Ryan Hurd",
-    "net": 689319,
-    "gross": 919092
+    "net": 691612,
+    "gross": 922150
    },
    {
     "song": "Ride It Out",
     "artist": "Alli Walker",
-    "net": 552242,
-    "gross": 828322
+    "net": 563040,
+    "gross": 844519
    },
    {
     "song": "Sadder Day",
     "artist": "Craig Campbell",
-    "net": 313150,
-    "gross": 626300
+    "net": 317376,
+    "gross": 634752
    },
    {
     "song": "Can't Make That Up",
@@ -941,26 +947,26 @@ window.LYRIC_WRITERS = {
  },
  "Bobby Hamrick": {
   "name": "Bobby Hamrick",
-  "songs": 42,
+  "songs": 44,
   "releases": 20,
-  "upcoming": 2,
+  "upcoming": 4,
   "holds": 17,
   "cuts": 3,
-  "grossStreams": 52007797,
-  "netStreams": 28069686,
-  "grossSpins": 194087,
-  "netSpins": 101487,
-  "lumStreams": 171034199,
-  "lumStreamsNet": 90651856,
-  "lumSpins": 358285,
-  "lumSpinsNet": 187560,
-  "avgShare": 0.7028,
-  "avgHoldDays": 200,
-  "maxHoldDays": 690,
+  "grossStreams": 52821368,
+  "netStreams": 28499867,
+  "grossSpins": 196052,
+  "netSpins": 102515,
+  "lumStreams": 165091046,
+  "lumStreamsNet": 87447200,
+  "lumSpins": 340966,
+  "lumSpinsNet": 178496,
+  "avgShare": 0.7011,
+  "avgHoldDays": 205,
+  "maxHoldDays": 702,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
-    "n": 12
+    "n": 13
    },
    {
     "artist": "Haven Madison",
@@ -983,39 +989,39 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1824513,
-    "gross": 2454613
+    "net": 1825376,
+    "gross": 2455773
    },
    {
     "song": "Swim Up Bar",
     "artist": "Scotty McCreery",
-    "net": 954860,
-    "gross": 1206546
+    "net": 966616,
+    "gross": 1221401
    },
    {
     "song": "Take Too Much",
     "artist": "Vincent Mason",
-    "net": 674465,
-    "gross": 1348930
+    "net": 686119,
+    "gross": 1372239
    },
    {
     "song": "Move It",
     "artist": "Austin & Colin",
-    "net": 509464,
-    "gross": 1455614
+    "net": 518096,
+    "gross": 1480275
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 6,
    "2025": 13,
-   "2026": 5
+   "2026": 7
   }
  },
  "Justin Halpin": {
@@ -1025,17 +1031,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 16,
   "cuts": 5,
-  "grossStreams": 3006363,
-  "netStreams": 1337827,
-  "grossSpins": 321,
-  "netSpins": 91,
-  "lumStreams": 2975080,
-  "lumStreamsNet": 850757,
+  "grossStreams": 3027228,
+  "netStreams": 1350490,
+  "grossSpins": 362,
+  "netSpins": 96,
+  "lumStreams": 3128712,
+  "lumStreamsNet": 870926,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.6143,
-  "avgHoldDays": 383,
-  "maxHoldDays": 797,
+  "avgHoldDays": 395,
+  "maxHoldDays": 809,
   "topArtists": [
    {
     "artist": "First Time Thieves",
@@ -1062,8 +1068,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Don't Break Itself",
     "artist": "Clayton Mullen",
-    "net": 395168,
-    "gross": 592723
+    "net": 397456,
+    "gross": 596155
    },
    {
     "song": "Pockets Full Of Sand",
@@ -1074,20 +1080,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Not Yet",
     "artist": "Daniel Jeffers",
-    "net": 96585,
-    "gross": 144893
+    "net": 97302,
+    "gross": 145969
+   },
+   {
+    "song": "Do Me A Favor",
+    "artist": "Daniel Jeffers",
+    "net": 90756,
+    "gross": 136128
    },
    {
     "song": "Vodka Soda",
     "artist": "408",
     "net": 89479,
     "gross": 198843
-   },
-   {
-    "song": "Do Me A Favor",
-    "artist": "Daniel Jeffers",
-    "net": 87432,
-    "gross": 131142
    }
   ],
   "byYear": {
@@ -1101,20 +1107,20 @@ window.LYRIC_WRITERS = {
   "name": "Jeremy Bussey",
   "songs": 42,
   "releases": 15,
-  "upcoming": 1,
-  "holds": 18,
+  "upcoming": 2,
+  "holds": 17,
   "cuts": 8,
-  "grossStreams": 52462648,
-  "netStreams": 29503941,
-  "grossSpins": 194296,
-  "netSpins": 101640,
-  "lumStreams": 172905673,
-  "lumStreamsNet": 92392272,
-  "lumSpins": 358633,
-  "lumSpinsNet": 187792,
+  "grossStreams": 53218320,
+  "netStreams": 29909232,
+  "grossSpins": 196273,
+  "netSpins": 102675,
+  "lumStreams": 166887325,
+  "lumStreamsNet": 89149189,
+  "lumSpins": 341337,
+  "lumSpinsNet": 178747,
   "avgShare": 0.6769,
-  "avgHoldDays": 358,
-  "maxHoldDays": 865,
+  "avgHoldDays": 384,
+  "maxHoldDays": 877,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
@@ -1141,70 +1147,70 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1824513,
-    "gross": 2454613
+    "net": 1825376,
+    "gross": 2455773
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery",
-    "net": 1103899,
-    "gross": 1379874
+    "net": 1108331,
+    "gross": 1385414
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery ,Jason Crabb",
-    "net": 752595,
-    "gross": 940744
+    "net": 759660,
+    "gross": 949576
    },
    {
     "song": "Heaven And Back",
     "artist": "Matt Stell",
-    "net": 568640,
-    "gross": 827113
+    "net": 577446,
+    "gross": 839922
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 4,
    "2025": 12,
-   "2026": 7
+   "2026": 8
   }
  },
  "Mike Fiorentino": {
   "name": "Mike Fiorentino",
-  "songs": 21,
+  "songs": 22,
   "releases": 17,
-  "upcoming": 1,
+  "upcoming": 2,
   "holds": 2,
   "cuts": 1,
-  "grossStreams": 6369009,
-  "netStreams": 2313518,
-  "grossSpins": 29975,
-  "netSpins": 8243,
-  "lumStreams": 2243898,
-  "lumStreamsNet": 913209,
-  "lumSpins": 464,
+  "grossStreams": 6456559,
+  "netStreams": 2340581,
+  "grossSpins": 30013,
+  "netSpins": 8253,
+  "lumStreams": 2204644,
+  "lumStreamsNet": 898043,
+  "lumSpins": 463,
   "lumSpinsNet": 132,
-  "avgShare": 0.6039,
-  "avgHoldDays": 347,
-  "maxHoldDays": 690,
+  "avgShare": 0.5992,
+  "avgHoldDays": 359,
+  "maxHoldDays": 702,
   "topArtists": [
    {
     "artist": "Tim Montana",
     "n": 8
    },
    {
-    "artist": "Kate Sykes",
-    "n": 2
+    "artist": "Gable Bradley",
+    "n": 3
    },
    {
-    "artist": "Gable Bradley",
+    "artist": "Kate Sykes",
     "n": 2
    },
    {
@@ -1220,20 +1226,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Devil You Know",
     "artist": "Tim Montana",
-    "net": 1353390,
-    "gross": 4921420
+    "net": 1375248,
+    "gross": 5000904
    },
    {
     "song": "Get You Some",
     "artist": "Tim Montana",
-    "net": 257463,
-    "gross": 386176
+    "net": 259234,
+    "gross": 388833
    },
    {
     "song": "Ashes",
     "artist": "Tim Montana",
-    "net": 188207,
-    "gross": 282297
+    "net": 190067,
+    "gross": 285087
    },
    {
     "song": "Wild And Free",
@@ -1252,7 +1258,7 @@ window.LYRIC_WRITERS = {
    "2023": 3,
    "2024": 6,
    "2025": 5,
-   "2026": 5
+   "2026": 6
   }
  },
  "Tyler Reeve": {
@@ -1262,17 +1268,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 5,
   "cuts": 1,
-  "grossStreams": 1116475,
-  "netStreams": 903965,
+  "grossStreams": 1124923,
+  "netStreams": 910573,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 246070,
-  "lumStreamsNet": 196277,
+  "lumStreams": 239047,
+  "lumStreamsNet": 191024,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.4815,
-  "avgHoldDays": 505,
-  "maxHoldDays": 927,
+  "avgHoldDays": 517,
+  "maxHoldDays": 939,
   "topArtists": [
    {
     "artist": "John Daly",
@@ -1299,32 +1305,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Double Down",
     "artist": "Chris Young",
-    "net": 853055,
-    "gross": 1023585
+    "net": 858972,
+    "gross": 1030685
    },
    {
     "song": "Match Made In Hell",
     "artist": "Brooke Lee",
-    "net": 23923,
-    "gross": 37527
+    "net": 24319,
+    "gross": 38148
    },
    {
     "song": "Slow It Down",
     "artist": "Dan Smalley",
-    "net": 20188,
-    "gross": 34582
+    "net": 20299,
+    "gross": 34771
    },
    {
     "song": "Wasted Prayers",
     "artist": "John Daly",
-    "net": 3886,
-    "gross": 15547
+    "net": 3980,
+    "gross": 15921
    },
    {
     "song": "The Way I Lose",
     "artist": "John Daly",
-    "net": 2910,
-    "gross": 5234
+    "net": 3001,
+    "gross": 5398
    }
   ],
   "byYear": {
@@ -1341,17 +1347,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 2,
   "cuts": 1,
-  "grossStreams": 3705069,
-  "netStreams": 1983643,
+  "grossStreams": 3826172,
+  "netStreams": 2054155,
   "grossSpins": 6,
   "netSpins": 3,
-  "lumStreams": 2467816,
-  "lumStreamsNet": 1307016,
+  "lumStreams": 2498717,
+  "lumStreamsNet": 1327404,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.5889,
-  "avgHoldDays": 640,
-  "maxHoldDays": 753,
+  "avgHoldDays": 652,
+  "maxHoldDays": 765,
   "topArtists": [
    {
     "artist": "Brooke Lee",
@@ -1378,14 +1384,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "So Beautiful",
     "artist": "Brooke Lee",
-    "net": 600184,
-    "gross": 1200369
+    "net": 613304,
+    "gross": 1226608
    },
    {
     "song": "Call Me Pretty",
     "artist": "Brooke Lee",
-    "net": 190155,
-    "gross": 285219
+    "net": 193739,
+    "gross": 290594
    },
    {
     "song": "Wild And Free",
@@ -1396,14 +1402,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Head In The Clouds",
     "artist": "Brooke Lee",
-    "net": 119447,
-    "gross": 244971
+    "net": 120812,
+    "gross": 247770
    },
    {
     "song": "I've Been Thinking",
     "artist": "Brooke Lee",
-    "net": 113854,
-    "gross": 309304
+    "net": 117612,
+    "gross": 319513
    }
   ],
   "byYear": {
@@ -1420,17 +1426,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 1,
   "cuts": 2,
-  "grossStreams": 873501,
-  "netStreams": 563537,
+  "grossStreams": 890101,
+  "netStreams": 574436,
   "grossSpins": 29,
   "netSpins": 19,
-  "lumStreams": 281253,
-  "lumStreamsNet": 185044,
+  "lumStreams": 271908,
+  "lumStreamsNet": 178776,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4167,
-  "avgHoldDays": 730,
-  "maxHoldDays": 730,
+  "avgHoldDays": 742,
+  "maxHoldDays": 742,
   "topArtists": [
    {
     "artist": "Elle King",
@@ -1453,14 +1459,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Ride It Out",
     "artist": "Alli Walker",
-    "net": 552242,
-    "gross": 828322
+    "net": 563040,
+    "gross": 844519
    },
    {
     "song": "Let's Get Rollin",
     "artist": "Gowa Gibbs",
-    "net": 11294,
-    "gross": 45179
+    "net": 11395,
+    "gross": 45582
    }
   ],
   "byYear": {
@@ -1471,17 +1477,17 @@ window.LYRIC_WRITERS = {
  "Chizzy": {
   "name": "Chizzy",
   "songs": 21,
-  "releases": 15,
-  "upcoming": 5,
+  "releases": 16,
+  "upcoming": 4,
   "holds": 0,
   "cuts": 1,
-  "grossStreams": 22853681,
-  "netStreams": 1745572,
-  "grossSpins": 2636,
-  "netSpins": 238,
-  "lumStreams": 3393496,
-  "lumStreamsNet": 330001,
-  "lumSpins": 28,
+  "grossStreams": 22957914,
+  "netStreams": 1763800,
+  "grossSpins": 2644,
+  "netSpins": 239,
+  "lumStreams": 3448367,
+  "lumStreamsNet": 352122,
+  "lumSpins": 31,
   "lumSpinsNet": 2,
   "avgShare": 0.5791,
   "avgHoldDays": null,
@@ -1512,26 +1518,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Show It",
     "artist": "Chris Brown",
-    "net": 1253223,
-    "gross": 20887052
+    "net": 1256572,
+    "gross": 20942882
    },
    {
     "song": "Spin The Town",
     "artist": "Richie Allen",
-    "net": 158817,
-    "gross": 635269
+    "net": 159809,
+    "gross": 639236
    },
    {
     "song": "Catching Fire",
     "artist": "Alli Leighann",
-    "net": 100661,
-    "gross": 151008
+    "net": 103439,
+    "gross": 155175
    },
    {
     "song": "Just Like That",
     "artist": "Connor McCutcheon",
-    "net": 68904,
-    "gross": 68904
+    "net": 69155,
+    "gross": 69155
    },
    {
     "song": "Alright",
@@ -1555,17 +1561,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 1,
   "cuts": 7,
-  "grossStreams": 384395,
-  "netStreams": 160865,
-  "grossSpins": 661,
-  "netSpins": 220,
-  "lumStreams": 511611,
-  "lumStreamsNet": 186111,
-  "lumSpins": 4888,
-  "lumSpinsNet": 1630,
+  "grossStreams": 387844,
+  "netStreams": 162120,
+  "grossSpins": 686,
+  "netSpins": 229,
+  "lumStreams": 521604,
+  "lumStreamsNet": 189241,
+  "lumSpins": 5116,
+  "lumSpinsNet": 1706,
   "avgShare": 0.4741,
-  "avgHoldDays": 820,
-  "maxHoldDays": 820,
+  "avgHoldDays": 832,
+  "maxHoldDays": 832,
   "topArtists": [
    {
     "artist": "Adam Chaffins",
@@ -1592,20 +1598,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Dive Bar Moses",
     "artist": "Adam Chaffins",
-    "net": 26491,
-    "gross": 34182
+    "net": 26622,
+    "gross": 34352
    },
    {
     "song": "Warning You Whiskey",
     "artist": "Brit Taylor",
-    "net": 14867,
-    "gross": 44595
+    "net": 15295,
+    "gross": 45878
    },
    {
     "song": "Living Till My Dying Day",
     "artist": "Adam Chaffins",
-    "net": 14201,
-    "gross": 28403
+    "net": 14247,
+    "gross": 28495
    },
    {
     "song": "You Can Dance With Me",
@@ -1614,10 +1620,10 @@ window.LYRIC_WRITERS = {
     "gross": 41412
    },
    {
-    "song": "Holding On, Holding Out",
+    "song": "King Of Coal Dust County",
     "artist": "Adam Chaffins",
-    "net": 13003,
-    "gross": 39003
+    "net": 13308,
+    "gross": 39918
    }
   ],
   "byYear": {
@@ -1635,14 +1641,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 1,
-  "grossStreams": 77145550,
-  "netStreams": 25495898,
-  "grossSpins": 4068,
-  "netSpins": 1272,
-  "lumStreams": 86355654,
-  "lumStreamsNet": 28010224,
-  "lumSpins": 64113,
-  "lumSpinsNet": 19928,
+  "grossStreams": 76372630,
+  "netStreams": 25220244,
+  "grossSpins": 4108,
+  "netSpins": 1284,
+  "lumStreams": 85988374,
+  "lumStreamsNet": 27865991,
+  "lumSpins": 64095,
+  "lumSpinsNet": 19855,
   "avgShare": 0.5427,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -1672,32 +1678,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Still Waters",
     "artist": "Leanna Crawford",
-    "net": 20356241,
-    "gross": 61056513
+    "net": 20034521,
+    "gross": 60091545
    },
    {
     "song": "Hamms In A Glass",
     "artist": "Winona Fighter",
-    "net": 1243166,
-    "gross": 4972667
-   },
-   {
-    "song": "When I Meet Jesus",
-    "artist": "Jeremy Rosado",
-    "net": 1222465,
-    "gross": 3666662
+    "net": 1271997,
+    "gross": 5087991
    },
    {
     "song": "Hero In The Room",
     "artist": "Jeremy Rosado",
-    "net": 1161025,
-    "gross": 3482379
+    "net": 1205002,
+    "gross": 3614284
+   },
+   {
+    "song": "When I Meet Jesus",
+    "artist": "Jeremy Rosado",
+    "net": 1164833,
+    "gross": 3493802
    },
    {
     "song": "Father Let It Be",
     "artist": "Sidewalk Prophets",
-    "net": 358057,
-    "gross": 1432228
+    "net": 383632,
+    "gross": 1534528
    }
   ],
   "byYear": {
@@ -1710,25 +1716,25 @@ window.LYRIC_WRITERS = {
  "Connor McCutcheon": {
   "name": "Connor McCutcheon",
   "songs": 40,
-  "releases": 29,
+  "releases": 30,
   "upcoming": 0,
   "holds": 9,
-  "cuts": 2,
-  "grossStreams": 7231410,
-  "netStreams": 2785708,
-  "grossSpins": 3,
-  "netSpins": 0,
-  "lumStreams": 5313598,
-  "lumStreamsNet": 1472071,
-  "lumSpins": 5,
+  "cuts": 1,
+  "grossStreams": 7310327,
+  "netStreams": 2806776,
+  "grossSpins": 4,
+  "netSpins": 1,
+  "lumStreams": 5444667,
+  "lumStreamsNet": 1497920,
+  "lumSpins": 6,
   "lumSpinsNet": 1,
   "avgShare": 0.425,
-  "avgHoldDays": 215,
-  "maxHoldDays": 834,
+  "avgHoldDays": 227,
+  "maxHoldDays": 846,
   "topArtists": [
    {
     "artist": "Connor McCutcheon",
-    "n": 21
+    "n": 22
    },
    {
     "artist": "Blake Proehl",
@@ -1743,7 +1749,7 @@ window.LYRIC_WRITERS = {
     "n": 1
    },
    {
-    "artist": "Jake Banfield",
+    "artist": "Tayler Holder",
     "n": 1
    }
   ],
@@ -1751,32 +1757,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Top Of The Hill",
     "artist": "Connor McCutcheon",
-    "net": 365238,
-    "gross": 547831
+    "net": 365812,
+    "gross": 548691
    },
    {
     "song": "Ways Away",
     "artist": "Tyler Nance",
-    "net": 337277,
-    "gross": 1349110
+    "net": 353134,
+    "gross": 1412538
    },
    {
     "song": "Whiskey's Already Workin'",
     "artist": "Connor McCutcheon",
-    "net": 302973,
-    "gross": 302973
-   },
-   {
-    "song": "Girlfriend's Got A Boyfriend",
-    "artist": "Cole Goodwin",
-    "net": 240115,
-    "gross": 720420
+    "net": 303865,
+    "gross": 303865
    },
    {
     "song": "'Til She's Gone",
     "artist": "Tayler Holder",
-    "net": 225945,
-    "gross": 677702
+    "net": 228284,
+    "gross": 684716
+   },
+   {
+    "song": "Girlfriend's Got A Boyfriend",
+    "artist": "Cole Goodwin",
+    "net": 228033,
+    "gross": 684170
    }
   ],
   "byYear": {
@@ -1788,26 +1794,26 @@ window.LYRIC_WRITERS = {
  },
  "Frank Rogers": {
   "name": "Frank Rogers",
-  "songs": 48,
+  "songs": 49,
   "releases": 12,
-  "upcoming": 3,
-  "holds": 28,
+  "upcoming": 6,
+  "holds": 26,
   "cuts": 5,
-  "grossStreams": 59600496,
-  "netStreams": 34698777,
-  "grossSpins": 250077,
-  "netSpins": 143417,
-  "lumStreams": 179710483,
-  "lumStreamsNet": 97520956,
-  "lumSpins": 362948,
-  "lumSpinsNet": 191050,
-  "avgShare": 0.7328,
-  "avgHoldDays": 194,
-  "maxHoldDays": 865,
+  "grossStreams": 60436973,
+  "netStreams": 35163356,
+  "grossSpins": 252081,
+  "netSpins": 144474,
+  "lumStreams": 173194766,
+  "lumStreamsNet": 93886203,
+  "lumSpins": 345460,
+  "lumSpinsNet": 181860,
+  "avgShare": 0.7315,
+  "avgHoldDays": 215,
+  "maxHoldDays": 877,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
-    "n": 31
+    "n": 32
    },
    {
     "artist": "Darius Rucker",
@@ -1830,39 +1836,39 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 22742064,
-    "gross": 43492186
+    "net": 23112417,
+    "gross": 44200455
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 4985004,
-    "gross": 6646672
+    "net": 5028396,
+    "gross": 6704528
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1824513,
-    "gross": 2454613
+    "net": 1825376,
+    "gross": 2455773
    },
    {
     "song": "Can't Pass The Bar",
     "artist": "Scotty McCreery",
-    "net": 1236173,
-    "gross": 1798070
+    "net": 1255640,
+    "gross": 1826386
    },
    {
     "song": "Swim Up Bar",
     "artist": "Scotty McCreery",
-    "net": 954860,
-    "gross": 1206546
+    "net": 966616,
+    "gross": 1221401
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 4,
    "2025": 8,
-   "2026": 7
+   "2026": 10
   }
  },
  "Joy Williams": {
@@ -1872,17 +1878,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 1,
   "cuts": 1,
-  "grossStreams": 4600061,
-  "netStreams": 1959066,
-  "grossSpins": 298,
-  "netSpins": 99,
-  "lumStreams": 1362029,
-  "lumStreamsNet": 556441,
+  "grossStreams": 4656055,
+  "netStreams": 1982388,
+  "grossSpins": 299,
+  "netSpins": 100,
+  "lumStreams": 1359540,
+  "lumStreamsNet": 558240,
   "lumSpins": 83,
   "lumSpinsNet": 27,
   "avgShare": 0.446,
-  "avgHoldDays": 863,
-  "maxHoldDays": 863,
+  "avgHoldDays": 875,
+  "maxHoldDays": 875,
   "topArtists": [
    {
     "artist": "Vince Gill",
@@ -1909,26 +1915,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Oxygen Mask",
     "artist": "Sasha Alex Sloan",
-    "net": 1041005,
-    "gross": 2011994
+    "net": 1051919,
+    "gross": 2033087
    },
    {
     "song": "Somebody's Child",
     "artist": "Blessing Offor",
-    "net": 542268,
-    "gross": 1626479
+    "net": 548768,
+    "gross": 1645976
    },
    {
     "song": "Nicotine Patch",
     "artist": "Tim Gallagher",
-    "net": 164663,
-    "gross": 447334
+    "net": 166410,
+    "gross": 452079
    },
    {
     "song": "Shake Ya Boots",
     "artist": "RaeLynn",
-    "net": 146428,
-    "gross": 377880
+    "net": 149445,
+    "gross": 385665
    },
    {
     "song": "Root Down",
@@ -1951,17 +1957,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 1,
   "cuts": 0,
-  "grossStreams": 23928260,
-  "netStreams": 7641624,
+  "grossStreams": 24349051,
+  "netStreams": 7782018,
   "grossSpins": 1,
   "netSpins": 0,
-  "lumStreams": 9353026,
-  "lumStreamsNet": 2995755,
+  "lumStreams": 9262707,
+  "lumStreamsNet": 2970964,
   "lumSpins": 3,
   "lumSpinsNet": 1,
   "avgShare": 0.3743,
-  "avgHoldDays": 331,
-  "maxHoldDays": 331,
+  "avgHoldDays": 343,
+  "maxHoldDays": 343,
   "topArtists": [
    {
     "artist": "LECADE",
@@ -1980,26 +1986,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Gave It Up",
     "artist": "LECADE",
-    "net": 2688768,
-    "gross": 10755074
+    "net": 2731814,
+    "gross": 10927259
    },
    {
     "song": "Bed We Made",
     "artist": "LECADE",
-    "net": 1873616,
-    "gross": 3747232
+    "net": 1917020,
+    "gross": 3834041
    },
    {
     "song": "You Get Me",
     "artist": "LECADE",
-    "net": 1631021,
-    "gross": 4892086
+    "net": 1671224,
+    "gross": 5012670
    },
    {
     "song": "Liquor & Cigarettes",
     "artist": "LECADE",
-    "net": 1324910,
-    "gross": 3973938
+    "net": 1338651,
+    "gross": 4015151
    },
    {
     "song": "Blind",
@@ -2021,17 +2027,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 4,
   "cuts": 1,
-  "grossStreams": 312496,
-  "netStreams": 164459,
+  "grossStreams": 340608,
+  "netStreams": 183151,
   "grossSpins": 2,
   "netSpins": 0,
-  "lumStreams": 281859,
-  "lumStreamsNet": 141291,
+  "lumStreams": 303290,
+  "lumStreamsNet": 154254,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4685,
-  "avgHoldDays": 213,
-  "maxHoldDays": 340,
+  "avgHoldDays": 225,
+  "maxHoldDays": 352,
   "topArtists": [
    {
     "artist": "Corey Kent",
@@ -2058,8 +2064,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Maybe Baby",
     "artist": "Brody Clementi",
-    "net": 118621,
-    "gross": 177923
+    "net": 137236,
+    "gross": 205844
    },
    {
     "song": "All For You",
@@ -2070,8 +2076,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Good Boy",
     "artist": "John Daly",
-    "net": 8682,
-    "gross": 21706
+    "net": 8758,
+    "gross": 21897
    },
    {
     "song": "Good Man Going Home",
@@ -2092,17 +2098,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 5,
   "cuts": 2,
-  "grossStreams": 700715,
-  "netStreams": 136898,
-  "grossSpins": 1475,
-  "netSpins": 245,
-  "lumStreams": 518643,
-  "lumStreamsNet": 112667,
+  "grossStreams": 817437,
+  "netStreams": 165559,
+  "grossSpins": 1486,
+  "netSpins": 247,
+  "lumStreams": 602806,
+  "lumStreamsNet": 137158,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.2636,
-  "avgHoldDays": 303,
-  "maxHoldDays": 303,
+  "avgHoldDays": 315,
+  "maxHoldDays": 315,
   "topArtists": [
    {
     "artist": "Restless Road",
@@ -2127,16 +2133,16 @@ window.LYRIC_WRITERS = {
   ],
   "topSongs": [
    {
-    "song": "Shooting Star",
-    "artist": "Sacha",
-    "net": 76606,
-    "gross": 459546
-   },
-   {
     "song": "Forever Ago",
     "artist": "Restless Road",
-    "net": 60292,
-    "gross": 241169
+    "net": 87912,
+    "gross": 351650
+   },
+   {
+    "song": "Shooting Star",
+    "artist": "Sacha",
+    "net": 77646,
+    "gross": 465787
    }
   ],
   "byYear": {
@@ -2151,17 +2157,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 5,
   "cuts": 3,
-  "grossStreams": 4682809,
-  "netStreams": 1760471,
+  "grossStreams": 4687660,
+  "netStreams": 1763775,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 1946651,
-  "lumStreamsNet": 880102,
+  "lumStreams": 1998808,
+  "lumStreamsNet": 907269,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4618,
-  "avgHoldDays": 164,
-  "maxHoldDays": 261,
+  "avgHoldDays": 176,
+  "maxHoldDays": 273,
   "topArtists": [
    {
     "artist": "Joe Bryson",
@@ -2188,32 +2194,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "She Don't Really Miss Me",
     "artist": "Joe Bryson",
-    "net": 700470,
-    "gross": 2100991
+    "net": 700168,
+    "gross": 2100085
    },
    {
     "song": "Bloody Nails",
     "artist": "Joe Bryson",
-    "net": 205119,
-    "gross": 410239
+    "net": 196009,
+    "gross": 392019
    },
    {
     "song": "Down to the Filter",
     "artist": "Joe Bryson",
-    "net": 159835,
-    "gross": 639343
+    "net": 160364,
+    "gross": 641458
    },
    {
     "song": "Hey Hey Mama",
     "artist": "Joe Bryson",
-    "net": 135737,
-    "gross": 135737
+    "net": 137958,
+    "gross": 137958
    },
    {
     "song": "Wild Magnolia",
     "artist": "Joe Bryson",
-    "net": 135052,
-    "gross": 405077
+    "net": 137289,
+    "gross": 411785
    }
   ],
   "byYear": {
@@ -2234,17 +2240,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 5,
   "holds": 10,
   "cuts": 3,
-  "grossStreams": 1178999526,
-  "netStreams": 252419581,
-  "grossSpins": 733928,
-  "netSpins": 149435,
-  "lumStreams": 1905841598,
-  "lumStreamsNet": 424622201,
-  "lumSpins": 1447062,
-  "lumSpinsNet": 275224,
+  "grossStreams": 1213394691,
+  "netStreams": 260235948,
+  "grossSpins": 762823,
+  "netSpins": 156304,
+  "lumStreams": 1910988460,
+  "lumStreamsNet": 428777136,
+  "lumSpins": 1480318,
+  "lumSpinsNet": 285184,
   "avgShare": 0.3361,
-  "avgHoldDays": 98,
-  "maxHoldDays": 232,
+  "avgHoldDays": 110,
+  "maxHoldDays": 244,
   "topArtists": [
    {
     "artist": "HARDY",
@@ -2271,32 +2277,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "I Got Better",
     "artist": "Morgan Wallen",
-    "net": 69129305,
-    "gross": 414692894
+    "net": 70613444,
+    "gross": 423595948
    },
    {
     "song": "Be Her",
     "artist": "Ella Langley",
-    "net": 51770351,
-    "gross": 207081406
+    "net": 55538794,
+    "gross": 222155179
    },
    {
     "song": "Jim Bob",
     "artist": "HARDY",
-    "net": 16981504,
-    "gross": 33963009
+    "net": 17176068,
+    "gross": 34352136
    },
    {
     "song": "Never Met Anyone Like You",
     "artist": "Ella Langley",
-    "net": 13338573,
-    "gross": 40007719
+    "net": 13662598,
+    "gross": 40979601
    },
    {
     "song": "Psycho",
     "artist": "HARDY",
-    "net": 11851902,
-    "gross": 47407608
+    "net": 11952624,
+    "gross": 47810497
    }
   ],
   "byYear": {
@@ -2312,17 +2318,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 5,
   "cuts": 1,
-  "grossStreams": 612715,
-  "netStreams": 153972,
+  "grossStreams": 615471,
+  "netStreams": 154110,
   "grossSpins": 58,
   "netSpins": 19,
-  "lumStreams": 1084170,
-  "lumStreamsNet": 238298,
+  "lumStreams": 1111067,
+  "lumStreamsNet": 243778,
   "lumSpins": 122,
   "lumSpinsNet": 40,
   "avgShare": 0.5519,
-  "avgHoldDays": 122,
-  "maxHoldDays": 232,
+  "avgHoldDays": 134,
+  "maxHoldDays": 244,
   "topArtists": [
    {
     "artist": "Kasey Tyndall",
@@ -2351,8 +2357,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Maybe You're The One",
     "artist": "Pop Evil",
-    "net": 8867,
-    "gross": 177356
+    "net": 9005,
+    "gross": 180112
    }
   ],
   "byYear": {
@@ -2366,14 +2372,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 53424366,
-  "netStreams": 9970849,
-  "grossSpins": 3509,
-  "netSpins": 496,
-  "lumStreams": 18243619,
-  "lumStreamsNet": 3391546,
-  "lumSpins": 365,
-  "lumSpinsNet": 65,
+  "grossStreams": 35841325,
+  "netStreams": 6260037,
+  "grossSpins": 3378,
+  "netSpins": 469,
+  "lumStreams": 18830553,
+  "lumStreamsNet": 3511221,
+  "lumSpins": 393,
+  "lumSpinsNet": 71,
   "avgShare": 0.1393,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -2401,34 +2407,34 @@ window.LYRIC_WRITERS = {
   ],
   "topSongs": [
    {
-    "song": "Cannibalism",
-    "artist": "Slayyyter",
-    "net": 3745768,
-    "gross": 17836994
-   },
-   {
     "song": "Bad Kids",
     "artist": "347aidan",
-    "net": 3038790,
-    "gross": 12155161
+    "net": 3043315,
+    "gross": 12173263
    },
    {
     "song": "Shake The City",
     "artist": "Knock2",
-    "net": 1107987,
-    "gross": 5539936
+    "net": 1118559,
+    "gross": 5592795
    },
    {
     "song": "You Ain't Gotta",
     "artist": "Albert Posis",
-    "net": 491000,
-    "gross": 1964002
+    "net": 495534,
+    "gross": 1982138
    },
    {
     "song": "Sunday",
     "artist": "347aidan",
-    "net": 253530,
-    "gross": 2028245
+    "net": 255635,
+    "gross": 2045086
+   },
+   {
+    "song": "Fast N Slow",
+    "artist": "Knock2",
+    "net": 195019,
+    "gross": 975097
    }
   ],
   "byYear": {
@@ -2446,12 +2452,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 344198,
-  "netStreams": 229476,
+  "grossStreams": 346282,
+  "netStreams": 230866,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 74405,
-  "lumStreamsNet": 49605,
+  "lumStreams": 71789,
+  "lumStreamsNet": 47861,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.8889,
@@ -2475,8 +2481,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Sound Of You Leaving",
     "artist": "12/OC",
-    "net": 229476,
-    "gross": 344198
+    "net": 230866,
+    "gross": 346282
    }
   ],
   "byYear": {
@@ -2491,17 +2497,17 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 8,
   "cuts": 0,
-  "grossStreams": 14257220,
-  "netStreams": 4702234,
-  "grossSpins": 21162,
-  "netSpins": 8394,
-  "lumStreams": 9213675,
-  "lumStreamsNet": 2819166,
-  "lumSpins": 355,
-  "lumSpinsNet": 153,
+  "grossStreams": 14326079,
+  "netStreams": 4745235,
+  "grossSpins": 21180,
+  "netSpins": 8400,
+  "lumStreams": 9192954,
+  "lumStreamsNet": 2827170,
+  "lumSpins": 346,
+  "lumSpinsNet": 149,
   "avgShare": 0.4829,
-  "avgHoldDays": 139,
-  "maxHoldDays": 179,
+  "avgHoldDays": 151,
+  "maxHoldDays": 191,
   "topArtists": [
    {
     "artist": "Haven Madison",
@@ -2528,32 +2534,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Fancy Like Christmas",
     "artist": "Walker Hayes",
-    "net": 1463070,
-    "gross": 5852283
+    "net": 1466379,
+    "gross": 5865516
    },
    {
     "song": "Cheat Code",
     "artist": "Lukas Graham",
-    "net": 1291755,
-    "gross": 2981204
+    "net": 1302803,
+    "gross": 3006701
    },
    {
     "song": "Miss Wannabe",
     "artist": "Jenna Davis",
-    "net": 627565,
-    "gross": 1882319
+    "net": 612917,
+    "gross": 1838386
    },
    {
     "song": "Big Bad Frog",
     "artist": "Austin & Colin",
-    "net": 289599,
-    "gross": 434378
+    "net": 309588,
+    "gross": 464360
    },
    {
     "song": "Real Love",
     "artist": "Ryan Ellis",
-    "net": 256340,
-    "gross": 1025361
+    "net": 256776,
+    "gross": 1027106
    }
   ],
   "byYear": {
@@ -2579,8 +2585,8 @@ window.LYRIC_WRITERS = {
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.3334,
-  "avgHoldDays": 174,
-  "maxHoldDays": 174,
+  "avgHoldDays": 186,
+  "maxHoldDays": 186,
   "topArtists": [
    {
     "artist": "Frankie J",
@@ -2597,14 +2603,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 792261,
-  "netStreams": 264139,
-  "grossSpins": 220,
-  "netSpins": 73,
-  "lumStreams": 663782,
-  "lumStreamsNet": 221304,
-  "lumSpins": 36,
-  "lumSpinsNet": 12,
+  "grossStreams": 796987,
+  "netStreams": 265715,
+  "grossSpins": 222,
+  "netSpins": 74,
+  "lumStreams": 659443,
+  "lumStreamsNet": 219858,
+  "lumSpins": 34,
+  "lumSpinsNet": 11,
   "avgShare": 0.6667,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -2618,8 +2624,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Livin' It Up Down In Texas",
     "artist": "Billy F Gibbons",
-    "net": 264139,
-    "gross": 792261
+    "net": 265715,
+    "gross": 796987
    }
   ],
   "byYear": {
@@ -2634,12 +2640,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 1,
   "cuts": 0,
-  "grossStreams": 47978894,
-  "netStreams": 16098205,
-  "grossSpins": 158453,
-  "netSpins": 69662,
-  "lumStreams": 8256281,
-  "lumStreamsNet": 1723114,
+  "grossStreams": 48595795,
+  "netStreams": 16286436,
+  "grossSpins": 158959,
+  "netSpins": 69885,
+  "lumStreams": 8503687,
+  "lumStreamsNet": 1785196,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.2589,
@@ -2671,14 +2677,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Number 1",
     "artist": "Nico Santos",
-    "net": 11845573,
-    "gross": 26921757
+    "net": 11937036,
+    "gross": 27129628
    },
    {
     "song": "Forever Again",
     "artist": "Matt Hansen",
-    "net": 2033613,
-    "gross": 12206566
+    "net": 2070991,
+    "gross": 12430919
    },
    {
     "song": "Compass",
@@ -2689,8 +2695,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Housekeeping",
     "artist": "Ally Salort",
-    "net": 166024,
-    "gross": 498124
+    "net": 194818,
+    "gross": 584513
    },
    {
     "song": "Before We Know It",
@@ -2712,12 +2718,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 11,
   "cuts": 2,
-  "grossStreams": 7618993,
-  "netStreams": 4330915,
+  "grossStreams": 7627834,
+  "netStreams": 4336502,
   "grossSpins": 203,
   "netSpins": 142,
-  "lumStreams": 191563,
-  "lumStreamsNet": 132765,
+  "lumStreams": 189810,
+  "lumStreamsNet": 131586,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4391,
@@ -2749,32 +2755,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Find You Inside",
     "artist": "Joseph of Mercury",
-    "net": 854231,
-    "gross": 1138975
+    "net": 855098,
+    "gross": 1140131
    },
    {
     "song": "Pretenders",
     "artist": "Joseph of Mercury",
-    "net": 631046,
-    "gross": 901495
+    "net": 631728,
+    "gross": 902469
    },
    {
     "song": "Without Words",
     "artist": "Joseph of Mercury",
-    "net": 554367,
-    "gross": 791953
+    "net": 554971,
+    "gross": 792817
    },
    {
     "song": "Angel",
     "artist": "Joseph of Mercury",
-    "net": 455924,
-    "gross": 759874
+    "net": 456241,
+    "gross": 760402
    },
    {
     "song": "Nikki",
     "artist": "Joseph of Mercury",
-    "net": 376398,
-    "gross": 537712
+    "net": 378197,
+    "gross": 540282
    }
   ],
   "byYear": {
@@ -2796,14 +2802,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 1957011,
-  "netStreams": 1092998,
-  "grossSpins": 8542,
-  "netSpins": 5682,
-  "lumStreams": 2271080,
-  "lumStreamsNet": 1352955,
-  "lumSpins": 16500,
-  "lumSpinsNet": 10982,
+  "grossStreams": 2128253,
+  "netStreams": 1194974,
+  "grossSpins": 9563,
+  "netSpins": 6362,
+  "lumStreams": 2391996,
+  "lumStreamsNet": 1435401,
+  "lumSpins": 18755,
+  "lumSpinsNet": 12486,
   "avgShare": 0.5953,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -2821,32 +2827,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Shut Me Out",
     "artist": "Tim Montana",
-    "net": 268301,
-    "gross": 536603
+    "net": 278554,
+    "gross": 557109
    },
    {
     "song": "Get You Some",
     "artist": "Tim Montana",
-    "net": 257463,
-    "gross": 386176
+    "net": 259234,
+    "gross": 388833
    },
    {
     "song": "Ashes",
     "artist": "Tim Montana",
-    "net": 188207,
-    "gross": 282297
+    "net": 190067,
+    "gross": 285087
    },
    {
     "song": "Die Today",
     "artist": "Tim Montana",
-    "net": 122326,
-    "gross": 366905
+    "net": 124178,
+    "gross": 372462
    },
    {
     "song": "Right Again",
     "artist": "Tim Montana",
-    "net": 81090,
-    "gross": 121630
+    "net": 81874,
+    "gross": 122805
    }
   ],
   "byYear": {
@@ -2857,26 +2863,30 @@ window.LYRIC_WRITERS = {
  },
  "Jason Vance Harris": {
   "name": "Jason Vance Harris",
-  "songs": 8,
+  "songs": 11,
   "releases": 7,
-  "upcoming": 1,
+  "upcoming": 4,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 4282946,
-  "netStreams": 1536452,
+  "grossStreams": 4316932,
+  "netStreams": 1552915,
   "grossSpins": 36,
   "netSpins": 18,
-  "lumStreams": 1839995,
-  "lumStreamsNet": 759005,
+  "lumStreams": 1818261,
+  "lumStreamsNet": 751217,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.3219,
+  "avgShare": 0.2614,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
     "artist": "Eli",
     "n": 4
+   },
+   {
+    "artist": "Beabadoobee",
+    "n": 3
    },
    {
     "artist": "BEL",
@@ -2895,20 +2905,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Marianne",
     "artist": "Eli",
-    "net": 1130905,
-    "gross": 2261811
+    "net": 1143068,
+    "gross": 2286136
    },
    {
     "song": "I Wish I Was A Girl",
     "artist": "Eli",
-    "net": 161700,
-    "gross": 323400
+    "net": 164540,
+    "gross": 329081
    },
    {
     "song": "Falsetto",
     "artist": "Eli",
-    "net": 129805,
-    "gross": 346149
+    "net": 132092,
+    "gross": 352247
    },
    {
     "song": "Mistake",
@@ -2919,14 +2929,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Only Want You",
     "artist": "BEL",
-    "net": 32945,
-    "gross": 82363
+    "net": 32014,
+    "gross": 80037
    }
   ],
   "byYear": {
    "2024": 1,
    "2025": 5,
-   "2026": 1
+   "2026": 4
   }
  },
  "Nick Gale": {
@@ -2936,14 +2946,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 3,
   "holds": 5,
   "cuts": 6,
-  "grossStreams": 939931603,
-  "netStreams": 179624260,
-  "grossSpins": 404739,
-  "netSpins": 112374,
-  "lumStreams": 322203717,
-  "lumStreamsNet": 49338030,
-  "lumSpins": 172167,
-  "lumSpinsNet": 22892,
+  "grossStreams": 955264806,
+  "netStreams": 182961042,
+  "grossSpins": 406031,
+  "netSpins": 112730,
+  "lumStreams": 320250414,
+  "lumStreamsNet": 49159323,
+  "lumSpins": 167488,
+  "lumSpinsNet": 22270,
   "avgShare": 0.2358,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -2973,26 +2983,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Miles On It",
     "artist": "Marshmello",
-    "net": 58285193,
-    "gross": 438894529
+    "net": 58879091,
+    "gross": 443366651
    },
    {
     "song": "Barcelona",
     "artist": "Alan Walker",
-    "net": 23109410,
-    "gross": 57773526
+    "net": 23392453,
+    "gross": 58481133
    },
    {
     "song": "I'm Pretty",
     "artist": "KATSEYE",
-    "net": 12369323,
-    "gross": 49477293
+    "net": 13416013,
+    "gross": 53664053
    },
    {
     "song": "Nothing Without Your Love",
     "artist": "JIN",
-    "net": 12342625,
-    "gross": 73687317
+    "net": 12487887,
+    "gross": 74554555
    },
    {
     "song": "Off My Face",
@@ -3015,14 +3025,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 1,
   "cuts": 1,
-  "grossStreams": 419569393,
-  "netStreams": 218395664,
-  "grossSpins": 33577,
-  "netSpins": 14467,
-  "lumStreams": 46261612,
-  "lumStreamsNet": 20504331,
-  "lumSpins": 3242,
-  "lumSpinsNet": 572,
+  "grossStreams": 421642324,
+  "netStreams": 219314276,
+  "grossSpins": 33704,
+  "netSpins": 14498,
+  "lumStreams": 46281058,
+  "lumStreamsNet": 20444661,
+  "lumSpins": 3444,
+  "lumSpinsNet": 605,
   "avgShare": 0.3247,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3052,14 +3062,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Hear Me Say",
     "artist": "Jonas Blue",
-    "net": 100144077,
-    "gross": 100144077
+    "net": 100226135,
+    "gross": 100226135
    },
    {
     "song": "Little Girl Gone",
     "artist": "CHINCHILLA",
-    "net": 96197208,
-    "gross": 213771574
+    "net": 96815779,
+    "gross": 215146176
    },
    {
     "song": "1:5",
@@ -3070,14 +3080,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Lady In Red",
     "artist": "Pedro Santos",
-    "net": 2889261,
-    "gross": 5778523
+    "net": 2944983,
+    "gross": 5889966
    },
    {
     "song": "All Night Long",
     "artist": "Jonas Blue",
-    "net": 2317618,
-    "gross": 30901580
+    "net": 2318625,
+    "gross": 30915006
    }
   ],
   "byYear": {
@@ -3098,12 +3108,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 1,
   "cuts": 1,
-  "grossStreams": 113362300,
-  "netStreams": 29121726,
-  "grossSpins": 70049,
-  "netSpins": 7270,
-  "lumStreams": 81767302,
-  "lumStreamsNet": 9044031,
+  "grossStreams": 114486225,
+  "netStreams": 29287663,
+  "grossSpins": 70161,
+  "netSpins": 7282,
+  "lumStreams": 81785552,
+  "lumStreamsNet": 9030012,
   "lumSpins": 2636,
   "lumSpinsNet": 263,
   "avgShare": 0.52,
@@ -3135,32 +3145,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Slip N Slide",
     "artist": "Wizkid",
-    "net": 20153115,
-    "gross": 20153115
+    "net": 20254318,
+    "gross": 20254318
    },
    {
     "song": "This Is",
     "artist": "Ella Mai",
-    "net": 8372446,
-    "gross": 83724464
+    "net": 8435068,
+    "gross": 84350689
    },
    {
     "song": "Curious",
     "artist": "Shenseea",
-    "net": 474973,
-    "gross": 7539258
+    "net": 476586,
+    "gross": 7564871
    },
    {
     "song": "#GMFU",
     "artist": "Lindita",
-    "net": 64868,
-    "gross": 432455
+    "net": 64873,
+    "gross": 432491
    },
    {
     "song": "Jealous",
     "artist": "Lindita",
-    "net": 39903,
-    "gross": 266026
+    "net": 39911,
+    "gross": 266075
    }
   ],
   "byYear": {
@@ -3178,12 +3188,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 3,
   "holds": 5,
   "cuts": 6,
-  "grossStreams": 47962009,
-  "netStreams": 7769622,
-  "grossSpins": 589,
-  "netSpins": 112,
-  "lumStreams": 10203836,
-  "lumStreamsNet": 1775864,
+  "grossStreams": 48192653,
+  "netStreams": 8067123,
+  "grossSpins": 603,
+  "netSpins": 114,
+  "lumStreams": 10441301,
+  "lumStreamsNet": 1810614,
   "lumSpins": 183,
   "lumSpinsNet": 36,
   "avgShare": 0.2536,
@@ -3215,32 +3225,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Top 5",
     "artist": "ZEROBASEONE",
-    "net": 2939876,
-    "gross": 13442510
+    "net": 3113875,
+    "gross": 14238115
    },
    {
     "song": "Somewhere In Between",
     "artist": "Matt Hansen",
-    "net": 2275174,
-    "gross": 9100698
+    "net": 2377015,
+    "gross": 9508063
    },
    {
     "song": "Everything Is Love",
     "artist": "AHOF",
-    "net": 977698,
-    "gross": 4444086
+    "net": 991560,
+    "gross": 4507094
    },
    {
     "song": "Breathe",
     "artist": "Marlon Hoffstadt",
-    "net": 737852,
-    "gross": 3689263
+    "net": 776282,
+    "gross": 3881412
    },
    {
     "song": "Mismatch",
     "artist": "&TEAM",
-    "net": 232205,
-    "gross": 11163728
+    "net": 238966,
+    "gross": 11488784
    }
   ],
   "byYear": {
@@ -3255,14 +3265,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 5,
   "cuts": 3,
-  "grossStreams": 53977743,
-  "netStreams": 15664863,
-  "grossSpins": 10805,
-  "netSpins": 2566,
-  "lumStreams": 10637642,
-  "lumStreamsNet": 3008847,
-  "lumSpins": 1723,
-  "lumSpinsNet": 346,
+  "grossStreams": 55327334,
+  "netStreams": 16108985,
+  "grossSpins": 10992,
+  "netSpins": 2613,
+  "lumStreams": 10853419,
+  "lumStreamsNet": 3081196,
+  "lumSpins": 1694,
+  "lumSpinsNet": 340,
   "avgShare": 0.2923,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3292,26 +3302,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Afters",
     "artist": "BL3SS",
-    "net": 5115426,
-    "gross": 16152277
+    "net": 5413909,
+    "gross": 17094757
    },
    {
     "song": "Watching Over You",
     "artist": "Nu Aspect",
-    "net": 3091270,
-    "gross": 9274740
+    "net": 3109410,
+    "gross": 9329163
    },
    {
     "song": "Sleep Talking",
     "artist": "Beyond",
-    "net": 1627813,
-    "gross": 8139069
+    "net": 1631988,
+    "gross": 8159942
    },
    {
     "song": "Like A Child",
     "artist": "Armin Van Buuren",
-    "net": 1279419,
-    "gross": 3411784
+    "net": 1387401,
+    "gross": 3699737
    },
    {
     "song": "Tears On My Piano",
@@ -3334,12 +3344,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 1,
   "cuts": 0,
-  "grossStreams": 4528277,
-  "netStreams": 2204316,
-  "grossSpins": 502,
-  "netSpins": 177,
-  "lumStreams": 1812667,
-  "lumStreamsNet": 987489,
+  "grossStreams": 4631419,
+  "netStreams": 2251958,
+  "grossSpins": 512,
+  "netSpins": 180,
+  "lumStreams": 1783723,
+  "lumStreamsNet": 977124,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.7293,
@@ -3377,26 +3387,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Shark",
     "artist": "Reaper",
-    "net": 397925,
-    "gross": 397925
+    "net": 420580,
+    "gross": 420580
    },
    {
     "song": "In The End",
     "artist": "Leven Kali",
-    "net": 297074,
-    "gross": 891314
+    "net": 301268,
+    "gross": 903896
    },
    {
     "song": "Palestine",
     "artist": "KNEECAP",
-    "net": 277110,
-    "gross": 1385551
+    "net": 287506,
+    "gross": 1437532
    },
    {
     "song": "Wipe Your Tears",
     "artist": "Sam Austins",
-    "net": 272059,
-    "gross": 816259
+    "net": 274356,
+    "gross": 823153
    }
   ],
   "byYear": {
@@ -3413,14 +3423,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 1,
   "cuts": 0,
-  "grossStreams": 44394361,
-  "netStreams": 7731793,
-  "grossSpins": 25452,
-  "netSpins": 9434,
-  "lumStreams": 10091900,
-  "lumStreamsNet": 2074590,
-  "lumSpins": 959,
-  "lumSpinsNet": 340,
+  "grossStreams": 44722344,
+  "netStreams": 7806011,
+  "grossSpins": 25558,
+  "netSpins": 9470,
+  "lumStreams": 9791769,
+  "lumStreamsNet": 2044725,
+  "lumSpins": 955,
+  "lumSpinsNet": 338,
   "avgShare": 0.2932,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3450,32 +3460,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "More To Lose",
     "artist": "Miley Cyrus",
-    "net": 3035568,
-    "gross": 30355682
+    "net": 3050899,
+    "gross": 30508996
    },
    {
     "song": "Magic",
     "artist": "Andy Grammer",
-    "net": 1501265,
-    "gross": 4869495
+    "net": 1526516,
+    "gross": 4951400
    },
    {
     "song": "Joy",
     "artist": "Angelique Kidjo",
-    "net": 1423913,
-    "gross": 4068323
+    "net": 1435366,
+    "gross": 4101047
    },
    {
     "song": "Cheat Code",
     "artist": "Lukas Graham",
-    "net": 1291755,
-    "gross": 2981204
+    "net": 1302803,
+    "gross": 3006701
    },
    {
     "song": "Do It All Again",
     "artist": "Jon Batiste",
-    "net": 208373,
-    "gross": 625183
+    "net": 211323,
+    "gross": 634033
    }
   ],
   "byYear": {
@@ -3487,26 +3497,26 @@ window.LYRIC_WRITERS = {
  },
  "Jamie Moore": {
   "name": "Jamie Moore",
-  "songs": 7,
-  "releases": 2,
+  "songs": 8,
+  "releases": 3,
   "upcoming": 1,
   "holds": 4,
   "cuts": 0,
-  "grossStreams": 879056,
-  "netStreams": 439528,
+  "grossStreams": 883074,
+  "netStreams": 441537,
   "grossSpins": 413,
   "netSpins": 206,
-  "lumStreams": 831521,
-  "lumStreamsNet": 415760,
-  "lumSpins": 443,
-  "lumSpinsNet": 221,
-  "avgShare": 0.3572,
-  "avgHoldDays": 86,
-  "maxHoldDays": 99,
+  "lumStreams": 1013694,
+  "lumStreamsNet": 477360,
+  "lumSpins": 433,
+  "lumSpinsNet": 216,
+  "avgShare": 0.3438,
+  "avgHoldDays": 98,
+  "maxHoldDays": 111,
   "topArtists": [
    {
     "artist": "Mackenzie Carpenter",
-    "n": 2
+    "n": 3
    },
    {
     "artist": "George Birge",
@@ -3529,8 +3539,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Drunk Girls in Bathrooms",
     "artist": "Maddie & Tae",
-    "net": 338313,
-    "gross": 676627
+    "net": 340322,
+    "gross": 680645
    },
    {
     "song": "Drunk Enough",
@@ -3541,7 +3551,7 @@ window.LYRIC_WRITERS = {
   ],
   "byYear": {
    "2025": 1,
-   "2026": 2
+   "2026": 3
   }
  },
  "Hunter Madrid": {
@@ -3551,12 +3561,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 1,
   "cuts": 0,
-  "grossStreams": 17792512,
-  "netStreams": 3963947,
+  "grossStreams": 17992258,
+  "netStreams": 4011257,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 3848666,
-  "lumStreamsNet": 811340,
+  "lumStreams": 3817597,
+  "lumStreamsNet": 806296,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.3149,
@@ -3588,32 +3598,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Superblue",
     "artist": "Sydney Ross Mitchell",
-    "net": 1266685,
-    "gross": 2533371
+    "net": 1284930,
+    "gross": 2569860
    },
    {
     "song": "Villain",
     "artist": "Fordo",
-    "net": 980199,
-    "gross": 6534662
+    "net": 993005,
+    "gross": 6620038
    },
    {
     "song": "Strangers",
     "artist": "Daniel Munozz",
-    "net": 636874,
-    "gross": 2547498
+    "net": 643532,
+    "gross": 2574129
    },
    {
     "song": "Sting",
     "artist": "Sydney Ross Mitchell",
-    "net": 254749,
-    "gross": 2547498
+    "net": 257412,
+    "gross": 2574129
    },
    {
     "song": "Thrill",
     "artist": "Sydney Ross Mitchell",
-    "net": 212614,
-    "gross": 850457
+    "net": 215672,
+    "gross": 862691
    }
   ],
   "byYear": {
@@ -3635,8 +3645,8 @@ window.LYRIC_WRITERS = {
   "netStreams": 1838,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 7490,
-  "lumStreamsNet": 3457,
+  "lumStreams": 8110,
+  "lumStreamsNet": 3691,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.4452,
@@ -3682,14 +3692,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 103174000,
-  "netStreams": 22728481,
-  "grossSpins": 371,
-  "netSpins": 34,
-  "lumStreams": 94981802,
-  "lumStreamsNet": 21531121,
-  "lumSpins": 1308,
-  "lumSpinsNet": 291,
+  "grossStreams": 105415491,
+  "netStreams": 23180728,
+  "grossSpins": 413,
+  "netSpins": 36,
+  "lumStreams": 97346982,
+  "lumStreamsNet": 22019977,
+  "lumSpins": 1350,
+  "lumSpinsNet": 296,
   "avgShare": 0.1467,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3715,26 +3725,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "House Money",
     "artist": "Baby Keem",
-    "net": 19762836,
-    "gross": 29943691
+    "net": 20157208,
+    "gross": 30541225
    },
    {
     "song": "Highway 95 pt.2",
     "artist": "Baby Keem",
-    "net": 1735717,
-    "gross": 16343856
+    "net": 1774109,
+    "gross": 16705367
    },
    {
     "song": "$ex Appeal",
     "artist": "Baby Keem",
-    "net": 612329,
-    "gross": 20970205
+    "net": 626023,
+    "gross": 21439149
    },
    {
     "song": "No Blame",
     "artist": "Baby Keem",
-    "net": 445378,
-    "gross": 7195125
+    "net": 451167,
+    "gross": 7288651
    },
    {
     "song": "On Your Mind",
@@ -3747,6 +3757,50 @@ window.LYRIC_WRITERS = {
    "2026": 6
   }
  },
+ "Jade Eagleson": {
+  "name": "Jade Eagleson",
+  "songs": 3,
+  "releases": 1,
+  "upcoming": 2,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 1497,
+  "netStreams": 499,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 1353,
+  "lumStreamsNet": 451,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.3056,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Jade Eagleson",
+    "n": 1
+   },
+   {
+    "artist": "Riley Taylor",
+    "n": 1
+   },
+   {
+    "artist": "Brandie Caroline",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Watering the Lawn",
+    "artist": "Riley Taylor",
+    "net": 499,
+    "gross": 1497
+   }
+  ],
+  "byYear": {
+   "2026": 2
+  }
+ },
  "David Ryan Harris": {
   "name": "David Ryan Harris",
   "songs": 46,
@@ -3754,13 +3808,13 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 622739967,
-  "netStreams": 255424031,
-  "grossSpins": 19742,
-  "netSpins": 8875,
-  "lumStreams": 23201883,
-  "lumStreamsNet": 8578535,
-  "lumSpins": 3,
+  "grossStreams": 624241166,
+  "netStreams": 256192378,
+  "grossSpins": 19857,
+  "netSpins": 8927,
+  "lumStreams": 23161970,
+  "lumStreamsNet": 8541291,
+  "lumSpins": 2,
   "lumSpinsNet": 1,
   "avgShare": 0.5031,
   "avgHoldDays": null,
@@ -3791,32 +3845,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Battlescars",
     "artist": "Guy Sebastian",
-    "net": 216736867,
-    "gross": 433473734
+    "net": 217518216,
+    "gross": 435036432
    },
    {
     "song": "All The Way",
     "artist": "Jacksepticeye",
-    "net": 19422457,
-    "gross": 58273200
+    "net": 19400128,
+    "gross": 58206207
    },
    {
     "song": "I Like It Like That",
     "artist": "Guy Sebastian",
-    "net": 6002988,
-    "gross": 18010767
+    "net": 5998632,
+    "gross": 17997697
    },
    {
     "song": "Forever More",
     "artist": "David Ryan Harris",
-    "net": 2591354,
-    "gross": 2591354
+    "net": 2593051,
+    "gross": 2593051
    },
    {
     "song": "All We Could Have Been",
     "artist": "Alex Sampson",
-    "net": 2161853,
-    "gross": 13511587
+    "net": 2166564,
+    "gross": 13541029
    }
   ],
   "byYear": {
@@ -3843,12 +3897,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 353527,
-  "netStreams": 172939,
+  "grossStreams": 354231,
+  "netStreams": 173303,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 2319,
-  "lumStreamsNet": 1503,
+  "lumStreams": 2295,
+  "lumStreamsNet": 1493,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.5195,
@@ -3868,32 +3922,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Alma De Chico",
     "artist": "Marc Tinez",
-    "net": 112670,
-    "gross": 225340
+    "net": 112947,
+    "gross": 225894
    },
    {
     "song": "De 0 A 100",
     "artist": "Groove 2070",
-    "net": 8653,
-    "gross": 25954
+    "net": 8661,
+    "gross": 25980
    },
    {
     "song": "Under Your Control",
     "artist": "Marc Tinez",
-    "net": 7616,
-    "gross": 15232
+    "net": 7626,
+    "gross": 15253
    },
    {
     "song": "Nada Me Vale",
     "artist": "Marc Tinez",
-    "net": 6983,
-    "gross": 13967
+    "net": 6993,
+    "gross": 13986
    },
    {
     "song": "Desde Que Me Fui",
     "artist": "Marc Tinez",
-    "net": 5758,
-    "gross": 11516
+    "net": 5759,
+    "gross": 11518
    }
   ],
   "byYear": {
@@ -3914,14 +3968,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 1863611662,
-  "netStreams": 411724358,
-  "grossSpins": 1436086,
-  "netSpins": 336091,
-  "lumStreams": 463556289,
-  "lumStreamsNet": 101646360,
-  "lumSpins": 100850,
-  "lumSpinsNet": 23715,
+  "grossStreams": 1525405948,
+  "netStreams": 348502038,
+  "grossSpins": 1327223,
+  "netSpins": 315765,
+  "lumStreams": 464221569,
+  "lumStreamsNet": 101837629,
+  "lumSpins": 100654,
+  "lumSpinsNet": 23698,
   "avgShare": 0.2219,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3949,34 +4003,34 @@ window.LYRIC_WRITERS = {
   ],
   "topSongs": [
    {
-    "song": "One Beer",
-    "artist": "HARDY",
-    "net": 64621016,
-    "gross": 344645423
-   },
-   {
     "song": "Wait In The Truck",
     "artist": "HARDY",
-    "net": 48417525,
-    "gross": 215189000
+    "net": 48663672,
+    "gross": 216282987
    },
    {
     "song": "I Wrote The Book",
     "artist": "Morgan Wallen",
-    "net": 48326926,
-    "gross": 203481794
+    "net": 48547129,
+    "gross": 204408966
    },
    {
     "song": "Single Saturday Night",
     "artist": "Cole Swindell",
-    "net": 42559795,
-    "gross": 170239180
+    "net": 42836850,
+    "gross": 171347400
    },
    {
     "song": "Beers On Me",
     "artist": "Dierks Bentley",
     "net": 37478200,
     "gross": 149912801
+   },
+   {
+    "song": "Born With A Beer In My Hand",
+    "artist": "Morgan Wallen",
+    "net": 29549447,
+    "gross": 78798527
    }
   ],
   "byYear": {
@@ -3994,12 +4048,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 73547017,
-  "netStreams": 26043085,
-  "grossSpins": 134,
+  "grossStreams": 74339619,
+  "netStreams": 26359418,
+  "grossSpins": 135,
   "netSpins": 52,
-  "lumStreams": 8607290,
-  "lumStreamsNet": 3268267,
+  "lumStreams": 8599470,
+  "lumStreamsNet": 3279740,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.5029,
@@ -4031,32 +4085,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Trouble",
     "artist": "Camylio",
-    "net": 8938101,
-    "gross": 26808942
+    "net": 9072496,
+    "gross": 27212048
    },
    {
     "song": "Amnesia",
     "artist": "Camylio",
-    "net": 4150874,
-    "gross": 12450132
+    "net": 4174327,
+    "gross": 12520478
    },
    {
     "song": "Angel",
     "artist": "Camylio",
-    "net": 3707694,
-    "gross": 11120860
+    "net": 3715753,
+    "gross": 11145030
    },
    {
     "song": "Dusk Till Dawn",
     "artist": "Camylio",
-    "net": 2227537,
-    "gross": 6681277
+    "net": 2240507,
+    "gross": 6720177
    },
    {
     "song": "Bones",
     "artist": "Camylio",
-    "net": 2181492,
-    "gross": 4362984
+    "net": 2182882,
+    "gross": 4365765
    }
   ],
   "byYear": {
@@ -4075,14 +4129,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 6,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 960021192,
-  "netStreams": 81947453,
-  "grossSpins": 34541,
-  "netSpins": 1905,
-  "lumStreams": 165936252,
-  "lumStreamsNet": 14948057,
-  "lumSpins": 1596,
-  "lumSpinsNet": 74,
+  "grossStreams": 965450541,
+  "netStreams": 82495700,
+  "grossSpins": 34926,
+  "netSpins": 1933,
+  "lumStreams": 165296248,
+  "lumStreamsNet": 14891160,
+  "lumSpins": 1490,
+  "lumSpinsNet": 72,
   "avgShare": 0.1016,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -4112,32 +4166,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Count Me Out",
     "artist": "Kendrick Lamar",
-    "net": 36776377,
-    "gross": 417913377
+    "net": 36951227,
+    "gross": 419900318
    },
    {
     "song": "Give You The World",
     "artist": "Steve Lacy",
-    "net": 18706974,
-    "gross": 112354204
+    "net": 18817949,
+    "gross": 113020717
    },
    {
     "song": "Mercury",
     "artist": "Steve Lacy",
-    "net": 2813415,
-    "gross": 112536629
+    "net": 2827076,
+    "gross": 113083069
    },
    {
     "song": "Buttons",
     "artist": "Steve Lacy",
-    "net": 2282592,
-    "gross": 45651851
+    "net": 2295502,
+    "gross": 45910055
    },
    {
     "song": "Vacay",
     "artist": "Aminé",
-    "net": 2217201,
-    "gross": 15647153
+    "net": 2238222,
+    "gross": 15795503
    }
   ],
   "byYear": {
@@ -4155,13 +4209,13 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 20988680,
-  "netStreams": 1303373,
-  "grossSpins": 617,
+  "grossStreams": 21045489,
+  "netStreams": 1307328,
+  "grossSpins": 620,
   "netSpins": 37,
-  "lumStreams": 2573010,
-  "lumStreamsNet": 184976,
-  "lumSpins": 14,
+  "lumStreams": 2531597,
+  "lumStreamsNet": 183007,
+  "lumSpins": 16,
   "lumSpinsNet": 0,
   "avgShare": 0.4766,
   "avgHoldDays": null,
@@ -4188,26 +4242,26 @@ window.LYRIC_WRITERS = {
    {
     "song": "Show It",
     "artist": "Chris Brown",
-    "net": 1253223,
-    "gross": 20887052
+    "net": 1256572,
+    "gross": 20942882
    },
    {
     "song": "Give Up On Us",
     "artist": "Lonnie",
-    "net": 42925,
-    "gross": 64453
+    "net": 43512,
+    "gross": 65334
    },
    {
     "song": "Delicious",
     "artist": "Delf",
-    "net": 6384,
-    "gross": 31922
+    "net": 6394,
+    "gross": 31974
    },
    {
     "song": "Off My Mind",
     "artist": "Delf",
-    "net": 840,
-    "gross": 5253
+    "net": 847,
+    "gross": 5299
    }
   ],
   "byYear": {
@@ -4218,20 +4272,20 @@ window.LYRIC_WRITERS = {
  },
  "Patrick Ridgen": {
   "name": "Patrick Ridgen",
-  "songs": 10,
+  "songs": 11,
   "releases": 10,
-  "upcoming": 0,
+  "upcoming": 1,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 2619031,
-  "netStreams": 612200,
-  "grossSpins": 343,
-  "netSpins": 85,
-  "lumStreams": 1169053,
-  "lumStreamsNet": 284156,
+  "grossStreams": 2648244,
+  "netStreams": 618284,
+  "grossSpins": 348,
+  "netSpins": 87,
+  "lumStreams": 1158796,
+  "lumStreamsNet": 281515,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.4633,
+  "avgShare": 0.4515,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
@@ -4260,8 +4314,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "DMPB",
     "artist": "Yung Gravy",
-    "net": 284033,
-    "gross": 1893557
+    "net": 286274,
+    "gross": 1908499
    },
    {
     "song": "Wild And Free",
@@ -4272,27 +4326,27 @@ window.LYRIC_WRITERS = {
    {
     "song": "24/7",
     "artist": "Brooke Daye",
-    "net": 73313,
-    "gross": 219961
+    "net": 74282,
+    "gross": 222871
    },
    {
     "song": "All My Love",
     "artist": "Johnny Valentine",
-    "net": 39790,
-    "gross": 159163
+    "net": 42307,
+    "gross": 169231
    },
    {
     "song": "Otherside",
     "artist": "Bryce Vine",
-    "net": 21250,
-    "gross": 85000
+    "net": 21546,
+    "gross": 86185
    }
   ],
   "byYear": {
    "2022": 1,
    "2024": 6,
    "2025": 1,
-   "2026": 2
+   "2026": 3
   }
  },
  "RYON": {
@@ -4302,12 +4356,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 1975590,
-  "netStreams": 313969,
+  "grossStreams": 1991095,
+  "netStreams": 316403,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 802843,
-  "lumStreamsNet": 122187,
+  "lumStreams": 790504,
+  "lumStreamsNet": 120292,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.3767,
@@ -4339,20 +4393,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "DMPB",
     "artist": "Yung Gravy",
-    "net": 284033,
-    "gross": 1893557
+    "net": 286274,
+    "gross": 1908499
    },
    {
     "song": "Everything I Love",
     "artist": "Bela Pierce",
-    "net": 15557,
-    "gross": 38894
+    "net": 15590,
+    "gross": 38975
    },
    {
     "song": "Interlude / The Light",
     "artist": "The Ready Set",
-    "net": 14378,
-    "gross": 43139
+    "net": 14538,
+    "gross": 43621
    }
   ],
   "byYear": {
@@ -4367,12 +4421,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 975824,
-  "netStreams": 487912,
+  "grossStreams": 981764,
+  "netStreams": 490882,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 39201,
-  "lumStreamsNet": 19600,
+  "lumStreams": 39256,
+  "lumStreamsNet": 19628,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.5,
@@ -4388,8 +4442,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Favour",
     "artist": "LILO",
-    "net": 487912,
-    "gross": 975824
+    "net": 490882,
+    "gross": 981764
    }
   ],
   "byYear": {
@@ -4403,12 +4457,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 134720,
-  "netStreams": 54541,
+  "grossStreams": 135387,
+  "netStreams": 54828,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 52029,
-  "lumStreamsNet": 25183,
+  "lumStreams": 48834,
+  "lumStreamsNet": 23566,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.3794,
@@ -4432,14 +4486,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Tell It To The Whiskey",
     "artist": "Chris Colston",
-    "net": 27473,
-    "gross": 82403
+    "net": 27578,
+    "gross": 82720
    },
    {
     "song": "Hell Freezes Over",
     "artist": "Dillon Carmichael",
-    "net": 27068,
-    "gross": 52317
+    "net": 27249,
+    "gross": 52667
    }
   ],
   "byYear": {
@@ -4451,16 +4505,16 @@ window.LYRIC_WRITERS = {
  "Sawyer Utah": {
   "name": "Sawyer Utah",
   "songs": 31,
-  "releases": 30,
-  "upcoming": 1,
+  "releases": 31,
+  "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 25823240,
-  "netStreams": 9603581,
-  "grossSpins": 93,
-  "netSpins": 45,
-  "lumStreams": 8909943,
-  "lumStreamsNet": 3441339,
+  "grossStreams": 26271869,
+  "netStreams": 9809180,
+  "grossSpins": 96,
+  "netSpins": 47,
+  "lumStreams": 8785653,
+  "lumStreamsNet": 3428826,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.5554,
@@ -4492,32 +4546,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Beautiful As You",
     "artist": "Zach Hood",
-    "net": 2495624,
-    "gross": 7487622
+    "net": 2544858,
+    "gross": 7635340
    },
    {
     "song": "Simple Life",
     "artist": "Zach Hood",
-    "net": 1122303,
-    "gross": 2244606
+    "net": 1125587,
+    "gross": 2251174
    },
    {
     "song": "Happy Ever After",
     "artist": "Zach Hood",
-    "net": 768208,
-    "gross": 3072835
+    "net": 774399,
+    "gross": 3097597
    },
    {
     "song": "Middle Of Nowhere",
     "artist": "Zach Hood",
-    "net": 672614,
-    "gross": 3363072
+    "net": 684984,
+    "gross": 3424924
    },
    {
-    "song": "Southern Belle",
-    "artist": "Zach Hood",
-    "net": 567682,
-    "gross": 1419207
+    "song": "Play With My Heart",
+    "artist": "Sawyer Utah",
+    "net": 585332,
+    "gross": 585332
    }
   ],
   "byYear": {
@@ -4534,14 +4588,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 19023677,
-  "netStreams": 19023677,
-  "grossSpins": 56748,
-  "netSpins": 56748,
-  "lumStreams": 9992443,
-  "lumStreamsNet": 9992443,
-  "lumSpins": 37330,
-  "lumSpinsNet": 37330,
+  "grossStreams": 19464477,
+  "netStreams": 19464477,
+  "grossSpins": 56934,
+  "netSpins": 56934,
+  "lumStreams": 10102504,
+  "lumStreamsNet": 10102504,
+  "lumSpins": 37729,
+  "lumSpinsNet": 37729,
   "avgShare": 1.0,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -4555,32 +4609,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Wanting and Waiting",
     "artist": "The Black Crowes",
-    "net": 5892517,
-    "gross": 5892517
+    "net": 5952595,
+    "gross": 5952595
    },
    {
     "song": "Wilted Rose (feat. Lainey Wilson)",
     "artist": "The Black Crowes",
-    "net": 2542659,
-    "gross": 2542659
+    "net": 2548805,
+    "gross": 2548805
    },
    {
     "song": "Rats and Clowns",
     "artist": "The Black Crowes",
-    "net": 1360365,
-    "gross": 1360365
+    "net": 1366064,
+    "gross": 1366064
    },
    {
     "song": "Cross Your Fingers",
     "artist": "The Black Crowes",
-    "net": 1331302,
-    "gross": 1331302
+    "net": 1338413,
+    "gross": 1338413
    },
    {
     "song": "Bedside Manners",
     "artist": "The Black Crowes",
-    "net": 1198571,
-    "gross": 1198571
+    "net": 1203104,
+    "gross": 1203104
    }
   ],
   "byYear": {
@@ -4595,14 +4649,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 19141852,
-  "netStreams": 19053220,
-  "grossSpins": 56748,
-  "netSpins": 56748,
-  "lumStreams": 10004269,
-  "lumStreamsNet": 9995399,
-  "lumSpins": 37359,
-  "lumSpinsNet": 37337,
+  "grossStreams": 19582802,
+  "netStreams": 19494058,
+  "grossSpins": 56934,
+  "netSpins": 56934,
+  "lumStreams": 10113959,
+  "lumStreamsNet": 10105367,
+  "lumSpins": 37757,
+  "lumSpinsNet": 37736,
   "avgShare": 0.7273,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -4620,32 +4674,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Wanting and Waiting",
     "artist": "The Black Crowes",
-    "net": 5892517,
-    "gross": 5892517
+    "net": 5952595,
+    "gross": 5952595
    },
    {
     "song": "Wilted Rose (feat. Lainey Wilson)",
     "artist": "The Black Crowes",
-    "net": 2542659,
-    "gross": 2542659
+    "net": 2548805,
+    "gross": 2548805
    },
    {
     "song": "Rats and Clowns",
     "artist": "The Black Crowes",
-    "net": 1360365,
-    "gross": 1360365
+    "net": 1366064,
+    "gross": 1366064
    },
    {
     "song": "Cross Your Fingers",
     "artist": "The Black Crowes",
-    "net": 1331302,
-    "gross": 1331302
+    "net": 1338413,
+    "gross": 1338413
    },
    {
     "song": "Bedside Manners",
     "artist": "The Black Crowes",
-    "net": 1198571,
-    "gross": 1198571
+    "net": 1203104,
+    "gross": 1203104
    }
   ],
   "byYear": {
@@ -4660,12 +4714,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 8331561,
-  "netStreams": 1982618,
-  "grossSpins": 2769,
-  "netSpins": 553,
-  "lumStreams": 5205025,
-  "lumStreamsNet": 1291308,
+  "grossStreams": 8474793,
+  "netStreams": 2016057,
+  "grossSpins": 2776,
+  "netSpins": 555,
+  "lumStreams": 5306633,
+  "lumStreamsNet": 1323530,
   "lumSpins": 2,
   "lumSpinsNet": 0,
   "avgShare": 0.2884,
@@ -4697,20 +4751,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Good Bad & Ugly",
     "artist": "JaeyBxrd",
-    "net": 535878,
-    "gross": 2679391
+    "net": 548643,
+    "gross": 2743217
    },
    {
     "song": "I Want You",
     "artist": "NURKO",
-    "net": 294277,
-    "gross": 1177110
+    "net": 298117,
+    "gross": 1192469
    },
    {
     "song": "Cut Me Open",
     "artist": "JaeyBxrd",
-    "net": 290152,
-    "gross": 1160611
+    "net": 295673,
+    "gross": 1182692
    },
    {
     "song": "Where We Are Right Now",
@@ -4721,8 +4775,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Pour Decisions",
     "artist": "Ryan and Rory",
-    "net": 97986,
-    "gross": 489932
+    "net": 101695,
+    "gross": 508477
    }
   ],
   "byYear": {
@@ -4738,12 +4792,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 4663833,
-  "netStreams": 3420036,
-  "grossSpins": 60,
-  "netSpins": 50,
-  "lumStreams": 1365843,
-  "lumStreamsNet": 904817,
+  "grossStreams": 4772411,
+  "netStreams": 3473598,
+  "grossSpins": 66,
+  "netSpins": 55,
+  "lumStreams": 1402793,
+  "lumStreamsNet": 919774,
   "lumSpins": 2,
   "lumSpinsNet": 2,
   "avgShare": 0.9187,
@@ -4775,14 +4829,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Minutes With You",
     "artist": "Jake Clark",
-    "net": 1015228,
-    "gross": 1015228
+    "net": 1024490,
+    "gross": 1024490
    },
    {
     "song": "Evergreen Avenue",
     "artist": "Izzy Escobar",
-    "net": 542136,
-    "gross": 1445698
+    "net": 569990,
+    "gross": 1519975
    },
    {
     "song": "BUTTERF-LIES",
@@ -4793,14 +4847,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Three More Glasses",
     "artist": "Izzy Escobar",
-    "net": 289809,
-    "gross": 579618
+    "net": 296996,
+    "gross": 593992
    },
    {
     "song": "Break Season",
     "artist": "Mira Housey",
-    "net": 262407,
-    "gross": 262407
+    "net": 265801,
+    "gross": 265801
    }
   ],
   "byYear": {
@@ -4816,12 +4870,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 2381453,
-  "netStreams": 143218,
-  "grossSpins": 255,
+  "grossStreams": 2381480,
+  "netStreams": 143245,
+  "grossSpins": 262,
   "netSpins": 6,
-  "lumStreams": 1141280,
-  "lumStreamsNet": 78862,
+  "lumStreams": 1053016,
+  "lumStreamsNet": 75461,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.375,
@@ -4857,8 +4911,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Sound Of The Spotlight",
     "artist": "First Time Thieves",
-    "net": 1099,
-    "gross": 1099
+    "net": 1126,
+    "gross": 1126
    }
   ],
   "byYear": {
@@ -4873,12 +4927,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 449247,
-  "netStreams": 170405,
+  "grossStreams": 449263,
+  "netStreams": 170408,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 5620,
-  "lumStreamsNet": 2043,
+  "lumStreams": 5011,
+  "lumStreamsNet": 1806,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.3524,
@@ -4938,14 +4992,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 1,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 35125756,
-  "netStreams": 13954460,
-  "grossSpins": 9950,
-  "netSpins": 2965,
-  "lumStreams": 11404902,
-  "lumStreamsNet": 3994831,
-  "lumSpins": 1731,
-  "lumSpinsNet": 823,
+  "grossStreams": 35888466,
+  "netStreams": 14244411,
+  "grossSpins": 10044,
+  "netSpins": 2990,
+  "lumStreams": 11462487,
+  "lumStreamsNet": 4006673,
+  "lumSpins": 1729,
+  "lumSpinsNet": 824,
   "avgShare": 0.6281,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -4975,32 +5029,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Starry Eyed",
     "artist": "Good Neighbours",
-    "net": 4300829,
-    "gross": 17203318
+    "net": 4408282,
+    "gross": 17633129
    },
    {
     "song": "My Love (Is Like A Waterfall)",
     "artist": "Peacemode",
-    "net": 2091612,
-    "gross": 2091612
+    "net": 2134323,
+    "gross": 2134323
    },
    {
     "song": "Come Back Baby",
     "artist": "Peacemode",
-    "net": 1178057,
-    "gross": 1178057
+    "net": 1192395,
+    "gross": 1192395
    },
    {
     "song": "Vienna (Everything's Fine)",
     "artist": "Vienna Vienna",
-    "net": 852575,
-    "gross": 2557981
+    "net": 859601,
+    "gross": 2579062
    },
    {
     "song": "Holy Sugar",
     "artist": "The Wombats",
-    "net": 519738,
-    "gross": 1039476
+    "net": 526036,
+    "gross": 1052072
    }
   ],
   "byYear": {
@@ -5016,14 +5070,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 9,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 8394939,
-  "netStreams": 8253653,
-  "grossSpins": 19,
-  "netSpins": 19,
-  "lumStreams": 5100786,
-  "lumStreamsNet": 5008185,
-  "lumSpins": 33,
-  "lumSpinsNet": 32,
+  "grossStreams": 8596429,
+  "netStreams": 8452943,
+  "grossSpins": 21,
+  "netSpins": 21,
+  "lumStreams": 4964074,
+  "lumStreamsNet": 4880837,
+  "lumSpins": 34,
+  "lumSpinsNet": 34,
   "avgShare": 0.9609,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -5037,32 +5091,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Big Time",
     "artist": "Mustard Service",
-    "net": 2242188,
-    "gross": 2242188
+    "net": 2283820,
+    "gross": 2283820
    },
    {
     "song": "Conversation Overtime",
     "artist": "Mustard Service",
-    "net": 1260831,
-    "gross": 1260831
+    "net": 1283023,
+    "gross": 1283023
    },
    {
     "song": "Going Nowhere",
     "artist": "Mustard Service",
-    "net": 1135859,
-    "gross": 1135859
+    "net": 1156235,
+    "gross": 1156235
    },
    {
     "song": "2am",
     "artist": "Mustard Service",
-    "net": 1086366,
-    "gross": 1086366
+    "net": 1106444,
+    "gross": 1106444
    },
    {
     "song": "I'm An Idiot",
     "artist": "Mustard Service",
-    "net": 553759,
-    "gross": 553759
+    "net": 565609,
+    "gross": 565609
    }
   ],
   "byYear": {
@@ -5077,12 +5131,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 7528924,
-  "netStreams": 7528924,
+  "grossStreams": 7665565,
+  "netStreams": 7665565,
   "grossSpins": 7,
   "netSpins": 7,
-  "lumStreams": 4503432,
-  "lumStreamsNet": 4503432,
+  "lumStreams": 4339042,
+  "lumStreamsNet": 4339042,
   "lumSpins": 19,
   "lumSpinsNet": 19,
   "avgShare": 0.9545,
@@ -5098,32 +5152,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Big Time",
     "artist": "Mustard Service",
-    "net": 2242188,
-    "gross": 2242188
+    "net": 2283820,
+    "gross": 2283820
    },
    {
     "song": "Conversation Overtime",
     "artist": "Mustard Service",
-    "net": 1260831,
-    "gross": 1260831
+    "net": 1283023,
+    "gross": 1283023
    },
    {
     "song": "Going Nowhere",
     "artist": "Mustard Service",
-    "net": 1135859,
-    "gross": 1135859
+    "net": 1156235,
+    "gross": 1156235
    },
    {
     "song": "2am",
     "artist": "Mustard Service",
-    "net": 1086366,
-    "gross": 1086366
+    "net": 1106444,
+    "gross": 1106444
    },
    {
     "song": "I'm An Idiot",
     "artist": "Mustard Service",
-    "net": 553759,
-    "gross": 553759
+    "net": 565609,
+    "gross": 565609
    }
   ],
   "byYear": {
@@ -5138,13 +5192,13 @@ window.LYRIC_WRITERS = {
   "upcoming": 2,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 8235354,
-  "netStreams": 8094068,
+  "grossStreams": 8382991,
+  "netStreams": 8239505,
   "grossSpins": 7,
   "netSpins": 7,
-  "lumStreams": 4966433,
-  "lumStreamsNet": 4873832,
-  "lumSpins": 20,
+  "lumStreams": 4755224,
+  "lumStreamsNet": 4671987,
+  "lumSpins": 19,
   "lumSpinsNet": 19,
   "avgShare": 0.9308,
   "avgHoldDays": null,
@@ -5159,32 +5213,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Big Time",
     "artist": "Mustard Service",
-    "net": 2242188,
-    "gross": 2242188
+    "net": 2283820,
+    "gross": 2283820
    },
    {
     "song": "Conversation Overtime",
     "artist": "Mustard Service",
-    "net": 1260831,
-    "gross": 1260831
+    "net": 1283023,
+    "gross": 1283023
    },
    {
     "song": "Going Nowhere",
     "artist": "Mustard Service",
-    "net": 1135859,
-    "gross": 1135859
+    "net": 1156235,
+    "gross": 1156235
    },
    {
     "song": "2am",
     "artist": "Mustard Service",
-    "net": 1086366,
-    "gross": 1086366
+    "net": 1106444,
+    "gross": 1106444
    },
    {
     "song": "I'm An Idiot",
     "artist": "Mustard Service",
-    "net": 553759,
-    "gross": 553759
+    "net": 565609,
+    "gross": 565609
    }
   ],
   "byYear": {
@@ -5199,12 +5253,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 1051949,
-  "netStreams": 241497,
+  "grossStreams": 1098242,
+  "netStreams": 251913,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 70219,
-  "lumStreamsNet": 16025,
+  "lumStreams": 75110,
+  "lumStreamsNet": 17125,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.2375,
@@ -5220,8 +5274,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Playground",
     "artist": "Grace Bridie",
-    "net": 193408,
-    "gross": 859595
+    "net": 203824,
+    "gross": 905888
    },
    {
     "song": "Afterglow",
@@ -5242,12 +5296,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 607653,
-  "netStreams": 260185,
+  "grossStreams": 616719,
+  "netStreams": 263876,
   "grossSpins": 38,
   "netSpins": 14,
-  "lumStreams": 1856347,
-  "lumStreamsNet": 825439,
+  "lumStreams": 1891063,
+  "lumStreamsNet": 840784,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.3411,
@@ -5279,14 +5333,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Cool Down",
     "artist": "Ari Lennox",
-    "net": 232191,
-    "gross": 515980
+    "net": 235525,
+    "gross": 523389
    },
    {
     "song": "Unreasonable",
     "artist": "Paperwater",
-    "net": 11998,
-    "gross": 35988
+    "net": 12048,
+    "gross": 36139
    },
    {
     "song": "The Gift",
@@ -5297,14 +5351,14 @@ window.LYRIC_WRITERS = {
    {
     "song": "Into Me",
     "artist": "Tolou",
-    "net": 6039,
-    "gross": 30195
+    "net": 6332,
+    "gross": 31663
    },
    {
     "song": "World In You",
     "artist": "Myya",
-    "net": 1125,
-    "gross": 3410
+    "net": 1137,
+    "gross": 3448
    }
   ],
   "byYear": {
@@ -5319,14 +5373,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 49699628,
-  "netStreams": 2980943,
-  "grossSpins": 67941,
-  "netSpins": 3660,
-  "lumStreams": 68905767,
-  "lumStreamsNet": 3763197,
-  "lumSpins": 81187,
-  "lumSpinsNet": 4416,
+  "grossStreams": 51000301,
+  "netStreams": 3060803,
+  "grossSpins": 73038,
+  "netSpins": 3979,
+  "lumStreams": 71655637,
+  "lumStreamsNet": 3909495,
+  "lumSpins": 88237,
+  "lumSpinsNet": 4859,
   "avgShare": 0.0934,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -5362,30 +5416,63 @@ window.LYRIC_WRITERS = {
    {
     "song": "Jezebel",
     "artist": "GIVEON",
-    "net": 761341,
-    "gross": 11363302
+    "net": 812891,
+    "gross": 12132702
    },
    {
     "song": "100",
     "artist": "Ella Mai",
-    "net": 692628,
-    "gross": 13852561
+    "net": 717739,
+    "gross": 14354787
    },
    {
     "song": "Yo Yan",
     "artist": "Skrillex",
-    "net": 378482,
-    "gross": 1513930
+    "net": 380665,
+    "gross": 1522662
    },
    {
     "song": "Ruin Me",
     "artist": "Corbyn Besson",
-    "net": 60724,
-    "gross": 1214495
+    "net": 61740,
+    "gross": 1234810
    }
   ],
   "byYear": {
    "2025": 1,
+   "2026": 4
+  }
+ },
+ "Tkay Maidza": {
+  "name": "Tkay Maidza",
+  "songs": 4,
+  "releases": 4,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 0,
+  "netStreams": 0,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 0,
+  "lumStreamsNet": 0,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2406,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Tkay Maidza",
+    "n": 3
+   },
+   {
+    "artist": "Snakehips",
+    "n": 1
+   }
+  ],
+  "topSongs": [],
+  "byYear": {
    "2026": 4
   }
  },
@@ -5396,12 +5483,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 66021,
-  "netStreams": 53628,
+  "grossStreams": 92115,
+  "netStreams": 74299,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 91188,
-  "lumStreamsNet": 77955,
+  "lumStreams": 102076,
+  "lumStreamsNet": 87473,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.7778,
@@ -5417,20 +5504,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Take My Bones",
     "artist": "Camylio",
-    "net": 28839,
-    "gross": 28839
+    "net": 38664,
+    "gross": 38664
    },
    {
     "song": "Before You Do",
     "artist": "Camylio",
-    "net": 15252,
-    "gross": 22878
+    "net": 23806,
+    "gross": 35708
    },
    {
     "song": "Ashes",
     "artist": "Camylio",
-    "net": 9536,
-    "gross": 14304
+    "net": 11829,
+    "gross": 17743
    }
   ],
   "byYear": {
@@ -5444,12 +5531,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 127505,
-  "netStreams": 25501,
+  "grossStreams": 141969,
+  "netStreams": 28393,
   "grossSpins": 9,
   "netSpins": 1,
-  "lumStreams": 88240,
-  "lumStreamsNet": 17648,
+  "lumStreams": 97149,
+  "lumStreamsNet": 19429,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.2,
@@ -5465,8 +5552,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Jesus In China (Overflow)",
     "artist": "Chanpan",
-    "net": 25501,
-    "gross": 127505
+    "net": 28393,
+    "gross": 141969
    }
   ],
   "byYear": {
@@ -5480,14 +5567,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 581058,
-  "netStreams": 159790,
-  "grossSpins": 190,
+  "grossStreams": 1113172,
+  "netStreams": 306122,
+  "grossSpins": 192,
   "netSpins": 52,
-  "lumStreams": 1342354,
-  "lumStreamsNet": 369147,
-  "lumSpins": 6,
-  "lumSpinsNet": 1,
+  "lumStreams": 2837969,
+  "lumStreamsNet": 780441,
+  "lumSpins": 18,
+  "lumSpinsNet": 4,
   "avgShare": 0.275,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -5501,8 +5588,8 @@ window.LYRIC_WRITERS = {
    {
     "song": "Find Me In A Bar",
     "artist": "Nate Smith",
-    "net": 159790,
-    "gross": 581058
+    "net": 306122,
+    "gross": 1113172
    }
   ],
   "byYear": {
