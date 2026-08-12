@@ -690,6 +690,8 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
   .q-total-l{font-size:13px;color:var(--ink-soft);font-weight:600}
   .q-export{margin-left:auto;font-size:13px;font-weight:700;padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--blue);cursor:pointer}
   .q-export:hover{background:var(--bg-2)}
+  .act-export-row{display:flex;justify-content:flex-end;margin:0 0 12px}
+  .act-export-row .q-export{margin-left:0}
   .q-group{margin-bottom:20px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper)}
   .q-group-h{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:800;color:var(--ink);padding:12px 16px;background:var(--bg-2);border-bottom:1px solid var(--line)}
   .q-count{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);padding:2px 9px;border-radius:20px}
@@ -711,6 +713,7 @@ body.nav-collapsed .nav-item{justify-content:center;padding:10px}
     <div class="basis-callout"><span class="bc-lbl">Metrics shown as</span><div class="seg basis-seg"><button data-basis="gross">Gross</button><button data-basis="adjusted">Spirit-adjusted (net)</button></div></div>
     <div class="section-head"><span class="eyebrow">Activity</span><h3>Writer activity leaderboards</h3></div>
     <p style="color:var(--ink-soft);font-size:13px;max-width:820px;margin:-4px 0 14px">Who's most active across the SOS catalog — by song count, ownership share, and the kinds of cuts they're landing (singles, major-label, top-tier artists). Click any writer to open their card; respects the filters above.</p>
+    <div class="act-export-row"><button class="q-export" id="actExport">⬇ Download CSV</button></div>
     <div class="boards" id="activityBoards"></div>
    </div>
   </section>
@@ -1133,6 +1136,33 @@ function renderActivity(){
    +board('Most singles','singles', rank('single'), x=>x.single.toLocaleString(),'single')
    +board('Most major-label songs','major-label cuts', rank('major'), x=>x.major.toLocaleString(),'major')
    +board('Most top-tier-artist songs','top-artist cuts', rank('top'), x=>x.top.toLocaleString(),'top');
+}
+function exportActivityCsv(){
+  const FR=filtered(), W={}, C=window.LYRIC_CHARTS||{};
+  FR.forEach(r=>{
+    const names=(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()).filter(Boolean);
+    const isSingle=r.type==='Single'||r.type==='Single → Album';
+    const isMajor=/Major Label/.test(r.labelGroup||'');
+    const isTop=!!r.topArtist;
+    const p=(typeof r.spiritPct==='number')?r.spiritPct:null;
+    const c=C[r.id]; const st=(c&&typeof c.streams==='number')?c.streams:0;
+    names.forEach(nm=>{ const w=W[nm]||(W[nm]={n:0,pctSum:0,pctN:0,single:0,major:0,top:0,str:0,netstr:0});
+      w.n++; if(p!=null){w.pctSum+=p;w.pctN++;} if(isSingle)w.single++; if(isMajor)w.major++; if(isTop)w.top++;
+      if(st>0&&p!=null){ w.str+=st; w.netstr+=st*p; } });
+  });
+  const rows=Object.entries(W).map(([name,w])=>({name,n:w.n,
+      avg:w.pctN?Math.round(w.pctSum/w.pctN*1000)/10:'',
+      wavg:w.str?Math.round(w.netstr/w.str*1000)/10:'',
+      single:w.single,major:w.major,top:w.top}))
+    .sort((a,b)=>b.n-a.n);
+  const cell=v=>`"${String(v==null?'':v).replace(/"/g,'""')}"`;
+  const header=['Writer','Songs credited','Avg Spirit share %','Streams-weighted share %','Singles','Major-label songs','Top-tier-artist songs'];
+  const lines=[header.map(cell).join(',')].concat(
+    rows.map(r=>[r.name,r.n,r.avg,r.wavg,r.single,r.major,r.top].map(cell).join(',')));
+  const asOf=(window.LYRIC_ROYALTY&&LYRIC_ROYALTY.meta&&LYRIC_ROYALTY.meta.asOf)||new Date().toISOString().slice(0,10);
+  const blob=new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const url=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=url; a.download='writer-activity_'+asOf+'.csv'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
 }
 function openActivityDetail(name, metric){
   const META={
@@ -1692,6 +1722,7 @@ document.addEventListener('click',e=>{
   if(pv){ if(state.pView!==pv.dataset.pview){ state.pView=pv.dataset.pview; renderPipeline(); } return; }
   if(e.target.id==='pClear'){ state.pWriter=state.pGenre=state.pVenture=''; renderPipeline(); }
   if(e.target.id==='qExport'){ exportQualityCsv(); }
+  if(e.target.id==='actExport'){ exportActivityCsv(); }
   const as=e.target.closest('.act-seg button[data-actshare]');
   if(as && state.actShare!==as.dataset.actshare){ state.actShare=as.dataset.actshare; renderActivity(); }
   const ad=e.target.closest('[data-actwriter]');
