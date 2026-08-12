@@ -339,6 +339,9 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 .gc-empty{padding:40px 20px;text-align:center;color:var(--ink-faint);font-size:13.5px;font-weight:600}
 .bo-mult{color:var(--green)!important}
 #activityBoards .act-rows{max-height:560px;overflow-y:auto}
+.act-seg{display:inline-flex;margin-left:auto;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.act-seg button{border:0;background:var(--paper);color:var(--ink-soft);font-weight:700;font-size:11px;padding:4px 9px;cursor:pointer}
+.act-seg button.on{background:var(--blue);color:#fff}
 @media(max-width:760px){.gfbar-in{padding:0 12px}.gfbar .ctl{flex:1 1 auto}}
 
 @media(max-width:880px){
@@ -765,7 +768,7 @@ const TYPE_CLASS = {'Single':'t-Single','Album':'t-Album','EP':'t-EP','Single �
 const $ = s => document.querySelector(s);
 
 let data = load();
-let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', writers:[], writerMode:'include', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:'', pFrom:'', pTo:'', artist:'', genre:''};
+let state = {view:'calendar', editing:false, q:'', status:'', type:'', tier:'', label:'', sort:'date', dir:-1, basis:'adjusted', writer:'', writers:[], writerMode:'include', page:'overview', gapSrc:'luminate', pView:'snapshot', pWriter:'', pGenre:'', pVenture:'', pFrom:'', pTo:'', artist:'', genre:'', actShare:'simple'};
 
 function load(){
   const draft = localStorage.getItem(LS_KEY);
@@ -1085,29 +1088,34 @@ function renderPipeline(){
 /* ---------- Activity leaderboards (writer-level) ---------- */
 function renderActivity(){
   const host=$('#activityBoards'); if(!host) return;
-  const FR=filtered(), W={};
+  const FR=filtered(), W={}, C=window.LYRIC_CHARTS||{};
   FR.forEach(r=>{
     const names=(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()).filter(Boolean);
     const isSingle=r.type==='Single'||r.type==='Single → Album';
     const isMajor=/Major Label/.test(r.labelGroup||'');
     const isTop=!!r.topArtist;
     const p=(typeof r.spiritPct==='number')?r.spiritPct:null;
-    names.forEach(nm=>{ const w=W[nm]||(W[nm]={n:0,pctSum:0,pctN:0,single:0,major:0,top:0});
-      w.n++; if(p!=null){w.pctSum+=p;w.pctN++;} if(isSingle)w.single++; if(isMajor)w.major++; if(isTop)w.top++; });
+    const c=C[r.id]; const st=(c&&typeof c.streams==='number')?c.streams:0;
+    names.forEach(nm=>{ const w=W[nm]||(W[nm]={n:0,pctSum:0,pctN:0,single:0,major:0,top:0,str:0,netstr:0});
+      w.n++; if(p!=null){w.pctSum+=p;w.pctN++;} if(isSingle)w.single++; if(isMajor)w.major++; if(isTop)w.top++;
+      if(st>0&&p!=null){ w.str+=st; w.netstr+=st*p; } });
   });
-  const arr=Object.entries(W).map(([name,w])=>({name,...w,avg:w.pctN?w.pctSum/w.pctN:0}));
+  const arr=Object.entries(W).map(([name,w])=>({name,...w,avg:w.pctN?w.pctSum/w.pctN:0,wavg:w.str?w.netstr/w.str:0}));
   const rank=(key,flt)=> arr.filter(x=>(flt?flt(x):true)&&x[key]>0).sort((a,b)=>b[key]-a[key]);
-  const board=(title,unit,rows,valFn)=>`<section class="board">
-      <div class="board-h"><span class="eyebrow">Activity</span><h3>${title}</h3><span class="when">${rows.length} writers · ${unit}</span></div>
+  const board=(title,unit,rows,valFn,extra)=>`<section class="board">
+      <div class="board-h"><span class="eyebrow">Activity</span><h3>${title}</h3>${extra||`<span class="when">${rows.length} writers · ${unit}</span>`}</div>
       <div class="act-rows">`
     +(rows.length?rows.map((x,i)=>`<div class="brow"><span class="brank t${i+1<=3?i+1:''}">${i+1}</span>
         <div><div class="bsong"><span class="wname" data-writer="${esc(x.name)}">${esc(x.name)}</span></div></div>
         <div class="bmetric"><span class="bn">${valFn(x)}</span></div></div>`).join('')
         :'<div class="brow head"><span></span><div class="bsub">No data in the current filter.</div><span></span></div>')
     +`</div></section>`;
+  const wtd=state.actShare==='weighted', shareKey=wtd?'wavg':'avg';
+  const shareRows=rank(shareKey, wtd? (x=>x.str>0) : (x=>x.n>=5));
+  const shareExtra=`<div class="seg act-seg"><button data-actshare="simple" class="${wtd?'':'on'}">Simple avg</button><button data-actshare="weighted" class="${wtd?'on':''}">Streams-weighted</button></div>`;
   host.innerHTML =
     board('Highest output','songs credited', rank('n'), x=>x.n.toLocaleString())
-   +board('Highest avg Spirit share','avg % owned (5+ songs)', rank('avg',w=>w.n>=5), x=>Math.round(x.avg*100)+'%')
+   +board(wtd?'Effective Spirit share':'Highest avg Spirit share', wtd?'stream-weighted % owned':'avg % owned (5+ songs)', shareRows, x=>Math.round(x[shareKey]*100)+'%', shareExtra)
    +board('Most singles','singles', rank('single'), x=>x.single.toLocaleString())
    +board('Most major-label songs','major-label cuts', rank('major'), x=>x.major.toLocaleString())
    +board('Most top-tier-artist songs','top-artist cuts', rank('top'), x=>x.top.toLocaleString());
@@ -1646,6 +1654,8 @@ document.addEventListener('click',e=>{
   if(pv){ if(state.pView!==pv.dataset.pview){ state.pView=pv.dataset.pview; renderPipeline(); } return; }
   if(e.target.id==='pClear'){ state.pWriter=state.pGenre=state.pVenture=''; renderPipeline(); }
   if(e.target.id==='qExport'){ exportQualityCsv(); }
+  const as=e.target.closest('.act-seg button[data-actshare]');
+  if(as && state.actShare!==as.dataset.actshare){ state.actShare=as.dataset.actshare; renderActivity(); }
 });
 document.addEventListener('change',e=>{
   if(e.target.id==='pWriter'){ state.pWriter=e.target.value; renderPipeline(); }
