@@ -342,6 +342,20 @@ td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right
 .act-seg{display:inline-flex;margin-left:auto;border:1px solid var(--line);border-radius:7px;overflow:hidden}
 .act-seg button{border:0;background:var(--paper);color:var(--ink-soft);font-weight:700;font-size:11px;padding:4px 9px;cursor:pointer}
 .act-seg button.on{background:var(--blue);color:#fff}
+.wc-detail{padding:2px}
+.det-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.det-head h3{margin:0;font-size:20px;color:var(--ink)}
+.det-sub{font-size:12.5px;color:var(--ink-soft);font-weight:600;margin-top:2px}
+.det-card{margin-left:auto;font-size:12px;font-weight:700;padding:7px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--blue);cursor:pointer;white-space:nowrap}
+.det-list{max-height:60vh;overflow-y:auto;border:1px solid var(--line);border-radius:10px}
+.det-row{display:flex;align-items:baseline;gap:10px;padding:8px 12px;border-top:1px solid var(--line)}
+.det-row:first-child{border-top:0}
+.det-main{display:flex;flex-direction:column;min-width:0;flex:1}
+.det-t{font-size:13.5px;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.det-t:hover{color:var(--blue);text-decoration:underline}
+.det-a{font-size:11.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.det-v{font-size:12.5px;font-weight:700;color:var(--ink-soft);white-space:nowrap}
+.det-empty{padding:16px;color:var(--ink-faint);font-size:13px;text-align:center}
 @media(max-width:760px){.gfbar-in{padding:0 12px}.gfbar .ctl{flex:1 1 auto}}
 
 @media(max-width:880px){
@@ -1102,11 +1116,11 @@ function renderActivity(){
   });
   const arr=Object.entries(W).map(([name,w])=>({name,...w,avg:w.pctN?w.pctSum/w.pctN:0,wavg:w.str?w.netstr/w.str:0}));
   const rank=(key,flt)=> arr.filter(x=>(flt?flt(x):true)&&x[key]>0).sort((a,b)=>b[key]-a[key]);
-  const board=(title,unit,rows,valFn,extra)=>`<section class="board">
+  const board=(title,unit,rows,valFn,metric,extra)=>`<section class="board">
       <div class="board-h"><span class="eyebrow">Activity</span><h3>${title}</h3>${extra||`<span class="when">${rows.length} writers · ${unit}</span>`}</div>
       <div class="act-rows">`
     +(rows.length?rows.map((x,i)=>`<div class="brow"><span class="brank t${i+1<=3?i+1:''}">${i+1}</span>
-        <div><div class="bsong"><span class="wname" data-writer="${esc(x.name)}">${esc(x.name)}</span></div></div>
+        <div><div class="bsong"><span class="wname act-detail" data-actwriter="${esc(x.name)}" data-actmetric="${metric}" title="Click to see the songs behind this number">${esc(x.name)}</span></div></div>
         <div class="bmetric"><span class="bn">${valFn(x)}</span></div></div>`).join('')
         :'<div class="brow head"><span></span><div class="bsub">No data in the current filter.</div><span></span></div>')
     +`</div></section>`;
@@ -1114,11 +1128,35 @@ function renderActivity(){
   const shareRows=rank(shareKey, wtd? (x=>x.str>0) : (x=>x.n>=5));
   const shareExtra=`<div class="seg act-seg"><button data-actshare="simple" class="${wtd?'':'on'}">Simple avg</button><button data-actshare="weighted" class="${wtd?'on':''}">Streams-weighted</button></div>`;
   host.innerHTML =
-    board('Highest output','songs credited', rank('n'), x=>x.n.toLocaleString())
-   +board(wtd?'Effective Spirit share':'Highest avg Spirit share', wtd?'stream-weighted % owned':'avg % owned (5+ songs)', shareRows, x=>Math.round(x[shareKey]*100)+'%', shareExtra)
-   +board('Most singles','singles', rank('single'), x=>x.single.toLocaleString())
-   +board('Most major-label songs','major-label cuts', rank('major'), x=>x.major.toLocaleString())
-   +board('Most top-tier-artist songs','top-artist cuts', rank('top'), x=>x.top.toLocaleString());
+    board('Highest output','songs credited', rank('n'), x=>x.n.toLocaleString(),'output')
+   +board(wtd?'Effective Spirit share':'Highest avg Spirit share', wtd?'stream-weighted % owned':'avg % owned (5+ songs)', shareRows, x=>Math.round(x[shareKey]*100)+'%','share', shareExtra)
+   +board('Most singles','singles', rank('single'), x=>x.single.toLocaleString(),'single')
+   +board('Most major-label songs','major-label cuts', rank('major'), x=>x.major.toLocaleString(),'major')
+   +board('Most top-tier-artist songs','top-artist cuts', rank('top'), x=>x.top.toLocaleString(),'top');
+}
+function openActivityDetail(name, metric){
+  const META={
+    output:{label:'Songs credited', pred:_=>true},
+    share:{label:'Ownership by song', pred:_=>true},
+    single:{label:'Singles', pred:r=>r.type==='Single'||r.type==='Single → Album'},
+    major:{label:'Major-label songs', pred:r=>/Major Label/.test(r.labelGroup||'')},
+    top:{label:'Top-tier-artist songs', pred:r=>!!r.topArtist}
+  }[metric]; if(!META) return;
+  const C=window.LYRIC_CHARTS||{};
+  const songs=filtered().filter(r=>(r.spiritSongwriters||'').split(/\s*,\s*/).map(x=>x.trim()).includes(name) && META.pred(r))
+    .map(r=>({r, st:(C[r.id]&&typeof C[r.id].streams==='number')?C[r.id].streams:0}))
+    .sort((a,b)=>b.st-a.st);
+  const ctx=r=> metric==='major'?esc(r.label||r.labelGroup||'') : metric==='single'?esc(r.type) : metric==='top'?'Top-tier artist' : (r.spiritPct!=null?Math.round(r.spiritPct*100)+'% Spirit':'');
+  const rowsHtml=songs.map(({r,st})=>{
+    const sp='https://open.spotify.com/search/'+encodeURIComponent(((r.artist||'')+' '+(r.songTitle||'')).trim());
+    const c=ctx(r);
+    return `<div class="det-row"><span class="det-main"><a class="det-t" href="${sp}" target="_blank" rel="noopener" title="Search on Spotify">${esc(r.songTitle||'—')}</a><span class="det-a">${esc(r.artist||'—')}${c?' · '+c:''}</span></span><span class="det-v">${st>0?fmtNum(st):'—'}</span></div>`;
+  }).join('') || '<div class="det-empty">No songs match.</div>';
+  $('#wBody').innerHTML=`<div class="wc-detail">
+      <div class="det-head"><div><h3>${esc(name)}</h3><div class="det-sub">${META.label} · ${songs.length}${metric==='output'?' in filter':''}</div></div>
+        <button class="det-card" data-writer="${esc(name)}">Full writer card →</button></div>
+      <div class="det-list">${rowsHtml}</div></div>`;
+  $('#wOverlay').classList.add('show');
 }
 
 /* ---------- Data Quality (pipeline cleanup worklist) ---------- */
@@ -1656,6 +1694,8 @@ document.addEventListener('click',e=>{
   if(e.target.id==='qExport'){ exportQualityCsv(); }
   const as=e.target.closest('.act-seg button[data-actshare]');
   if(as && state.actShare!==as.dataset.actshare){ state.actShare=as.dataset.actshare; renderActivity(); }
+  const ad=e.target.closest('[data-actwriter]');
+  if(ad){ e.preventDefault(); e.stopPropagation(); openActivityDetail(ad.dataset.actwriter, ad.dataset.actmetric); }
 });
 document.addEventListener('change',e=>{
   if(e.target.id==='pWriter'){ state.pWriter=e.target.value; renderPipeline(); }
