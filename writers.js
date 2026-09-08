@@ -1,743 +1,192 @@
 // Per-writer aggregate, built by generate.py from ALL Airtable rows. Do not hand-edit.
 window.LYRIC_WRITERS = {
- "Brent Anderson": {
-  "name": "Brent Anderson",
-  "songs": 136,
-  "releases": 30,
-  "upcoming": 9,
-  "holds": 90,
-  "cuts": 7,
-  "grossStreams": 105859525,
-  "netStreams": 56236110,
-  "grossSpins": 404135,
-  "netSpins": 233061,
-  "lumStreams": 201642487,
-  "lumStreamsNet": 105770397,
-  "lumSpins": 357249,
-  "lumSpinsNet": 188553,
-  "avgShare": 0.5487,
-  "avgHoldDays": 389,
-  "maxHoldDays": 925,
+ "Melodie Wagner": {
+  "name": "Melodie Wagner",
+  "songs": 40,
+  "releases": 29,
+  "upcoming": 2,
+  "holds": 5,
+  "cuts": 4,
+  "grossStreams": 73818500,
+  "netStreams": 21932371,
+  "grossSpins": 11788,
+  "netSpins": 2802,
+  "lumStreams": 17798167,
+  "lumStreamsNet": 5273353,
+  "lumSpins": 1796,
+  "lumSpinsNet": 347,
+  "avgShare": 0.29,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "KC Lights",
+    "n": 2
+   },
+   {
+    "artist": "Alle Farben",
+    "n": 2
+   },
+   {
+    "artist": "Hyzteria",
+    "n": 2
+   },
+   {
+    "artist": "BL3SS",
+    "n": 2
+   },
+   {
+    "artist": "Maverick City Music",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Afters",
+    "artist": "BL3SS",
+    "net": 5644316,
+    "gross": 17822282
+   },
+   {
+    "song": "For My Good",
+    "artist": "Maverick City Music",
+    "net": 5007231,
+    "gross": 15018692
+   },
+   {
+    "song": "Watching Over You",
+    "artist": "Nu Aspect",
+    "net": 3150176,
+    "gross": 9451475
+   },
+   {
+    "song": "Sleep Talking",
+    "artist": "Beyond",
+    "net": 1643047,
+    "gross": 8215236
+   },
+   {
+    "song": "Like A Child",
+    "artist": "Armin Van Buuren",
+    "net": 1609370,
+    "gross": 4291654
+   }
+  ],
+  "byYear": {
+   "2023": 2,
+   "2024": 5,
+   "2025": 11,
+   "2026": 12
+  }
+ },
+ "Frank Rogers": {
+  "name": "Frank Rogers",
+  "songs": 57,
+  "releases": 15,
+  "upcoming": 10,
+  "holds": 31,
+  "cuts": 1,
+  "grossStreams": 89086748,
+  "netStreams": 56391679,
+  "grossSpins": 407703,
+  "netSpins": 255004,
+  "lumStreams": 173804209,
+  "lumStreamsNet": 100494158,
+  "lumSpins": 309419,
+  "lumSpinsNet": 171683,
+  "avgShare": 0.7393,
+  "avgHoldDays": 212,
+  "maxHoldDays": 904,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
-    "n": 28
+    "n": 33
    },
    {
-    "artist": "Dustin Lynch",
-    "n": 18
-   },
-   {
-    "artist": "John Morgan",
+    "artist": "Darius Rucker",
     "n": 11
    },
    {
-    "artist": "Jenna Paulette",
-    "n": 9
+    "artist": "Emily Ann Roberts",
+    "n": 6
    },
    {
-    "artist": "Dillon Carmichael",
-    "n": 8
+    "artist": "Dustin Lynch",
+    "n": 3
+   },
+   {
+    "artist": "John Morgan",
+    "n": 1
    }
   ],
   "topSongs": [
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
+    "net": 25005927,
+    "gross": 45848786
    },
    {
     "song": "Cab In A Solo",
     "artist": "Scotty McCreery",
-    "net": 16156328,
+    "net": 18450537,
     "gross": 27674423
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 5028396,
-    "gross": 6704528
+    "net": 5370939,
+    "gross": 6713674
    },
    {
-    "song": "Mine For The Summer",
-    "artist": "Jameson Rodgers",
-    "net": 1486939,
-    "gross": 5947759
+    "song": "Feel Like The Holidays",
+    "artist": "Scotty McCreery",
+    "net": 2456413,
+    "gross": 2456413
    },
    {
     "song": "Can't Pass The Bar",
     "artist": "Scotty McCreery",
-    "net": 1255640,
-    "gross": 1826386
+    "net": 1386322,
+    "gross": 1848430
    }
   ],
   "byYear": {
-   "2023": 2,
-   "2024": 11,
-   "2025": 23,
+   "2023": 1,
+   "2024": 6,
+   "2025": 8,
    "2026": 11
-  }
- },
- "David Garcia": {
-  "name": "David Garcia",
-  "songs": 66,
-  "releases": 33,
-  "upcoming": 5,
-  "holds": 22,
-  "cuts": 6,
-  "grossStreams": 241058875,
-  "netStreams": 77904993,
-  "grossSpins": 335293,
-  "netSpins": 92526,
-  "lumStreams": 276960223,
-  "lumStreamsNet": 99369305,
-  "lumSpins": 100128,
-  "lumSpinsNet": 28768,
-  "avgShare": 0.3679,
-  "avgHoldDays": 484,
-  "maxHoldDays": 903,
-  "topArtists": [
-   {
-    "artist": "Priscilla Block",
-    "n": 10
-   },
-   {
-    "artist": "HARDY",
-    "n": 9
-   },
-   {
-    "artist": "Morgan Wallen",
-    "n": 5
-   },
-   {
-    "artist": "ATLUS",
-    "n": 4
-   },
-   {
-    "artist": "Jelly Roll",
-    "n": 3
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Jim Bob",
-    "artist": "HARDY",
-    "net": 17176068,
-    "gross": 34352136
-   },
-   {
-    "song": "If You Were Mine",
-    "artist": "Morgan Wallen",
-    "net": 16440373,
-    "gross": 65761495
-   },
-   {
-    "song": "Back Then Right Now",
-    "artist": "Tyler Hubbard",
-    "net": 13195528,
-    "gross": 52782114
-   },
-   {
-    "song": "Good On You",
-    "artist": "Priscilla Block",
-    "net": 6527940,
-    "gross": 26111760
-   },
-   {
-    "song": "Country Country",
-    "artist": "HARDY",
-    "net": 3363349,
-    "gross": 5044772
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 14,
-   "2025": 19,
-   "2026": 10
-  }
- },
- "Brock Westover": {
-  "name": "Brock Westover",
-  "songs": 62,
-  "releases": 22,
-  "upcoming": 1,
-  "holds": 30,
-  "cuts": 9,
-  "grossStreams": 1329447,
-  "netStreams": 704961,
-  "grossSpins": 672,
-  "netSpins": 445,
-  "lumStreams": 879261,
-  "lumStreamsNet": 516707,
-  "lumSpins": 1,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5457,
-  "avgHoldDays": 276,
-  "maxHoldDays": 702,
-  "topArtists": [
-   {
-    "artist": "Haven Madison",
-    "n": 7
-   },
-   {
-    "artist": "Alyssa Flaherty",
-    "n": 6
-   },
-   {
-    "artist": "Jonny West",
-    "n": 6
-   },
-   {
-    "artist": "Brooke Eden",
-    "n": 3
-   },
-   {
-    "artist": "Harper Grace",
-    "n": 3
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Anything Anymore",
-    "artist": "Stella Hennen",
-    "net": 305502,
-    "gross": 458231
-   },
-   {
-    "song": "Driver Drive",
-    "artist": "Brooke Lee",
-    "net": 74603,
-    "gross": 117782
-   },
-   {
-    "song": "Placeholder",
-    "artist": "Julia Minichiello",
-    "net": 64088,
-    "gross": 96128
-   },
-   {
-    "song": "Giddy Up",
-    "artist": "Brooke Eden",
-    "net": 58015,
-    "gross": 174065
-   },
-   {
-    "song": "Born To Be Country",
-    "artist": "Amy Sheppard",
-    "net": 53885,
-    "gross": 161672
-   }
-  ],
-  "byYear": {
-   "2024": 2,
-   "2025": 18,
-   "2026": 11
-  }
- },
- "Cale Dodds": {
-  "name": "Cale Dodds",
-  "songs": 80,
-  "releases": 52,
-  "upcoming": 2,
-  "holds": 20,
-  "cuts": 6,
-  "grossStreams": 13872377,
-  "netStreams": 5459064,
-  "grossSpins": 1598,
-  "netSpins": 870,
-  "lumStreams": 13876230,
-  "lumStreamsNet": 4639531,
-  "lumSpins": 693,
-  "lumSpinsNet": 209,
-  "avgShare": 0.5288,
-  "avgHoldDays": 342,
-  "maxHoldDays": 809,
-  "topArtists": [
-   {
-    "artist": "First Time Thieves",
-    "n": 18
-   },
-   {
-    "artist": "Cale Dodds",
-    "n": 9
-   },
-   {
-    "artist": "Timmy McKeever",
-    "n": 6
-   },
-   {
-    "artist": "Jesse Murphy",
-    "n": 3
-   },
-   {
-    "artist": "Drew Baldridge",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Liquor Talkin'",
-    "artist": "Don Louis",
-    "net": 2110250,
-    "gross": 6331386
-   },
-   {
-    "song": "Can't Pass The Bar",
-    "artist": "Scotty McCreery",
-    "net": 1255640,
-    "gross": 1826386
-   },
-   {
-    "song": "All Dogs Go To Heaven",
-    "artist": "Chris Young",
-    "net": 512874,
-    "gross": 1538315
-   },
-   {
-    "song": "Don't Break Itself",
-    "artist": "Clayton Mullen",
-    "net": 397456,
-    "gross": 596155
-   },
-   {
-    "song": "Pockets Full Of Sand",
-    "artist": "The Elovaters",
-    "net": 128390,
-    "gross": 963895
-   }
-  ],
-  "byYear": {
-   "2022": 2,
-   "2023": 5,
-   "2024": 20,
-   "2025": 21,
-   "2026": 11
-  }
- },
- "Ryan Beaver": {
-  "name": "Ryan Beaver",
-  "songs": 76,
-  "releases": 38,
-  "upcoming": 14,
-  "holds": 19,
-  "cuts": 5,
-  "grossStreams": 189272304,
-  "netStreams": 55607472,
-  "grossSpins": 7932,
-  "netSpins": 2601,
-  "lumStreams": 227742315,
-  "lumStreamsNet": 63103294,
-  "lumSpins": 1849,
-  "lumSpinsNet": 623,
-  "avgShare": 0.3394,
-  "avgHoldDays": 480,
-  "maxHoldDays": 896,
-  "topArtists": [
-   {
-    "artist": "Hudson Westbrook",
-    "n": 11
-   },
-   {
-    "artist": "Emily Ann Roberts",
-    "n": 7
-   },
-   {
-    "artist": "Warren Zeiders",
-    "n": 5
-   },
-   {
-    "artist": "Corey Kent",
-    "n": 4
-   },
-   {
-    "artist": "Brooks & Dunn",
-    "n": 4
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Mine Tomorrow",
-    "artist": "Hudson Westbrook",
-    "net": 11199910,
-    "gross": 33603092
-   },
-   {
-    "song": "Heart They Didn't Break",
-    "artist": "Maddie & Tae",
-    "net": 7211373,
-    "gross": 21629794
-   },
-   {
-    "song": "Pray Your Name",
-    "artist": "Hudson Westbrook",
-    "net": 6954108,
-    "gross": 20864412
-   },
-   {
-    "song": "Funny Seeing You Here",
-    "artist": "Hudson Westbrook",
-    "net": 4330720,
-    "gross": 17322882
-   },
-   {
-    "song": "Fight Like Hell",
-    "artist": "Warren Zeiders",
-    "net": 4241029,
-    "gross": 16964119
-   }
-  ],
-  "byYear": {
-   "2023": 5,
-   "2024": 11,
-   "2025": 16,
-   "2026": 23
-  }
- },
- "Adam Wood": {
-  "name": "Adam Wood",
-  "songs": 39,
-  "releases": 19,
-  "upcoming": 4,
-  "holds": 7,
-  "cuts": 9,
-  "grossStreams": 6174198,
-  "netStreams": 2385283,
-  "grossSpins": 796,
-  "netSpins": 511,
-  "lumStreams": 5959088,
-  "lumStreamsNet": 2459842,
-  "lumSpins": 392,
-  "lumSpinsNet": 235,
-  "avgShare": 0.4608,
-  "avgHoldDays": 318,
-  "maxHoldDays": 644,
-  "topArtists": [
-   {
-    "artist": "Smithfield",
-    "n": 7
-   },
-   {
-    "artist": "Lee Brice",
-    "n": 3
-   },
-   {
-    "artist": "Kameron Marlowe",
-    "n": 2
-   },
-   {
-    "artist": "Troy Cartwright",
-    "n": 2
-   },
-   {
-    "artist": "Shane Profitt",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Think About Me",
-    "artist": "Tyler Braden",
-    "net": 391615,
-    "gross": 1174613
-   },
-   {
-    "song": "Off The Map",
-    "artist": "Dierks Bentley",
-    "net": 356268,
-    "gross": 534376
-   },
-   {
-    "song": "Anything Anymore",
-    "artist": "Stella Hennen",
-    "net": 305502,
-    "gross": 458231
-   },
-   {
-    "song": "Not As I've Done",
-    "artist": "Kasey Tyndall",
-    "net": 265203,
-    "gross": 397786
-   },
-   {
-    "song": "First Place",
-    "artist": "Elvie Shane",
-    "net": 195422,
-    "gross": 781688
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 7,
-   "2025": 15,
-   "2026": 9
-  }
- },
- "Nathan Barlowe": {
-  "name": "Nathan Barlowe",
-  "songs": 15,
-  "releases": 8,
-  "upcoming": 0,
-  "holds": 6,
-  "cuts": 1,
-  "grossStreams": 363080,
-  "netStreams": 203719,
-  "grossSpins": 9517,
-  "netSpins": 6344,
-  "lumStreams": 1648476,
-  "lumStreamsNet": 1004386,
-  "lumSpins": 18690,
-  "lumSpinsNet": 12460,
-  "avgShare": 0.5359,
-  "avgHoldDays": 262,
-  "maxHoldDays": 439,
-  "topArtists": [
-   {
-    "artist": "Tim Montana",
-    "n": 5
-   },
-   {
-    "artist": "Tyler Hubbard",
-    "n": 3
-   },
-   {
-    "artist": "Maneskin",
-    "n": 2
-   },
-   {
-    "artist": "Mary Kutter",
-    "n": 1
-   },
-   {
-    "artist": "Kasey Tyndall",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Drunk Enough",
-    "artist": "Midland",
-    "net": 101214,
-    "gross": 202429
-   },
-   {
-    "song": "Break Me Down",
-    "artist": "Tim Montana",
-    "net": 76240,
-    "gross": 114355
-   },
-   {
-    "song": "Crown of Ash",
-    "artist": "Tim Montana",
-    "net": 18208,
-    "gross": 36417
-   },
-   {
-    "song": "Candy Cigarettes",
-    "artist": "Luna Halo",
-    "net": 5880,
-    "gross": 6616
-   },
-   {
-    "song": "Pills",
-    "artist": "Kate Sykes",
-    "net": 2175,
-    "gross": 3263
-   }
-  ],
-  "byYear": {
-   "2025": 2,
-   "2026": 7
-  }
- },
- "Jessica Cayne": {
-  "name": "Jessica Cayne",
-  "songs": 60,
-  "releases": 37,
-  "upcoming": 2,
-  "holds": 19,
-  "cuts": 2,
-  "grossStreams": 15756916,
-  "netStreams": 6169989,
-  "grossSpins": 3283,
-  "netSpins": 1641,
-  "lumStreams": 6069340,
-  "lumStreamsNet": 2355758,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5006,
-  "avgHoldDays": 308,
-  "maxHoldDays": 796,
-  "topArtists": [
-   {
-    "artist": "Haven Madison",
-    "n": 6
-   },
-   {
-    "artist": "Jess Moskaluke",
-    "n": 4
-   },
-   {
-    "artist": "Grace Asbury",
-    "n": 4
-   },
-   {
-    "artist": "Kelsey Parks",
-    "n": 3
-   },
-   {
-    "artist": "Mike Parker",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "The Whiskey's Gone",
-    "artist": "Alli Walker",
-    "net": 1237763,
-    "gross": 3712548
-   },
-   {
-    "song": "On The Fence",
-    "artist": "Gowa Gibbs",
-    "net": 1051919,
-    "gross": 2033087
-   },
-   {
-    "song": "Talking Bout Tonight",
-    "artist": "The Kruse Brothers",
-    "net": 613347,
-    "gross": 1226694
-   },
-   {
-    "song": "Take It As A Blessing",
-    "artist": "Jordana Bryant",
-    "net": 416002,
-    "gross": 623973
-   },
-   {
-    "song": "Afterglow",
-    "artist": "Kelsey Parks",
-    "net": 317630,
-    "gross": 1270523
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 8,
-   "2025": 28,
-   "2026": 4
-  }
- },
- "Matthew Morrisey": {
-  "name": "Matthew Morrisey",
-  "songs": 27,
-  "releases": 18,
-  "upcoming": 3,
-  "holds": 6,
-  "cuts": 0,
-  "grossStreams": 8063773,
-  "netStreams": 3665953,
-  "grossSpins": 3263,
-  "netSpins": 1631,
-  "lumStreams": 4063368,
-  "lumStreamsNet": 1614578,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5204,
-  "avgHoldDays": 622,
-  "maxHoldDays": 846,
-  "topArtists": [
-   {
-    "artist": "Jess Moskaluke",
-    "n": 4
-   },
-   {
-    "artist": "Jordana Bryant",
-    "n": 3
-   },
-   {
-    "artist": "Gowa Gibbs",
-    "n": 2
-   },
-   {
-    "artist": "Morgan Myles",
-    "n": 2
-   },
-   {
-    "artist": "Mike Parker",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "On The Fence",
-    "artist": "Gowa Gibbs",
-    "net": 1051919,
-    "gross": 2033087
-   },
-   {
-    "song": "Talking Bout Tonight",
-    "artist": "The Kruse Brothers",
-    "net": 613347,
-    "gross": 1226694
-   },
-   {
-    "song": "Take It As A Blessing",
-    "artist": "Jordana Bryant",
-    "net": 416002,
-    "gross": 623973
-   },
-   {
-    "song": "Love On The Radio",
-    "artist": "Clayton Mullen",
-    "net": 335322,
-    "gross": 1341288
-   },
-   {
-    "song": "The Life For Me",
-    "artist": "Jess Moskaluke",
-    "net": 287538,
-    "gross": 575076
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 4,
-   "2025": 13,
-   "2026": 3
   }
  },
  "Derek George": {
   "name": "Derek George",
-  "songs": 89,
-  "releases": 22,
-  "upcoming": 5,
-  "holds": 59,
+  "songs": 96,
+  "releases": 23,
+  "upcoming": 7,
+  "holds": 63,
   "cuts": 3,
-  "grossStreams": 64723892,
-  "netStreams": 38150912,
-  "grossSpins": 251434,
-  "netSpins": 143960,
-  "lumStreams": 183928469,
-  "lumStreamsNet": 100567588,
-  "lumSpins": 345628,
-  "lumSpinsNet": 181941,
-  "avgShare": 0.7308,
-  "avgHoldDays": 287,
-  "maxHoldDays": 877,
+  "grossStreams": 67863808,
+  "netStreams": 42431935,
+  "grossSpins": 255409,
+  "netSpins": 153303,
+  "lumStreams": 169532405,
+  "lumStreamsNet": 96985094,
+  "lumSpins": 297516,
+  "lumSpinsNet": 163708,
+  "avgShare": 0.7355,
+  "avgHoldDays": 292,
+  "maxHoldDays": 904,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
-    "n": 39
-   },
-   {
-    "artist": "Dillon Carmichael",
-    "n": 7
+    "n": 40
    },
    {
     "artist": "Cole Goodwin",
+    "n": 8
+   },
+   {
+    "artist": "Dillon Carmichael",
     "n": 7
    },
    {
@@ -753,63 +202,1194 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
+    "net": 25005927,
+    "gross": 45848786
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 5028396,
-    "gross": 6704528
+    "net": 5370939,
+    "gross": 6713674
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1825376,
-    "gross": 2455773
+    "net": 2456413,
+    "gross": 2456413
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery",
-    "net": 1108331,
-    "gross": 1385414
+    "net": 1117835,
+    "gross": 1397294
    },
    {
     "song": "Swim Up Bar",
     "artist": "Scotty McCreery",
-    "net": 966616,
-    "gross": 1221401
+    "net": 1041520,
+    "gross": 1249725
    }
   ],
   "byYear": {
-   "2023": 3,
+   "2023": 4,
    "2024": 7,
    "2025": 13,
    "2026": 10
   }
  },
+ "Ryan Beaver": {
+  "name": "Ryan Beaver",
+  "songs": 81,
+  "releases": 39,
+  "upcoming": 14,
+  "holds": 23,
+  "cuts": 5,
+  "grossStreams": 194307694,
+  "netStreams": 57054959,
+  "grossSpins": 8386,
+  "netSpins": 2723,
+  "lumStreams": 229126816,
+  "lumStreamsNet": 63706860,
+  "lumSpins": 1957,
+  "lumSpinsNet": 655,
+  "avgShare": 0.3545,
+  "avgHoldDays": 420,
+  "maxHoldDays": 923,
+  "topArtists": [
+   {
+    "artist": "Emily Ann Roberts",
+    "n": 11
+   },
+   {
+    "artist": "Hudson Westbrook",
+    "n": 11
+   },
+   {
+    "artist": "Warren Zeiders",
+    "n": 5
+   },
+   {
+    "artist": "Brooks & Dunn",
+    "n": 4
+   },
+   {
+    "artist": "Max McNown",
+    "n": 4
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Mine Tomorrow",
+    "artist": "Hudson Westbrook",
+    "net": 11374139,
+    "gross": 34125831
+   },
+   {
+    "song": "Heart They Didn't Break",
+    "artist": "Maddie & Tae",
+    "net": 7211373,
+    "gross": 21629794
+   },
+   {
+    "song": "Pray Your Name",
+    "artist": "Hudson Westbrook",
+    "net": 6963740,
+    "gross": 20893310
+   },
+   {
+    "song": "Funny Seeing You Here",
+    "artist": "Hudson Westbrook",
+    "net": 4571014,
+    "gross": 18284057
+   },
+   {
+    "song": "Fight Like Hell",
+    "artist": "Warren Zeiders",
+    "net": 4244697,
+    "gross": 16978790
+   }
+  ],
+  "byYear": {
+   "2023": 5,
+   "2024": 11,
+   "2025": 16,
+   "2026": 24
+  }
+ },
+ "Jordan Cosmo": {
+  "name": "Jordan Cosmo",
+  "songs": 67,
+  "releases": 61,
+  "upcoming": 2,
+  "holds": 0,
+  "cuts": 4,
+  "grossStreams": 425334319,
+  "netStreams": 221001951,
+  "grossSpins": 34584,
+  "netSpins": 14679,
+  "lumStreams": 45377334,
+  "lumStreamsNet": 19972903,
+  "lumSpins": 3919,
+  "lumSpinsNet": 685,
+  "avgShare": 0.3251,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "MIYA MIYA",
+    "n": 9
+   },
+   {
+    "artist": "Fiaa Hamilton",
+    "n": 4
+   },
+   {
+    "artist": "Tommy Lyon",
+    "n": 4
+   },
+   {
+    "artist": "CHINCHILLA",
+    "n": 4
+   },
+   {
+    "artist": "Zach Loizou",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Hear Me Say",
+    "artist": "Jonas Blue",
+    "net": 100401107,
+    "gross": 100401107
+   },
+   {
+    "song": "Little Girl Gone",
+    "artist": "CHINCHILLA",
+    "net": 98194501,
+    "gross": 218210003
+   },
+   {
+    "song": "Lady In Red",
+    "artist": "Pedro Santos",
+    "net": 3047408,
+    "gross": 6094816
+   },
+   {
+    "song": "1:05",
+    "artist": "CHINCHILLA",
+    "net": 3036152,
+    "gross": 6072304
+   },
+   {
+    "song": "All Night Long",
+    "artist": "Jonas Blue",
+    "net": 2320692,
+    "gross": 30942562
+   }
+  ],
+  "byYear": {
+   "2019": 5,
+   "2020": 10,
+   "2021": 7,
+   "2022": 5,
+   "2023": 8,
+   "2024": 11,
+   "2025": 11,
+   "2026": 6
+  }
+ },
+ "Tkay Maidza": {
+  "name": "Tkay Maidza",
+  "songs": 5,
+  "releases": 5,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 3385541,
+  "netStreams": 698326,
+  "grossSpins": 743,
+  "netSpins": 181,
+  "lumStreams": 1834585,
+  "lumStreamsNet": 379269,
+  "lumSpins": 16,
+  "lumSpinsNet": 3,
+  "avgShare": 0.2225,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Tkay Maidza",
+    "n": 3
+   },
+   {
+    "artist": "Jenevieve",
+    "n": 1
+   },
+   {
+    "artist": "Snakehips",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Must Be",
+    "artist": "Tkay Maidza",
+    "net": 184631,
+    "gross": 738526
+   },
+   {
+    "song": "Romanticize",
+    "artist": "Tkay Maidza",
+    "net": 171985,
+    "gross": 809343
+   },
+   {
+    "song": "Bellafonte",
+    "artist": "Jenevieve",
+    "net": 144516,
+    "gross": 963444
+   },
+   {
+    "song": "PLZ HOLD",
+    "artist": "Snakehips",
+    "net": 130149,
+    "gross": 650749
+   },
+   {
+    "song": "Pressed",
+    "artist": "Tkay Maidza",
+    "net": 67043,
+    "gross": 223479
+   }
+  ],
+  "byYear": {
+   "2026": 5
+  }
+ },
+ "Nick Gale": {
+  "name": "Nick Gale",
+  "songs": 43,
+  "releases": 31,
+  "upcoming": 3,
+  "holds": 5,
+  "cuts": 4,
+  "grossStreams": 971390828,
+  "netStreams": 186602989,
+  "grossSpins": 408879,
+  "netSpins": 113563,
+  "lumStreams": 310925312,
+  "lumStreamsNet": 47999947,
+  "lumSpins": 158190,
+  "lumSpinsNet": 21036,
+  "avgShare": 0.2433,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Marshmello",
+    "n": 5
+   },
+   {
+    "artist": "Duffy",
+    "n": 4
+   },
+   {
+    "artist": "The Paradox",
+    "n": 2
+   },
+   {
+    "artist": "Gigi Moss",
+    "n": 2
+   },
+   {
+    "artist": "Chung Ha",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Miles On It",
+    "artist": "Marshmello",
+    "net": 59019580,
+    "gross": 444424551
+   },
+   {
+    "song": "Barcelona",
+    "artist": "Alan Walker",
+    "net": 23607330,
+    "gross": 59018327
+   },
+   {
+    "song": "I'm Pretty",
+    "artist": "KATSEYE",
+    "net": 14289592,
+    "gross": 57158370
+   },
+   {
+    "song": "Nothing Without Your Love",
+    "artist": "JIN",
+    "net": 12838008,
+    "gross": 76644824
+   },
+   {
+    "song": "Off My Face",
+    "artist": "Maneskin",
+    "net": 12685888,
+    "gross": 72490793
+   }
+  ],
+  "byYear": {
+   "2023": 6,
+   "2024": 8,
+   "2025": 12,
+   "2026": 6
+  }
+ },
+ "Angelo Mota": {
+  "name": "Angelo Mota",
+  "songs": 11,
+  "releases": 11,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 1011049,
+  "netStreams": 523501,
+  "grossSpins": 2,
+  "netSpins": 1,
+  "lumStreams": 775011,
+  "lumStreamsNet": 405339,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5432,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Angelo Mota",
+    "n": 11
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Is This My Life",
+    "artist": "Angelo Mota",
+    "net": 385002,
+    "gross": 770005
+   },
+   {
+    "song": "Javelin",
+    "artist": "Angelo Mota",
+    "net": 77899,
+    "gross": 119845
+   },
+   {
+    "song": "or not",
+    "artist": "Angelo Mota",
+    "net": 60599,
+    "gross": 121199
+   }
+  ],
+  "byYear": {
+   "2026": 11
+  }
+ },
+ "Hamish": {
+  "name": "Hamish",
+  "songs": 52,
+  "releases": 52,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 56738029,
+  "netStreams": 11009273,
+  "grossSpins": 3614,
+  "netSpins": 515,
+  "lumStreams": 20254714,
+  "lumStreamsNet": 4053259,
+  "lumSpins": 461,
+  "lumSpinsNet": 85,
+  "avgShare": 0.1575,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "VITA",
+    "n": 9
+   },
+   {
+    "artist": "Marley Moon",
+    "n": 8
+   },
+   {
+    "artist": "Nami",
+    "n": 6
+   },
+   {
+    "artist": "See You Next Year",
+    "n": 5
+   },
+   {
+    "artist": "Angelo Mota",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Cannibalism",
+    "artist": "Slayyyter",
+    "net": 4277993,
+    "gross": 20371396
+   },
+   {
+    "song": "Bad Kids",
+    "artist": "347aidan",
+    "net": 3053000,
+    "gross": 12212001
+   },
+   {
+    "song": "Shake The City",
+    "artist": "Knock2",
+    "net": 1142999,
+    "gross": 5714999
+   },
+   {
+    "song": "You Ain't Gotta",
+    "artist": "Albert Posis",
+    "net": 505284,
+    "gross": 2021139
+   },
+   {
+    "song": "Is This My Life",
+    "artist": "Angelo Mota",
+    "net": 385002,
+    "gross": 770005
+   }
+  ],
+  "byYear": {
+   "2022": 9,
+   "2023": 9,
+   "2024": 13,
+   "2025": 16,
+   "2026": 4
+  }
+ },
+ "Kasey Tyndall": {
+  "name": "Kasey Tyndall",
+  "songs": 13,
+  "releases": 2,
+  "upcoming": 2,
+  "holds": 3,
+  "cuts": 6,
+  "grossStreams": 653757,
+  "netStreams": 165346,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 1163910,
+  "lumStreamsNet": 255525,
+  "lumSpins": 122,
+  "lumSpinsNet": 40,
+  "avgShare": 0.5808,
+  "avgHoldDays": 180,
+  "maxHoldDays": 271,
+  "topArtists": [
+   {
+    "artist": "Kasey Tyndall",
+    "n": 9
+   },
+   {
+    "artist": "Lainey Wilson",
+    "n": 1
+   },
+   {
+    "artist": "Kylie Morgan",
+    "n": 1
+   },
+   {
+    "artist": "Gavin Adcock",
+    "n": 1
+   },
+   {
+    "artist": "Pop Evil",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Like My Own",
+    "artist": "Kylie Morgan",
+    "net": 156071,
+    "gross": 468261
+   },
+   {
+    "song": "Maybe You're The One",
+    "artist": "Pop Evil",
+    "net": 9274,
+    "gross": 185496
+   }
+  ],
+  "byYear": {
+   "2026": 10
+  }
+ },
+ "Jeremy Bussey": {
+  "name": "Jeremy Bussey",
+  "songs": 46,
+  "releases": 17,
+  "upcoming": 4,
+  "holds": 20,
+  "cuts": 5,
+  "grossStreams": 54160649,
+  "netStreams": 32127262,
+  "grossSpins": 200071,
+  "netSpins": 109166,
+  "lumStreams": 153147070,
+  "lumStreamsNet": 85813094,
+  "lumSpins": 293550,
+  "lumSpinsNet": 160561,
+  "avgShare": 0.6838,
+  "avgHoldDays": 352,
+  "maxHoldDays": 904,
+  "topArtists": [
+   {
+    "artist": "Scotty McCreery",
+    "n": 17
+   },
+   {
+    "artist": "Dustin Lynch",
+    "n": 4
+   },
+   {
+    "artist": "Shane Profitt",
+    "n": 3
+   },
+   {
+    "artist": "Tyler Farr",
+    "n": 2
+   },
+   {
+    "artist": "Matt Stell",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Bottle Rockets (Hold My Hand)",
+    "artist": "Scotty McCreery",
+    "net": 25005927,
+    "gross": 45848786
+   },
+   {
+    "song": "Feel Like The Holidays",
+    "artist": "Scotty McCreery",
+    "net": 2456413,
+    "gross": 2456413
+   },
+   {
+    "song": "Red Letter Blueprint",
+    "artist": "Scotty McCreery",
+    "net": 1117835,
+    "gross": 1397294
+   },
+   {
+    "song": "Red Letter Blueprint",
+    "artist": "Scotty McCreery ,Jason Crabb",
+    "net": 774462,
+    "gross": 968078
+   },
+   {
+    "song": "Whiskey Said",
+    "artist": "Scotty McCreery",
+    "net": 577587,
+    "gross": 721984
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 5,
+   "2025": 11,
+   "2026": 8,
+   "2027": 1
+  }
+ },
+ "Jade Eagleson": {
+  "name": "Jade Eagleson",
+  "songs": 6,
+  "releases": 2,
+  "upcoming": 1,
+  "holds": 3,
+  "cuts": 0,
+  "grossStreams": 23025,
+  "netStreams": 7676,
+  "grossSpins": 24,
+  "netSpins": 8,
+  "lumStreams": 11828,
+  "lumStreamsNet": 3943,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2834,
+  "avgHoldDays": 15,
+  "maxHoldDays": 19,
+  "topArtists": [
+   {
+    "artist": "Jade Eagleson",
+    "n": 4
+   },
+   {
+    "artist": "Brandie Caroline",
+    "n": 1
+   },
+   {
+    "artist": "Riley Taylor",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Watering the Lawn",
+    "artist": "Riley Taylor",
+    "net": 4559,
+    "gross": 13677
+   },
+   {
+    "song": "Prairie Queen",
+    "artist": "Brandie Caroline",
+    "net": 3116,
+    "gross": 9348
+   }
+  ],
+  "byYear": {
+   "2026": 3
+  }
+ },
+ "Chizzy": {
+  "name": "Chizzy",
+  "songs": 21,
+  "releases": 19,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 1,
+  "grossStreams": 23232014,
+  "netStreams": 1808942,
+  "grossSpins": 2669,
+  "netSpins": 241,
+  "lumStreams": 3527550,
+  "lumStreamsNet": 391382,
+  "lumSpins": 36,
+  "lumSpinsNet": 2,
+  "avgShare": 0.6203,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Chizzy Stephens",
+    "n": 6
+   },
+   {
+    "artist": "Jaz Karis",
+    "n": 2
+   },
+   {
+    "artist": "Marc Tinez",
+    "n": 2
+   },
+   {
+    "artist": "&TEAM",
+    "n": 1
+   },
+   {
+    "artist": "Bri3",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Show It",
+    "artist": "Chris Brown",
+    "net": 1264121,
+    "gross": 21068690
+   },
+   {
+    "song": "Spin The Town",
+    "artist": "Richie Allen",
+    "net": 159809,
+    "gross": 639236
+   },
+   {
+    "song": "Catching Fire",
+    "artist": "Alli Leighann",
+    "net": 109735,
+    "gross": 164619
+   },
+   {
+    "song": "Just Like That",
+    "artist": "Connor McCutcheon",
+    "net": 69155,
+    "gross": 69155
+   },
+   {
+    "song": "Alright",
+    "artist": "Jaz Karis",
+    "net": 46603,
+    "gross": 466033
+   }
+  ],
+  "byYear": {
+   "2014": 1,
+   "2022": 1,
+   "2024": 3,
+   "2025": 6,
+   "2026": 10
+  }
+ },
+ "Will Jay": {
+  "name": "Will Jay",
+  "songs": 1,
+  "releases": 0,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 0,
+  "netStreams": 0,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 0,
+  "lumStreamsNet": 0,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.8654,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "&TEAM",
+    "n": 1
+   }
+  ],
+  "topSongs": [],
+  "byYear": {
+   "2026": 1
+  }
+ },
+ "Volta": {
+  "name": "Volta",
+  "songs": 9,
+  "releases": 8,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 130793810,
+  "netStreams": 26689579,
+  "grossSpins": 1439,
+  "netSpins": 168,
+  "lumStreams": 106061125,
+  "lumStreamsNet": 23505104,
+  "lumSpins": 1505,
+  "lumSpinsNet": 323,
+  "avgShare": 0.1407,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Baby Keem",
+    "n": 5
+   },
+   {
+    "artist": "JENNIE",
+    "n": 1
+   },
+   {
+    "artist": "LISA",
+    "n": 1
+   },
+   {
+    "artist": "Playboi Carti",
+    "n": 1
+   },
+   {
+    "artist": "FKA Twigs",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "House Money",
+    "artist": "Baby Keem",
+    "net": 21006903,
+    "gross": 31828642
+   },
+   {
+    "song": "Highway 95 pt.2",
+    "artist": "Baby Keem",
+    "net": 1854698,
+    "gross": 17464209
+   },
+   {
+    "song": "SaWaDiKa",
+    "artist": "LISA",
+    "net": 1380482,
+    "gross": 9410240
+   },
+   {
+    "song": "Heaven",
+    "artist": "JENNIE",
+    "net": 1071988,
+    "gross": 9528789
+   },
+   {
+    "song": "$ex Appeal",
+    "artist": "Baby Keem",
+    "net": 655154,
+    "gross": 22436783
+   }
+  ],
+  "byYear": {
+   "2026": 8
+  }
+ },
+ "David Garcia": {
+  "name": "David Garcia",
+  "songs": 74,
+  "releases": 38,
+  "upcoming": 9,
+  "holds": 22,
+  "cuts": 5,
+  "grossStreams": 348404798,
+  "netStreams": 123888452,
+  "grossSpins": 451771,
+  "netSpins": 149982,
+  "lumStreams": 289351230,
+  "lumStreamsNet": 107113685,
+  "lumSpins": 97311,
+  "lumSpinsNet": 28126,
+  "avgShare": 0.3743,
+  "avgHoldDays": 511,
+  "maxHoldDays": 930,
+  "topArtists": [
+   {
+    "artist": "HARDY",
+    "n": 10
+   },
+   {
+    "artist": "Priscilla Block",
+    "n": 10
+   },
+   {
+    "artist": "Morgan Wallen",
+    "n": 5
+   },
+   {
+    "artist": "Jelly Roll",
+    "n": 4
+   },
+   {
+    "artist": "ATLUS",
+    "n": 4
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Jim Bob",
+    "artist": "HARDY",
+    "net": 17567442,
+    "gross": 35134884
+   },
+   {
+    "song": "If You Were Mine",
+    "artist": "Morgan Wallen",
+    "net": 17034830,
+    "gross": 68139321
+   },
+   {
+    "song": "Church",
+    "artist": "Jelly Roll",
+    "net": 13366761,
+    "gross": 22911830
+   },
+   {
+    "song": "Back Then Right Now",
+    "artist": "Tyler Hubbard",
+    "net": 13338467,
+    "gross": 53353869
+   },
+   {
+    "song": "See You Next Summer",
+    "artist": "Brian Kelley",
+    "net": 12917920,
+    "gross": 22142476
+   }
+  ],
+  "byYear": {
+   "2021": 1,
+   "2022": 2,
+   "2023": 3,
+   "2024": 14,
+   "2025": 18,
+   "2026": 14
+  }
+ },
+ "Connor McCutcheon": {
+  "name": "Connor McCutcheon",
+  "songs": 40,
+  "releases": 30,
+  "upcoming": 0,
+  "holds": 9,
+  "cuts": 1,
+  "grossStreams": 8241144,
+  "netStreams": 3030162,
+  "grossSpins": 5,
+  "netSpins": 1,
+  "lumStreams": 5795628,
+  "lumStreamsNet": 1566999,
+  "lumSpins": 7,
+  "lumSpinsNet": 1,
+  "avgShare": 0.4288,
+  "avgHoldDays": 254,
+  "maxHoldDays": 873,
+  "topArtists": [
+   {
+    "artist": "Connor McCutcheon",
+    "n": 22
+   },
+   {
+    "artist": "Blake Proehl",
+    "n": 8
+   },
+   {
+    "artist": "Tyler Nance",
+    "n": 1
+   },
+   {
+    "artist": "Alli Leighann",
+    "n": 1
+   },
+   {
+    "artist": "Tayler Holder",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Ways Away",
+    "artist": "Tyler Nance",
+    "net": 392362,
+    "gross": 1569451
+   },
+   {
+    "song": "Top Of The Hill",
+    "artist": "Connor McCutcheon",
+    "net": 365812,
+    "gross": 548691
+   },
+   {
+    "song": "Whiskey's Already Workin'",
+    "artist": "Connor McCutcheon",
+    "net": 303865,
+    "gross": 303865
+   },
+   {
+    "song": "Girlfriend's Got A Boyfriend",
+    "artist": "Cole Goodwin",
+    "net": 280477,
+    "gross": 841517
+   },
+   {
+    "song": "'Til She's Gone",
+    "artist": "Tayler Holder",
+    "net": 228284,
+    "gross": 684716
+   }
+  ],
+  "byYear": {
+   "2023": 2,
+   "2024": 7,
+   "2025": 15,
+   "2026": 7
+  }
+ },
+ "Brent Anderson": {
+  "name": "Brent Anderson",
+  "songs": 159,
+  "releases": 34,
+  "upcoming": 8,
+  "holds": 112,
+  "cuts": 5,
+  "grossStreams": 107675906,
+  "netStreams": 60981886,
+  "grossSpins": 408224,
+  "netSpins": 255119,
+  "lumStreams": 187000746,
+  "lumStreamsNet": 102947397,
+  "lumSpins": 308741,
+  "lumSpinsNet": 170866,
+  "avgShare": 0.5199,
+  "avgHoldDays": 338,
+  "maxHoldDays": 952,
+  "topArtists": [
+   {
+    "artist": "Scotty McCreery",
+    "n": 28
+   },
+   {
+    "artist": "Dustin Lynch",
+    "n": 21
+   },
+   {
+    "artist": "John Morgan",
+    "n": 11
+   },
+   {
+    "artist": "LOCASH",
+    "n": 10
+   },
+   {
+    "artist": "Jenna Paulette",
+    "n": 9
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Bottle Rockets (Hold My Hand)",
+    "artist": "Scotty McCreery",
+    "net": 25005927,
+    "gross": 45848786
+   },
+   {
+    "song": "Cab In A Solo",
+    "artist": "Scotty McCreery",
+    "net": 18450537,
+    "gross": 27674423
+   },
+   {
+    "song": "Fall of Summer",
+    "artist": "Scotty McCreery",
+    "net": 5370939,
+    "gross": 6713674
+   },
+   {
+    "song": "Mine For The Summer",
+    "artist": "Jameson Rodgers",
+    "net": 1493736,
+    "gross": 5974947
+   },
+   {
+    "song": "Can't Pass The Bar",
+    "artist": "Scotty McCreery",
+    "net": 1386322,
+    "gross": 1848430
+   }
+  ],
+  "byYear": {
+   "2023": 2,
+   "2024": 11,
+   "2025": 21,
+   "2026": 14
+  }
+ },
+ "Brock Westover": {
+  "name": "Brock Westover",
+  "songs": 65,
+  "releases": 24,
+  "upcoming": 1,
+  "holds": 30,
+  "cuts": 10,
+  "grossStreams": 1561316,
+  "netStreams": 817460,
+  "grossSpins": 961,
+  "netSpins": 541,
+  "lumStreams": 995325,
+  "lumStreamsNet": 590646,
+  "lumSpins": 1,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5513,
+  "avgHoldDays": 303,
+  "maxHoldDays": 729,
+  "topArtists": [
+   {
+    "artist": "Haven Madison",
+    "n": 7
+   },
+   {
+    "artist": "Alyssa Flaherty",
+    "n": 6
+   },
+   {
+    "artist": "Jonny West",
+    "n": 6
+   },
+   {
+    "artist": "Kasey Tyndall",
+    "n": 3
+   },
+   {
+    "artist": "Harper Grace",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Anything Anymore",
+    "artist": "Stella Hennen",
+    "net": 312566,
+    "gross": 468827
+   },
+   {
+    "song": "Driver Drive",
+    "artist": "Brooke Lee",
+    "net": 129845,
+    "gross": 204997
+   },
+   {
+    "song": "Placeholder",
+    "artist": "Julia Minichiello",
+    "net": 64552,
+    "gross": 96824
+   },
+   {
+    "song": "Giddy Up",
+    "artist": "Brooke Eden",
+    "net": 59794,
+    "gross": 179401
+   },
+   {
+    "song": "Born To Be Country",
+    "artist": "Amy Sheppard",
+    "net": 54406,
+    "gross": 163237
+   }
+  ],
+  "byYear": {
+   "2024": 2,
+   "2025": 17,
+   "2026": 15
+  }
+ },
  "Monty Criswell": {
   "name": "Monty Criswell",
-  "songs": 104,
+  "songs": 105,
   "releases": 20,
-  "upcoming": 5,
-  "holds": 76,
+  "upcoming": 7,
+  "holds": 75,
   "cuts": 3,
-  "grossStreams": 80056904,
-  "netStreams": 42582469,
-  "grossSpins": 283254,
-  "netSpins": 154504,
-  "lumStreams": 230223266,
-  "lumStreamsNet": 115185747,
-  "lumSpins": 395600,
-  "lumSpinsNet": 198600,
-  "avgShare": 0.6542,
-  "avgHoldDays": 329,
-  "maxHoldDays": 925,
+  "grossStreams": 84524777,
+  "netStreams": 46986242,
+  "grossSpins": 293455,
+  "netSpins": 165916,
+  "lumStreams": 218285684,
+  "lumStreamsNet": 112509355,
+  "lumSpins": 359136,
+  "lumSpinsNet": 184251,
+  "avgShare": 0.6645,
+  "avgHoldDays": 355,
+  "maxHoldDays": 952,
   "topArtists": [
    {
     "artist": "Scotty McCreery",
     "n": 36
+   },
+   {
+    "artist": "Cole Goodwin",
+    "n": 8
    },
    {
     "artist": "Parker McCollum",
@@ -817,10 +1397,6 @@ window.LYRIC_WRITERS = {
    },
    {
     "artist": "Dillon Carmichael",
-    "n": 7
-   },
-   {
-    "artist": "Cole Goodwin",
     "n": 7
    },
    {
@@ -832,32 +1408,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Bottle Rockets (Hold My Hand)",
     "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
+    "net": 25005927,
+    "gross": 45848786
    },
    {
     "song": "Killin' Me",
     "artist": "Parker McCollum",
-    "net": 5340225,
-    "gross": 16017474
+    "net": 6180946,
+    "gross": 18539133
    },
    {
     "song": "Fall of Summer",
     "artist": "Scotty McCreery",
-    "net": 5028396,
-    "gross": 6704528
+    "net": 5370939,
+    "gross": 6713674
    },
    {
     "song": "Feel Like The Holidays",
     "artist": "Scotty McCreery",
-    "net": 1825376,
-    "gross": 2455773
+    "net": 2456413,
+    "gross": 2456413
    },
    {
     "song": "Red Letter Blueprint",
     "artist": "Scotty McCreery",
-    "net": 1108331,
-    "gross": 1385414
+    "net": 1117835,
+    "gross": 1397294
    }
   ],
   "byYear": {
@@ -867,181 +1443,655 @@ window.LYRIC_WRITERS = {
    "2026": 10
   }
  },
- "Brinley Addington": {
-  "name": "Brinley Addington",
-  "songs": 17,
-  "releases": 9,
-  "upcoming": 0,
-  "holds": 5,
-  "cuts": 3,
-  "grossStreams": 3102838,
-  "netStreams": 1816083,
-  "grossSpins": 32,
-  "netSpins": 20,
-  "lumStreams": 1555398,
-  "lumStreamsNet": 729449,
+ "Jessica Cayne": {
+  "name": "Jessica Cayne",
+  "songs": 63,
+  "releases": 40,
+  "upcoming": 2,
+  "holds": 19,
+  "cuts": 2,
+  "grossStreams": 16611110,
+  "netStreams": 6933120,
+  "grossSpins": 3299,
+  "netSpins": 1649,
+  "lumStreams": 6214295,
+  "lumStreamsNet": 2559282,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.4196,
-  "avgHoldDays": 468,
-  "maxHoldDays": 898,
+  "avgShare": 0.5066,
+  "avgHoldDays": 335,
+  "maxHoldDays": 823,
   "topArtists": [
-   {
-    "artist": "McCoy Moore",
-    "n": 3
-   },
-   {
-    "artist": "Old Hickory",
-    "n": 2
-   },
-   {
-    "artist": "MaRynn Taylor",
-    "n": 1
-   },
-   {
-    "artist": "Catie Offerman",
-    "n": 1
-   },
-   {
-    "artist": "Drew Baldridge",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "This Party Sucks",
-    "artist": "Ryan Hurd",
-    "net": 691612,
-    "gross": 922150
-   },
-   {
-    "song": "Ride It Out",
-    "artist": "Alli Walker",
-    "net": 563040,
-    "gross": 844519
-   },
-   {
-    "song": "Sadder Day",
-    "artist": "Craig Campbell",
-    "net": 317376,
-    "gross": 634752
-   },
-   {
-    "song": "Can't Make That Up",
-    "artist": "McCoy Moore",
-    "net": 116344,
-    "gross": 348963
-   },
-   {
-    "song": "Dandelion",
-    "artist": "Brooke Lee",
-    "net": 43074,
-    "gross": 78331
-   }
-  ],
-  "byYear": {
-   "2024": 4,
-   "2025": 5,
-   "2026": 3
-  }
- },
- "Bobby Hamrick": {
-  "name": "Bobby Hamrick",
-  "songs": 44,
-  "releases": 20,
-  "upcoming": 4,
-  "holds": 17,
-  "cuts": 3,
-  "grossStreams": 52821368,
-  "netStreams": 28499867,
-  "grossSpins": 196052,
-  "netSpins": 102515,
-  "lumStreams": 165091046,
-  "lumStreamsNet": 87447200,
-  "lumSpins": 340966,
-  "lumSpinsNet": 178496,
-  "avgShare": 0.7011,
-  "avgHoldDays": 205,
-  "maxHoldDays": 702,
-  "topArtists": [
-   {
-    "artist": "Scotty McCreery",
-    "n": 13
-   },
    {
     "artist": "Haven Madison",
+    "n": 6
+   },
+   {
+    "artist": "Jess Moskaluke",
     "n": 5
    },
    {
-    "artist": "Austin & Colin",
+    "artist": "Grace Asbury",
     "n": 4
    },
    {
-    "artist": "Darius Rucker",
-    "n": 4
+    "artist": "Kelsey Parks",
+    "n": 3
    },
    {
-    "artist": "Daniel Jeffers",
-    "n": 4
+    "artist": "Adam Mac",
+    "n": 2
    }
   ],
   "topSongs": [
    {
-    "song": "Bottle Rockets (Hold My Hand)",
-    "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
+    "song": "On The Fence",
+    "artist": "Gowa Gibbs",
+    "net": 1384145,
+    "gross": 2076115
    },
    {
-    "song": "Feel Like The Holidays",
-    "artist": "Scotty McCreery",
-    "net": 1825376,
-    "gross": 2455773
+    "song": "The Whiskey's Gone",
+    "artist": "Alli Walker",
+    "net": 1251347,
+    "gross": 3753292
    },
    {
-    "song": "Swim Up Bar",
-    "artist": "Scotty McCreery",
-    "net": 966616,
-    "gross": 1221401
+    "song": "Talking Bout Tonight",
+    "artist": "The Kruse Brothers",
+    "net": 686501,
+    "gross": 1373002
    },
    {
-    "song": "Take Too Much",
-    "artist": "Vincent Mason",
-    "net": 686119,
-    "gross": 1372239
+    "song": "Take It As A Blessing",
+    "artist": "Jordana Bryant",
+    "net": 432807,
+    "gross": 649179
    },
    {
-    "song": "Move It",
-    "artist": "Austin & Colin",
-    "net": 518096,
-    "gross": 1480275
+    "song": "Afterglow",
+    "artist": "Kelsey Parks",
+    "net": 325500,
+    "gross": 1302003
+   }
+  ],
+  "byYear": {
+   "2023": 2,
+   "2024": 8,
+   "2025": 28,
+   "2026": 6
+  }
+ },
+ "Matthew Morrisey": {
+  "name": "Matthew Morrisey",
+  "songs": 30,
+  "releases": 21,
+  "upcoming": 3,
+  "holds": 6,
+  "cuts": 0,
+  "grossStreams": 9106998,
+  "netStreams": 4529218,
+  "grossSpins": 3279,
+  "netSpins": 1639,
+  "lumStreams": 4257816,
+  "lumStreamsNet": 1771115,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5289,
+  "avgHoldDays": 649,
+  "maxHoldDays": 873,
+  "topArtists": [
+   {
+    "artist": "Jess Moskaluke",
+    "n": 5
+   },
+   {
+    "artist": "Jordana Bryant",
+    "n": 3
+   },
+   {
+    "artist": "The Kruse Brothers",
+    "n": 2
+   },
+   {
+    "artist": "Gowa Gibbs",
+    "n": 2
+   },
+   {
+    "artist": "Morgan Myles",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "On The Fence",
+    "artist": "Gowa Gibbs",
+    "net": 1384145,
+    "gross": 2076115
+   },
+   {
+    "song": "Talking Bout Tonight",
+    "artist": "The Kruse Brothers",
+    "net": 686501,
+    "gross": 1373002
+   },
+   {
+    "song": "Take It As A Blessing",
+    "artist": "Jordana Bryant",
+    "net": 432807,
+    "gross": 649179
+   },
+   {
+    "song": "Love On The Radio",
+    "artist": "Clayton Mullen",
+    "net": 382782,
+    "gross": 1531129
+   },
+   {
+    "song": "Nicotine Patch",
+    "artist": "Tim Gallagher",
+    "net": 304434,
+    "gross": 456629
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 6,
    "2025": 13,
+   "2026": 4
+  }
+ },
+ "Brooke Lee": {
+  "name": "Brooke Lee",
+  "songs": 28,
+  "releases": 23,
+  "upcoming": 2,
+  "holds": 2,
+  "cuts": 1,
+  "grossStreams": 4111100,
+  "netStreams": 2419247,
+  "grossSpins": 7,
+  "netSpins": 3,
+  "lumStreams": 2598542,
+  "lumStreamsNet": 1466607,
+  "lumSpins": 1,
+  "lumSpinsNet": 0,
+  "avgShare": 0.6316,
+  "avgHoldDays": 679,
+  "maxHoldDays": 792,
+  "topArtists": [
+   {
+    "artist": "Brooke Lee",
+    "n": 23
+   },
+   {
+    "artist": "Tanner Gomes",
+    "n": 1
+   },
+   {
+    "artist": "Preslee",
+    "n": 1
+   },
+   {
+    "artist": "Jac Ross",
+    "n": 1
+   },
+   {
+    "artist": "Brooke Lee,Gabe Bradley",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "So Beautiful",
+    "artist": "Brooke Lee",
+    "net": 638961,
+    "gross": 1277922
+   },
+   {
+    "song": "I've Been Thinking",
+    "artist": "Brooke Lee",
+    "net": 220075,
+    "gross": 330097
+   },
+   {
+    "song": "Call Me Pretty",
+    "artist": "Brooke Lee",
+    "net": 201659,
+    "gross": 302474
+   },
+   {
+    "song": "Wild And Free",
+    "artist": "Brooke Lee",
+    "net": 167210,
+    "gross": 167210
+   },
+   {
+    "song": "Head In The Clouds",
+    "artist": "Brooke Lee",
+    "net": 166251,
+    "gross": 249365
+   }
+  ],
+  "byYear": {
+   "2023": 6,
+   "2024": 1,
+   "2025": 10,
+   "2026": 9
+  }
+ },
+ "Mike Fiorentino": {
+  "name": "Mike Fiorentino",
+  "songs": 25,
+  "releases": 19,
+  "upcoming": 0,
+  "holds": 4,
+  "cuts": 2,
+  "grossStreams": 6475269,
+  "netStreams": 3509704,
+  "grossSpins": 30091,
+  "netSpins": 15045,
+  "lumStreams": 2197308,
+  "lumStreamsNet": 1219714,
+  "lumSpins": 486,
+  "lumSpinsNet": 244,
+  "avgShare": 0.6227,
+  "avgHoldDays": 204,
+  "maxHoldDays": 729,
+  "topArtists": [
+   {
+    "artist": "Tim Montana",
+    "n": 8
+   },
+   {
+    "artist": "Kate Sykes",
+    "n": 4
+   },
+   {
+    "artist": "Gable Bradley",
+    "n": 3
+   },
+   {
+    "artist": "Kasey Tyndall",
+    "n": 1
+   },
+   {
+    "artist": "John Daly",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Devil You Know",
+    "artist": "Tim Montana",
+    "net": 2500452,
+    "gross": 5000904
+   },
+   {
+    "song": "Get You Some",
+    "artist": "Tim Montana",
+    "net": 263248,
+    "gross": 394853
+   },
+   {
+    "song": "Ashes",
+    "artist": "Tim Montana",
+    "net": 194257,
+    "gross": 291372
+   },
+   {
+    "song": "Wild And Free",
+    "artist": "Brooke Lee",
+    "net": 167210,
+    "gross": 167210
+   },
+   {
+    "song": "You Made Your Bed",
+    "artist": "Erin Gibney",
+    "net": 88121,
+    "gross": 176243
+   }
+  ],
+  "byYear": {
+   "2023": 3,
+   "2024": 6,
+   "2025": 5,
    "2026": 7
+  }
+ },
+ "Nathan Barlowe": {
+  "name": "Nathan Barlowe",
+  "songs": 17,
+  "releases": 10,
+  "upcoming": 0,
+  "holds": 5,
+  "cuts": 2,
+  "grossStreams": 602401,
+  "netStreams": 335046,
+  "grossSpins": 10250,
+  "netSpins": 6833,
+  "lumStreams": 1910476,
+  "lumStreamsNet": 1148073,
+  "lumSpins": 20645,
+  "lumSpinsNet": 13764,
+  "avgShare": 0.5481,
+  "avgHoldDays": 316,
+  "maxHoldDays": 466,
+  "topArtists": [
+   {
+    "artist": "Tim Montana",
+    "n": 5
+   },
+   {
+    "artist": "Tyler Hubbard",
+    "n": 3
+   },
+   {
+    "artist": "Maneskin",
+    "n": 2
+   },
+   {
+    "artist": "Gable Bradley",
+    "n": 2
+   },
+   {
+    "artist": "Kasey Tyndall",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Drunk Enough",
+    "artist": "Midland",
+    "net": 160344,
+    "gross": 320688
+   },
+   {
+    "song": "Break Me Down",
+    "artist": "Tim Montana",
+    "net": 90741,
+    "gross": 136105
+   },
+   {
+    "song": "Crown of Ash",
+    "artist": "Tim Montana",
+    "net": 33088,
+    "gross": 66177
+   },
+   {
+    "song": "Nothing At All",
+    "artist": "Gable Bradley",
+    "net": 15953,
+    "gross": 31906
+   },
+   {
+    "song": "Beautiful Hate",
+    "artist": "Tim Montana",
+    "net": 12088,
+    "gross": 18132
+   }
+  ],
+  "byYear": {
+   "2025": 4,
+   "2026": 8
+  }
+ },
+ "Michael Hardy": {
+  "name": "Michael Hardy",
+  "songs": 102,
+  "releases": 81,
+  "upcoming": 9,
+  "holds": 6,
+  "cuts": 6,
+  "grossStreams": 3170530475,
+  "netStreams": 702647735,
+  "grossSpins": 2267968,
+  "netSpins": 521781,
+  "lumStreams": 2389120067,
+  "lumStreamsNet": 540904692,
+  "lumSpins": 1625124,
+  "lumSpinsNet": 326534,
+  "avgShare": 0.2889,
+  "avgHoldDays": 127,
+  "maxHoldDays": 271,
+  "topArtists": [
+   {
+    "artist": "HARDY",
+    "n": 32
+   },
+   {
+    "artist": "Morgan Wallen",
+    "n": 9
+   },
+   {
+    "artist": "Cole Swindell",
+    "n": 6
+   },
+   {
+    "artist": "Brantley Gilbert",
+    "n": 4
+   },
+   {
+    "artist": "Jordan Davis",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "I Got Better",
+    "artist": "Morgan Wallen",
+    "net": 73910246,
+    "gross": 443372805
+   },
+   {
+    "song": "One Beer",
+    "artist": "HARDY",
+    "net": 65507762,
+    "gross": 349374732
+   },
+   {
+    "song": "Be Her",
+    "artist": "Ella Langley",
+    "net": 63539509,
+    "gross": 254158037
+   },
+   {
+    "song": "Wait In The Truck",
+    "artist": "HARDY",
+    "net": 49184018,
+    "gross": 218595636
+   },
+   {
+    "song": "I Wrote The Book",
+    "artist": "Morgan Wallen",
+    "net": 48926706,
+    "gross": 206007184
+   }
+  ],
+  "byYear": {
+   "2019": 1,
+   "2020": 5,
+   "2021": 15,
+   "2022": 14,
+   "2023": 11,
+   "2024": 3,
+   "2025": 28,
+   "2026": 16
+  }
+ },
+ "Remy Gautreau": {
+  "name": "Remy Gautreau",
+  "songs": 32,
+  "releases": 32,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 9019905,
+  "netStreams": 2138163,
+  "grossSpins": 2779,
+  "netSpins": 555,
+  "lumStreams": 5487887,
+  "lumStreamsNet": 1379648,
+  "lumSpins": 3,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2833,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Black Caviar",
+    "n": 10
+   },
+   {
+    "artist": "Remy",
+    "n": 7
+   },
+   {
+    "artist": "O.A.R.",
+    "n": 3
+   },
+   {
+    "artist": "JaeyBxrd",
+    "n": 2
+   },
+   {
+    "artist": "Lukas Graham",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Good Bad & Ugly",
+    "artist": "JaeyBxrd",
+    "net": 583818,
+    "gross": 2919093
+   },
+   {
+    "song": "Cut Me Open",
+    "artist": "JaeyBxrd",
+    "net": 300138,
+    "gross": 1200553
+   },
+   {
+    "song": "I Want You",
+    "artist": "NURKO",
+    "net": 298117,
+    "gross": 1192469
+   },
+   {
+    "song": "Where We Are Right Now",
+    "artist": "O.A.R.",
+    "net": 140752,
+    "gross": 469174
+   },
+   {
+    "song": "Waiting My Whole Life For This",
+    "artist": "Black Caviar",
+    "net": 109932,
+    "gross": 244294
+   }
+  ],
+  "byYear": {
+   "2024": 17,
+   "2025": 10,
+   "2026": 5
+  }
+ },
+ "Jamie Moore": {
+  "name": "Jamie Moore",
+  "songs": 10,
+  "releases": 5,
+  "upcoming": 1,
+  "holds": 4,
+  "cuts": 0,
+  "grossStreams": 2494906,
+  "netStreams": 964593,
+  "grossSpins": 828,
+  "netSpins": 344,
+  "lumStreams": 5938125,
+  "lumStreamsNet": 2103239,
+  "lumSpins": 424,
+  "lumSpinsNet": 208,
+  "avgShare": 0.3417,
+  "avgHoldDays": 125,
+  "maxHoldDays": 138,
+  "topArtists": [
+   {
+    "artist": "Mackenzie Carpenter",
+    "n": 4
+   },
+   {
+    "artist": "Timothy Wayne",
+    "n": 1
+   },
+   {
+    "artist": "Maddie & Tae",
+    "n": 1
+   },
+   {
+    "artist": "K. Michelle",
+    "n": 1
+   },
+   {
+    "artist": "Haven Madison",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Drunk Girls in Bathrooms",
+    "artist": "Maddie & Tae",
+    "net": 344572,
+    "gross": 689145
+   },
+   {
+    "song": "Drunk Cigs",
+    "artist": "Mackenzie Carpenter",
+    "net": 317435,
+    "gross": 952401
+   },
+   {
+    "song": "Drunk Enough",
+    "artist": "Midland",
+    "net": 160344,
+    "gross": 320688
+   },
+   {
+    "song": "I Kinda Want Your Man",
+    "artist": "Mackenzie Carpenter",
+    "net": 105935,
+    "gross": 423742
+   },
+   {
+    "song": "That'd Be You",
+    "artist": "Timothy Wayne",
+    "net": 36306,
+    "gross": 108930
+   }
+  ],
+  "byYear": {
+   "2025": 2,
+   "2026": 4
   }
  },
  "Justin Halpin": {
   "name": "Justin Halpin",
-  "songs": 57,
-  "releases": 36,
-  "upcoming": 0,
+  "songs": 58,
+  "releases": 38,
+  "upcoming": 1,
   "holds": 16,
-  "cuts": 5,
-  "grossStreams": 3027228,
-  "netStreams": 1350490,
-  "grossSpins": 362,
-  "netSpins": 96,
-  "lumStreams": 3128712,
-  "lumStreamsNet": 870926,
+  "cuts": 3,
+  "grossStreams": 3427587,
+  "netStreams": 1483602,
+  "grossSpins": 642,
+  "netSpins": 135,
+  "lumStreams": 3452494,
+  "lumStreamsNet": 938025,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.6143,
-  "avgHoldDays": 395,
-  "maxHoldDays": 809,
+  "avgShare": 0.6081,
+  "avgHoldDays": 422,
+  "maxHoldDays": 836,
   "topArtists": [
    {
     "artist": "First Time Thieves",
@@ -1060,7 +2110,7 @@ window.LYRIC_WRITERS = {
     "n": 3
    },
    {
-    "artist": "Drew Baldridge",
+    "artist": "Timmy McKeever",
     "n": 2
    }
   ],
@@ -1068,236 +2118,434 @@ window.LYRIC_WRITERS = {
    {
     "song": "Don't Break Itself",
     "artist": "Clayton Mullen",
-    "net": 397456,
-    "gross": 596155
+    "net": 401814,
+    "gross": 602691
    },
    {
     "song": "Pockets Full Of Sand",
     "artist": "The Elovaters",
-    "net": 128390,
-    "gross": 963895
-   },
-   {
-    "song": "Not Yet",
-    "artist": "Daniel Jeffers",
-    "net": 97302,
-    "gross": 145969
-   },
-   {
-    "song": "Do Me A Favor",
-    "artist": "Daniel Jeffers",
-    "net": 90756,
-    "gross": 136128
+    "net": 150343,
+    "gross": 1128704
    },
    {
     "song": "Vodka Soda",
     "artist": "408",
-    "net": 89479,
-    "gross": 198843
+    "net": 136848,
+    "gross": 304108
+   },
+   {
+    "song": "Do Me A Favor",
+    "artist": "Daniel Jeffers",
+    "net": 99589,
+    "gross": 149377
+   },
+   {
+    "song": "Not Yet",
+    "artist": "Daniel Jeffers",
+    "net": 98662,
+    "gross": 148008
    }
   ],
   "byYear": {
    "2023": 1,
    "2024": 13,
    "2025": 19,
-   "2026": 8
+   "2026": 9
   }
  },
- "Jeremy Bussey": {
-  "name": "Jeremy Bussey",
-  "songs": 42,
-  "releases": 15,
-  "upcoming": 2,
-  "holds": 17,
-  "cuts": 8,
-  "grossStreams": 53218320,
-  "netStreams": 29909232,
-  "grossSpins": 196273,
-  "netSpins": 102675,
-  "lumStreams": 166887325,
-  "lumStreamsNet": 89149189,
-  "lumSpins": 341337,
-  "lumSpinsNet": 178747,
-  "avgShare": 0.6769,
-  "avgHoldDays": 384,
-  "maxHoldDays": 877,
+ "Ben Samama": {
+  "name": "Ben Samama",
+  "songs": 34,
+  "releases": 19,
+  "upcoming": 5,
+  "holds": 5,
+  "cuts": 5,
+  "grossStreams": 53492053,
+  "netStreams": 8698750,
+  "grossSpins": 623,
+  "netSpins": 118,
+  "lumStreams": 11494583,
+  "lumStreamsNet": 1998888,
+  "lumSpins": 183,
+  "lumSpinsNet": 36,
+  "avgShare": 0.2511,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Scotty McCreery",
-    "n": 17
+    "artist": "Michael Aldag",
+    "n": 7
    },
    {
-    "artist": "Dustin Lynch",
-    "n": 4
+    "artist": "AJ McClean",
+    "n": 6
    },
    {
-    "artist": "Ashley McBryde",
+    "artist": "Matt Hansen",
     "n": 2
    },
    {
-    "artist": "Matt Stell",
+    "artist": "ZEROBASEONE",
     "n": 2
    },
    {
-    "artist": "Tyler Farr",
+    "artist": "Xdinary Heroes",
     "n": 2
    }
   ],
   "topSongs": [
    {
-    "song": "Bottle Rockets (Hold My Hand)",
-    "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
+    "song": "Top 5",
+    "artist": "ZEROBASEONE",
+    "net": 3378945,
+    "gross": 15450141
    },
    {
-    "song": "Feel Like The Holidays",
-    "artist": "Scotty McCreery",
-    "net": 1825376,
-    "gross": 2455773
+    "song": "Somewhere In Between",
+    "artist": "Matt Hansen",
+    "net": 2527674,
+    "gross": 10110696
    },
    {
-    "song": "Red Letter Blueprint",
-    "artist": "Scotty McCreery",
-    "net": 1108331,
-    "gross": 1385414
+    "song": "Everything Is Love",
+    "artist": "AHOF",
+    "net": 1011347,
+    "gross": 4597036
    },
    {
-    "song": "Red Letter Blueprint",
-    "artist": "Scotty McCreery ,Jason Crabb",
-    "net": 759660,
-    "gross": 949576
+    "song": "Breathe",
+    "artist": "Marlon Hoffstadt",
+    "net": 845878,
+    "gross": 4229390
    },
    {
-    "song": "Heaven And Back",
-    "artist": "Matt Stell",
-    "net": 577446,
-    "gross": 839922
+    "song": "Mismatch",
+    "artist": "&TEAM",
+    "net": 255172,
+    "gross": 12267886
+   }
+  ],
+  "byYear": {
+   "2025": 5,
+   "2026": 15
+  }
+ },
+ "Adam Chaffins": {
+  "name": "Adam Chaffins",
+  "songs": 30,
+  "releases": 25,
+  "upcoming": 2,
+  "holds": 1,
+  "cuts": 2,
+  "grossStreams": 420275,
+  "netStreams": 189371,
+  "grossSpins": 741,
+  "netSpins": 247,
+  "lumStreams": 570549,
+  "lumStreamsNet": 217099,
+  "lumSpins": 5499,
+  "lumSpinsNet": 1834,
+  "avgShare": 0.4945,
+  "avgHoldDays": 859,
+  "maxHoldDays": 859,
+  "topArtists": [
+   {
+    "artist": "Adam Chaffins",
+    "n": 15
+   },
+   {
+    "artist": "Brit Taylor",
+    "n": 8
+   },
+   {
+    "artist": "Caleb Lee Hutchinson",
+    "n": 1
+   },
+   {
+    "artist": "Carolina Story",
+    "n": 1
+   },
+   {
+    "artist": "Kenny Chesney",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Dive Bar Moses",
+    "artist": "Adam Chaffins",
+    "net": 35298,
+    "gross": 35298
+   },
+   {
+    "song": "Warning You Whiskey",
+    "artist": "Brit Taylor",
+    "net": 16123,
+    "gross": 48360
+   },
+   {
+    "song": "Living Till My Dying Day",
+    "artist": "Adam Chaffins",
+    "net": 14863,
+    "gross": 29726
+   },
+   {
+    "song": "King Of Coal Dust County",
+    "artist": "Adam Chaffins",
+    "net": 14560,
+    "gross": 43673
+   },
+   {
+    "song": "You Can Dance With Me",
+    "artist": "Joshua Ray Walker",
+    "net": 13999,
+    "gross": 41990
+   }
+  ],
+  "byYear": {
+   "2022": 1,
+   "2023": 2,
+   "2024": 3,
+   "2025": 7,
+   "2026": 16
+  }
+ },
+ "Honi": {
+  "name": "Honi",
+  "songs": 2,
+  "releases": 1,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 993482,
+  "netStreams": 496741,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 39354,
+  "lumStreamsNet": 19677,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.375,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "CRAVITY",
+    "n": 1
+   },
+   {
+    "artist": "LILO",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Favour",
+    "artist": "LILO",
+    "net": 496741,
+    "gross": 993482
+   }
+  ],
+  "byYear": {
+   "2023": 1
+  }
+ },
+ "Ely Rise": {
+  "name": "Ely Rise",
+  "songs": 52,
+  "releases": 51,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 978895077,
+  "netStreams": 84323035,
+  "grossSpins": 37004,
+  "netSpins": 2123,
+  "lumStreams": 167924866,
+  "lumStreamsNet": 15253002,
+  "lumSpins": 1723,
+  "lumSpinsNet": 137,
+  "avgShare": 0.1047,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Ravyn Lenae",
+    "n": 17
+   },
+   {
+    "artist": "Dahi",
+    "n": 10
+   },
+   {
+    "artist": "Childish Gambino",
+    "n": 7
+   },
+   {
+    "artist": "Eem Triplin",
+    "n": 5
+   },
+   {
+    "artist": "Aminé",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Count Me Out",
+    "artist": "Kendrick Lamar",
+    "net": 37404288,
+    "gross": 425048730
+   },
+   {
+    "song": "Give You The World",
+    "artist": "Steve Lacy",
+    "net": 19089564,
+    "gross": 114652037
+   },
+   {
+    "song": "Mercury",
+    "artist": "Steve Lacy",
+    "net": 2861325,
+    "gross": 114453028
+   },
+   {
+    "song": "Buttons",
+    "artist": "Steve Lacy",
+    "net": 2327367,
+    "gross": 46547353
+   },
+   {
+    "song": "Vacay",
+    "artist": "Aminé",
+    "net": 2283351,
+    "gross": 16113985
+   }
+  ],
+  "byYear": {
+   "2022": 4,
+   "2023": 3,
+   "2024": 14,
+   "2025": 9,
+   "2026": 21
+  }
+ },
+ "Adam Wood": {
+  "name": "Adam Wood",
+  "songs": 40,
+  "releases": 19,
+  "upcoming": 5,
+  "holds": 7,
+  "cuts": 9,
+  "grossStreams": 6405407,
+  "netStreams": 2477695,
+  "grossSpins": 813,
+  "netSpins": 523,
+  "lumStreams": 5799662,
+  "lumStreamsNet": 2363622,
+  "lumSpins": 401,
+  "lumSpinsNet": 241,
+  "avgShare": 0.4771,
+  "avgHoldDays": 345,
+  "maxHoldDays": 671,
+  "topArtists": [
+   {
+    "artist": "Smithfield",
+    "n": 7
+   },
+   {
+    "artist": "Kasey Tyndall",
+    "n": 3
+   },
+   {
+    "artist": "Lee Brice",
+    "n": 3
+   },
+   {
+    "artist": "Shane Profitt",
+    "n": 2
+   },
+   {
+    "artist": "Elvie Shane",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Think About Me",
+    "artist": "Tyler Braden",
+    "net": 400089,
+    "gross": 1200027
+   },
+   {
+    "song": "Off The Map",
+    "artist": "Dierks Bentley",
+    "net": 368251,
+    "gross": 552349
+   },
+   {
+    "song": "Anything Anymore",
+    "artist": "Stella Hennen",
+    "net": 312566,
+    "gross": 468827
+   },
+   {
+    "song": "Not As I've Done",
+    "artist": "Kasey Tyndall",
+    "net": 272990,
+    "gross": 409466
+   },
+   {
+    "song": "First Place",
+    "artist": "Elvie Shane",
+    "net": 196485,
+    "gross": 785940
    }
   ],
   "byYear": {
    "2023": 1,
-   "2024": 4,
-   "2025": 12,
-   "2026": 8
-  }
- },
- "Mike Fiorentino": {
-  "name": "Mike Fiorentino",
-  "songs": 22,
-  "releases": 17,
-  "upcoming": 2,
-  "holds": 2,
-  "cuts": 1,
-  "grossStreams": 6456559,
-  "netStreams": 2340581,
-  "grossSpins": 30013,
-  "netSpins": 8253,
-  "lumStreams": 2204644,
-  "lumStreamsNet": 898043,
-  "lumSpins": 463,
-  "lumSpinsNet": 132,
-  "avgShare": 0.5992,
-  "avgHoldDays": 359,
-  "maxHoldDays": 702,
-  "topArtists": [
-   {
-    "artist": "Tim Montana",
-    "n": 8
-   },
-   {
-    "artist": "Gable Bradley",
-    "n": 3
-   },
-   {
-    "artist": "Kate Sykes",
-    "n": 2
-   },
-   {
-    "artist": "Alina",
-    "n": 1
-   },
-   {
-    "artist": "Will Moseley",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Devil You Know",
-    "artist": "Tim Montana",
-    "net": 1375248,
-    "gross": 5000904
-   },
-   {
-    "song": "Get You Some",
-    "artist": "Tim Montana",
-    "net": 259234,
-    "gross": 388833
-   },
-   {
-    "song": "Ashes",
-    "artist": "Tim Montana",
-    "net": 190067,
-    "gross": 285087
-   },
-   {
-    "song": "Wild And Free",
-    "artist": "Brooke Lee",
-    "net": 162423,
-    "gross": 162423
-   },
-   {
-    "song": "You Made Your Bed",
-    "artist": "Erin Gibney",
-    "net": 86710,
-    "gross": 173420
-   }
-  ],
-  "byYear": {
-   "2023": 3,
-   "2024": 6,
-   "2025": 5,
-   "2026": 6
+   "2024": 7,
+   "2025": 15,
+   "2026": 10
   }
  },
  "Tyler Reeve": {
   "name": "Tyler Reeve",
-  "songs": 12,
+  "songs": 13,
   "releases": 5,
   "upcoming": 1,
-  "holds": 5,
+  "holds": 6,
   "cuts": 1,
-  "grossStreams": 1124923,
-  "netStreams": 910573,
+  "grossStreams": 1131835,
+  "netStreams": 1096716,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 239047,
-  "lumStreamsNet": 191024,
+  "lumStreams": 227254,
+  "lumStreamsNet": 217533,
   "lumSpins": 1,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4815,
-  "avgHoldDays": 517,
-  "maxHoldDays": 939,
+  "lumSpinsNet": 1,
+  "avgShare": 0.4962,
+  "avgHoldDays": 457,
+  "maxHoldDays": 966,
   "topArtists": [
    {
     "artist": "John Daly",
     "n": 2
    },
    {
-    "artist": "Tim McGraw",
+    "artist": "George Birge",
     "n": 1
    },
    {
-    "artist": "David J",
+    "artist": "Josh Ross",
     "n": 1
    },
    {
-    "artist": "Morgan Wallen",
+    "artist": "Shane Profitt",
     "n": 1
    },
    {
-    "artist": "Lee Brice",
+    "artist": "ATLUS",
     "n": 1
    }
   ],
@@ -1305,20 +2553,20 @@ window.LYRIC_WRITERS = {
    {
     "song": "Double Down",
     "artist": "Chris Young",
-    "net": 858972,
-    "gross": 1030685
+    "net": 1036761,
+    "gross": 1036761
    },
    {
     "song": "Match Made In Hell",
     "artist": "Brooke Lee",
-    "net": 24319,
-    "gross": 38148
+    "net": 28843,
+    "gross": 38458
    },
    {
     "song": "Slow It Down",
     "artist": "Dan Smalley",
-    "net": 20299,
-    "gross": 34771
+    "net": 23532,
+    "gross": 35297
    },
    {
     "song": "Wasted Prayers",
@@ -1329,7 +2577,7 @@ window.LYRIC_WRITERS = {
    {
     "song": "The Way I Lose",
     "artist": "John Daly",
-    "net": 3001,
+    "net": 3598,
     "gross": 5398
    }
   ],
@@ -1340,838 +2588,32 @@ window.LYRIC_WRITERS = {
    "2026": 1
   }
  },
- "Brooke Lee": {
-  "name": "Brooke Lee",
-  "songs": 27,
-  "releases": 22,
-  "upcoming": 2,
-  "holds": 2,
-  "cuts": 1,
-  "grossStreams": 3826172,
-  "netStreams": 2054155,
-  "grossSpins": 6,
-  "netSpins": 3,
-  "lumStreams": 2498717,
-  "lumStreamsNet": 1327404,
-  "lumSpins": 1,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5889,
-  "avgHoldDays": 652,
-  "maxHoldDays": 765,
-  "topArtists": [
-   {
-    "artist": "Brooke Lee",
-    "n": 22
-   },
-   {
-    "artist": "ATLUS",
-    "n": 1
-   },
-   {
-    "artist": "Jac Ross",
-    "n": 1
-   },
-   {
-    "artist": "Preslee",
-    "n": 1
-   },
-   {
-    "artist": "Tanner Gomes",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "So Beautiful",
-    "artist": "Brooke Lee",
-    "net": 613304,
-    "gross": 1226608
-   },
-   {
-    "song": "Call Me Pretty",
-    "artist": "Brooke Lee",
-    "net": 193739,
-    "gross": 290594
-   },
-   {
-    "song": "Wild And Free",
-    "artist": "Brooke Lee",
-    "net": 162423,
-    "gross": 162423
-   },
-   {
-    "song": "Head In The Clouds",
-    "artist": "Brooke Lee",
-    "net": 120812,
-    "gross": 247770
-   },
-   {
-    "song": "I've Been Thinking",
-    "artist": "Brooke Lee",
-    "net": 117612,
-    "gross": 319513
-   }
-  ],
-  "byYear": {
-   "2023": 6,
-   "2024": 1,
-   "2025": 10,
-   "2026": 8
-  }
- },
- "Dave Cohen": {
-  "name": "Dave Cohen",
-  "songs": 5,
-  "releases": 2,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 2,
-  "grossStreams": 890101,
-  "netStreams": 574436,
-  "grossSpins": 29,
-  "netSpins": 19,
-  "lumStreams": 271908,
-  "lumStreamsNet": 178776,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4167,
-  "avgHoldDays": 742,
-  "maxHoldDays": 742,
-  "topArtists": [
-   {
-    "artist": "Elle King",
-    "n": 2
-   },
-   {
-    "artist": "Eddie and the Getaway",
-    "n": 1
-   },
-   {
-    "artist": "Gowa Gibbs",
-    "n": 1
-   },
-   {
-    "artist": "Alli Walker",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Ride It Out",
-    "artist": "Alli Walker",
-    "net": 563040,
-    "gross": 844519
-   },
-   {
-    "song": "Let's Get Rollin",
-    "artist": "Gowa Gibbs",
-    "net": 11395,
-    "gross": 45582
-   }
-  ],
-  "byYear": {
-   "2024": 3,
-   "2025": 1
-  }
- },
- "Chizzy": {
-  "name": "Chizzy",
-  "songs": 21,
-  "releases": 16,
-  "upcoming": 4,
-  "holds": 0,
-  "cuts": 1,
-  "grossStreams": 22957914,
-  "netStreams": 1763800,
-  "grossSpins": 2644,
-  "netSpins": 239,
-  "lumStreams": 3448367,
-  "lumStreamsNet": 352122,
-  "lumSpins": 31,
-  "lumSpinsNet": 2,
-  "avgShare": 0.5791,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Chizzy Stephens",
-    "n": 6
-   },
-   {
-    "artist": "Marc Tinez",
-    "n": 2
-   },
-   {
-    "artist": "Jaz Karis",
-    "n": 2
-   },
-   {
-    "artist": "Breland",
-    "n": 1
-   },
-   {
-    "artist": "Atlien Workshop",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Show It",
-    "artist": "Chris Brown",
-    "net": 1256572,
-    "gross": 20942882
-   },
-   {
-    "song": "Spin The Town",
-    "artist": "Richie Allen",
-    "net": 159809,
-    "gross": 639236
-   },
-   {
-    "song": "Catching Fire",
-    "artist": "Alli Leighann",
-    "net": 103439,
-    "gross": 155175
-   },
-   {
-    "song": "Just Like That",
-    "artist": "Connor McCutcheon",
-    "net": 69155,
-    "gross": 69155
-   },
-   {
-    "song": "Alright",
-    "artist": "Jaz Karis",
-    "net": 45508,
-    "gross": 455086
-   }
-  ],
-  "byYear": {
-   "2014": 1,
-   "2022": 1,
-   "2024": 3,
-   "2025": 6,
-   "2026": 10
-  }
- },
- "Adam Chaffins": {
-  "name": "Adam Chaffins",
-  "songs": 28,
-  "releases": 19,
-  "upcoming": 1,
-  "holds": 1,
-  "cuts": 7,
-  "grossStreams": 387844,
-  "netStreams": 162120,
-  "grossSpins": 686,
-  "netSpins": 229,
-  "lumStreams": 521604,
-  "lumStreamsNet": 189241,
-  "lumSpins": 5116,
-  "lumSpinsNet": 1706,
-  "avgShare": 0.4741,
-  "avgHoldDays": 832,
-  "maxHoldDays": 832,
-  "topArtists": [
-   {
-    "artist": "Adam Chaffins",
-    "n": 13
-   },
-   {
-    "artist": "Brit Taylor",
-    "n": 8
-   },
-   {
-    "artist": "Troy Cartwright",
-    "n": 1
-   },
-   {
-    "artist": "Wade Sapp",
-    "n": 1
-   },
-   {
-    "artist": "Colin Stough",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Dive Bar Moses",
-    "artist": "Adam Chaffins",
-    "net": 26622,
-    "gross": 34352
-   },
-   {
-    "song": "Warning You Whiskey",
-    "artist": "Brit Taylor",
-    "net": 15295,
-    "gross": 45878
-   },
-   {
-    "song": "Living Till My Dying Day",
-    "artist": "Adam Chaffins",
-    "net": 14247,
-    "gross": 28495
-   },
-   {
-    "song": "You Can Dance With Me",
-    "artist": "Joshua Ray Walker",
-    "net": 13806,
-    "gross": 41412
-   },
-   {
-    "song": "King Of Coal Dust County",
-    "artist": "Adam Chaffins",
-    "net": 13308,
-    "gross": 39918
-   }
-  ],
-  "byYear": {
-   "2022": 1,
-   "2023": 2,
-   "2024": 3,
-   "2025": 12,
-   "2026": 9
-  }
- },
- "Justin Richards": {
-  "name": "Justin Richards",
-  "songs": 20,
-  "releases": 17,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 1,
-  "grossStreams": 76372630,
-  "netStreams": 25220244,
-  "grossSpins": 4108,
-  "netSpins": 1284,
-  "lumStreams": 85988374,
-  "lumStreamsNet": 27865991,
-  "lumSpins": 64095,
-  "lumSpinsNet": 19855,
-  "avgShare": 0.5427,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Sidewalk Prophets",
-    "n": 4
-   },
-   {
-    "artist": "Brooke Lee",
-    "n": 4
-   },
-   {
-    "artist": "Jeremy Rosado",
-    "n": 2
-   },
-   {
-    "artist": "Lawson Harris",
-    "n": 1
-   },
-   {
-    "artist": "Tanner Gomes",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Still Waters",
-    "artist": "Leanna Crawford",
-    "net": 20034521,
-    "gross": 60091545
-   },
-   {
-    "song": "Hamms In A Glass",
-    "artist": "Winona Fighter",
-    "net": 1271997,
-    "gross": 5087991
-   },
-   {
-    "song": "Hero In The Room",
-    "artist": "Jeremy Rosado",
-    "net": 1205002,
-    "gross": 3614284
-   },
-   {
-    "song": "When I Meet Jesus",
-    "artist": "Jeremy Rosado",
-    "net": 1164833,
-    "gross": 3493802
-   },
-   {
-    "song": "Father Let It Be",
-    "artist": "Sidewalk Prophets",
-    "net": 383632,
-    "gross": 1534528
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 4,
-   "2025": 11,
-   "2026": 4
-  }
- },
- "Connor McCutcheon": {
-  "name": "Connor McCutcheon",
-  "songs": 40,
-  "releases": 30,
-  "upcoming": 0,
-  "holds": 9,
-  "cuts": 1,
-  "grossStreams": 7310327,
-  "netStreams": 2806776,
-  "grossSpins": 4,
-  "netSpins": 1,
-  "lumStreams": 5444667,
-  "lumStreamsNet": 1497920,
-  "lumSpins": 6,
-  "lumSpinsNet": 1,
-  "avgShare": 0.425,
-  "avgHoldDays": 227,
-  "maxHoldDays": 846,
-  "topArtists": [
-   {
-    "artist": "Connor McCutcheon",
-    "n": 22
-   },
-   {
-    "artist": "Blake Proehl",
-    "n": 8
-   },
-   {
-    "artist": "Kelsey Hart",
-    "n": 1
-   },
-   {
-    "artist": "David J",
-    "n": 1
-   },
-   {
-    "artist": "Tayler Holder",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Top Of The Hill",
-    "artist": "Connor McCutcheon",
-    "net": 365812,
-    "gross": 548691
-   },
-   {
-    "song": "Ways Away",
-    "artist": "Tyler Nance",
-    "net": 353134,
-    "gross": 1412538
-   },
-   {
-    "song": "Whiskey's Already Workin'",
-    "artist": "Connor McCutcheon",
-    "net": 303865,
-    "gross": 303865
-   },
-   {
-    "song": "'Til She's Gone",
-    "artist": "Tayler Holder",
-    "net": 228284,
-    "gross": 684716
-   },
-   {
-    "song": "Girlfriend's Got A Boyfriend",
-    "artist": "Cole Goodwin",
-    "net": 228033,
-    "gross": 684170
-   }
-  ],
-  "byYear": {
-   "2023": 2,
-   "2024": 7,
-   "2025": 15,
-   "2026": 7
-  }
- },
- "Frank Rogers": {
-  "name": "Frank Rogers",
-  "songs": 49,
-  "releases": 12,
-  "upcoming": 6,
-  "holds": 26,
-  "cuts": 5,
-  "grossStreams": 60436973,
-  "netStreams": 35163356,
-  "grossSpins": 252081,
-  "netSpins": 144474,
-  "lumStreams": 173194766,
-  "lumStreamsNet": 93886203,
-  "lumSpins": 345460,
-  "lumSpinsNet": 181860,
-  "avgShare": 0.7315,
-  "avgHoldDays": 215,
-  "maxHoldDays": 877,
-  "topArtists": [
-   {
-    "artist": "Scotty McCreery",
-    "n": 32
-   },
-   {
-    "artist": "Darius Rucker",
-    "n": 11
-   },
-   {
-    "artist": "Dustin Lynch",
-    "n": 3
-   },
-   {
-    "artist": "Emily Ann Roberts",
-    "n": 2
-   },
-   {
-    "artist": "Matt Stell",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Bottle Rockets (Hold My Hand)",
-    "artist": "Scotty McCreery",
-    "net": 23112417,
-    "gross": 44200455
-   },
-   {
-    "song": "Fall of Summer",
-    "artist": "Scotty McCreery",
-    "net": 5028396,
-    "gross": 6704528
-   },
-   {
-    "song": "Feel Like The Holidays",
-    "artist": "Scotty McCreery",
-    "net": 1825376,
-    "gross": 2455773
-   },
-   {
-    "song": "Can't Pass The Bar",
-    "artist": "Scotty McCreery",
-    "net": 1255640,
-    "gross": 1826386
-   },
-   {
-    "song": "Swim Up Bar",
-    "artist": "Scotty McCreery",
-    "net": 966616,
-    "gross": 1221401
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 4,
-   "2025": 8,
-   "2026": 10
-  }
- },
- "Joy Williams": {
-  "name": "Joy Williams",
-  "songs": 11,
-  "releases": 9,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 1,
-  "grossStreams": 4656055,
-  "netStreams": 1982388,
-  "grossSpins": 299,
-  "netSpins": 100,
-  "lumStreams": 1359540,
-  "lumStreamsNet": 558240,
-  "lumSpins": 83,
-  "lumSpinsNet": 27,
-  "avgShare": 0.446,
-  "avgHoldDays": 875,
-  "maxHoldDays": 875,
-  "topArtists": [
-   {
-    "artist": "Vince Gill",
-    "n": 2
-   },
-   {
-    "artist": "Apple Kids Country",
-    "n": 1
-   },
-   {
-    "artist": "RaeLynn",
-    "n": 1
-   },
-   {
-    "artist": "Tim Gallagher",
-    "n": 1
-   },
-   {
-    "artist": "Blessing Offor",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Oxygen Mask",
-    "artist": "Sasha Alex Sloan",
-    "net": 1051919,
-    "gross": 2033087
-   },
-   {
-    "song": "Somebody's Child",
-    "artist": "Blessing Offor",
-    "net": 548768,
-    "gross": 1645976
-   },
-   {
-    "song": "Nicotine Patch",
-    "artist": "Tim Gallagher",
-    "net": 166410,
-    "gross": 452079
-   },
-   {
-    "song": "Shake Ya Boots",
-    "artist": "RaeLynn",
-    "net": 149445,
-    "gross": 385665
-   },
-   {
-    "song": "Root Down",
-    "artist": "Noah Guthrie",
-    "net": 32380,
-    "gross": 48568
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 4,
-   "2025": 3,
-   "2026": 2
-  }
- },
- "LECADE": {
-  "name": "LECADE",
-  "songs": 11,
-  "releases": 9,
-  "upcoming": 1,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 24349051,
-  "netStreams": 7782018,
-  "grossSpins": 1,
-  "netSpins": 0,
-  "lumStreams": 9262707,
-  "lumStreamsNet": 2970964,
-  "lumSpins": 3,
-  "lumSpinsNet": 1,
-  "avgShare": 0.3743,
-  "avgHoldDays": 343,
-  "maxHoldDays": 343,
-  "topArtists": [
-   {
-    "artist": "LECADE",
-    "n": 9
-   },
-   {
-    "artist": "Clever",
-    "n": 1
-   },
-   {
-    "artist": "Avery Roberson",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Gave It Up",
-    "artist": "LECADE",
-    "net": 2731814,
-    "gross": 10927259
-   },
-   {
-    "song": "Bed We Made",
-    "artist": "LECADE",
-    "net": 1917020,
-    "gross": 3834041
-   },
-   {
-    "song": "You Get Me",
-    "artist": "LECADE",
-    "net": 1671224,
-    "gross": 5012670
-   },
-   {
-    "song": "Liquor & Cigarettes",
-    "artist": "LECADE",
-    "net": 1338651,
-    "gross": 4015151
-   },
-   {
-    "song": "Blind",
-    "artist": "LECADE",
-    "net": 66700,
-    "gross": 333501
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 3,
-   "2025": 6
-  }
- },
- "Nick Autry": {
-  "name": "Nick Autry",
-  "songs": 9,
-  "releases": 4,
-  "upcoming": 0,
-  "holds": 4,
-  "cuts": 1,
-  "grossStreams": 340608,
-  "netStreams": 183151,
-  "grossSpins": 2,
-  "netSpins": 0,
-  "lumStreams": 303290,
-  "lumStreamsNet": 154254,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4685,
-  "avgHoldDays": 225,
-  "maxHoldDays": 352,
-  "topArtists": [
-   {
-    "artist": "Corey Kent",
-    "n": 1
-   },
-   {
-    "artist": "Alyssa Flaherty",
-    "n": 1
-   },
-   {
-    "artist": "Kevin Powers",
-    "n": 1
-   },
-   {
-    "artist": "Madeline Merlo",
-    "n": 1
-   },
-   {
-    "artist": "Restless Road",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Maybe Baby",
-    "artist": "Brody Clementi",
-    "net": 137236,
-    "gross": 205844
-   },
-   {
-    "song": "All For You",
-    "artist": "Josh Tatofi",
-    "net": 35736,
-    "gross": 107187
-   },
-   {
-    "song": "Good Boy",
-    "artist": "John Daly",
-    "net": 8758,
-    "gross": 21897
-   },
-   {
-    "song": "Good Man Going Home",
-    "artist": "Jeff Bates",
-    "net": 1420,
-    "gross": 5680
-   }
-  ],
-  "byYear": {
-   "2025": 1,
-   "2026": 4
-  }
- },
- "Zach Beeken": {
-  "name": "Zach Beeken",
-  "songs": 11,
-  "releases": 2,
-  "upcoming": 2,
-  "holds": 5,
-  "cuts": 2,
-  "grossStreams": 817437,
-  "netStreams": 165559,
-  "grossSpins": 1486,
-  "netSpins": 247,
-  "lumStreams": 602806,
-  "lumStreamsNet": 137158,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.2636,
-  "avgHoldDays": 315,
-  "maxHoldDays": 315,
-  "topArtists": [
-   {
-    "artist": "Restless Road",
-    "n": 7
-   },
-   {
-    "artist": "Preston Cooper",
-    "n": 1
-   },
-   {
-    "artist": "Mike Parker",
-    "n": 1
-   },
-   {
-    "artist": "Sacha",
-    "n": 1
-   },
-   {
-    "artist": "Michael Rotundo",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Forever Ago",
-    "artist": "Restless Road",
-    "net": 87912,
-    "gross": 351650
-   },
-   {
-    "song": "Shooting Star",
-    "artist": "Sacha",
-    "net": 77646,
-    "gross": 465787
-   }
-  ],
-  "byYear": {
-   "2025": 3,
-   "2026": 3
-  }
- },
  "Joe Bryson": {
   "name": "Joe Bryson",
-  "songs": 48,
-  "releases": 40,
-  "upcoming": 0,
-  "holds": 5,
-  "cuts": 3,
-  "grossStreams": 4687660,
-  "netStreams": 1763775,
+  "songs": 50,
+  "releases": 41,
+  "upcoming": 3,
+  "holds": 6,
+  "cuts": 0,
+  "grossStreams": 4833280,
+  "netStreams": 1849077,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 1998808,
-  "lumStreamsNet": 907269,
+  "lumStreams": 2118873,
+  "lumStreamsNet": 978788,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.4618,
-  "avgHoldDays": 176,
-  "maxHoldDays": 273,
+  "avgShare": 0.46,
+  "avgHoldDays": 174,
+  "maxHoldDays": 300,
   "topArtists": [
    {
     "artist": "Joe Bryson",
-    "n": 30
+    "n": 31
+   },
+   {
+    "artist": "Jasper Charles",
+    "n": 3
    },
    {
     "artist": "Liam Coleman",
@@ -2182,11 +2624,7 @@ window.LYRIC_WRITERS = {
     "n": 3
    },
    {
-    "artist": "Trey Gallman",
-    "n": 2
-   },
-   {
-    "artist": "Jasper Charles",
+    "artist": "Colleen McKenna",
     "n": 2
    }
   ],
@@ -2194,32 +2632,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "She Don't Really Miss Me",
     "artist": "Joe Bryson",
-    "net": 700168,
-    "gross": 2100085
+    "net": 701646,
+    "gross": 2104518
    },
    {
     "song": "Bloody Nails",
     "artist": "Joe Bryson",
-    "net": 196009,
-    "gross": 392019
+    "net": 233502,
+    "gross": 467004
    },
    {
     "song": "Down to the Filter",
     "artist": "Joe Bryson",
-    "net": 160364,
-    "gross": 641458
+    "net": 161382,
+    "gross": 645530
    },
    {
     "song": "Hey Hey Mama",
     "artist": "Joe Bryson",
-    "net": 137958,
-    "gross": 137958
+    "net": 146867,
+    "gross": 146867
    },
    {
     "song": "Wild Magnolia",
     "artist": "Joe Bryson",
-    "net": 137289,
-    "gross": 411785
+    "net": 137596,
+    "gross": 412706
    }
   ],
   "byYear": {
@@ -2230,635 +2668,237 @@ window.LYRIC_WRITERS = {
    "2023": 3,
    "2024": 10,
    "2025": 9,
-   "2026": 11
+   "2026": 11,
+   "2027": 1
   }
  },
- "Hardy (Admin)": {
-  "name": "Hardy (Admin)",
-  "songs": 52,
-  "releases": 34,
-  "upcoming": 5,
-  "holds": 10,
-  "cuts": 3,
-  "grossStreams": 1213394691,
-  "netStreams": 260235948,
-  "grossSpins": 762823,
-  "netSpins": 156304,
-  "lumStreams": 1910988460,
-  "lumStreamsNet": 428777136,
-  "lumSpins": 1480318,
-  "lumSpinsNet": 285184,
-  "avgShare": 0.3361,
-  "avgHoldDays": 110,
-  "maxHoldDays": 244,
-  "topArtists": [
-   {
-    "artist": "HARDY",
-    "n": 27
-   },
-   {
-    "artist": "Morgan Wallen",
-    "n": 6
-   },
-   {
-    "artist": "Jordan Davis",
-    "n": 2
-   },
-   {
-    "artist": "Ella Langley",
-    "n": 2
-   },
-   {
-    "artist": "Nate Smith",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "I Got Better",
-    "artist": "Morgan Wallen",
-    "net": 70613444,
-    "gross": 423595948
-   },
-   {
-    "song": "Be Her",
-    "artist": "Ella Langley",
-    "net": 55538794,
-    "gross": 222155179
-   },
-   {
-    "song": "Jim Bob",
-    "artist": "HARDY",
-    "net": 17176068,
-    "gross": 34352136
-   },
-   {
-    "song": "Never Met Anyone Like You",
-    "artist": "Ella Langley",
-    "net": 13662598,
-    "gross": 40979601
-   },
-   {
-    "song": "Psycho",
-    "artist": "HARDY",
-    "net": 11952624,
-    "gross": 47810497
-   }
-  ],
-  "byYear": {
-   "2024": 3,
-   "2025": 28,
-   "2026": 10
-  }
- },
- "Kasey Tyndall": {
-  "name": "Kasey Tyndall",
+ "Nick Autry": {
+  "name": "Nick Autry",
   "songs": 9,
-  "releases": 2,
-  "upcoming": 1,
-  "holds": 5,
+  "releases": 4,
+  "upcoming": 0,
+  "holds": 4,
   "cuts": 1,
-  "grossStreams": 615471,
-  "netStreams": 154110,
-  "grossSpins": 58,
-  "netSpins": 19,
-  "lumStreams": 1111067,
-  "lumStreamsNet": 243778,
-  "lumSpins": 122,
-  "lumSpinsNet": 40,
-  "avgShare": 0.5519,
-  "avgHoldDays": 134,
-  "maxHoldDays": 244,
+  "grossStreams": 410730,
+  "netStreams": 225804,
+  "grossSpins": 2,
+  "netSpins": 0,
+  "lumStreams": 340037,
+  "lumStreamsNet": 178995,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.4685,
+  "avgHoldDays": 252,
+  "maxHoldDays": 379,
   "topArtists": [
    {
-    "artist": "Kasey Tyndall",
-    "n": 6
-   },
-   {
-    "artist": "Gavin Adcock",
+    "artist": "John Daly",
     "n": 1
    },
    {
-    "artist": "Kylie Morgan",
+    "artist": "Restless Road",
     "n": 1
    },
    {
-    "artist": "Pop Evil",
+    "artist": "Brody Clementi",
+    "n": 1
+   },
+   {
+    "artist": "Madeline Merlo",
+    "n": 1
+   },
+   {
+    "artist": "Kevin Powers",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Like My Own",
-    "artist": "Kylie Morgan",
-    "net": 145105,
-    "gross": 435359
+    "song": "Maybe Baby",
+    "artist": "Brody Clementi",
+    "net": 180279,
+    "gross": 270406
    },
    {
-    "song": "Maybe You're The One",
-    "artist": "Pop Evil",
-    "net": 9005,
-    "gross": 180112
+    "song": "All For You",
+    "artist": "Josh Tatofi",
+    "net": 39689,
+    "gross": 119044
+   },
+   {
+    "song": "Good Man Going Home",
+    "artist": "Jeff Bates",
+    "net": 4461,
+    "gross": 17846
+   },
+   {
+    "song": "This Old Road Is Coming To An End",
+    "artist": "John Daly",
+    "net": 1373,
+    "gross": 3434
    }
   ],
   "byYear": {
+   "2025": 1,
    "2026": 4
   }
  },
- "Hamish": {
-  "name": "Hamish",
-  "songs": 49,
-  "releases": 49,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 35841325,
-  "netStreams": 6260037,
-  "grossSpins": 3378,
-  "netSpins": 469,
-  "lumStreams": 18830553,
-  "lumStreamsNet": 3511221,
-  "lumSpins": 393,
-  "lumSpinsNet": 71,
-  "avgShare": 0.1393,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
+ "Bobby Hamrick": {
+  "name": "Bobby Hamrick",
+  "songs": 51,
+  "releases": 27,
+  "upcoming": 5,
+  "holds": 18,
+  "cuts": 1,
+  "grossStreams": 54411385,
+  "netStreams": 31557761,
+  "grossSpins": 199832,
+  "netSpins": 108988,
+  "lumStreams": 152036918,
+  "lumStreamsNet": 84566340,
+  "lumSpins": 293165,
+  "lumSpinsNet": 160297,
+  "avgShare": 0.7262,
+  "avgHoldDays": 269,
+  "maxHoldDays": 902,
   "topArtists": [
    {
-    "artist": "Marley Moon",
-    "n": 8
+    "artist": "Scotty McCreery",
+    "n": 13
    },
    {
-    "artist": "VITA",
-    "n": 8
-   },
-   {
-    "artist": "Nami",
-    "n": 6
-   },
-   {
-    "artist": "See You Next Year",
+    "artist": "Haven Madison",
     "n": 5
    },
    {
-    "artist": "Knock2",
-    "n": 3
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Bad Kids",
-    "artist": "347aidan",
-    "net": 3043315,
-    "gross": 12173263
-   },
-   {
-    "song": "Shake The City",
-    "artist": "Knock2",
-    "net": 1118559,
-    "gross": 5592795
-   },
-   {
-    "song": "You Ain't Gotta",
-    "artist": "Albert Posis",
-    "net": 495534,
-    "gross": 1982138
-   },
-   {
-    "song": "Sunday",
-    "artist": "347aidan",
-    "net": 255635,
-    "gross": 2045086
-   },
-   {
-    "song": "Fast N Slow",
-    "artist": "Knock2",
-    "net": 195019,
-    "gross": 975097
-   }
-  ],
-  "byYear": {
-   "2022": 9,
-   "2023": 9,
-   "2024": 13,
-   "2025": 16,
-   "2026": 1
-  }
- },
- "Sam Carter": {
-  "name": "Sam Carter",
-  "songs": 3,
-  "releases": 1,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 346282,
-  "netStreams": 230866,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 71789,
-  "lumStreamsNet": 47861,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.8889,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Brinley Addington",
-    "n": 1
-   },
-   {
-    "artist": "Lawson Harris",
-    "n": 1
-   },
-   {
-    "artist": "12/OC",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Sound Of You Leaving",
-    "artist": "12/OC",
-    "net": 230866,
-    "gross": 346282
-   }
-  ],
-  "byYear": {
-   "2025": 1,
-   "2026": 2
-  }
- },
- "Shane Stevens": {
-  "name": "Shane Stevens",
-  "songs": 26,
-  "releases": 18,
-  "upcoming": 0,
-  "holds": 8,
-  "cuts": 0,
-  "grossStreams": 14326079,
-  "netStreams": 4745235,
-  "grossSpins": 21180,
-  "netSpins": 8400,
-  "lumStreams": 9192954,
-  "lumStreamsNet": 2827170,
-  "lumSpins": 346,
-  "lumSpinsNet": 149,
-  "avgShare": 0.4829,
-  "avgHoldDays": 151,
-  "maxHoldDays": 191,
-  "topArtists": [
-   {
-    "artist": "Haven Madison",
-    "n": 6
-   },
-   {
-    "artist": "Jenna Davis",
-    "n": 3
-   },
-   {
-    "artist": "Lukas Graham",
-    "n": 2
-   },
-   {
-    "artist": "Toby Lightman",
-    "n": 2
-   },
-   {
-    "artist": "Shane Stevens",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Fancy Like Christmas",
-    "artist": "Walker Hayes",
-    "net": 1466379,
-    "gross": 5865516
-   },
-   {
-    "song": "Cheat Code",
-    "artist": "Lukas Graham",
-    "net": 1302803,
-    "gross": 3006701
-   },
-   {
-    "song": "Miss Wannabe",
-    "artist": "Jenna Davis",
-    "net": 612917,
-    "gross": 1838386
-   },
-   {
-    "song": "Big Bad Frog",
     "artist": "Austin & Colin",
-    "net": 309588,
-    "gross": 464360
+    "n": 5
    },
    {
-    "song": "Real Love",
-    "artist": "Ryan Ellis",
-    "net": 256776,
-    "gross": 1027106
+    "artist": "Darius Rucker",
+    "n": 4
+   },
+   {
+    "artist": "Daniel Jeffers",
+    "n": 4
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Bottle Rockets (Hold My Hand)",
+    "artist": "Scotty McCreery",
+    "net": 25005927,
+    "gross": 45848786
+   },
+   {
+    "song": "Feel Like The Holidays",
+    "artist": "Scotty McCreery",
+    "net": 2456413,
+    "gross": 2456413
+   },
+   {
+    "song": "Swim Up Bar",
+    "artist": "Scotty McCreery",
+    "net": 1041520,
+    "gross": 1249725
+   },
+   {
+    "song": "Take Too Much",
+    "artist": "Vincent Mason",
+    "net": 715958,
+    "gross": 1431917
+   },
+   {
+    "song": "Lonely Ain't Lonely",
+    "artist": "Scotty McCreery",
+    "net": 444756,
+    "gross": 518908
    }
   ],
   "byYear": {
-   "2023": 1,
+   "2023": 3,
    "2024": 8,
-   "2025": 7,
-   "2026": 2
+   "2025": 14,
+   "2026": 8
   }
  },
- "Frank Ray": {
-  "name": "Frank Ray",
-  "songs": 1,
-  "releases": 0,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 0,
-  "netStreams": 0,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 0,
-  "lumStreamsNet": 0,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.3334,
-  "avgHoldDays": 186,
-  "maxHoldDays": 186,
-  "topArtists": [
-   {
-    "artist": "Frankie J",
-    "n": 1
-   }
-  ],
-  "topSongs": [],
-  "byYear": {}
- },
- "Billy F. Gibbons": {
-  "name": "Billy F. Gibbons",
-  "songs": 3,
-  "releases": 1,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 796987,
-  "netStreams": 265715,
-  "grossSpins": 222,
-  "netSpins": 74,
-  "lumStreams": 659443,
-  "lumStreamsNet": 219858,
-  "lumSpins": 34,
-  "lumSpinsNet": 11,
-  "avgShare": 0.6667,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Billy F Gibbons",
-    "n": 3
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Livin' It Up Down In Texas",
-    "artist": "Billy F Gibbons",
-    "net": 265715,
-    "gross": 796987
-   }
-  ],
-  "byYear": {
-   "2025": 1,
-   "2026": 2
-  }
- },
- "Sara Boe": {
-  "name": "Sara Boe",
+ "Patrick Ridgen": {
+  "name": "Patrick Ridgen",
   "songs": 11,
-  "releases": 8,
-  "upcoming": 2,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 48595795,
-  "netStreams": 16286436,
-  "grossSpins": 158959,
-  "netSpins": 69885,
-  "lumStreams": 8503687,
-  "lumStreamsNet": 1785196,
-  "lumSpins": 1,
-  "lumSpinsNet": 0,
-  "avgShare": 0.2589,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Matt Hansen",
-    "n": 3
-   },
-   {
-    "artist": "NewJeans",
-    "n": 1
-   },
-   {
-    "artist": "GAEUL",
-    "n": 1
-   },
-   {
-    "artist": "Nico Santos",
-    "n": 1
-   },
-   {
-    "artist": "Ali Wolv",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Number 1",
-    "artist": "Nico Santos",
-    "net": 11937036,
-    "gross": 27129628
-   },
-   {
-    "song": "Forever Again",
-    "artist": "Matt Hansen",
-    "net": 2070991,
-    "gross": 12430919
-   },
-   {
-    "song": "Compass",
-    "artist": "Matt Hansen",
-    "net": 1765645,
-    "gross": 7062580
-   },
-   {
-    "song": "Housekeeping",
-    "artist": "Ally Salort",
-    "net": 194818,
-    "gross": 584513
-   },
-   {
-    "song": "Before We Know It",
-    "artist": "Matt Hansen",
-    "net": 125156,
-    "gross": 625781
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2025": 3,
-   "2026": 5
-  }
- },
- "Joseph of Mercury": {
-  "name": "Joseph of Mercury",
-  "songs": 49,
-  "releases": 36,
+  "releases": 11,
   "upcoming": 0,
-  "holds": 11,
-  "cuts": 2,
-  "grossStreams": 7627834,
-  "netStreams": 4336502,
-  "grossSpins": 203,
-  "netSpins": 142,
-  "lumStreams": 189810,
-  "lumStreamsNet": 131586,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4391,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Joseph of Mercury",
-    "n": 30
-   },
-   {
-    "artist": "Maneskin",
-    "n": 11
-   },
-   {
-    "artist": "Beyonce",
-    "n": 2
-   },
-   {
-    "artist": "Jennie Harluk",
-    "n": 2
-   },
-   {
-    "artist": "Fritz Helder",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Find You Inside",
-    "artist": "Joseph of Mercury",
-    "net": 855098,
-    "gross": 1140131
-   },
-   {
-    "song": "Pretenders",
-    "artist": "Joseph of Mercury",
-    "net": 631728,
-    "gross": 902469
-   },
-   {
-    "song": "Without Words",
-    "artist": "Joseph of Mercury",
-    "net": 554971,
-    "gross": 792817
-   },
-   {
-    "song": "Angel",
-    "artist": "Joseph of Mercury",
-    "net": 456241,
-    "gross": 760402
-   },
-   {
-    "song": "Nikki",
-    "artist": "Joseph of Mercury",
-    "net": 378197,
-    "gross": 540282
-   }
-  ],
-  "byYear": {
-   "2016": 2,
-   "2017": 6,
-   "2018": 2,
-   "2019": 7,
-   "2020": 2,
-   "2021": 5,
-   "2022": 5,
-   "2024": 6,
-   "2025": 1
-  }
- },
- "Tim Montana": {
-  "name": "Tim Montana",
-  "songs": 21,
-  "releases": 20,
-  "upcoming": 1,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 2128253,
-  "netStreams": 1194974,
-  "grossSpins": 9563,
-  "netSpins": 6362,
-  "lumStreams": 2391996,
-  "lumStreamsNet": 1435401,
-  "lumSpins": 18755,
-  "lumSpinsNet": 12486,
-  "avgShare": 0.5953,
+  "grossStreams": 2716790,
+  "netStreams": 636162,
+  "grossSpins": 348,
+  "netSpins": 87,
+  "lumStreams": 1139449,
+  "lumStreamsNet": 275057,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.4515,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Tim Montana",
-    "n": 20
+    "artist": "Arkade",
+    "n": 1
    },
    {
-    "artist": "Billy F Gibbons",
+    "artist": "Bryce Vine",
+    "n": 1
+   },
+   {
+    "artist": "Johnny Valentine",
+    "n": 1
+   },
+   {
+    "artist": "Marino.",
+    "n": 1
+   },
+   {
+    "artist": "Michael Rotundo",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Shut Me Out",
-    "artist": "Tim Montana",
-    "net": 278554,
-    "gross": 557109
+    "song": "DMPB",
+    "artist": "Yung Gravy",
+    "net": 291539,
+    "gross": 1943599
    },
    {
-    "song": "Get You Some",
-    "artist": "Tim Montana",
-    "net": 259234,
-    "gross": 388833
+    "song": "Wild And Free",
+    "artist": "Brooke Lee",
+    "net": 167210,
+    "gross": 167210
    },
    {
-    "song": "Ashes",
-    "artist": "Tim Montana",
-    "net": 190067,
-    "gross": 285087
+    "song": "24/7",
+    "artist": "Brooke Daye",
+    "net": 76403,
+    "gross": 229232
    },
    {
-    "song": "Die Today",
-    "artist": "Tim Montana",
-    "net": 124178,
-    "gross": 372462
+    "song": "All My Love",
+    "artist": "Johnny Valentine",
+    "net": 46346,
+    "gross": 185385
    },
    {
-    "song": "Right Again",
-    "artist": "Tim Montana",
-    "net": 81874,
-    "gross": 122805
+    "song": "Otherside",
+    "artist": "Bryce Vine",
+    "net": 22219,
+    "gross": 88878
    }
   ],
   "byYear": {
+   "2022": 1,
    "2024": 6,
    "2025": 1,
-   "2026": 14
+   "2026": 3
   }
  },
  "Jason Vance Harris": {
@@ -2868,12 +2908,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 4,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 4316932,
-  "netStreams": 1552915,
+  "grossStreams": 4441416,
+  "netStreams": 1600768,
   "grossSpins": 36,
   "netSpins": 18,
-  "lumStreams": 1818261,
-  "lumStreamsNet": 751217,
+  "lumStreams": 1795472,
+  "lumStreamsNet": 747093,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.2614,
@@ -2893,11 +2933,11 @@ window.LYRIC_WRITERS = {
     "n": 2
    },
    {
-    "artist": "Keni Titus",
+    "artist": "Juliet Ivy",
     "n": 1
    },
    {
-    "artist": "Juliet Ivy",
+    "artist": "Keni Titus",
     "n": 1
    }
   ],
@@ -2905,32 +2945,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Marianne",
     "artist": "Eli",
-    "net": 1143068,
-    "gross": 2286136
+    "net": 1172907,
+    "gross": 2345815
    },
    {
     "song": "I Wish I Was A Girl",
     "artist": "Eli",
-    "net": 164540,
-    "gross": 329081
+    "net": 171486,
+    "gross": 342972
    },
    {
     "song": "Falsetto",
     "artist": "Eli",
-    "net": 132092,
-    "gross": 352247
+    "net": 137569,
+    "gross": 366851
    },
    {
     "song": "Mistake",
     "artist": "Keni Titus",
-    "net": 60403,
-    "gross": 1208062
+    "net": 61626,
+    "gross": 1232529
    },
    {
     "song": "Only Want You",
     "artist": "BEL",
-    "net": 32014,
-    "gross": 80037
+    "net": 35465,
+    "gross": 88663
    }
   ],
   "byYear": {
@@ -2939,183 +2979,166 @@ window.LYRIC_WRITERS = {
    "2026": 4
   }
  },
- "Nick Gale": {
-  "name": "Nick Gale",
-  "songs": 44,
-  "releases": 30,
-  "upcoming": 3,
-  "holds": 5,
-  "cuts": 6,
-  "grossStreams": 955264806,
-  "netStreams": 182961042,
-  "grossSpins": 406031,
-  "netSpins": 112730,
-  "lumStreams": 320250414,
-  "lumStreamsNet": 49159323,
-  "lumSpins": 167488,
-  "lumSpinsNet": 22270,
-  "avgShare": 0.2358,
+ "Tim Montana": {
+  "name": "Tim Montana",
+  "songs": 23,
+  "releases": 22,
+  "upcoming": 1,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 7043824,
+  "netStreams": 3757617,
+  "grossSpins": 40359,
+  "netSpins": 21888,
+  "lumStreams": 3982482,
+  "lumStreamsNet": 2264701,
+  "lumSpins": 21201,
+  "lumSpinsNet": 14044,
+  "avgShare": 0.5942,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Duffy",
-    "n": 6
+    "artist": "Tim Montana",
+    "n": 22
    },
    {
-    "artist": "Marshmello",
+    "artist": "Billy F Gibbons",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Devil You Know",
+    "artist": "Tim Montana",
+    "net": 2500452,
+    "gross": 5000904
+   },
+   {
+    "song": "Shut Me Out",
+    "artist": "Tim Montana",
+    "net": 288335,
+    "gross": 576671
+   },
+   {
+    "song": "Get You Some",
+    "artist": "Tim Montana",
+    "net": 263248,
+    "gross": 394853
+   },
+   {
+    "song": "Ashes",
+    "artist": "Tim Montana",
+    "net": 194257,
+    "gross": 291372
+   },
+   {
+    "song": "Break Me Down",
+    "artist": "Tim Montana",
+    "net": 90741,
+    "gross": 136105
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 7,
+   "2025": 1,
+   "2026": 14
+  }
+ },
+ "Joe Janiak": {
+  "name": "Joe Janiak",
+  "songs": 44,
+  "releases": 44,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 37318113,
+  "netStreams": 14705296,
+  "grossSpins": 10125,
+  "netSpins": 3024,
+  "lumStreams": 11531205,
+  "lumStreamsNet": 4044806,
+  "lumSpins": 1747,
+  "lumSpinsNet": 845,
+  "avgShare": 0.6281,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Peacemode",
+    "n": 18
+   },
+   {
+    "artist": "Rachel Grae",
     "n": 5
    },
    {
-    "artist": "Chung Ha",
-    "n": 2
-   },
-   {
-    "artist": "The Paradox",
-    "n": 2
-   },
-   {
-    "artist": "Lost Frequencies",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Miles On It",
-    "artist": "Marshmello",
-    "net": 58879091,
-    "gross": 443366651
-   },
-   {
-    "song": "Barcelona",
-    "artist": "Alan Walker",
-    "net": 23392453,
-    "gross": 58481133
-   },
-   {
-    "song": "I'm Pretty",
-    "artist": "KATSEYE",
-    "net": 13416013,
-    "gross": 53664053
-   },
-   {
-    "song": "Nothing Without Your Love",
-    "artist": "JIN",
-    "net": 12487887,
-    "gross": 74554555
-   },
-   {
-    "song": "Off My Face",
-    "artist": "Maneskin",
-    "net": 12323586,
-    "gross": 70420494
-   }
-  ],
-  "byYear": {
-   "2023": 6,
-   "2024": 8,
-   "2025": 12,
-   "2026": 4
-  }
- },
- "Jordan Cosmo": {
-  "name": "Jordan Cosmo",
-  "songs": 64,
-  "releases": 60,
-  "upcoming": 2,
-  "holds": 1,
-  "cuts": 1,
-  "grossStreams": 421642324,
-  "netStreams": 219314276,
-  "grossSpins": 33704,
-  "netSpins": 14498,
-  "lumStreams": 46281058,
-  "lumStreamsNet": 20444661,
-  "lumSpins": 3444,
-  "lumSpinsNet": 605,
-  "avgShare": 0.3247,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "MIYA MIYA",
-    "n": 9
-   },
-   {
-    "artist": "CHINCHILLA",
+    "artist": "Billy Idol",
     "n": 4
    },
    {
-    "artist": "Fiaa Hamilton",
-    "n": 4
-   },
-   {
-    "artist": "Tommy Lyon",
-    "n": 4
-   },
-   {
-    "artist": "Jonas Blue",
+    "artist": "Charlotte MacInnes",
     "n": 3
+   },
+   {
+    "artist": "Camylio",
+    "n": 2
    }
   ],
   "topSongs": [
    {
-    "song": "Hear Me Say",
-    "artist": "Jonas Blue",
-    "net": 100226135,
-    "gross": 100226135
+    "song": "Starry Eyed",
+    "artist": "Good Neighbours",
+    "net": 4646258,
+    "gross": 18585034
    },
    {
-    "song": "Little Girl Gone",
-    "artist": "CHINCHILLA",
-    "net": 96815779,
-    "gross": 215146176
+    "song": "My Love (Is Like A Waterfall)",
+    "artist": "Peacemode",
+    "net": 2134323,
+    "gross": 2134323
    },
    {
-    "song": "1:5",
-    "artist": "CHINCHILLA",
-    "net": 2969817,
-    "gross": 5939635
+    "song": "Come Back Baby",
+    "artist": "Peacemode",
+    "net": 1223503,
+    "gross": 1223503
    },
    {
-    "song": "Lady In Red",
-    "artist": "Pedro Santos",
-    "net": 2944983,
-    "gross": 5889966
+    "song": "Vienna (Everything's Fine)",
+    "artist": "Vienna Vienna",
+    "net": 860216,
+    "gross": 2580907
    },
    {
-    "song": "All Night Long",
-    "artist": "Jonas Blue",
-    "net": 2318625,
-    "gross": 30915006
+    "song": "Holy Sugar",
+    "artist": "The Wombats",
+    "net": 537997,
+    "gross": 1075994
    }
   ],
   "byYear": {
-   "2019": 5,
-   "2020": 10,
-   "2021": 7,
-   "2022": 5,
-   "2023": 8,
-   "2024": 11,
-   "2025": 11,
-   "2026": 5
+   "2024": 12,
+   "2025": 17,
+   "2026": 15
   }
  },
  "Angel Delrae": {
   "name": "Angel Delrae",
   "songs": 20,
-  "releases": 17,
-  "upcoming": 1,
-  "holds": 1,
-  "cuts": 1,
-  "grossStreams": 114486225,
-  "netStreams": 29287663,
-  "grossSpins": 70161,
-  "netSpins": 7282,
-  "lumStreams": 81785552,
-  "lumStreamsNet": 9030012,
-  "lumSpins": 2636,
-  "lumSpinsNet": 263,
+  "releases": 18,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 2,
+  "grossStreams": 116188453,
+  "netStreams": 29665380,
+  "grossSpins": 70448,
+  "netSpins": 7330,
+  "lumStreams": 81392079,
+  "lumStreamsNet": 8985463,
+  "lumSpins": 2623,
+  "lumSpinsNet": 262,
   "avgShare": 0.52,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -3133,7 +3156,7 @@ window.LYRIC_WRITERS = {
     "n": 2
    },
    {
-    "artist": "JISOO",
+    "artist": "JIHYO",
     "n": 1
    },
    {
@@ -3145,32 +3168,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Slip N Slide",
     "artist": "Wizkid",
-    "net": 20254318,
-    "gross": 20254318
+    "net": 20491758,
+    "gross": 20491758
    },
    {
     "song": "This Is",
     "artist": "Ella Mai",
-    "net": 8435068,
-    "gross": 84350689
+    "net": 8570237,
+    "gross": 85702378
    },
    {
     "song": "Curious",
     "artist": "Shenseea",
-    "net": 476586,
-    "gross": 7564871
+    "net": 480153,
+    "gross": 7621477
    },
    {
     "song": "#GMFU",
     "artist": "Lindita",
-    "net": 64873,
-    "gross": 432491
+    "net": 64884,
+    "gross": 432563
    },
    {
     "song": "Jealous",
     "artist": "Lindita",
-    "net": 39911,
-    "gross": 266075
+    "net": 39924,
+    "gross": 266166
    }
   ],
   "byYear": {
@@ -3178,1328 +3201,7 @@ window.LYRIC_WRITERS = {
    "2022": 5,
    "2023": 1,
    "2024": 7,
-   "2026": 4
-  }
- },
- "Ben Samama": {
-  "name": "Ben Samama",
-  "songs": 33,
-  "releases": 19,
-  "upcoming": 3,
-  "holds": 5,
-  "cuts": 6,
-  "grossStreams": 48192653,
-  "netStreams": 8067123,
-  "grossSpins": 603,
-  "netSpins": 114,
-  "lumStreams": 10441301,
-  "lumStreamsNet": 1810614,
-  "lumSpins": 183,
-  "lumSpinsNet": 36,
-  "avgShare": 0.2536,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Michael Aldag",
-    "n": 7
-   },
-   {
-    "artist": "AJ McClean",
-    "n": 6
-   },
-   {
-    "artist": "Matt Hansen",
-    "n": 2
-   },
-   {
-    "artist": "Xdinary Heroes",
-    "n": 2
-   },
-   {
-    "artist": "ZEROBASEONE",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Top 5",
-    "artist": "ZEROBASEONE",
-    "net": 3113875,
-    "gross": 14238115
-   },
-   {
-    "song": "Somewhere In Between",
-    "artist": "Matt Hansen",
-    "net": 2377015,
-    "gross": 9508063
-   },
-   {
-    "song": "Everything Is Love",
-    "artist": "AHOF",
-    "net": 991560,
-    "gross": 4507094
-   },
-   {
-    "song": "Breathe",
-    "artist": "Marlon Hoffstadt",
-    "net": 776282,
-    "gross": 3881412
-   },
-   {
-    "song": "Mismatch",
-    "artist": "&TEAM",
-    "net": 238966,
-    "gross": 11488784
-   }
-  ],
-  "byYear": {
-   "2025": 5,
-   "2026": 14
-  }
- },
- "Melodie Wagner": {
-  "name": "Melodie Wagner",
-  "songs": 36,
-  "releases": 27,
-  "upcoming": 1,
-  "holds": 5,
-  "cuts": 3,
-  "grossStreams": 55327334,
-  "netStreams": 16108985,
-  "grossSpins": 10992,
-  "netSpins": 2613,
-  "lumStreams": 10853419,
-  "lumStreamsNet": 3081196,
-  "lumSpins": 1694,
-  "lumSpinsNet": 340,
-  "avgShare": 0.2923,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Hyzteria",
-    "n": 2
-   },
-   {
-    "artist": "KC Lights",
-    "n": 2
-   },
-   {
-    "artist": "BL3SS",
-    "n": 2
-   },
-   {
-    "artist": "Alle Farben",
-    "n": 2
-   },
-   {
-    "artist": "LF System",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Afters",
-    "artist": "BL3SS",
-    "net": 5413909,
-    "gross": 17094757
-   },
-   {
-    "song": "Watching Over You",
-    "artist": "Nu Aspect",
-    "net": 3109410,
-    "gross": 9329163
-   },
-   {
-    "song": "Sleep Talking",
-    "artist": "Beyond",
-    "net": 1631988,
-    "gross": 8159942
-   },
-   {
-    "song": "Like A Child",
-    "artist": "Armin Van Buuren",
-    "net": 1387401,
-    "gross": 3699737
-   },
-   {
-    "song": "Tears On My Piano",
-    "artist": "Joel Corry",
-    "net": 1040367,
-    "gross": 3467891
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 5,
-   "2025": 11,
-   "2026": 10
-  }
- },
- "JJ Scheff": {
-  "name": "JJ Scheff",
-  "songs": 15,
-  "releases": 14,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 4631419,
-  "netStreams": 2251958,
-  "grossSpins": 512,
-  "netSpins": 180,
-  "lumStreams": 1783723,
-  "lumStreamsNet": 977124,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.7293,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Reaper",
-    "n": 8
-   },
-   {
-    "artist": "Joseph of Mercury",
-    "n": 2
-   },
-   {
-    "artist": "Leven Kali",
-    "n": 2
-   },
-   {
-    "artist": "Tkay Maidza",
-    "n": 1
-   },
-   {
-    "artist": "Sam Austins",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Up",
-    "artist": "Reaper",
-    "net": 543681,
-    "gross": 543681
-   },
-   {
-    "song": "Shark",
-    "artist": "Reaper",
-    "net": 420580,
-    "gross": 420580
-   },
-   {
-    "song": "In The End",
-    "artist": "Leven Kali",
-    "net": 301268,
-    "gross": 903896
-   },
-   {
-    "song": "Palestine",
-    "artist": "KNEECAP",
-    "net": 287506,
-    "gross": 1437532
-   },
-   {
-    "song": "Wipe Your Tears",
-    "artist": "Sam Austins",
-    "net": 274356,
-    "gross": 823153
-   }
-  ],
-  "byYear": {
-   "2022": 1,
-   "2024": 1,
-   "2025": 10,
-   "2026": 2
-  }
- },
- "Autumn Rowe": {
-  "name": "Autumn Rowe",
-  "songs": 20,
-  "releases": 19,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 44722344,
-  "netStreams": 7806011,
-  "grossSpins": 25558,
-  "netSpins": 9470,
-  "lumStreams": 9791769,
-  "lumStreamsNet": 2044725,
-  "lumSpins": 955,
-  "lumSpinsNet": 338,
-  "avgShare": 0.2932,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Lukas Graham",
-    "n": 2
-   },
-   {
-    "artist": "MILCK",
-    "n": 2
-   },
-   {
-    "artist": "Th3dstream",
-    "n": 2
-   },
-   {
-    "artist": "Chapter & Verse",
-    "n": 1
-   },
-   {
-    "artist": "Sophia Treadway",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "More To Lose",
-    "artist": "Miley Cyrus",
-    "net": 3050899,
-    "gross": 30508996
-   },
-   {
-    "song": "Magic",
-    "artist": "Andy Grammer",
-    "net": 1526516,
-    "gross": 4951400
-   },
-   {
-    "song": "Joy",
-    "artist": "Angelique Kidjo",
-    "net": 1435366,
-    "gross": 4101047
-   },
-   {
-    "song": "Cheat Code",
-    "artist": "Lukas Graham",
-    "net": 1302803,
-    "gross": 3006701
-   },
-   {
-    "song": "Do It All Again",
-    "artist": "Jon Batiste",
-    "net": 211323,
-    "gross": 634033
-   }
-  ],
-  "byYear": {
-   "2022": 3,
-   "2024": 10,
-   "2025": 4,
-   "2026": 2
-  }
- },
- "Jamie Moore": {
-  "name": "Jamie Moore",
-  "songs": 8,
-  "releases": 3,
-  "upcoming": 1,
-  "holds": 4,
-  "cuts": 0,
-  "grossStreams": 883074,
-  "netStreams": 441537,
-  "grossSpins": 413,
-  "netSpins": 206,
-  "lumStreams": 1013694,
-  "lumStreamsNet": 477360,
-  "lumSpins": 433,
-  "lumSpinsNet": 216,
-  "avgShare": 0.3438,
-  "avgHoldDays": 98,
-  "maxHoldDays": 111,
-  "topArtists": [
-   {
-    "artist": "Mackenzie Carpenter",
-    "n": 3
-   },
-   {
-    "artist": "George Birge",
-    "n": 1
-   },
-   {
-    "artist": "Haven Madison",
-    "n": 1
-   },
-   {
-    "artist": "K. Michelle",
-    "n": 1
-   },
-   {
-    "artist": "Maddie & Tae",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Drunk Girls in Bathrooms",
-    "artist": "Maddie & Tae",
-    "net": 340322,
-    "gross": 680645
-   },
-   {
-    "song": "Drunk Enough",
-    "artist": "Midland",
-    "net": 101214,
-    "gross": 202429
-   }
-  ],
-  "byYear": {
-   "2025": 1,
-   "2026": 3
-  }
- },
- "Hunter Madrid": {
-  "name": "Hunter Madrid",
-  "songs": 12,
-  "releases": 11,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 17992258,
-  "netStreams": 4011257,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 3817597,
-  "lumStreamsNet": 806296,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.3149,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "AG Club",
-    "n": 3
-   },
-   {
-    "artist": "Sydney Ross Mitchell",
-    "n": 3
-   },
-   {
-    "artist": "Camo",
-    "n": 2
-   },
-   {
-    "artist": "GIRLSET",
-    "n": 1
-   },
-   {
-    "artist": "Daniel Munozz",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Superblue",
-    "artist": "Sydney Ross Mitchell",
-    "net": 1284930,
-    "gross": 2569860
-   },
-   {
-    "song": "Villain",
-    "artist": "Fordo",
-    "net": 993005,
-    "gross": 6620038
-   },
-   {
-    "song": "Strangers",
-    "artist": "Daniel Munozz",
-    "net": 643532,
-    "gross": 2574129
-   },
-   {
-    "song": "Sting",
-    "artist": "Sydney Ross Mitchell",
-    "net": 257412,
-    "gross": 2574129
-   },
-   {
-    "song": "Thrill",
-    "artist": "Sydney Ross Mitchell",
-    "net": 215672,
-    "gross": 862691
-   }
-  ],
-  "byYear": {
-   "2022": 3,
-   "2023": 2,
-   "2024": 5,
-   "2025": 1,
-   "2026": 1
-  }
- },
- "Noelle Scaggs": {
-  "name": "Noelle Scaggs",
-  "songs": 11,
-  "releases": 10,
-  "upcoming": 0,
-  "holds": 1,
-  "cuts": 0,
-  "grossStreams": 5939,
-  "netStreams": 1838,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 8110,
-  "lumStreamsNet": 3691,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4452,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Noelle Scaggs",
-    "n": 9
-   },
-   {
-    "artist": "Pink Slip",
-    "n": 1
-   },
-   {
-    "artist": "UNSECRET",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Life Of The Party",
-    "artist": "UNSECRET",
-    "net": 1097,
-    "gross": 3293
-   },
-   {
-    "song": "Bless The DJ",
-    "artist": "Noelle Scaggs",
-    "net": 740,
-    "gross": 2646
-   }
-  ],
-  "byYear": {
-   "2025": 2,
-   "2026": 8
-  }
- },
- "Volta": {
-  "name": "Volta",
-  "songs": 8,
-  "releases": 6,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 105415491,
-  "netStreams": 23180728,
-  "grossSpins": 413,
-  "netSpins": 36,
-  "lumStreams": 97346982,
-  "lumStreamsNet": 22019977,
-  "lumSpins": 1350,
-  "lumSpinsNet": 296,
-  "avgShare": 0.1467,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Baby Keem",
-    "n": 5
-   },
-   {
-    "artist": "LISA",
-    "n": 1
-   },
-   {
-    "artist": "Playboi Carti",
-    "n": 1
-   },
-   {
-    "artist": "FKA Twigs",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "House Money",
-    "artist": "Baby Keem",
-    "net": 20157208,
-    "gross": 30541225
-   },
-   {
-    "song": "Highway 95 pt.2",
-    "artist": "Baby Keem",
-    "net": 1774109,
-    "gross": 16705367
-   },
-   {
-    "song": "$ex Appeal",
-    "artist": "Baby Keem",
-    "net": 626023,
-    "gross": 21439149
-   },
-   {
-    "song": "No Blame",
-    "artist": "Baby Keem",
-    "net": 451167,
-    "gross": 7288651
-   },
-   {
-    "song": "On Your Mind",
-    "artist": "FKA Twigs",
-    "net": 172219,
-    "gross": 3444395
-   }
-  ],
-  "byYear": {
-   "2026": 6
-  }
- },
- "Jade Eagleson": {
-  "name": "Jade Eagleson",
-  "songs": 3,
-  "releases": 1,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 1497,
-  "netStreams": 499,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 1353,
-  "lumStreamsNet": 451,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.3056,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Jade Eagleson",
-    "n": 1
-   },
-   {
-    "artist": "Riley Taylor",
-    "n": 1
-   },
-   {
-    "artist": "Brandie Caroline",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Watering the Lawn",
-    "artist": "Riley Taylor",
-    "net": 499,
-    "gross": 1497
-   }
-  ],
-  "byYear": {
-   "2026": 2
-  }
- },
- "David Ryan Harris": {
-  "name": "David Ryan Harris",
-  "songs": 46,
-  "releases": 46,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 624241166,
-  "netStreams": 256192378,
-  "grossSpins": 19857,
-  "netSpins": 8927,
-  "lumStreams": 23161970,
-  "lumStreamsNet": 8541291,
-  "lumSpins": 2,
-  "lumSpinsNet": 1,
-  "avgShare": 0.5031,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "David Ryan Harris",
-    "n": 21
-   },
-   {
-    "artist": "Shoshana Bean",
-    "n": 13
-   },
-   {
-    "artist": "Guy Sebastian",
-    "n": 2
-   },
-   {
-    "artist": "Brand New Immortals",
-    "n": 1
-   },
-   {
-    "artist": "Dia Frampton",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Battlescars",
-    "artist": "Guy Sebastian",
-    "net": 217518216,
-    "gross": 435036432
-   },
-   {
-    "song": "All The Way",
-    "artist": "Jacksepticeye",
-    "net": 19400128,
-    "gross": 58206207
-   },
-   {
-    "song": "I Like It Like That",
-    "artist": "Guy Sebastian",
-    "net": 5998632,
-    "gross": 17997697
-   },
-   {
-    "song": "Forever More",
-    "artist": "David Ryan Harris",
-    "net": 2593051,
-    "gross": 2593051
-   },
-   {
-    "song": "All We Could Have Been",
-    "artist": "Alex Sampson",
-    "net": 2166564,
-    "gross": 13541029
-   }
-  ],
-  "byYear": {
-   "2001": 1,
-   "2004": 4,
-   "2006": 5,
-   "2009": 1,
-   "2011": 3,
-   "2012": 2,
-   "2015": 11,
-   "2016": 1,
-   "2017": 1,
-   "2019": 1,
-   "2021": 1,
-   "2023": 1,
-   "2025": 13,
-   "2026": 1
-  }
- },
- "Marc Tinez": {
-  "name": "Marc Tinez",
-  "songs": 32,
-  "releases": 32,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 354231,
-  "netStreams": 173303,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 2295,
-  "lumStreamsNet": 1493,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5195,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Marc Tinez",
-    "n": 31
-   },
-   {
-    "artist": "Groove 2070",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Alma De Chico",
-    "artist": "Marc Tinez",
-    "net": 112947,
-    "gross": 225894
-   },
-   {
-    "song": "De 0 A 100",
-    "artist": "Groove 2070",
-    "net": 8661,
-    "gross": 25980
-   },
-   {
-    "song": "Under Your Control",
-    "artist": "Marc Tinez",
-    "net": 7626,
-    "gross": 15253
-   },
-   {
-    "song": "Nada Me Vale",
-    "artist": "Marc Tinez",
-    "net": 6993,
-    "gross": 13986
-   },
-   {
-    "song": "Desde Que Me Fui",
-    "artist": "Marc Tinez",
-    "net": 5759,
-    "gross": 11518
-   }
-  ],
-  "byYear": {
-   "2019": 3,
-   "2020": 6,
-   "2021": 6,
-   "2022": 3,
-   "2023": 1,
-   "2024": 6,
-   "2025": 4,
-   "2026": 3
-  }
- },
- "Hardy (Acq)": {
-  "name": "Hardy (Acq)",
-  "songs": 46,
-  "releases": 46,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 1525405948,
-  "netStreams": 348502038,
-  "grossSpins": 1327223,
-  "netSpins": 315765,
-  "lumStreams": 464221569,
-  "lumStreamsNet": 101837629,
-  "lumSpins": 100654,
-  "lumSpinsNet": 23698,
-  "avgShare": 0.2219,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Cole Swindell",
-    "n": 6
-   },
-   {
-    "artist": "Brantley Gilbert",
-    "n": 4
-   },
-   {
-    "artist": "Morgan Wallen",
-    "n": 3
-   },
-   {
-    "artist": "HARDY",
-    "n": 2
-   },
-   {
-    "artist": "Piano Dreamers",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Wait In The Truck",
-    "artist": "HARDY",
-    "net": 48663672,
-    "gross": 216282987
-   },
-   {
-    "song": "I Wrote The Book",
-    "artist": "Morgan Wallen",
-    "net": 48547129,
-    "gross": 204408966
-   },
-   {
-    "song": "Single Saturday Night",
-    "artist": "Cole Swindell",
-    "net": 42836850,
-    "gross": 171347400
-   },
-   {
-    "song": "Beers On Me",
-    "artist": "Dierks Bentley",
-    "net": 37478200,
-    "gross": 149912801
-   },
-   {
-    "song": "Born With A Beer In My Hand",
-    "artist": "Morgan Wallen",
-    "net": 29549447,
-    "gross": 78798527
-   }
-  ],
-  "byYear": {
-   "2019": 1,
-   "2020": 5,
-   "2021": 15,
-   "2022": 14,
-   "2023": 11
-  }
- },
- "Camylio": {
-  "name": "Camylio",
-  "songs": 23,
-  "releases": 23,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 74339619,
-  "netStreams": 26359418,
-  "grossSpins": 135,
-  "netSpins": 52,
-  "lumStreams": 8599470,
-  "lumStreamsNet": 3279740,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5029,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Camylio",
-    "n": 18
-   },
-   {
-    "artist": "Zach Hood",
-    "n": 2
-   },
-   {
-    "artist": "Cymo",
-    "n": 1
-   },
-   {
-    "artist": "\"Stellar, Camylio\"",
-    "n": 1
-   },
-   {
-    "artist": "Matteo Bocelli",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Trouble",
-    "artist": "Camylio",
-    "net": 9072496,
-    "gross": 27212048
-   },
-   {
-    "song": "Amnesia",
-    "artist": "Camylio",
-    "net": 4174327,
-    "gross": 12520478
-   },
-   {
-    "song": "Angel",
-    "artist": "Camylio",
-    "net": 3715753,
-    "gross": 11145030
-   },
-   {
-    "song": "Dusk Till Dawn",
-    "artist": "Camylio",
-    "net": 2240507,
-    "gross": 6720177
-   },
-   {
-    "song": "Bones",
-    "artist": "Camylio",
-    "net": 2182882,
-    "gross": 4365765
-   }
-  ],
-  "byYear": {
-   "2021": 3,
-   "2022": 1,
-   "2023": 1,
-   "2024": 5,
-   "2025": 2,
-   "2026": 11
-  }
- },
- "Ely Rise": {
-  "name": "Ely Rise",
-  "songs": 42,
-  "releases": 36,
-  "upcoming": 6,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 965450541,
-  "netStreams": 82495700,
-  "grossSpins": 34926,
-  "netSpins": 1933,
-  "lumStreams": 165296248,
-  "lumStreamsNet": 14891160,
-  "lumSpins": 1490,
-  "lumSpinsNet": 72,
-  "avgShare": 0.1016,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Dahi",
-    "n": 10
-   },
-   {
-    "artist": "Ravyn Lenae",
-    "n": 8
-   },
-   {
-    "artist": "Childish Gambino",
-    "n": 7
-   },
-   {
-    "artist": "Eem Triplin",
-    "n": 5
-   },
-   {
-    "artist": "Steve Lacy",
-    "n": 3
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Count Me Out",
-    "artist": "Kendrick Lamar",
-    "net": 36951227,
-    "gross": 419900318
-   },
-   {
-    "song": "Give You The World",
-    "artist": "Steve Lacy",
-    "net": 18817949,
-    "gross": 113020717
-   },
-   {
-    "song": "Mercury",
-    "artist": "Steve Lacy",
-    "net": 2827076,
-    "gross": 113083069
-   },
-   {
-    "song": "Buttons",
-    "artist": "Steve Lacy",
-    "net": 2295502,
-    "gross": 45910055
-   },
-   {
-    "song": "Vacay",
-    "artist": "Aminé",
-    "net": 2238222,
-    "gross": 15795503
-   }
-  ],
-  "byYear": {
-   "2022": 4,
-   "2023": 3,
-   "2024": 14,
-   "2025": 9,
-   "2026": 12
-  }
- },
- "blckatom": {
-  "name": "blckatom",
-  "songs": 7,
-  "releases": 7,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 21045489,
-  "netStreams": 1307328,
-  "grossSpins": 620,
-  "netSpins": 37,
-  "lumStreams": 2531597,
-  "lumStreamsNet": 183007,
-  "lumSpins": 16,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4766,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Delf",
-    "n": 3
-   },
-   {
-    "artist": "blckatom",
-    "n": 2
-   },
-   {
-    "artist": "Chris Brown",
-    "n": 1
-   },
-   {
-    "artist": "Lonnie",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Show It",
-    "artist": "Chris Brown",
-    "net": 1256572,
-    "gross": 20942882
-   },
-   {
-    "song": "Give Up On Us",
-    "artist": "Lonnie",
-    "net": 43512,
-    "gross": 65334
-   },
-   {
-    "song": "Delicious",
-    "artist": "Delf",
-    "net": 6394,
-    "gross": 31974
-   },
-   {
-    "song": "Off My Mind",
-    "artist": "Delf",
-    "net": 847,
-    "gross": 5299
-   }
-  ],
-  "byYear": {
-   "2022": 2,
-   "2024": 4,
-   "2026": 1
-  }
- },
- "Patrick Ridgen": {
-  "name": "Patrick Ridgen",
-  "songs": 11,
-  "releases": 10,
-  "upcoming": 1,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 2648244,
-  "netStreams": 618284,
-  "grossSpins": 348,
-  "netSpins": 87,
-  "lumStreams": 1158796,
-  "lumStreamsNet": 281515,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.4515,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Bela Pierce",
-    "n": 1
-   },
-   {
-    "artist": "First Time Thieves",
-    "n": 1
-   },
-   {
-    "artist": "Yung Gravy",
-    "n": 1
-   },
-   {
-    "artist": "Marino.",
-    "n": 1
-   },
-   {
-    "artist": "9rofit",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "DMPB",
-    "artist": "Yung Gravy",
-    "net": 286274,
-    "gross": 1908499
-   },
-   {
-    "song": "Wild And Free",
-    "artist": "Brooke Lee",
-    "net": 162423,
-    "gross": 162423
-   },
-   {
-    "song": "24/7",
-    "artist": "Brooke Daye",
-    "net": 74282,
-    "gross": 222871
-   },
-   {
-    "song": "All My Love",
-    "artist": "Johnny Valentine",
-    "net": 42307,
-    "gross": 169231
-   },
-   {
-    "song": "Otherside",
-    "artist": "Bryce Vine",
-    "net": 21546,
-    "gross": 86185
-   }
-  ],
-  "byYear": {
-   "2022": 1,
-   "2024": 6,
-   "2025": 1,
-   "2026": 3
-  }
- },
- "RYON": {
-  "name": "RYON",
-  "songs": 5,
-  "releases": 5,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 1991095,
-  "netStreams": 316403,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 790504,
-  "lumStreamsNet": 120292,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.3767,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Bela Pierce",
-    "n": 1
-   },
-   {
-    "artist": "The Ready Set",
-    "n": 1
-   },
-   {
-    "artist": "Yung Gravy",
-    "n": 1
-   },
-   {
-    "artist": "Backpack Jones",
-    "n": 1
-   },
-   {
-    "artist": "9rofit",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "DMPB",
-    "artist": "Yung Gravy",
-    "net": 286274,
-    "gross": 1908499
-   },
-   {
-    "song": "Everything I Love",
-    "artist": "Bela Pierce",
-    "net": 15590,
-    "gross": 38975
-   },
-   {
-    "song": "Interlude / The Light",
-    "artist": "The Ready Set",
-    "net": 14538,
-    "gross": 43621
-   }
-  ],
-  "byYear": {
-   "2022": 1,
-   "2024": 4
-  }
- },
- "Honi": {
-  "name": "Honi",
-  "songs": 1,
-  "releases": 1,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 981764,
-  "netStreams": 490882,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 39256,
-  "lumStreamsNet": 19628,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.5,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "LILO",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Favour",
-    "artist": "LILO",
-    "net": 490882,
-    "gross": 981764
-   }
-  ],
-  "byYear": {
-   "2023": 1
-  }
- },
- "Josh Dunne": {
-  "name": "Josh Dunne",
-  "songs": 4,
-  "releases": 4,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 135387,
-  "netStreams": 54828,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 48834,
-  "lumStreamsNet": 23566,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.3794,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Joe Wodarek & 51 South",
-    "n": 2
-   },
-   {
-    "artist": "Chris Colston",
-    "n": 1
-   },
-   {
-    "artist": "Dillon Carmichael",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Tell It To The Whiskey",
-    "artist": "Chris Colston",
-    "net": 27578,
-    "gross": 82720
-   },
-   {
-    "song": "Hell Freezes Over",
-    "artist": "Dillon Carmichael",
-    "net": 27249,
-    "gross": 52667
-   }
-  ],
-  "byYear": {
-   "2023": 1,
-   "2024": 2,
-   "2025": 1
+   "2026": 5
   }
  },
  "Sawyer Utah": {
@@ -4509,12 +3211,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 26271869,
-  "netStreams": 9809180,
-  "grossSpins": 96,
-  "netSpins": 47,
-  "lumStreams": 8785653,
-  "lumStreamsNet": 3428826,
+  "grossStreams": 26254400,
+  "netStreams": 9738041,
+  "grossSpins": 14,
+  "netSpins": 6,
+  "lumStreams": 8616433,
+  "lumStreamsNet": 3450603,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.5554,
@@ -4546,32 +3248,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Beautiful As You",
     "artist": "Zach Hood",
-    "net": 2544858,
-    "gross": 7635340
+    "net": 2660495,
+    "gross": 7982284
    },
    {
     "song": "Simple Life",
     "artist": "Zach Hood",
-    "net": 1125587,
-    "gross": 2251174
+    "net": 1126562,
+    "gross": 2253125
    },
    {
     "song": "Happy Ever After",
     "artist": "Zach Hood",
-    "net": 774399,
-    "gross": 3097597
+    "net": 775053,
+    "gross": 3100214
    },
    {
     "song": "Middle Of Nowhere",
     "artist": "Zach Hood",
-    "net": 684984,
-    "gross": 3424924
+    "net": 710142,
+    "gross": 3550710
    },
    {
     "song": "Play With My Heart",
     "artist": "Sawyer Utah",
-    "net": 585332,
-    "gross": 585332
+    "net": 604150,
+    "gross": 604150
    }
   ],
   "byYear": {
@@ -4581,207 +3283,459 @@ window.LYRIC_WRITERS = {
    "2026": 7
   }
  },
- "Chris Robinson": {
-  "name": "Chris Robinson",
-  "songs": 21,
-  "releases": 21,
+ "Marco Ochoa": {
+  "name": "Marco Ochoa",
+  "songs": 23,
+  "releases": 23,
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 19464477,
-  "netStreams": 19464477,
-  "grossSpins": 56934,
-  "netSpins": 56934,
-  "lumStreams": 10102504,
-  "lumStreamsNet": 10102504,
-  "lumSpins": 37729,
-  "lumSpinsNet": 37729,
-  "avgShare": 1.0,
+  "grossStreams": 8304411,
+  "netStreams": 8140827,
+  "grossSpins": 22,
+  "netSpins": 22,
+  "lumStreams": 5299951,
+  "lumStreamsNet": 5211553,
+  "lumSpins": 39,
+  "lumSpinsNet": 39,
+  "avgShare": 0.9609,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "The Black Crowes",
-    "n": 21
+    "artist": "Mustard Service",
+    "n": 23
    }
   ],
   "topSongs": [
    {
-    "song": "Wanting and Waiting",
-    "artist": "The Black Crowes",
-    "net": 5952595,
-    "gross": 5952595
+    "song": "Big Time",
+    "artist": "Mustard Service",
+    "net": 2384082,
+    "gross": 2384082
    },
    {
-    "song": "Wilted Rose (feat. Lainey Wilson)",
-    "artist": "The Black Crowes",
-    "net": 2548805,
-    "gross": 2548805
+    "song": "Conversation Overtime",
+    "artist": "Mustard Service",
+    "net": 1334247,
+    "gross": 1334247
    },
    {
-    "song": "Rats and Clowns",
-    "artist": "The Black Crowes",
-    "net": 1366064,
-    "gross": 1366064
+    "song": "2am",
+    "artist": "Mustard Service",
+    "net": 1159063,
+    "gross": 1159063
    },
    {
-    "song": "Cross Your Fingers",
-    "artist": "The Black Crowes",
-    "net": 1338413,
-    "gross": 1338413
+    "song": "I'm An Idiot",
+    "artist": "Mustard Service",
+    "net": 595363,
+    "gross": 595363
    },
    {
-    "song": "Bedside Manners",
-    "artist": "The Black Crowes",
-    "net": 1203104,
-    "gross": 1203104
+    "song": "Let Me Call You Baby",
+    "artist": "Mustard Service",
+    "net": 563514,
+    "gross": 563514
    }
   ],
   "byYear": {
-   "2024": 10,
-   "2026": 11
+   "2025": 11,
+   "2026": 12
   }
  },
- "Rich Robinson": {
-  "name": "Rich Robinson",
-  "songs": 33,
-  "releases": 33,
+ "Adam Perez": {
+  "name": "Adam Perez",
+  "songs": 11,
+  "releases": 11,
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 19582802,
-  "netStreams": 19494058,
-  "grossSpins": 56934,
-  "netSpins": 56934,
-  "lumStreams": 10113959,
-  "lumStreamsNet": 10105367,
-  "lumSpins": 37757,
-  "lumSpinsNet": 37736,
-  "avgShare": 0.7273,
+  "grossStreams": 6850893,
+  "netStreams": 6836409,
+  "grossSpins": 7,
+  "netSpins": 7,
+  "lumStreams": 4257950,
+  "lumStreamsNet": 4243746,
+  "lumSpins": 24,
+  "lumSpinsNet": 24,
+  "avgShare": 0.9545,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "The Black Crowes",
-    "n": 21
-   },
-   {
-    "artist": "Silverlites",
-    "n": 12
+    "artist": "Mustard Service",
+    "n": 11
    }
   ],
   "topSongs": [
    {
-    "song": "Wanting and Waiting",
-    "artist": "The Black Crowes",
-    "net": 5952595,
-    "gross": 5952595
+    "song": "Big Time",
+    "artist": "Mustard Service",
+    "net": 2384082,
+    "gross": 2384082
    },
    {
-    "song": "Wilted Rose (feat. Lainey Wilson)",
-    "artist": "The Black Crowes",
-    "net": 2548805,
-    "gross": 2548805
+    "song": "Conversation Overtime",
+    "artist": "Mustard Service",
+    "net": 1334247,
+    "gross": 1334247
    },
    {
-    "song": "Rats and Clowns",
-    "artist": "The Black Crowes",
-    "net": 1366064,
-    "gross": 1366064
+    "song": "2am",
+    "artist": "Mustard Service",
+    "net": 1159063,
+    "gross": 1159063
    },
    {
-    "song": "Cross Your Fingers",
-    "artist": "The Black Crowes",
-    "net": 1338413,
-    "gross": 1338413
+    "song": "I'm An Idiot",
+    "artist": "Mustard Service",
+    "net": 595363,
+    "gross": 595363
    },
    {
-    "song": "Bedside Manners",
-    "artist": "The Black Crowes",
-    "net": 1203104,
-    "gross": 1203104
+    "song": "Let Me Call You Baby",
+    "artist": "Mustard Service",
+    "net": 563514,
+    "gross": 563514
    }
   ],
   "byYear": {
-   "2024": 22,
-   "2026": 11
+   "2025": 9,
+   "2026": 2
   }
  },
- "Remy Gautreau": {
-  "name": "Remy Gautreau",
-  "songs": 31,
-  "releases": 31,
+ "Leonardo Cattani": {
+  "name": "Leonardo Cattani",
+  "songs": 13,
+  "releases": 13,
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 8474793,
-  "netStreams": 2016057,
-  "grossSpins": 2776,
-  "netSpins": 555,
-  "lumStreams": 5306633,
-  "lumStreamsNet": 1323530,
-  "lumSpins": 2,
+  "grossStreams": 7596393,
+  "netStreams": 7432809,
+  "grossSpins": 7,
+  "netSpins": 7,
+  "lumStreams": 4628920,
+  "lumStreamsNet": 4540522,
+  "lumSpins": 24,
+  "lumSpinsNet": 24,
+  "avgShare": 0.9308,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Mustard Service",
+    "n": 13
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Big Time",
+    "artist": "Mustard Service",
+    "net": 2384082,
+    "gross": 2384082
+   },
+   {
+    "song": "Conversation Overtime",
+    "artist": "Mustard Service",
+    "net": 1334247,
+    "gross": 1334247
+   },
+   {
+    "song": "2am",
+    "artist": "Mustard Service",
+    "net": 1159063,
+    "gross": 1159063
+   },
+   {
+    "song": "I'm An Idiot",
+    "artist": "Mustard Service",
+    "net": 595363,
+    "gross": 595363
+   },
+   {
+    "song": "Let Me Call You Baby",
+    "artist": "Mustard Service",
+    "net": 563514,
+    "gross": 563514
+   }
+  ],
+  "byYear": {
+   "2025": 11,
+   "2026": 2
+  }
+ },
+ "Sara Boe": {
+  "name": "Sara Boe",
+  "songs": 11,
+  "releases": 8,
+  "upcoming": 2,
+  "holds": 1,
+  "cuts": 0,
+  "grossStreams": 49851501,
+  "netStreams": 16602910,
+  "grossSpins": 160161,
+  "netSpins": 70413,
+  "lumStreams": 8960143,
+  "lumStreamsNet": 1895310,
+  "lumSpins": 1,
   "lumSpinsNet": 0,
-  "avgShare": 0.2884,
+  "avgShare": 0.2589,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Black Caviar",
-    "n": 10
-   },
-   {
-    "artist": "Remy",
-    "n": 7
-   },
-   {
-    "artist": "O.A.R.",
+    "artist": "Matt Hansen",
     "n": 3
    },
    {
-    "artist": "JaeyBxrd",
-    "n": 2
+    "artist": "Nico Santos",
+    "n": 1
    },
    {
-    "artist": "DEE/MA",
+    "artist": "Bea",
+    "n": 1
+   },
+   {
+    "artist": "Ally Salort",
+    "n": 1
+   },
+   {
+    "artist": "GAEUL",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Good Bad & Ugly",
-    "artist": "JaeyBxrd",
-    "net": 548643,
-    "gross": 2743217
+    "song": "Number 1",
+    "artist": "Nico Santos",
+    "net": 12009452,
+    "gross": 27294210
    },
    {
-    "song": "I Want You",
-    "artist": "NURKO",
-    "net": 298117,
-    "gross": 1192469
+    "song": "Forever Again",
+    "artist": "Matt Hansen",
+    "net": 2142982,
+    "gross": 12863038
    },
    {
-    "song": "Cut Me Open",
-    "artist": "JaeyBxrd",
-    "net": 295673,
-    "gross": 1182692
+    "song": "Compass",
+    "artist": "Matt Hansen",
+    "net": 1826048,
+    "gross": 7304194
    },
    {
-    "song": "Where We Are Right Now",
-    "artist": "O.A.R.",
-    "net": 127620,
-    "gross": 425401
+    "song": "Housekeeping",
+    "artist": "Ally Salort",
+    "net": 225144,
+    "gross": 675502
    },
    {
-    "song": "Pour Decisions",
-    "artist": "Ryan and Rory",
-    "net": 101695,
-    "gross": 508477
+    "song": "Before We Know It",
+    "artist": "Matt Hansen",
+    "net": 160108,
+    "gross": 800540
    }
   ],
   "byYear": {
-   "2024": 17,
-   "2025": 10,
+   "2023": 1,
+   "2025": 3,
+   "2026": 5
+  }
+ },
+ "Wes Singerman": {
+  "name": "Wes Singerman",
+  "songs": 1,
+  "releases": 1,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 171377,
+  "netStreams": 34275,
+  "grossSpins": 10,
+  "netSpins": 2,
+  "lumStreams": 114666,
+  "lumStreamsNet": 22933,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Chanpan",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Jesus In China (Overflow)",
+    "artist": "Chanpan",
+    "net": 34275,
+    "gross": 171377
+   }
+  ],
+  "byYear": {
+   "2026": 1
+  }
+ },
+ "Cale Dodds": {
+  "name": "Cale Dodds",
+  "songs": 80,
+  "releases": 52,
+  "upcoming": 3,
+  "holds": 20,
+  "cuts": 5,
+  "grossStreams": 14426127,
+  "netStreams": 5752791,
+  "grossSpins": 1889,
+  "netSpins": 976,
+  "lumStreams": 13935749,
+  "lumStreamsNet": 4685347,
+  "lumSpins": 800,
+  "lumSpinsNet": 239,
+  "avgShare": 0.5296,
+  "avgHoldDays": 369,
+  "maxHoldDays": 836,
+  "topArtists": [
+   {
+    "artist": "First Time Thieves",
+    "n": 18
+   },
+   {
+    "artist": "Cale Dodds",
+    "n": 9
+   },
+   {
+    "artist": "Timmy McKeever",
+    "n": 6
+   },
+   {
+    "artist": "Jesse Murphy",
+    "n": 3
+   },
+   {
+    "artist": "Harper Grace",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Liquor Talkin'",
+    "artist": "Don Louis",
+    "net": 2164647,
+    "gross": 6494591
+   },
+   {
+    "song": "Can't Pass The Bar",
+    "artist": "Scotty McCreery",
+    "net": 1386322,
+    "gross": 1848430
+   },
+   {
+    "song": "All Dogs Go To Heaven",
+    "artist": "Chris Young",
+    "net": 517501,
+    "gross": 1552193
+   },
+   {
+    "song": "Don't Break Itself",
+    "artist": "Clayton Mullen",
+    "net": 401814,
+    "gross": 602691
+   },
+   {
+    "song": "Pockets Full Of Sand",
+    "artist": "The Elovaters",
+    "net": 150343,
+    "gross": 1128704
+   }
+  ],
+  "byYear": {
+   "2022": 2,
+   "2023": 5,
+   "2024": 20,
+   "2025": 21,
+   "2026": 11
+  }
+ },
+ "Justin Richards": {
+  "name": "Justin Richards",
+  "songs": 20,
+  "releases": 17,
+  "upcoming": 2,
+  "holds": 0,
+  "cuts": 1,
+  "grossStreams": 80981862,
+  "netStreams": 26648982,
+  "grossSpins": 4162,
+  "netSpins": 1299,
+  "lumStreams": 84934230,
+  "lumStreamsNet": 27481731,
+  "lumSpins": 63941,
+  "lumSpinsNet": 19685,
+  "avgShare": 0.5427,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Brooke Lee",
+    "n": 4
+   },
+   {
+    "artist": "Sidewalk Prophets",
+    "n": 4
+   },
+   {
+    "artist": "Jeremy Rosado",
+    "n": 2
+   },
+   {
+    "artist": "Tanner Gomes",
+    "n": 1
+   },
+   {
+    "artist": "Lawson Harris",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Still Waters",
+    "artist": "Leanna Crawford",
+    "net": 21412802,
+    "gross": 64225562
+   },
+   {
+    "song": "When I Meet Jesus",
+    "artist": "Jeremy Rosado",
+    "net": 1373587,
+    "gross": 4119938
+   },
+   {
+    "song": "Hamms In A Glass",
+    "artist": "Winona Fighter",
+    "net": 1271997,
+    "gross": 5087991
+   },
+   {
+    "song": "Hero In The Room",
+    "artist": "Jeremy Rosado",
+    "net": 1248105,
+    "gross": 3743567
+   },
+   {
+    "song": "Father Let It Be",
+    "artist": "Sidewalk Prophets",
+    "net": 387799,
+    "gross": 1551197
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 4,
+   "2025": 11,
    "2026": 4
   }
  },
@@ -4792,12 +3746,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 4772411,
-  "netStreams": 3473598,
-  "grossSpins": 66,
-  "netSpins": 55,
-  "lumStreams": 1402793,
-  "lumStreamsNet": 919774,
+  "grossStreams": 5010021,
+  "netStreams": 3610158,
+  "grossSpins": 70,
+  "netSpins": 58,
+  "lumStreams": 1460539,
+  "lumStreamsNet": 940660,
   "lumSpins": 2,
   "lumSpinsNet": 2,
   "avgShare": 0.9187,
@@ -4829,32 +3783,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Minutes With You",
     "artist": "Jake Clark",
-    "net": 1024490,
-    "gross": 1024490
+    "net": 1049163,
+    "gross": 1049163
    },
    {
     "song": "Evergreen Avenue",
     "artist": "Izzy Escobar",
-    "net": 569990,
-    "gross": 1519975
+    "net": 614523,
+    "gross": 1638729
    },
    {
     "song": "BUTTERF-LIES",
     "artist": "Mira Housey",
-    "net": 387730,
-    "gross": 387730
+    "net": 400955,
+    "gross": 400955
    },
    {
     "song": "Three More Glasses",
     "artist": "Izzy Escobar",
-    "net": 296996,
-    "gross": 593992
+    "net": 315079,
+    "gross": 630159
    },
    {
     "song": "Break Season",
     "artist": "Mira Housey",
-    "net": 265801,
-    "gross": 265801
+    "net": 268214,
+    "gross": 268214
    }
   ],
   "byYear": {
@@ -4863,428 +3817,192 @@ window.LYRIC_WRITERS = {
    "2026": 5
   }
  },
- "Erik Belz": {
-  "name": "Erik Belz",
-  "songs": 3,
-  "releases": 3,
+ "Noelle Scaggs": {
+  "name": "Noelle Scaggs",
+  "songs": 11,
+  "releases": 10,
   "upcoming": 0,
-  "holds": 0,
+  "holds": 1,
   "cuts": 0,
-  "grossStreams": 2381480,
-  "netStreams": 143245,
-  "grossSpins": 262,
-  "netSpins": 6,
-  "lumStreams": 1053016,
-  "lumStreamsNet": 75461,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.375,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "First Time Thieves",
-    "n": 1
-   },
-   {
-    "artist": "Bryce Vine",
-    "n": 1
-   },
-   {
-    "artist": "Xandra,Bryce Vine",
-    "n": 1
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Something That You're Not",
-    "artist": "Bryce Vine",
-    "net": 110147,
-    "gross": 1101476
-   },
-   {
-    "song": "Superstar",
-    "artist": "Xandra,Bryce Vine",
-    "net": 31971,
-    "gross": 1278878
-   },
-   {
-    "song": "Sound Of The Spotlight",
-    "artist": "First Time Thieves",
-    "net": 1126,
-    "gross": 1126
-   }
-  ],
-  "byYear": {
-   "2024": 2,
-   "2025": 1
-  }
- },
- "Timothy Prater": {
-  "name": "Timothy Prater",
-  "songs": 7,
-  "releases": 7,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 449263,
-  "netStreams": 170408,
+  "grossStreams": 6550,
+  "netStreams": 2040,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 5011,
-  "lumStreamsNet": 1806,
+  "lumStreams": 7801,
+  "lumStreamsNet": 3708,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.3524,
+  "avgShare": 0.4452,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Capri Everitt",
-    "n": 6
+    "artist": "Noelle Scaggs",
+    "n": 9
    },
    {
-    "artist": "Luca Lowe",
+    "artist": "Pink Slip",
+    "n": 1
+   },
+   {
+    "artist": "UNSECRET",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Breath on Me",
-    "artist": "Capri Everitt",
-    "net": 42064,
-    "gross": 105160
+    "song": "Life Of The Party",
+    "artist": "UNSECRET",
+    "net": 1291,
+    "gross": 3874
    },
    {
-    "song": "Spiders",
-    "artist": "Capri Everitt",
-    "net": 37858,
-    "gross": 113690
-   },
-   {
-    "song": "Dancing With Your Shadow",
-    "artist": "Capri Everitt",
-    "net": 34854,
-    "gross": 87136
-   },
-   {
-    "song": "Unbreak Me",
-    "artist": "Capri Everitt",
-    "net": 28906,
-    "gross": 72265
-   },
-   {
-    "song": "Starlight",
-    "artist": "Capri Everitt",
-    "net": 25046,
-    "gross": 62615
+    "song": "Bless The DJ",
+    "artist": "Noelle Scaggs",
+    "net": 749,
+    "gross": 2676
    }
   ],
   "byYear": {
-   "2024": 2,
-   "2025": 5
+   "2025": 2,
+   "2026": 8
   }
  },
- "Joe Janiak": {
-  "name": "Joe Janiak",
-  "songs": 44,
-  "releases": 43,
-  "upcoming": 1,
+ "Zach Beeken": {
+  "name": "Zach Beeken",
+  "songs": 11,
+  "releases": 2,
+  "upcoming": 2,
+  "holds": 5,
+  "cuts": 2,
+  "grossStreams": 976530,
+  "netStreams": 204165,
+  "grossSpins": 1513,
+  "netSpins": 252,
+  "lumStreams": 739368,
+  "lumStreamsNet": 174206,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2636,
+  "avgHoldDays": 342,
+  "maxHoldDays": 342,
+  "topArtists": [
+   {
+    "artist": "Restless Road",
+    "n": 7
+   },
+   {
+    "artist": "Michael Rotundo",
+    "n": 1
+   },
+   {
+    "artist": "Mike Parker",
+    "n": 1
+   },
+   {
+    "artist": "Preston Cooper",
+    "n": 1
+   },
+   {
+    "artist": "Sacha",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Forever Ago",
+    "artist": "Restless Road",
+    "net": 124183,
+    "gross": 496735
+   },
+   {
+    "song": "Shooting Star",
+    "artist": "Sacha",
+    "net": 79981,
+    "gross": 479795
+   }
+  ],
+  "byYear": {
+   "2025": 3,
+   "2026": 3
+  }
+ },
+ "Hunter Madrid": {
+  "name": "Hunter Madrid",
+  "songs": 12,
+  "releases": 11,
+  "upcoming": 0,
   "holds": 0,
-  "cuts": 0,
-  "grossStreams": 35888466,
-  "netStreams": 14244411,
-  "grossSpins": 10044,
-  "netSpins": 2990,
-  "lumStreams": 11462487,
-  "lumStreamsNet": 4006673,
-  "lumSpins": 1729,
-  "lumSpinsNet": 824,
-  "avgShare": 0.6281,
+  "cuts": 1,
+  "grossStreams": 18565320,
+  "netStreams": 4155551,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 3803093,
+  "lumStreamsNet": 810264,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.3149,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Peacemode",
-    "n": 18
-   },
-   {
-    "artist": "Rachel Grae",
-    "n": 5
-   },
-   {
-    "artist": "Billy Idol",
-    "n": 4
-   },
-   {
-    "artist": "Charlotte MacInnes",
+    "artist": "Sydney Ross Mitchell",
     "n": 3
    },
    {
-    "artist": "Vienna Vienna",
+    "artist": "AG Club",
+    "n": 3
+   },
+   {
+    "artist": "Camo",
     "n": 2
+   },
+   {
+    "artist": "GIRLSET",
+    "n": 1
+   },
+   {
+    "artist": "Fordo",
+    "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Starry Eyed",
-    "artist": "Good Neighbours",
-    "net": 4408282,
-    "gross": 17633129
+    "song": "Superblue",
+    "artist": "Sydney Ross Mitchell",
+    "net": 1349078,
+    "gross": 2698156
    },
    {
-    "song": "My Love (Is Like A Waterfall)",
-    "artist": "Peacemode",
-    "net": 2134323,
-    "gross": 2134323
+    "song": "Villain",
+    "artist": "Fordo",
+    "net": 1019274,
+    "gross": 6795163
    },
    {
-    "song": "Come Back Baby",
-    "artist": "Peacemode",
-    "net": 1192395,
-    "gross": 1192395
+    "song": "Strangers",
+    "artist": "Daniel Munozz",
+    "net": 668820,
+    "gross": 2675280
    },
    {
-    "song": "Vienna (Everything's Fine)",
-    "artist": "Vienna Vienna",
-    "net": 859601,
-    "gross": 2579062
+    "song": "Sting",
+    "artist": "Sydney Ross Mitchell",
+    "net": 267528,
+    "gross": 2675280
    },
    {
-    "song": "Holy Sugar",
-    "artist": "The Wombats",
-    "net": 526036,
-    "gross": 1052072
+    "song": "Thrill",
+    "artist": "Sydney Ross Mitchell",
+    "net": 225759,
+    "gross": 903039
    }
   ],
   "byYear": {
-   "2024": 12,
-   "2025": 17,
-   "2026": 15
-  }
- },
- "Marco Ochoa": {
-  "name": "Marco Ochoa",
-  "songs": 23,
-  "releases": 14,
-  "upcoming": 9,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 8596429,
-  "netStreams": 8452943,
-  "grossSpins": 21,
-  "netSpins": 21,
-  "lumStreams": 4964074,
-  "lumStreamsNet": 4880837,
-  "lumSpins": 34,
-  "lumSpinsNet": 34,
-  "avgShare": 0.9609,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Mustard Service",
-    "n": 23
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Big Time",
-    "artist": "Mustard Service",
-    "net": 2283820,
-    "gross": 2283820
-   },
-   {
-    "song": "Conversation Overtime",
-    "artist": "Mustard Service",
-    "net": 1283023,
-    "gross": 1283023
-   },
-   {
-    "song": "Going Nowhere",
-    "artist": "Mustard Service",
-    "net": 1156235,
-    "gross": 1156235
-   },
-   {
-    "song": "2am",
-    "artist": "Mustard Service",
-    "net": 1106444,
-    "gross": 1106444
-   },
-   {
-    "song": "I'm An Idiot",
-    "artist": "Mustard Service",
-    "net": 565609,
-    "gross": 565609
-   }
-  ],
-  "byYear": {
-   "2025": 11,
-   "2026": 12
-  }
- },
- "Adam Perez": {
-  "name": "Adam Perez",
-  "songs": 11,
-  "releases": 9,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 7665565,
-  "netStreams": 7665565,
-  "grossSpins": 7,
-  "netSpins": 7,
-  "lumStreams": 4339042,
-  "lumStreamsNet": 4339042,
-  "lumSpins": 19,
-  "lumSpinsNet": 19,
-  "avgShare": 0.9545,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Mustard Service",
-    "n": 11
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Big Time",
-    "artist": "Mustard Service",
-    "net": 2283820,
-    "gross": 2283820
-   },
-   {
-    "song": "Conversation Overtime",
-    "artist": "Mustard Service",
-    "net": 1283023,
-    "gross": 1283023
-   },
-   {
-    "song": "Going Nowhere",
-    "artist": "Mustard Service",
-    "net": 1156235,
-    "gross": 1156235
-   },
-   {
-    "song": "2am",
-    "artist": "Mustard Service",
-    "net": 1106444,
-    "gross": 1106444
-   },
-   {
-    "song": "I'm An Idiot",
-    "artist": "Mustard Service",
-    "net": 565609,
-    "gross": 565609
-   }
-  ],
-  "byYear": {
-   "2025": 9,
-   "2026": 2
-  }
- },
- "Leonardo Cattani": {
-  "name": "Leonardo Cattani",
-  "songs": 13,
-  "releases": 11,
-  "upcoming": 2,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 8382991,
-  "netStreams": 8239505,
-  "grossSpins": 7,
-  "netSpins": 7,
-  "lumStreams": 4755224,
-  "lumStreamsNet": 4671987,
-  "lumSpins": 19,
-  "lumSpinsNet": 19,
-  "avgShare": 0.9308,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Mustard Service",
-    "n": 13
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Big Time",
-    "artist": "Mustard Service",
-    "net": 2283820,
-    "gross": 2283820
-   },
-   {
-    "song": "Conversation Overtime",
-    "artist": "Mustard Service",
-    "net": 1283023,
-    "gross": 1283023
-   },
-   {
-    "song": "Going Nowhere",
-    "artist": "Mustard Service",
-    "net": 1156235,
-    "gross": 1156235
-   },
-   {
-    "song": "2am",
-    "artist": "Mustard Service",
-    "net": 1106444,
-    "gross": 1106444
-   },
-   {
-    "song": "I'm An Idiot",
-    "artist": "Mustard Service",
-    "net": 565609,
-    "gross": 565609
-   }
-  ],
-  "byYear": {
-   "2025": 11,
-   "2026": 2
-  }
- },
- "Grace Bridie": {
-  "name": "Grace Bridie",
-  "songs": 2,
-  "releases": 2,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 1098242,
-  "netStreams": 251913,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 75110,
-  "lumStreamsNet": 17125,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.2375,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Grace Bridie",
-    "n": 2
-   }
-  ],
-  "topSongs": [
-   {
-    "song": "Playground",
-    "artist": "Grace Bridie",
-    "net": 203824,
-    "gross": 905888
-   },
-   {
-    "song": "Afterglow",
-    "artist": "Grace Bridie",
-    "net": 48088,
-    "gross": 192354
-   }
-  ],
-  "byYear": {
+   "2022": 3,
+   "2023": 2,
+   "2024": 5,
    "2025": 1,
    "2026": 1
   }
@@ -5296,12 +4014,12 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 616719,
-  "netStreams": 263876,
-  "grossSpins": 38,
+  "grossStreams": 634687,
+  "netStreams": 270932,
+  "grossSpins": 39,
   "netSpins": 14,
-  "lumStreams": 1891063,
-  "lumStreamsNet": 840784,
+  "lumStreams": 1954954,
+  "lumStreamsNet": 869035,
   "lumSpins": 1,
   "lumSpinsNet": 0,
   "avgShare": 0.3411,
@@ -5313,11 +4031,7 @@ window.LYRIC_WRITERS = {
     "n": 2
    },
    {
-    "artist": "Tamar Braxton",
-    "n": 1
-   },
-   {
-    "artist": "Ari Lennox",
+    "artist": "Myya",
     "n": 1
    },
    {
@@ -5325,7 +4039,11 @@ window.LYRIC_WRITERS = {
     "n": 1
    },
    {
-    "artist": "Myya",
+    "artist": "Ari Lennox",
+    "n": 1
+   },
+   {
+    "artist": "Tamar Braxton",
     "n": 1
    }
   ],
@@ -5333,32 +4051,32 @@ window.LYRIC_WRITERS = {
    {
     "song": "Cool Down",
     "artist": "Ari Lennox",
-    "net": 235525,
-    "gross": 523389
+    "net": 240327,
+    "gross": 534061
    },
    {
     "song": "Unreasonable",
     "artist": "Paperwater",
-    "net": 12048,
-    "gross": 36139
+    "net": 12147,
+    "gross": 36436
    },
    {
     "song": "The Gift",
     "artist": "Tamar Braxton",
-    "net": 8832,
-    "gross": 22080
+    "net": 10330,
+    "gross": 25827
    },
    {
     "song": "Into Me",
     "artist": "Tolou",
-    "net": 6332,
-    "gross": 31663
+    "net": 6974,
+    "gross": 34871
    },
    {
     "song": "World In You",
     "artist": "Myya",
-    "net": 1137,
-    "gross": 3448
+    "net": 1152,
+    "gross": 3492
    }
   ],
   "byYear": {
@@ -5366,114 +4084,85 @@ window.LYRIC_WRITERS = {
    "2026": 3
   }
  },
- "Peter Lee Johnson": {
-  "name": "Peter Lee Johnson",
-  "songs": 5,
-  "releases": 5,
+ "Camylio": {
+  "name": "Camylio",
+  "songs": 23,
+  "releases": 23,
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 51000301,
-  "netStreams": 3060803,
-  "grossSpins": 73038,
-  "netSpins": 3979,
-  "lumStreams": 71655637,
-  "lumStreamsNet": 3909495,
-  "lumSpins": 88237,
-  "lumSpinsNet": 4859,
-  "avgShare": 0.0934,
+  "grossStreams": 75123988,
+  "netStreams": 26628346,
+  "grossSpins": 136,
+  "netSpins": 53,
+  "lumStreams": 8544966,
+  "lumStreamsNet": 3288162,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5029,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Leon Thomas",
+    "artist": "Camylio",
+    "n": 18
+   },
+   {
+    "artist": "Zach Hood",
+    "n": 2
+   },
+   {
+    "artist": "Matteo Bocelli",
     "n": 1
    },
    {
-    "artist": "Ella Mai",
+    "artist": "\"Stellar, Camylio\"",
     "n": 1
    },
    {
-    "artist": "Skrillex",
-    "n": 1
-   },
-   {
-    "artist": "Corbyn Besson",
-    "n": 1
-   },
-   {
-    "artist": "GIVEON",
+    "artist": "Cymo",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "My Muse",
-    "artist": "Leon Thomas",
-    "net": 1087767,
-    "gross": 21755340
+    "song": "Trouble",
+    "artist": "Camylio",
+    "net": 9181520,
+    "gross": 27539055
    },
    {
-    "song": "Jezebel",
-    "artist": "GIVEON",
-    "net": 812891,
-    "gross": 12132702
+    "song": "Amnesia",
+    "artist": "Camylio",
+    "net": 4196271,
+    "gross": 12586298
    },
    {
-    "song": "100",
-    "artist": "Ella Mai",
-    "net": 717739,
-    "gross": 14354787
+    "song": "Angel",
+    "artist": "Camylio",
+    "net": 3771281,
+    "gross": 11311582
    },
    {
-    "song": "Yo Yan",
-    "artist": "Skrillex",
-    "net": 380665,
-    "gross": 1522662
+    "song": "Dusk Till Dawn",
+    "artist": "Camylio",
+    "net": 2267554,
+    "gross": 6801304
    },
    {
-    "song": "Ruin Me",
-    "artist": "Corbyn Besson",
-    "net": 61740,
-    "gross": 1234810
+    "song": "Bones",
+    "artist": "Camylio",
+    "net": 2186264,
+    "gross": 4372528
    }
   ],
   "byYear": {
-   "2025": 1,
-   "2026": 4
-  }
- },
- "Tkay Maidza": {
-  "name": "Tkay Maidza",
-  "songs": 4,
-  "releases": 4,
-  "upcoming": 0,
-  "holds": 0,
-  "cuts": 0,
-  "grossStreams": 0,
-  "netStreams": 0,
-  "grossSpins": 0,
-  "netSpins": 0,
-  "lumStreams": 0,
-  "lumStreamsNet": 0,
-  "lumSpins": 0,
-  "lumSpinsNet": 0,
-  "avgShare": 0.2406,
-  "avgHoldDays": null,
-  "maxHoldDays": null,
-  "topArtists": [
-   {
-    "artist": "Tkay Maidza",
-    "n": 3
-   },
-   {
-    "artist": "Snakehips",
-    "n": 1
-   }
-  ],
-  "topSongs": [],
-  "byYear": {
-   "2026": 4
+   "2021": 3,
+   "2022": 1,
+   "2023": 1,
+   "2024": 5,
+   "2025": 2,
+   "2026": 11
   }
  },
  "Coleton Rubin": {
@@ -5487,8 +4176,8 @@ window.LYRIC_WRITERS = {
   "netStreams": 74299,
   "grossSpins": 0,
   "netSpins": 0,
-  "lumStreams": 102076,
-  "lumStreamsNet": 87473,
+  "lumStreams": 122987,
+  "lumStreamsNet": 105449,
   "lumSpins": 0,
   "lumSpinsNet": 0,
   "avgShare": 0.7778,
@@ -5524,40 +4213,729 @@ window.LYRIC_WRITERS = {
    "2026": 3
   }
  },
- "Wes Singerman": {
-  "name": "Wes Singerman",
-  "songs": 1,
-  "releases": 1,
+ "Shane Stevens": {
+  "name": "Shane Stevens",
+  "songs": 26,
+  "releases": 18,
   "upcoming": 0,
-  "holds": 0,
+  "holds": 8,
   "cuts": 0,
-  "grossStreams": 141969,
-  "netStreams": 28393,
-  "grossSpins": 9,
-  "netSpins": 1,
-  "lumStreams": 97149,
-  "lumStreamsNet": 19429,
+  "grossStreams": 14045226,
+  "netStreams": 4698475,
+  "grossSpins": 21214,
+  "netSpins": 8411,
+  "lumStreams": 9132396,
+  "lumStreamsNet": 2838210,
+  "lumSpins": 331,
+  "lumSpinsNet": 143,
+  "avgShare": 0.4872,
+  "avgHoldDays": 178,
+  "maxHoldDays": 218,
+  "topArtists": [
+   {
+    "artist": "Haven Madison",
+    "n": 6
+   },
+   {
+    "artist": "Jenna Davis",
+    "n": 3
+   },
+   {
+    "artist": "Toby Lightman",
+    "n": 2
+   },
+   {
+    "artist": "Lukas Graham",
+    "n": 2
+   },
+   {
+    "artist": "Shane Stevens",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Fancy Like Christmas",
+    "artist": "Walker Hayes",
+    "net": 1467816,
+    "gross": 5871265
+   },
+   {
+    "song": "Cheat Code",
+    "artist": "Lukas Graham",
+    "net": 1315857,
+    "gross": 3036828
+   },
+   {
+    "song": "Miss Wannabe",
+    "artist": "Jenna Davis",
+    "net": 640805,
+    "gross": 1922031
+   },
+   {
+    "song": "Big Bad Frog",
+    "artist": "Austin & Colin",
+    "net": 357200,
+    "gross": 535774
+   },
+   {
+    "song": "Forget Me Not",
+    "artist": "Sicily Rose",
+    "net": 270694,
+    "gross": 406082
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 8,
+   "2025": 7,
+   "2026": 2
+  }
+ },
+ "JJ Scheff": {
+  "name": "JJ Scheff",
+  "songs": 15,
+  "releases": 14,
+  "upcoming": 0,
+  "holds": 1,
+  "cuts": 0,
+  "grossStreams": 4890884,
+  "netStreams": 2396470,
+  "grossSpins": 525,
+  "netSpins": 182,
+  "lumStreams": 1747555,
+  "lumStreamsNet": 956087,
   "lumSpins": 0,
   "lumSpinsNet": 0,
-  "avgShare": 0.2,
+  "avgShare": 0.7293,
   "avgHoldDays": null,
   "maxHoldDays": null,
   "topArtists": [
    {
-    "artist": "Chanpan",
+    "artist": "Reaper",
+    "n": 8
+   },
+   {
+    "artist": "Joseph of Mercury",
+    "n": 2
+   },
+   {
+    "artist": "Leven Kali",
+    "n": 2
+   },
+   {
+    "artist": "KNEECAP",
+    "n": 1
+   },
+   {
+    "artist": "Tkay Maidza",
     "n": 1
    }
   ],
   "topSongs": [
    {
-    "song": "Jesus In China (Overflow)",
-    "artist": "Chanpan",
-    "net": 28393,
-    "gross": 141969
+    "song": "Up",
+    "artist": "Reaper",
+    "net": 594623,
+    "gross": 594623
+   },
+   {
+    "song": "Shark",
+    "artist": "Reaper",
+    "net": 464835,
+    "gross": 464835
+   },
+   {
+    "song": "Palestine",
+    "artist": "KNEECAP",
+    "net": 309393,
+    "gross": 1546966
+   },
+   {
+    "song": "In The End",
+    "artist": "Leven Kali",
+    "net": 308375,
+    "gross": 925218
+   },
+   {
+    "song": "Wipe Your Tears",
+    "artist": "Sam Austins",
+    "net": 280005,
+    "gross": 840101
    }
   ],
   "byYear": {
+   "2022": 1,
+   "2024": 1,
+   "2025": 10,
+   "2026": 2
+  }
+ },
+ "Peter Lee Johnson": {
+  "name": "Peter Lee Johnson",
+  "songs": 5,
+  "releases": 5,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 55064893,
+  "netStreams": 3291915,
+  "grossSpins": 83644,
+  "netSpins": 4653,
+  "lumStreams": 77398613,
+  "lumStreamsNet": 4214642,
+  "lumSpins": 102867,
+  "lumSpinsNet": 5794,
+  "avgShare": 0.0934,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "GIVEON",
+    "n": 1
+   },
+   {
+    "artist": "Ella Mai",
+    "n": 1
+   },
+   {
+    "artist": "Corbyn Besson",
+    "n": 1
+   },
+   {
+    "artist": "Skrillex",
+    "n": 1
+   },
+   {
+    "artist": "Leon Thomas",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "My Muse",
+    "artist": "Leon Thomas",
+    "net": 1154710,
+    "gross": 23094212
+   },
+   {
+    "song": "Jezebel",
+    "artist": "GIVEON",
+    "net": 909764,
+    "gross": 13578581
+   },
+   {
+    "song": "100",
+    "artist": "Ella Mai",
+    "net": 778799,
+    "gross": 15575996
+   },
+   {
+    "song": "Yo Yan",
+    "artist": "Skrillex",
+    "net": 384794,
+    "gross": 1539176
+   },
+   {
+    "song": "Ruin Me",
+    "artist": "Corbyn Besson",
+    "net": 63846,
+    "gross": 1276928
+   }
+  ],
+  "byYear": {
+   "2025": 1,
+   "2026": 4
+  }
+ },
+ "David Ryan Harris": {
+  "name": "David Ryan Harris",
+  "songs": 46,
+  "releases": 46,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 627993000,
+  "netStreams": 257482047,
+  "grossSpins": 20043,
+  "netSpins": 9017,
+  "lumStreams": 23058111,
+  "lumStreamsNet": 8442179,
+  "lumSpins": 3,
+  "lumSpinsNet": 1,
+  "avgShare": 0.5031,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "David Ryan Harris",
+    "n": 21
+   },
+   {
+    "artist": "Shoshana Bean",
+    "n": 13
+   },
+   {
+    "artist": "Guy Sebastian",
+    "n": 2
+   },
+   {
+    "artist": "Sara Jean Kelley",
+    "n": 1
+   },
+   {
+    "artist": "Trombone Shorty",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Battlescars",
+    "artist": "Guy Sebastian",
+    "net": 218599235,
+    "gross": 437198470
+   },
+   {
+    "song": "All The Way",
+    "artist": "Jacksepticeye",
+    "net": 19487301,
+    "gross": 58467750
+   },
+   {
+    "song": "I Like It Like That",
+    "artist": "Guy Sebastian",
+    "net": 6050269,
+    "gross": 18152624
+   },
+   {
+    "song": "Forever More",
+    "artist": "David Ryan Harris",
+    "net": 2597419,
+    "gross": 2597419
+   },
+   {
+    "song": "All We Could Have Been",
+    "artist": "Alex Sampson",
+    "net": 2176427,
+    "gross": 13602674
+   }
+  ],
+  "byYear": {
+   "2001": 1,
+   "2004": 4,
+   "2006": 5,
+   "2009": 1,
+   "2011": 3,
+   "2012": 2,
+   "2015": 11,
+   "2016": 1,
+   "2017": 1,
+   "2019": 1,
+   "2021": 1,
+   "2023": 1,
+   "2025": 13,
    "2026": 1
+  }
+ },
+ "Autumn Rowe": {
+  "name": "Autumn Rowe",
+  "songs": 20,
+  "releases": 19,
+  "upcoming": 0,
+  "holds": 1,
+  "cuts": 0,
+  "grossStreams": 45424766,
+  "netStreams": 7951011,
+  "grossSpins": 25756,
+  "netSpins": 9533,
+  "lumStreams": 9202476,
+  "lumStreamsNet": 1943051,
+  "lumSpins": 942,
+  "lumSpinsNet": 332,
+  "avgShare": 0.2932,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Lukas Graham",
+    "n": 2
+   },
+   {
+    "artist": "MILCK",
+    "n": 2
+   },
+   {
+    "artist": "Th3dstream",
+    "n": 2
+   },
+   {
+    "artist": "Musza",
+    "n": 1
+   },
+   {
+    "artist": "Budjerah",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "More To Lose",
+    "artist": "Miley Cyrus",
+    "net": 3088167,
+    "gross": 30881670
+   },
+   {
+    "song": "Magic",
+    "artist": "Andy Grammer",
+    "net": 1588884,
+    "gross": 5153697
+   },
+   {
+    "song": "Joy",
+    "artist": "Angelique Kidjo",
+    "net": 1454346,
+    "gross": 4155275
+   },
+   {
+    "song": "Cheat Code",
+    "artist": "Lukas Graham",
+    "net": 1315857,
+    "gross": 3036828
+   },
+   {
+    "song": "Do It All Again",
+    "artist": "Jon Batiste",
+    "net": 218332,
+    "gross": 655064
+   }
+  ],
+  "byYear": {
+   "2022": 3,
+   "2024": 10,
+   "2025": 4,
+   "2026": 2
+  }
+ },
+ "Billy F. Gibbons": {
+  "name": "Billy F. Gibbons",
+  "songs": 3,
+  "releases": 1,
+  "upcoming": 2,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 798320,
+  "netStreams": 266159,
+  "grossSpins": 227,
+  "netSpins": 75,
+  "lumStreams": 641992,
+  "lumStreamsNet": 214040,
+  "lumSpins": 31,
+  "lumSpinsNet": 10,
+  "avgShare": 0.6667,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Billy F Gibbons",
+    "n": 3
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Livin' It Up Down In Texas",
+    "artist": "Billy F Gibbons",
+    "net": 266159,
+    "gross": 798320
+   }
+  ],
+  "byYear": {
+   "2025": 1,
+   "2026": 2
+  }
+ },
+ "Timothy Prater": {
+  "name": "Timothy Prater",
+  "songs": 7,
+  "releases": 7,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 455389,
+  "netStreams": 172480,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 4402,
+  "lumStreamsNet": 1571,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.3524,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Capri Everitt",
+    "n": 6
+   },
+   {
+    "artist": "Luca Lowe",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Breath on Me",
+    "artist": "Capri Everitt",
+    "net": 42118,
+    "gross": 105297
+   },
+   {
+    "song": "Spiders",
+    "artist": "Capri Everitt",
+    "net": 39719,
+    "gross": 119278
+   },
+   {
+    "song": "Dancing With Your Shadow",
+    "artist": "Capri Everitt",
+    "net": 34893,
+    "gross": 87234
+   },
+   {
+    "song": "Unbreak Me",
+    "artist": "Capri Everitt",
+    "net": 28966,
+    "gross": 72415
+   },
+   {
+    "song": "Starlight",
+    "artist": "Capri Everitt",
+    "net": 25099,
+    "gross": 62749
+   }
+  ],
+  "byYear": {
+   "2024": 2,
+   "2025": 5
+  }
+ },
+ "Erik Belz": {
+  "name": "Erik Belz",
+  "songs": 3,
+  "releases": 3,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 2417826,
+  "netStreams": 145045,
+  "grossSpins": 282,
+  "netSpins": 7,
+  "lumStreams": 944577,
+  "lumStreamsNet": 70752,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.375,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Bryce Vine",
+    "n": 1
+   },
+   {
+    "artist": "First Time Thieves",
+    "n": 1
+   },
+   {
+    "artist": "Xandra,Bryce Vine",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Something That You're Not",
+    "artist": "Bryce Vine",
+    "net": 111336,
+    "gross": 1113362
+   },
+   {
+    "song": "Superstar",
+    "artist": "Xandra,Bryce Vine",
+    "net": 32583,
+    "gross": 1303338
+   },
+   {
+    "song": "Sound Of The Spotlight",
+    "artist": "First Time Thieves",
+    "net": 1126,
+    "gross": 1126
+   }
+  ],
+  "byYear": {
+   "2024": 2,
+   "2025": 1
+  }
+ },
+ "Joseph of Mercury": {
+  "name": "Joseph of Mercury",
+  "songs": 49,
+  "releases": 36,
+  "upcoming": 0,
+  "holds": 11,
+  "cuts": 2,
+  "grossStreams": 7647928,
+  "netStreams": 4350656,
+  "grossSpins": 194,
+  "netSpins": 135,
+  "lumStreams": 188037,
+  "lumStreamsNet": 130466,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.4391,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Joseph of Mercury",
+    "n": 30
+   },
+   {
+    "artist": "Maneskin",
+    "n": 11
+   },
+   {
+    "artist": "Beyonce",
+    "n": 2
+   },
+   {
+    "artist": "Jennie Harluk",
+    "n": 2
+   },
+   {
+    "artist": "Majid Jordan",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Find You Inside",
+    "artist": "Joseph of Mercury",
+    "net": 857001,
+    "gross": 1142669
+   },
+   {
+    "song": "Pretenders",
+    "artist": "Joseph of Mercury",
+    "net": 638318,
+    "gross": 911883
+   },
+   {
+    "song": "Without Words",
+    "artist": "Joseph of Mercury",
+    "net": 556450,
+    "gross": 794929
+   },
+   {
+    "song": "Angel",
+    "artist": "Joseph of Mercury",
+    "net": 456926,
+    "gross": 761544
+   },
+   {
+    "song": "Nikki",
+    "artist": "Joseph of Mercury",
+    "net": 381385,
+    "gross": 544837
+   }
+  ],
+  "byYear": {
+   "2016": 2,
+   "2017": 6,
+   "2018": 2,
+   "2019": 7,
+   "2020": 2,
+   "2021": 5,
+   "2022": 5,
+   "2024": 6,
+   "2025": 1
+  }
+ },
+ "Brinley Addington": {
+  "name": "Brinley Addington",
+  "songs": 23,
+  "releases": 13,
+  "upcoming": 1,
+  "holds": 6,
+  "cuts": 3,
+  "grossStreams": 3744110,
+  "netStreams": 2249879,
+  "grossSpins": 34,
+  "netSpins": 21,
+  "lumStreams": 1782715,
+  "lumStreamsNet": 871497,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5109,
+  "avgHoldDays": 496,
+  "maxHoldDays": 925,
+  "topArtists": [
+   {
+    "artist": "Brinley Addington",
+    "n": 3
+   },
+   {
+    "artist": "Brooke Lee",
+    "n": 3
+   },
+   {
+    "artist": "McCoy Moore",
+    "n": 3
+   },
+   {
+    "artist": "Old Hickory",
+    "n": 2
+   },
+   {
+    "artist": "Morgan Wallen",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "This Party Sucks",
+    "artist": "Ryan Hurd",
+    "net": 692207,
+    "gross": 922943
+   },
+   {
+    "song": "Ride It Out",
+    "artist": "Alli Walker",
+    "net": 584277,
+    "gross": 876373
+   },
+   {
+    "song": "Sadder Day",
+    "artist": "Craig Campbell",
+    "net": 326888,
+    "gross": 653776
+   },
+   {
+    "song": "I've Been Thinking",
+    "artist": "Brooke Lee",
+    "net": 220075,
+    "gross": 330097
+   },
+   {
+    "song": "Can't Make That Up",
+    "artist": "McCoy Moore",
+    "net": 119083,
+    "gross": 357180
+   }
+  ],
+  "byYear": {
+   "2023": 2,
+   "2024": 6,
+   "2025": 5,
+   "2026": 4
   }
  },
  "Zack Hall": {
@@ -5567,14 +4945,14 @@ window.LYRIC_WRITERS = {
   "upcoming": 0,
   "holds": 0,
   "cuts": 0,
-  "grossStreams": 1113172,
-  "netStreams": 306122,
-  "grossSpins": 192,
-  "netSpins": 52,
-  "lumStreams": 2837969,
-  "lumStreamsNet": 780441,
-  "lumSpins": 18,
-  "lumSpinsNet": 4,
+  "grossStreams": 1596765,
+  "netStreams": 439110,
+  "grossSpins": 195,
+  "netSpins": 53,
+  "lumStreams": 4896770,
+  "lumStreamsNet": 1346611,
+  "lumSpins": 28,
+  "lumSpinsNet": 7,
   "avgShare": 0.275,
   "avgHoldDays": null,
   "maxHoldDays": null,
@@ -5588,12 +4966,759 @@ window.LYRIC_WRITERS = {
    {
     "song": "Find Me In A Bar",
     "artist": "Nate Smith",
-    "net": 306122,
-    "gross": 1113172
+    "net": 439110,
+    "gross": 1596765
    }
   ],
   "byYear": {
    "2026": 1
+  }
+ },
+ "Joy Williams": {
+  "name": "Joy Williams",
+  "songs": 11,
+  "releases": 9,
+  "upcoming": 0,
+  "holds": 1,
+  "cuts": 1,
+  "grossStreams": 4871412,
+  "netStreams": 2552508,
+  "grossSpins": 299,
+  "netSpins": 100,
+  "lumStreams": 1548099,
+  "lumStreamsNet": 713188,
+  "lumSpins": 92,
+  "lumSpinsNet": 30,
+  "avgShare": 0.497,
+  "avgHoldDays": 902,
+  "maxHoldDays": 902,
+  "topArtists": [
+   {
+    "artist": "Vince Gill",
+    "n": 2
+   },
+   {
+    "artist": "Forest Black",
+    "n": 1
+   },
+   {
+    "artist": "RaeLynn",
+    "n": 1
+   },
+   {
+    "artist": "Caroline Jones",
+    "n": 1
+   },
+   {
+    "artist": "Apple Kids Country",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Oxygen Mask",
+    "artist": "Sasha Alex Sloan",
+    "net": 1383938,
+    "gross": 2076115
+   },
+   {
+    "song": "Somebody's Child",
+    "artist": "Blessing Offor",
+    "net": 603095,
+    "gross": 1808926
+   },
+   {
+    "song": "Nicotine Patch",
+    "artist": "Tim Gallagher",
+    "net": 304434,
+    "gross": 456629
+   },
+   {
+    "song": "Shake Ya Boots",
+    "artist": "RaeLynn",
+    "net": 192832,
+    "gross": 385665
+   },
+   {
+    "song": "Root Down",
+    "artist": "Noah Guthrie",
+    "net": 33308,
+    "gross": 49960
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 4,
+   "2025": 3,
+   "2026": 2
+  }
+ },
+ "Marc Tinez": {
+  "name": "Marc Tinez",
+  "songs": 32,
+  "releases": 32,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 352643,
+  "netStreams": 172527,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 2188,
+  "lumStreamsNet": 1437,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5195,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Marc Tinez",
+    "n": 31
+   },
+   {
+    "artist": "Groove 2070",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Alma De Chico",
+    "artist": "Marc Tinez",
+    "net": 113108,
+    "gross": 226217
+   },
+   {
+    "song": "De 0 A 100",
+    "artist": "Groove 2070",
+    "net": 8673,
+    "gross": 26016
+   },
+   {
+    "song": "Under Your Control",
+    "artist": "Marc Tinez",
+    "net": 7641,
+    "gross": 15283
+   },
+   {
+    "song": "Nada Me Vale",
+    "artist": "Marc Tinez",
+    "net": 7005,
+    "gross": 14010
+   },
+   {
+    "song": "Desde Que Me Fui",
+    "artist": "Marc Tinez",
+    "net": 5761,
+    "gross": 11523
+   }
+  ],
+  "byYear": {
+   "2019": 3,
+   "2020": 6,
+   "2021": 6,
+   "2022": 3,
+   "2023": 1,
+   "2024": 6,
+   "2025": 4,
+   "2026": 3
+  }
+ },
+ "Grace Bridie": {
+  "name": "Grace Bridie",
+  "songs": 2,
+  "releases": 2,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 1193218,
+  "netStreams": 273282,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 84969,
+  "lumStreamsNet": 19329,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.2375,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Grace Bridie",
+    "n": 2
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Playground",
+    "artist": "Grace Bridie",
+    "net": 225194,
+    "gross": 1000864
+   },
+   {
+    "song": "Afterglow",
+    "artist": "Grace Bridie",
+    "net": 48088,
+    "gross": 192354
+   }
+  ],
+  "byYear": {
+   "2025": 1,
+   "2026": 1
+  }
+ },
+ "Frank Ray": {
+  "name": "Frank Ray",
+  "songs": 1,
+  "releases": 0,
+  "upcoming": 0,
+  "holds": 1,
+  "cuts": 0,
+  "grossStreams": 0,
+  "netStreams": 0,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 0,
+  "lumStreamsNet": 0,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.3334,
+  "avgHoldDays": 213,
+  "maxHoldDays": 213,
+  "topArtists": [
+   {
+    "artist": "Frankie J",
+    "n": 1
+   }
+  ],
+  "topSongs": [],
+  "byYear": {}
+ },
+ "Sam Carter": {
+  "name": "Sam Carter",
+  "songs": 3,
+  "releases": 1,
+  "upcoming": 2,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 0,
+  "netStreams": 0,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 61114,
+  "lumStreamsNet": 40744,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.8889,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Lawson Harris",
+    "n": 1
+   },
+   {
+    "artist": "Brinley Addington",
+    "n": 1
+   },
+   {
+    "artist": "12/OC",
+    "n": 1
+   }
+  ],
+  "topSongs": [],
+  "byYear": {
+   "2025": 1,
+   "2026": 2
+  }
+ },
+ "blckatom": {
+  "name": "blckatom",
+  "songs": 7,
+  "releases": 7,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 21173779,
+  "netStreams": 1316437,
+  "grossSpins": 630,
+  "netSpins": 37,
+  "lumStreams": 2441184,
+  "lumStreamsNet": 178690,
+  "lumSpins": 19,
+  "lumSpinsNet": 1,
+  "avgShare": 0.4766,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Delf",
+    "n": 3
+   },
+   {
+    "artist": "blckatom",
+    "n": 2
+   },
+   {
+    "artist": "Lonnie",
+    "n": 1
+   },
+   {
+    "artist": "Chris Brown",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Show It",
+    "artist": "Chris Brown",
+    "net": 1264121,
+    "gross": 21068690
+   },
+   {
+    "song": "Give Up On Us",
+    "artist": "Lonnie",
+    "net": 45037,
+    "gross": 67624
+   },
+   {
+    "song": "Delicious",
+    "artist": "Delf",
+    "net": 6419,
+    "gross": 32095
+   },
+   {
+    "song": "Off My Mind",
+    "artist": "Delf",
+    "net": 859,
+    "gross": 5370
+   }
+  ],
+  "byYear": {
+   "2022": 2,
+   "2024": 4,
+   "2026": 1
+  }
+ },
+ "Chris Robinson": {
+  "name": "Chris Robinson",
+  "songs": 21,
+  "releases": 21,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 20043981,
+  "netStreams": 20043981,
+  "grossSpins": 57406,
+  "netSpins": 57406,
+  "lumStreams": 10353514,
+  "lumStreamsNet": 10353514,
+  "lumSpins": 38411,
+  "lumSpinsNet": 38411,
+  "avgShare": 1.0,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "The Black Crowes",
+    "n": 21
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Wanting and Waiting",
+    "artist": "The Black Crowes",
+    "net": 5996211,
+    "gross": 5996211
+   },
+   {
+    "song": "Wilted Rose (feat. Lainey Wilson)",
+    "artist": "The Black Crowes",
+    "net": 2561791,
+    "gross": 2561791
+   },
+   {
+    "song": "Rats and Clowns",
+    "artist": "The Black Crowes",
+    "net": 1377641,
+    "gross": 1377641
+   },
+   {
+    "song": "Cross Your Fingers",
+    "artist": "The Black Crowes",
+    "net": 1344438,
+    "gross": 1344438
+   },
+   {
+    "song": "Bedside Manners",
+    "artist": "The Black Crowes",
+    "net": 1211608,
+    "gross": 1211608
+   }
+  ],
+  "byYear": {
+   "2024": 10,
+   "2026": 11
+  }
+ },
+ "Rich Robinson": {
+  "name": "Rich Robinson",
+  "songs": 33,
+  "releases": 33,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 20162624,
+  "netStreams": 20073641,
+  "grossSpins": 57406,
+  "netSpins": 57406,
+  "lumStreams": 10364361,
+  "lumStreamsNet": 10356225,
+  "lumSpins": 38435,
+  "lumSpinsNet": 38417,
+  "avgShare": 0.7273,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "The Black Crowes",
+    "n": 21
+   },
+   {
+    "artist": "Silverlites",
+    "n": 12
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Wanting and Waiting",
+    "artist": "The Black Crowes",
+    "net": 5996211,
+    "gross": 5996211
+   },
+   {
+    "song": "Wilted Rose (feat. Lainey Wilson)",
+    "artist": "The Black Crowes",
+    "net": 2561791,
+    "gross": 2561791
+   },
+   {
+    "song": "Rats and Clowns",
+    "artist": "The Black Crowes",
+    "net": 1377641,
+    "gross": 1377641
+   },
+   {
+    "song": "Cross Your Fingers",
+    "artist": "The Black Crowes",
+    "net": 1344438,
+    "gross": 1344438
+   },
+   {
+    "song": "Bedside Manners",
+    "artist": "The Black Crowes",
+    "net": 1211608,
+    "gross": 1211608
+   }
+  ],
+  "byYear": {
+   "2024": 22,
+   "2026": 11
+  }
+ },
+ "LECADE": {
+  "name": "LECADE",
+  "songs": 11,
+  "releases": 9,
+  "upcoming": 1,
+  "holds": 1,
+  "cuts": 0,
+  "grossStreams": 20967954,
+  "netStreams": 6647672,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 8756670,
+  "lumStreamsNet": 2845025,
+  "lumSpins": 2,
+  "lumSpinsNet": 1,
+  "avgShare": 0.3743,
+  "avgHoldDays": 370,
+  "maxHoldDays": 370,
+  "topArtists": [
+   {
+    "artist": "LECADE",
+    "n": 9
+   },
+   {
+    "artist": "Clever",
+    "n": 1
+   },
+   {
+    "artist": "Avery Roberson",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Gave It Up",
+    "artist": "LECADE",
+    "net": 2773718,
+    "gross": 11094874
+   },
+   {
+    "song": "Bed We Made",
+    "artist": "LECADE",
+    "net": 1943517,
+    "gross": 3887035
+   },
+   {
+    "song": "You Get Me",
+    "artist": "LECADE",
+    "net": 1674332,
+    "gross": 5021992
+   },
+   {
+    "song": "Liquor & Cigarettes",
+    "artist": "LECADE",
+    "net": 128965,
+    "gross": 386818
+   },
+   {
+    "song": "Blind",
+    "artist": "LECADE",
+    "net": 68678,
+    "gross": 343390
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 3,
+   "2025": 6
+  }
+ },
+ "RYON": {
+  "name": "RYON",
+  "songs": 5,
+  "releases": 5,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 2026348,
+  "netStreams": 321729,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 769639,
+  "lumStreamsNet": 117112,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.3767,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "The Ready Set",
+    "n": 1
+   },
+   {
+    "artist": "Backpack Jones",
+    "n": 1
+   },
+   {
+    "artist": "9rofit",
+    "n": 1
+   },
+   {
+    "artist": "Bela Pierce",
+    "n": 1
+   },
+   {
+    "artist": "Yung Gravy",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "DMPB",
+    "artist": "Yung Gravy",
+    "net": 291539,
+    "gross": 1943599
+   },
+   {
+    "song": "Everything I Love",
+    "artist": "Bela Pierce",
+    "net": 15651,
+    "gross": 39128
+   },
+   {
+    "song": "Interlude / The Light",
+    "artist": "The Ready Set",
+    "net": 14538,
+    "gross": 43621
+   }
+  ],
+  "byYear": {
+   "2022": 1,
+   "2024": 4
+  }
+ },
+ "Josh Dunne": {
+  "name": "Josh Dunne",
+  "songs": 4,
+  "releases": 4,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 136177,
+  "netStreams": 63218,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 43263,
+  "lumStreamsNet": 25868,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.4167,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Joe Wodarek & 51 South",
+    "n": 2
+   },
+   {
+    "artist": "Chris Colston",
+    "n": 1
+   },
+   {
+    "artist": "Dillon Carmichael",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Hell Freezes Over",
+    "artist": "Dillon Carmichael",
+    "net": 35639,
+    "gross": 53457
+   },
+   {
+    "song": "Tell It To The Whiskey",
+    "artist": "Chris Colston",
+    "net": 27578,
+    "gross": 82720
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 2,
+   "2025": 1
+  }
+ },
+ "Dave Cohen": {
+  "name": "Dave Cohen",
+  "songs": 8,
+  "releases": 4,
+  "upcoming": 1,
+  "holds": 1,
+  "cuts": 2,
+  "grossStreams": 3037742,
+  "netStreams": 2008758,
+  "grossSpins": 31,
+  "netSpins": 20,
+  "lumStreams": 752411,
+  "lumStreamsNet": 500547,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.5313,
+  "avgHoldDays": 769,
+  "maxHoldDays": 769,
+  "topArtists": [
+   {
+    "artist": "Gowa Gibbs",
+    "n": 2
+   },
+   {
+    "artist": "Elle King",
+    "n": 2
+   },
+   {
+    "artist": "Brooke Lee",
+    "n": 1
+   },
+   {
+    "artist": "Sasha Alex Sloan",
+    "n": 1
+   },
+   {
+    "artist": "Alli Walker",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Oxygen Mask",
+    "artist": "Sasha Alex Sloan",
+    "net": 1383938,
+    "gross": 2076115
+   },
+   {
+    "song": "Ride It Out",
+    "artist": "Alli Walker",
+    "net": 584277,
+    "gross": 876373
+   },
+   {
+    "song": "Match Made In Hell",
+    "artist": "Brooke Lee",
+    "net": 28843,
+    "gross": 38458
+   },
+   {
+    "song": "Let's Get Rollin",
+    "artist": "Gowa Gibbs",
+    "net": 11699,
+    "gross": 46796
+   }
+  ],
+  "byYear": {
+   "2023": 1,
+   "2024": 4,
+   "2025": 2
+  }
+ },
+ "Jonathan Singleton": {
+  "name": "Jonathan Singleton",
+  "songs": 1,
+  "releases": 1,
+  "upcoming": 0,
+  "holds": 0,
+  "cuts": 0,
+  "grossStreams": 53457,
+  "netStreams": 35639,
+  "grossSpins": 0,
+  "netSpins": 0,
+  "lumStreams": 34337,
+  "lumStreamsNet": 22892,
+  "lumSpins": 0,
+  "lumSpinsNet": 0,
+  "avgShare": 0.6667,
+  "avgHoldDays": null,
+  "maxHoldDays": null,
+  "topArtists": [
+   {
+    "artist": "Dillon Carmichael",
+    "n": 1
+   }
+  ],
+  "topSongs": [
+   {
+    "song": "Hell Freezes Over",
+    "artist": "Dillon Carmichael",
+    "net": 35639,
+    "gross": 53457
+   }
+  ],
+  "byYear": {
+   "2025": 1
   }
  }
 };
