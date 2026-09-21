@@ -1,0 +1,273 @@
+[
+  {
+    "isrc": "QT62W2609020",
+    "streams_status": 200,
+    "streams_resp": {
+      "id": "MR3F449813FFB14BECB6BF484726D2A683",
+      "isrc": "QT62W2609020",
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "program",
+      "display_artist_name": "Angelo Mota",
+      "artists": [
+        {
+          "name": "Angelo Mota",
+          "role": "Main Artist",
+          "id": "AR17109E4C10304CD2938968D15EFF9452"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Streams",
+          "value": [
+            {
+              "name": "total",
+              "value": 10440
+            },
+            {
+              "name": "service_type",
+              "value": [
+                {
+                  "name": "on_demand",
+                  "value": 10437
+                },
+                {
+                  "name": "programmed",
+                  "value": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "radio_status": 200,
+    "radio_resp": {
+      "id": "SG4E64A3DFE8B144E1BF49960D6BE4E77B",
+      "isrc": [
+        "QT62W2609020"
+      ],
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "program",
+      "display_artist_name": "Angelo Mota",
+      "artists": [
+        {
+          "name": "Angelo Mota",
+          "role": "Main Artist",
+          "id": "AR17109E4C10304CD2938968D15EFF9452"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Airplay",
+          "value": [
+            {
+              "name": "Audience",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Spins",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "isrc": "QT62W2609019",
+    "streams_status": 200,
+    "streams_resp": {
+      "id": "MR9D73FF160258447CAF230564C202556A",
+      "isrc": "QT62W2609019",
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "hills have eyes",
+      "display_artist_name": "Angelo Mota",
+      "artists": [
+        {
+          "name": "Angelo Mota",
+          "role": "Main Artist",
+          "id": "AR17109E4C10304CD2938968D15EFF9452"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Streams",
+          "value": [
+            {
+              "name": "total",
+              "value": 13586
+            },
+            {
+              "name": "service_type",
+              "value": [
+                {
+                  "name": "on_demand",
+                  "value": 13584
+                },
+                {
+                  "name": "programmed",
+                  "value": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "radio_status": 200,
+    "radio_resp": {
+      "id": "SG0208DEC2CC5A412EA86EE6F9534EF02B",
+      "isrc": [
+        "QT62W2609019"
+      ],
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "hills have eyes",
+      "display_artist_name": "Angelo Mota",
+      "artists": [
+        {
+          "name": "Angelo Mota",
+          "role": "Main Artist",
+          "id": "AR17109E4C10304CD2938968D15EFF9452"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Airplay",
+          "value": [
+            {
+              "name": "Audience",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Spins",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "isrc": "USQX92604649",
+    "streams_status": 200,
+    "streams_resp": {
+      "id": "MR783351E057854B6E812F4487AEBA5BAA",
+      "isrc": "USQX92604649",
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "HEAVEN",
+      "display_artist_name": "JENNIE",
+      "artists": [
+        {
+          "name": "Jennie",
+          "role": "Main Artist",
+          "id": "AR424CF928F9DE43F6B9F67E0EF98D1C95"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Streams",
+          "value": [
+            {
+              "name": "total",
+              "value": 3275690
+            },
+            {
+              "name": "service_type",
+              "value": [
+                {
+                  "name": "on_demand",
+                  "value": 3200050
+                },
+                {
+                  "name": "programmed",
+                  "value": 75640
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "radio_status": 200,
+    "radio_resp": {
+      "id": "SG8CF4182E6E6F4ED2AA4EAA838725ADFF",
+      "isrc": [
+        "USQX92605177",
+        "USQX92605491",
+        "USQX92605068",
+        "USQX92605468",
+        "USQX92605073",
+        "USQX92605319",
+        "USQX92604649",
+        "USQX92605088"
+      ],
+      "start_date": "2025-09-21",
+      "end_date": "2026-09-21",
+      "location": "US",
+      "title": "HEAVEN",
+      "display_artist_name": "JENNIE",
+      "artists": [
+        {
+          "name": "Jennie",
+          "role": "Main Artist",
+          "id": "AR424CF928F9DE43F6B9F67E0EF98D1C95"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Airplay",
+          "value": [
+            {
+              "name": "Audience",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Spins",
+              "value": [
+                {
+                  "name": "total",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

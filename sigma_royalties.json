@@ -1,0 +1,1410 @@
+{
+  "_comment": "Written by Claude from Sigma: MIXER_ANALYTICS.SPIRIT_ROYALTIES.SPIRIT_NPS_REPORT_CURRENT, filtered to Spirit Catalogue = 'SOS'. Do not hand-edit. See reference/ASK-CLAUDE-FOR-ROYALTIES.md to regenerate.",
+  "pulledOn": "2026-09-21",
+  "latestStatementMonth": "2026-08",
+  "ttmStart": "2025-09-01",
+  "ttmEnd": "2026-08-01",
+  "totals": {
+    "npsLife": 2204819,
+    "npsTtm": 1676414,
+    "incomeLife": 6033202,
+    "songs": 3751,
+    "clients": 140
+  },
+  "clientColumns": [
+    "client",
+    "npsLife",
+    "npsTtm",
+    "incomeLife"
+  ],
+  "clients": [
+    [
+      "SOS (MICHAEL HARDY APA)",
+      975130,
+      975130,
+      975130
+    ],
+    [
+      "N-THE-WATER PUBLISHING, INC.",
+      153761,
+      92634,
+      1141699
+    ],
+    [
+      "BRENT ANDERSON",
+      153338,
+      49411,
+      334537
+    ],
+    [
+      "DAVID ARTHUR GARCIA",
+      145973,
+      46157,
+      400377
+    ],
+    [
+      "NG PUBLISHING LTD",
+      106920,
+      62128,
+      290219
+    ],
+    [
+      "MONTY RUSS CRISWELL",
+      68201,
+      55720,
+      157322
+    ],
+    [
+      "JEREMY BUSSEY",
+      57331,
+      56671,
+      97392
+    ],
+    [
+      "WILLIAM DEREK GEORGE",
+      48834,
+      42039,
+      112775
+    ],
+    [
+      "SPIRIT VAULT SONGS II (JUSTIN RICHARDS  ESA)",
+      45218,
+      39005,
+      48582
+    ],
+    [
+      "REMY GAUTREAU",
+      42355,
+      8396,
+      146826
+    ],
+    [
+      "ROBERT PATRICK HAMRICK P/K/A BOBBY HAMRICK",
+      34829,
+      33327,
+      88635
+    ],
+    [
+      "JUSTIN HALPIN (50% CO-PUB COMPOSITIONS)",
+      25665,
+      11421,
+      85192
+    ],
+    [
+      "MICHAEL LOUIS FIORENTINO II",
+      25441,
+      738,
+      53037
+    ],
+    [
+      "SONGS OF SPIRIT",
+      25334,
+      22976,
+      25334
+    ],
+    [
+      "RYAN BEAVER",
+      24903,
+      18307,
+      78766
+    ],
+    [
+      "MICHAEL HARDY (ADMIN)",
+      24397,
+      24397,
+      799501
+    ],
+    [
+      "CALE DODDS (ESA/CO-PUB)",
+      24168,
+      3822,
+      91677
+    ],
+    [
+      "CHRISTIAN EMILIO ARNFIELD (CAMYLIO)",
+      20841,
+      17961,
+      70582
+    ],
+    [
+      "JUSTIN MARK RICHARDS (NEW & EXISTING COMPOSITIONS)",
+      18758,
+      13167,
+      39583
+    ],
+    [
+      "CIRCLE SOUND, LLC (RICH ROBINSON ADMIN)",
+      18478,
+      6850,
+      120478
+    ],
+    [
+      "PATRICK THOMAS RIDGEN PKA PLAYDED",
+      17399,
+      3168,
+      35507
+    ],
+    [
+      "CHRISTOPHER M. ROBINSON (ADMIN)",
+      15574,
+      5502,
+      101598
+    ],
+    [
+      "ETC MUSIC, INC. (ELY RISE)",
+      14804,
+      14784,
+      52071
+    ],
+    [
+      "SPIRIT VAULT SONGS II (DAVID GARCIA ESA)",
+      12355,
+      3245,
+      29380
+    ],
+    [
+      "CS 3RD MUSIC, LLC (CHIZZY)",
+      9904,
+      4844,
+      55880
+    ],
+    [
+      "RPRWAV LLC (JJ SCHEFF)",
+      6415,
+      6412,
+      25757
+    ],
+    [
+      "AUTUMN ROWE",
+      5757,
+      3356,
+      34838
+    ],
+    [
+      "POLYCHROME RECORDS, LLC F/S/O MIRA HOUSEY",
+      5245,
+      2898,
+      17026
+    ],
+    [
+      "MELODIE WAGNER",
+      5064,
+      3829,
+      16530
+    ],
+    [
+      "SHANE STEVE PITTMAN P/K/A SHANE STEVENS (ESA)",
+      4056,
+      2143,
+      15596
+    ],
+    [
+      "JOY ELIZABETH WILLIAMS",
+      3877,
+      2350,
+      14228
+    ],
+    [
+      "IMAGINATION RECORDINGS INC. (JOSEPH ROBERT JANIAK)",
+      3366,
+      3366,
+      8429
+    ],
+    [
+      "SPIRIT VAULT SONGS II (BOBBY HAMRICK ESA)",
+      2960,
+      2883,
+      6794
+    ],
+    [
+      "JASON VANCE HARRIS",
+      2951,
+      2363,
+      10328
+    ],
+    [
+      "ADAM WOOD",
+      2903,
+      2383,
+      7236
+    ],
+    [
+      "CALE DODDS (MASTER INCOME PAYTHRU)",
+      2853,
+      320,
+      15385
+    ],
+    [
+      "RYAN BEAVER (50% PAYTHRU-REVERTING CO-PUBLISHED COMPOSITIONS)",
+      2822,
+      1291,
+      14335
+    ],
+    [
+      "RYAN BEAVER (50% RECOUP-REVERTING CO-PUBLISHED COMPOSITIONS)",
+      2822,
+      1290,
+      14334
+    ],
+    [
+      "THE VAULT MUSIC, LLC (N-THE-WATER PUBLISHING, INC. ADMIN)",
+      2733,
+      1653,
+      19721
+    ],
+    [
+      "CADE RUSSELL BRINKLEY (LECADE)",
+      2418,
+      2418,
+      8732
+    ],
+    [
+      "SPIRIT VAULT TUNES II (JESSICA CAYNE ESA)",
+      2238,
+      2064,
+      2408
+    ],
+    [
+      "SAWYER UTAH (NEW COMPS)",
+      2036,
+      1212,
+      4348
+    ],
+    [
+      "LIZ LOKRE ENT. INC",
+      2006,
+      2006,
+      8444
+    ],
+    [
+      "VAULT MUSIC OF SPIRIT (SAWYER UTAH - VISCYRL)",
+      1724,
+      1037,
+      1781
+    ],
+    [
+      "NOELLE SCAGGS (SUMMARY ACCT)",
+      1701,
+      219,
+      17071
+    ],
+    [
+      "WESTOVER PUBLISHING, LLC",
+      1448,
+      628,
+      3165
+    ],
+    [
+      "ZEST POP LLC",
+      1406,
+      1406,
+      4882
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (CHRISTIAN EMILIO ARNFIELD-CAMYLIO)",
+      1365,
+      1173,
+      3798
+    ],
+    [
+      "SHANE STEVE PITTMAN P/K/A SHANE STEVENS (ADMIN)",
+      1324,
+      597,
+      10881
+    ],
+    [
+      "ROBERT PATRICK HAMRICK P/K/A BOBBY HAMRICK (MASTER INCOME PAYTHRU)",
+      1290,
+      751,
+      11348
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (REMY GAUTREAU ESA)",
+      1202,
+      255,
+      4114
+    ],
+    [
+      "JUSTIN HALPIN (NEW COMPOSITIONS)",
+      1183,
+      1182,
+      2265
+    ],
+    [
+      "JESSICA CAITLIN URICK/JESSICA CAYNE (NEW COMPOSITIONS)",
+      1112,
+      799,
+      2473
+    ],
+    [
+      "TIM MONTANA (CO-PUBLISHED COMPOSITIONS)",
+      1047,
+      469,
+      2649
+    ],
+    [
+      "JOY ELIZABETH WILLIAMS (MASTER INCOME PAYTHRU)",
+      1046,
+      475,
+      9296
+    ],
+    [
+      "RICHARD ADAM CHAFFINS (ADRA)",
+      938,
+      649,
+      1358
+    ],
+    [
+      "VAULT SONGS OF SPRIT (PATRICK RIDGEN)",
+      889,
+      419,
+      1277
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (MATTHEW MORRISEY ESA)",
+      870,
+      608,
+      1020
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (RYAN BEAVER ESA-CO-PUBLISHED COMPOSITIONS)",
+      821,
+      615,
+      2127
+    ],
+    [
+      "RICHARD ADAM CHAFFINS (CO-PUB)",
+      686,
+      142,
+      1817
+    ],
+    [
+      "RICHARD ADAM CHAFFINS (NO CO-PUB)",
+      615,
+      602,
+      664
+    ],
+    [
+      "BILLY G'S HOLLYWOOD PRODUCTIONS, INC. / BILLY F GIBBONS (ADMIN)",
+      587,
+      141,
+      6532
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (BROOKE LEE ESA)",
+      584,
+      423,
+      640
+    ],
+    [
+      "CAMP 86 APS (GRACE PASHEBA REDWAY P/K/A ANGEL DELRAE)",
+      582,
+      582,
+      961
+    ],
+    [
+      "CONNOR MCCUTCHEON (CO-PUB)",
+      579,
+      376,
+      1388
+    ],
+    [
+      "MATTHEW MORRISEY",
+      551,
+      400,
+      1267
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (ELY RISE ESA)",
+      513,
+      513,
+      1433
+    ],
+    [
+      "SARA BOE",
+      497,
+      497,
+      1599
+    ],
+    [
+      "BROOKE ALEA LAROTONDA P/K/A BROOKE LEE (NO CO-PUB)",
+      462,
+      291,
+      1060
+    ],
+    [
+      "NATHAN BARLOWE",
+      436,
+      430,
+      684
+    ],
+    [
+      "THE VAULT MUSIC, LLC (RICH ROBINSON ADMIN)",
+      382,
+      150,
+      2338
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (BROCK WESTOVER ESA)",
+      369,
+      250,
+      472
+    ],
+    [
+      "BRINLEY ADDINGTON",
+      368,
+      182,
+      1186
+    ],
+    [
+      "VAULT MUSIC OF SPIRIT (MELODIE WAGNER) ROW",
+      350,
+      254,
+      935
+    ],
+    [
+      "CONNOR MCCUTCHEON",
+      331,
+      265,
+      576
+    ],
+    [
+      "THE VAULT MUSIC, LLC (CHRIS ROBINSON ADMIN)",
+      316,
+      115,
+      1937
+    ],
+    [
+      "CALE DODDS (ADMIN)",
+      311,
+      166,
+      2868
+    ],
+    [
+      "PLJ MUSIC, INC. (PETER LEE JOHNSON)",
+      307,
+      307,
+      891
+    ],
+    [
+      "VAULT SONGS OF SPRIT (JJ SCHEFF)",
+      306,
+      306,
+      1018
+    ],
+    [
+      "DAVID ROSS COHEN P/K/A DAVE COHEN",
+      274,
+      245,
+      781
+    ],
+    [
+      "SAWYER UTAH (SELF RECORDED 1/3 CO-PUB & EXISTING COMPS)",
+      242,
+      218,
+      550
+    ],
+    [
+      "THE VAULT MUSIC, LLC (CHIZZY ADMIN)",
+      234,
+      115,
+      1095
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (SHANE STEVENS ESA)",
+      213,
+      98,
+      685
+    ],
+    [
+      "NOELLE SCAGGS (NINJA BUNNY SONGBOOK)",
+      199,
+      199,
+      2050
+    ],
+    [
+      "BENJAMIN SAMAMA",
+      191,
+      191,
+      779
+    ],
+    [
+      "NANCY MATALON OVERRIDE (Autumn Rowe Admin)",
+      188,
+      114,
+      939
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (AUTUMN ROWE ADMIN)",
+      185,
+      112,
+      937
+    ],
+    [
+      "NANCY MATALON - OVERRIDE (Mira Housey)",
+      182,
+      110,
+      477
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (MIRA HOUSEY ESA)",
+      181,
+      109,
+      478
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (JASON VANCE HARRIS)",
+      181,
+      150,
+      509
+    ],
+    [
+      "NANCY MATALON - OVERRIDE (Mira Housey) obo Autumn Rowe",
+      179,
+      107,
+      474
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (ADAM WOOD ESA)",
+      157,
+      116,
+      297
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (JOY WILLIAMS ESA)",
+      154,
+      109,
+      556
+    ],
+    [
+      "MATTHEW MORRISEY (CO-PUBLISHED COMPOSITIONS)",
+      106,
+      4,
+      200
+    ],
+    [
+      "NOELLE SCAGGS (BLACK BUTTAFLI WORLDWIDE MUZAK)",
+      104,
+      104,
+      1080
+    ],
+    [
+      "JESSICA CAITLIN URICK/JESSICA CAYNE (CO-PUB COMPOSITIONS)",
+      104,
+      77,
+      139
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (RYAN BEAVER ESA-REVERTING CO-PUBLISHED COMPOSITIONS)",
+      86,
+      33,
+      350
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (TIM MONTANA ESA)",
+      81,
+      40,
+      173
+    ],
+    [
+      "SPIRIT VAULT SONGS II (CADE RUSSELL BRINKLEY ESA)",
+      62,
+      62,
+      172
+    ],
+    [
+      "ERIK BELZ (ADMIN)",
+      61,
+      26,
+      467
+    ],
+    [
+      "BROOKE ALEA LAROTONDA P/K/A BROOKE LEE (CO-PUB)",
+      55,
+      9,
+      111
+    ],
+    [
+      "ZACHARY RYAN BEEKEN (EXISTING, ARTIST, & POST-RECOUP COMPOSITIONS)",
+      53,
+      53,
+      127
+    ],
+    [
+      "TYLER REEVE",
+      49,
+      36,
+      204
+    ],
+    [
+      "BROOKE ALEA LAROTONDA P/K/A BROOKE LEE (ADRA)",
+      47,
+      35,
+      130123
+    ],
+    [
+      "TIMOTHY TYRONE PRATER (NOBU)",
+      35,
+      16,
+      144
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (LIZ LOKRE ESA)",
+      33,
+      33,
+      140
+    ],
+    [
+      "KASEY TYNDALL DEORDIO PKA KASEY TYNDALL (NEW & EXISTING COMPOSITIONS)",
+      28,
+      28,
+      111
+    ],
+    [
+      "DANIEL CHRISTOPHER MORGANS (P/K/A YUNG HONI)",
+      27,
+      12,
+      93
+    ],
+    [
+      "JOSH DUNNE",
+      26,
+      9,
+      77
+    ],
+    [
+      "JEFFREY ADAM HOLMES",
+      25,
+      25,
+      100
+    ],
+    [
+      "THE VAULT MUSIC, LLC (SHANE STEVENS ADMIN)",
+      23,
+      10,
+      167
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (DAVE COHEN ESA)",
+      22,
+      20,
+      54
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (BRINLEY ADDINGTON ESA)",
+      15,
+      5,
+      37
+    ],
+    [
+      "TIM MONTANA",
+      15,
+      15,
+      39
+    ],
+    [
+      "NICHOLAS WAYNE AUTRY (EXISTING COMPOSITIONS)",
+      13,
+      13,
+      32
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (NICK AUTRY ESA)",
+      10,
+      10,
+      13
+    ],
+    [
+      "SPIRIT VAULT SONGS II (SAM CARTER ESA)",
+      9,
+      9,
+      9
+    ],
+    [
+      "NICHOLAS WAYNE AUTRY (NEW COMPOSITIONS)",
+      8,
+      8,
+      19
+    ],
+    [
+      "SPIRIT VAULT TUNES II (BRINLEY ADDINGTON ESA)",
+      7,
+      5,
+      21
+    ],
+    [
+      "THE VAULT MUSIC, LLC (BILLY F GIBBONS ADMIN)",
+      6,
+      2,
+      72
+    ],
+    [
+      "THE VAULT MUSIC, LLC (CALE DODDS ADMIN)",
+      4,
+      2,
+      34
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (BEN SAMAMA ESA)",
+      3,
+      3,
+      9
+    ],
+    [
+      "JOSEPH ANDREW BRYSON P/K/A JOE BRYSON (NO COPUB)",
+      2,
+      2,
+      4
+    ],
+    [
+      "JOSEPH ANDREW BRYSON P/K/A JOE BRYSON (COPUB)",
+      2,
+      2,
+      5
+    ],
+    [
+      "THE VAULT MUSIC, LLC (ERIK BELZ ADMIN)",
+      1,
+      0,
+      7
+    ],
+    [
+      "PEACE POURAGE INC (DAVID RYAN HARRIS ADMIN - NEW COMPOSITIONS)",
+      1,
+      1,
+      1
+    ],
+    [
+      "ALVARO MARTINEZ AGUILAR p/k/a MARC TINEZ",
+      1,
+      1,
+      4
+    ],
+    [
+      "CONNOR MCCUTCHEON (ADRA)",
+      1,
+      1,
+      1
+    ],
+    [
+      "VAULT MUSIC OF SPRIT (JEFFREY ADAM HOLMES ESA)",
+      1,
+      1,
+      2
+    ],
+    [
+      "SAM CARTER (NO CO-PUB)",
+      1,
+      1,
+      1
+    ],
+    [
+      "SPIRIT VAULT MUSIC II (TYLER REEVE ESA)",
+      1,
+      1,
+      2
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (TIM PRATER - NOBU)",
+      0,
+      0,
+      1
+    ],
+    [
+      "JUSTIN MARK RICHARDS (CO-PUB COMPOSITIONS)",
+      0,
+      0,
+      1
+    ],
+    [
+      "VAULT SONGS OF SPIRIT (DANIEL CHRISTOPHER MORGANS P/K/A YUNG HONI) ROW",
+      0,
+      0,
+      0
+    ],
+    [
+      "MICHAEL HARDY (ESA)",
+      0,
+      0,
+      0
+    ],
+    [
+      "COLBY WILLIFORD",
+      0,
+      0,
+      0
+    ],
+    [
+      "NG PUB LTD - USA$ PAYTHRU TO KOBALT",
+      0,
+      0,
+      56970
+    ],
+    [
+      "O & F, LLC (FRANK RAY SUMMARY ACCT)",
+      0,
+      0,
+      17309
+    ],
+    [
+      "US SOS (BULK PAYTHRU TO SOS UK)",
+      0,
+      0,
+      27651
+    ],
+    [
+      "VAULT SONGS OF SPRIT (ALVARO MARTINEZ AGUILAR p/k/a MARC TINEZ)",
+      0,
+      0,
+      0
+    ]
+  ],
+  "songColumns": [
+    "song",
+    "npsLife",
+    "npsTtm",
+    "incomeLife"
+  ],
+  "songs": [
+    [
+      "WAIT IN THE TRUCK",
+      118830,
+      118830,
+      118830
+    ],
+    [
+      "BACK THEN RIGHT NOW",
+      111036,
+      11797,
+      269678
+    ],
+    [
+      "NG PUB LTD - KOBALT OVERRIDE (NPS)",
+      106920,
+      62128,
+      106920
+    ],
+    [
+      "CAB IN A SOLO",
+      102502,
+      7659,
+      214502
+    ],
+    [
+      "GOD'S COUNTRY (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      90004,
+      90004,
+      90004
+    ],
+    [
+      "SAND IN MY BOOTS (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      86713,
+      86713,
+      86713
+    ],
+    [
+      "BOTTLE ROCKETS (ANDERSON/GEORGE/HAMRICK - ASCAP)",
+      73567,
+      73567,
+      155368
+    ],
+    [
+      "MORE THAN MY HOMETOWN (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      66920,
+      66920,
+      66920
+    ],
+    [
+      "STILL WATERS",
+      61788,
+      50122,
+      84653
+    ],
+    [
+      "SINGLE SATURDAY NIGHT",
+      61750,
+      61750,
+      61750
+    ],
+    [
+      "I WROTE THE BOOK",
+      55625,
+      55625,
+      55625
+    ],
+    [
+      "BOTTLE ROCKETS (BUSSEY - SESAC)",
+      50304,
+      50304,
+      76638
+    ],
+    [
+      "TAKE HER HOME",
+      48234,
+      48234,
+      48234
+    ],
+    [
+      "ONE BEER",
+      47894,
+      47894,
+      47894
+    ],
+    [
+      "UP DOWN (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      40933,
+      40933,
+      40933
+    ],
+    [
+      "BOTTLE ROCKETS (CRISWELL - BMI)",
+      37473,
+      37473,
+      76223
+    ],
+    [
+      "BOTTLE ROCKETS",
+      28709,
+      27782,
+      83978
+    ],
+    [
+      "SIMPLE (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      27303,
+      27303,
+      27303
+    ],
+    [
+      "FALL OF SUMMER (ANDERSON, GEORGE - ASCAP)",
+      26233,
+      16091,
+      54180
+    ],
+    [
+      "THIS BAR (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      25687,
+      25687,
+      25687
+    ],
+    [
+      "STILL GOIN DOWN (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      21724,
+      21724,
+      21724
+    ],
+    [
+      "DRINKABY",
+      21065,
+      21065,
+      21065
+    ],
+    [
+      "MAKE YOU LOOK ",
+      19577,
+      2,
+      67507
+    ],
+    [
+      "SONGS OF SPIRIT II MISC. INCOME",
+      18903,
+      16564,
+      18903
+    ],
+    [
+      "TN FAN",
+      18687,
+      18687,
+      18687
+    ],
+    [
+      "COME BACK AS A COUNTRY BOY",
+      18457,
+      18457,
+      18457
+    ],
+    [
+      "BORN WITH A BEER IN MY HAND",
+      17143,
+      17143,
+      17143
+    ],
+    [
+      "SHOW UP",
+      16030,
+      3036,
+      32231
+    ],
+    [
+      "LIVE FOR DAYS",
+      15687,
+      1,
+      41751
+    ],
+    [
+      "BEERS ON ME",
+      15650,
+      15650,
+      15650
+    ],
+    [
+      "NEW TRUCK (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      15078,
+      15078,
+      15078
+    ],
+    [
+      "I DON'T KNOW ABOUT YOU (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      14826,
+      14826,
+      14826
+    ],
+    [
+      "IF YOU WERE MINE",
+      14713,
+      14071,
+      47442
+    ],
+    [
+      "LIVIN' THE DREAM (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      14201,
+      14201,
+      14201
+    ],
+    [
+      "BABY",
+      14047,
+      9123,
+      104094
+    ],
+    [
+      "IF I KNOW ME (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      13372,
+      13372,
+      13372
+    ],
+    [
+      "FOOLISH",
+      12378,
+      8608,
+      90932
+    ],
+    [
+      "ALWAYS ON TIME",
+      11749,
+      7257,
+      87075
+    ],
+    [
+      "MIND PLAYIN TRICKS",
+      11230,
+      7757,
+      83207
+    ],
+    [
+      "I GOT BETTER",
+      10279,
+      10279,
+      342667
+    ],
+    [
+      "FALL OF SUMMER (CRISWELL - BMI)",
+      10156,
+      1170,
+      21176
+    ],
+    [
+      "LIVE FOR DAYS (MASTER - CALE DODDS)",
+      9375,
+      0,
+      41669
+    ],
+    [
+      "COUNT ME OUT",
+      9221,
+      9221,
+      32117
+    ],
+    [
+      "ROLEX ON A REDNECK",
+      9188,
+      9188,
+      9188
+    ],
+    [
+      "SOME GIRLS (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      9176,
+      9176,
+      9176
+    ],
+    [
+      "WANTING AND WAITING",
+      8564,
+      2744,
+      54686
+    ],
+    [
+      "DEVIL YOU KNOW",
+      8211,
+      482,
+      9294
+    ],
+    [
+      "STILL",
+      8112,
+      7811,
+      60060
+    ],
+    [
+      "NASTY",
+      8060,
+      2116,
+      59714
+    ],
+    [
+      "TALK YOU OUT OF IT (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      7636,
+      7636,
+      7636
+    ],
+    [
+      "WAITING MY WHOLE LIFE FOR THIS",
+      7543,
+      2768,
+      25938
+    ],
+    [
+      "PO PIMP",
+      7396,
+      4428,
+      54815
+    ],
+    [
+      "CHURCH (SOS - MICHAEL HARDY APA; BMI)",
+      7279,
+      7279,
+      7279
+    ],
+    [
+      "DAMN IT FEELS GOOD TO BE A GANGSTA",
+      7047,
+      2386,
+      52219
+    ],
+    [
+      "DAVID ARTHUR GARCIA (SOS) MISC. INCOME",
+      7033,
+      6793,
+      28131
+    ],
+    [
+      "HOLY WATER",
+      7022,
+      7022,
+      7022
+    ],
+    [
+      "CONFETTI",
+      6333,
+      0,
+      25331
+    ],
+    [
+      "SONGS OF SPIRIT ONE MISC. INCOME",
+      6203,
+      6203,
+      6203
+    ],
+    [
+      "HIGH, HIGH, HIGH",
+      6139,
+      5389,
+      20059
+    ],
+    [
+      "BETTER BOY",
+      6077,
+      6077,
+      6077
+    ],
+    [
+      "KILLING ME",
+      5981,
+      5981,
+      17052
+    ],
+    [
+      "PRACTICE",
+      5909,
+      5,
+      23634
+    ],
+    [
+      "HATE MY HEART (SOS - MICHAEL HARDY APA; BMI)",
+      5827,
+      5827,
+      5827
+    ],
+    [
+      "BEER DON'T (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      5641,
+      5641,
+      5641
+    ],
+    [
+      "ONE BIG COUNTRY SONG (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      5367,
+      5367,
+      5367
+    ],
+    [
+      "SEE YOU NEXT SUMMER (SOS - MICHAEL HARDY APA; BMI)",
+      5139,
+      5139,
+      5139
+    ],
+    [
+      "DO U?",
+      5136,
+      3096,
+      38062
+    ],
+    [
+      "MINE TOMORROW",
+      5080,
+      3672,
+      15734
+    ],
+    [
+      "SOMETHIN' COUNTRY (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      4614,
+      4614,
+      4614
+    ],
+    [
+      "FUCK FACES",
+      4576,
+      2251,
+      33915
+    ],
+    [
+      "REDNECK LOVE SONG (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      4466,
+      4466,
+      4466
+    ],
+    [
+      "PRAY YOUR NAME",
+      4373,
+      2434,
+      13355
+    ],
+    [
+      "JIM BOB (GARCIA - ASCAP)",
+      4330,
+      4080,
+      12029
+    ],
+    [
+      "PASS THE BAR",
+      4203,
+      791,
+      10129
+    ],
+    [
+      "WHATCHA KNOW 'BOUT THAT (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      4135,
+      4135,
+      4135
+    ],
+    [
+      "DOLLARS AND SENSE",
+      4080,
+      4078,
+      30219
+    ],
+    [
+      "CAN A HEART TAKE",
+      3873,
+      2264,
+      11776
+    ],
+    [
+      "PRAISE THE LORD (SOS - MICHAEL HARDY APA; BMI)",
+      3839,
+      3839,
+      3839
+    ],
+    [
+      "JIM BOB",
+      3836,
+      1176,
+      16594
+    ],
+    [
+      "LIVIN' THAT GOOD LIFE",
+      3698,
+      22,
+      13352
+    ],
+    [
+      "GOOD ON YOU",
+      3605,
+      914,
+      11753
+    ],
+    [
+      "LIKE IT LIKE THAT",
+      3389,
+      3389,
+      11732
+    ],
+    [
+      "WAITING IN THE QUIET",
+      3352,
+      16,
+      15178
+    ],
+    [
+      "HAD ME BY HALFTIME (MICHAEL HARDY APA – WRITER’S SHARE ONLY)",
+      3300,
+      3300,
+      3300
+    ],
+    [
+      "FROGMAN",
+      3291,
+      1523,
+      21285
+    ],
+    [
+      "STILL PO PIMPIN",
+      3255,
+      2577,
+      24140
+    ],
+    [
+      "MARY JANE",
+      3200,
+      2472,
+      23722
+    ],
+    [
+      "BEDSIDE MANNERS",
+      3193,
+      352,
+      21265
+    ],
+    [
+      "DIRTY COLD SUN",
+      3188,
+      751,
+      22662
+    ],
+    [
+      "PLAYA LIKE ME & YOU",
+      3176,
+      1597,
+      23532
+    ]
+  ]
+}
