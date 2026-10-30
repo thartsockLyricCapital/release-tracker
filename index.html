@@ -1254,7 +1254,7 @@ function sumRow(cls, label, count, addD, total){
     </div>`;
 }
 function leaderboard(title, rows, unit){
-  const top = rows.slice(0,10), other = rows.slice(10);
+  const top = rows.slice(0,20), other = rows.slice(20);
   const sum = a => a.reduce((s,x)=>s+(x.d||0),0);
   const sumT = a => a.reduce((s,x)=>s+(x.total||0),0);
   const body = top.map((x,i)=>`<div class="brow">
@@ -1265,7 +1265,7 @@ function leaderboard(title, rows, unit){
         <span class="bt">${fmtNum(x.total)} total</span></div>
     </div>`).join('') || '<div class="brow head"><span></span><div class="bsub">No data yet.</div><span></span></div>';
   const summary = rows.length ? (
-      sumRow('sub', 'Top 10 subtotal', null, sum(top), sumT(top)) +
+      sumRow('sub', 'Top 20 subtotal', null, sum(top), sumT(top)) +
       sumRow('other', 'Other songs', other.length, sum(other), sumT(other)) +
       sumRow('tot', 'All songs', rows.length, sum(rows), sumT(rows))
   ) : '';
